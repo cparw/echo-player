@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jai Shivaji</title>
+  <title>Bhakti Player</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: #000; overflow: hidden; width: 100vw; height: 100vh; }
@@ -11,11 +11,27 @@
   </style>
 </head>
 <body>
-  <iframe
-    id="player"
-    src="https://www.youtube.com/embed/cWXyJCw5nLo?autoplay=1&mute=0&loop=1&playlist=cWXyJCw5nLo&rel=0&modestbranding=1&controls=1"
-    allow="autoplay; encrypted-media; fullscreen"
-    allowfullscreen>
-  </iframe>
+  <iframe id="player" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+  <script>
+    const videos = {
+      shivaji:     { ids: ['cWXyJCw5nLo'] },
+      hanuman:     { ids: ['VucnW-EqycQ'] },
+      ram:         { ids: ['ngiru05tar8', 'GM4ZA3PVSQ0'] },
+      maharashtra: { ids: ['sXqqbOIz3VY'] },
+      palanhare:   { ids: ['kbMinfmC3E0'] }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const key = (params.get('v') || 'shivaji').toLowerCase();
+    const video = videos[key] || videos['shivaji'];
+
+    const firstId = video.ids[0];
+    const playlistIds = video.ids.join(',');
+    const loop = video.ids.length === 1 ? '1' : '0';
+
+    const src = `https://www.youtube.com/embed/${firstId}?autoplay=1&mute=0&loop=${loop}&playlist=${playlistIds}&rel=0&modestbranding=1&controls=1`;
+
+    document.getElementById('player').src = src;
+  </script>
 </body>
 </html>
