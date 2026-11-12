@@ -68,7 +68,7 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 ## 5. Brand (open decision)
 
 * The account covers everything GTA 6, not only numbers (owner rejected "HARD NUMBERS").
-* Wanted: modern, Gen Z, global, unique, minimal like "Unseen.", with a logo. Options sent 12 Nov: paused. (recommended), loredrop., afterglow., palm reader., redacted., deep cut., humid., sixsense. **Not picked yet.** Until then the end card says "GTA 6".
+* Wanted: modern, Gen Z, global, unique, minimal like "Unseen.", with a logo. Rejected by the owner: HARD NUMBERS, SUBTEXT, FOOTNOTE, PARALLAX, VANTAGE, paused., loredrop., afterglow., palm reader., redacted., deep cut., humid., sixsense. Third set sent 12 Nov (GTA feel words): six star. (recommended), hotwire., heat., getaway., riptide., off map., untold., mission passed. **Not picked yet.** Until then the end card says "GTA 6".
 * The handle must not contain GTA, Rockstar, VI or Vice City. Bio and captions say "Not affiliated with Rockstar Games or Take Two".
 
 ## 6. Captions and posting
@@ -99,6 +99,8 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 
 ## 9. Feedback log (newest first)
 
+* 12 Nov: "I already told you I didn't like them. I need something new, different, nice." The second name set (paused., loredrop., afterglow. ...) is rejected too. Third set sent: six star., hotwire., heat., getaway., riptide., off map., untold., mission passed. Never resend rejected names.
+* 12 Nov: "Make them more interesting. See the features which hit the most ... out of the box information that they would love ... make it more curious." Reels lead with the GTA 6 features that got the biggest reaction online, told through surprising, curiosity driven facts.
 * 12 Nov: "We should be very thoughtful how we start the reels, because that is where we catch the attention of the audience, and that has to be done to its perfect level." Every hook gets 3 written options, the strongest is picked deliberately, with the most stunning shot and big on screen text from frame 1.
 
 * 12 Nov (research, not owner): the reference reel's "they DM you, then ask you to follow" step is a follow gate under Meta's Spam standard. We keep the 90/10 DM but never gate it on a follow.

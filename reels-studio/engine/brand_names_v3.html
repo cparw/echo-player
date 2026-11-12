@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Unbounded'; font-weight: 800; src: url('node_modules/@fontsource/unbounded/files/unbounded-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Bricolage'; font-weight: 800; src: url('node_modules/@fontsource/bricolage-grotesque/files/bricolage-grotesque-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Fraunces'; font-weight: 600; font-style: italic; src: url('node_modules/@fontsource/fraunces/files/fraunces-latin-600-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Syne'; font-weight: 800; src: url('node_modules/@fontsource/syne/files/syne-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Instrument Serif'; font-style: italic; src: url('node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url('node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 600; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 800; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Anton'; src: url('node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2') format('woff2'); }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #060608; color: #F5F2EA; width: 1080px; }
+.head { padding: 70px 60px 20px; }
+.head h1 { font-family: 'Inter Tight'; font-weight: 800; font-size: 60px; margin: 0; letter-spacing: -0.02em; }
+.head p { font-family: 'Inter Tight'; font-weight: 600; font-size: 27px; color: rgba(245,242,234,0.62); margin: 14px 0 0; line-height: 1.35; }
+.grid { padding: 26px 40px 70px; display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.card { background: linear-gradient(180deg, #121217, #0c0c10); border: 1px solid rgba(245,242,234,0.09); border-radius: 38px; padding: 34px 30px 30px; position: relative; overflow: hidden; }
+.card.top { border: 2px solid #FF7A1A; box-shadow: 0 0 40px rgba(255,122,26,0.18); }
+.num { position: absolute; top: 20px; left: 26px; font-family: 'JetBrains Mono'; font-size: 19px; color: rgba(245,242,234,0.5); }
+.pick { position: absolute; top: 20px; right: 24px; font-family: 'JetBrains Mono'; font-size: 18px; letter-spacing: 0.14em; color: #FF7A1A; }
+.av { width: 210px; height: 210px; margin: 20px auto 22px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 3px rgba(245,242,234,0.12), 0 18px 50px rgba(0,0,0,0.6); }
+.mark { text-align: center; line-height: 1; white-space: nowrap; margin-top: 4px; }
+.handle { text-align: center; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 20px; color: #2EE6D0; margin-top: 16px; }
+.why { text-align: center; font-family: 'Inter Tight'; font-weight: 600; font-size: 22px; color: rgba(245,242,234,0.66); margin-top: 12px; line-height: 1.32; }
+.solo { width: 1080px; height: 1080px; }
+.solo .av { width: 1080px; height: 1080px; margin: 0; border-radius: 0; box-shadow: none; }
+</style>
+</head>
+<body>
+<div id="page"></div>
+<script>
+const G = (id, a, b, x2 = 1, y2 = 1) => `<linearGradient id="${id}" x1="0" y1="0" x2="${x2}" y2="${y2}"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient>`;
+const star = (cx, cy, r, fill) => {
+  let p = '';
+  for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, rr = i % 2 ? r * 0.45 : r; p += `${(cx + rr * Math.cos(a)).toFixed(2)},${(cy + rr * Math.sin(a)).toFixed(2)} `; }
+  return `<polygon points="${p}" fill="${fill}"/>`;
+};
+const arcStars = (cx, cy, R, r, fill, n = 6, spread = 150) => {
+  let s = '';
+  for (let i = 0; i < n; i++) { const a = (-90 - spread / 2 + i * spread / (n - 1)) * Math.PI / 180; s += star(cx + R * Math.cos(a), cy + R * Math.sin(a), r, fill); }
+  return s;
+};
+const NAMES = [
+  { name: 'six star.', top: true,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs>${G('ss1', '#FFB347', '#FF4FA3')}<radialGradient id="ssg" cx="0.5" cy="0.55" r="0.6"><stop offset="0" stop-color="#2a1430"/><stop offset="1" stop-color="#07070a"/></radialGradient></defs><rect width="100" height="100" fill="url(#ssg)"/>${arcStars(50, 62, 30, 6.2, 'url(#ss1)')}<text x="50" y="74" text-anchor="middle" font-family="Unbounded" font-weight="800" font-size="27" fill="#F5F2EA">6</text></svg>`,
+    mark: `<span style="font-family:Unbounded;font-weight:800;font-size:64px;letter-spacing:-0.03em">six star<span style="color:#FF7A1A">.</span></span>`,
+    handle: '@sixstar.gg · @sixstarhq', why: 'The wanted level goes back up to six stars in GTA 6 (GTA 5 stopped at five). Max level energy, every day.' },
+  { name: 'hotwire.',
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs>${G('hw1', '#2EE6D0', '#3B7BFF')}<radialGradient id="hwg" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFE7A0"/><stop offset="0.35" stop-color="#FF7A1A" stop-opacity="0.9"/><stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/></radialGradient></defs><rect width="100" height="100" fill="#07070a"/><path d="M12 64 C 28 64, 30 40, 46 46" stroke="url(#hw1)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M88 36 C 72 36, 70 60, 54 54" stroke="#FF4FA3" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="50" cy="50" r="15" fill="url(#hwg)"/><path d="M50 40 L46 51 L52 51 L48 61" stroke="#fff" stroke-width="2.6" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>`,
+    mark: `<span style="font-family:Syne;font-weight:800;font-size:68px;letter-spacing:-0.02em">hot<span style="background:linear-gradient(90deg,#2EE6D0,#3B7BFF);-webkit-background-clip:text;color:transparent">wire</span>.</span>`,
+    handle: '@hotwire.gg · @hotwirehq', why: 'How every GTA story starts. We jump start your feed with GTA 6 news, secrets and gameplay.' },
+  { name: 'heat.',
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs>${G('ht1', '#FFD36B', '#FF3D6E', 0, 1)}</defs><rect width="100" height="100" fill="#07070a"/><circle cx="50" cy="44" r="22" fill="url(#ht1)"/><g stroke="#07070a" stroke-width="3.4" fill="none"><path d="M24 50 Q 31 46 37 50 T 50 50 T 63 50 T 76 50"/><path d="M24 58 Q 31 54 37 58 T 50 58 T 63 58 T 76 58"/></g><g stroke="#FF7A1A" stroke-width="3" fill="none" stroke-linecap="round"><path d="M26 76 Q 33 72 39 76 T 52 76 T 65 76 T 76 76"/></g></svg>`,
+    mark: `<span style="font-family:'Instrument Serif';font-style:italic;font-size:104px;background:linear-gradient(90deg,#FFD36B,#FF3D6E);-webkit-background-clip:text;color:transparent">heat.</span>`,
+    handle: '@heat.gg · @thatsheat', why: 'Three meanings at once: Florida heat, GTA 6\'s new police Heat system, and "that\'s heat" for something great.' },
+  { name: 'getaway.',
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs>${G('ga1', '#FF7A1A', '#FF4FA3', 0, 1)}${G('ga2', '#1b1030', '#07070a', 0, 1)}</defs><rect width="100" height="100" fill="url(#ga2)"/><circle cx="50" cy="44" r="16" fill="url(#ga1)"/><rect x="0" y="50" width="100" height="50" fill="#0b0b10"/><path d="M50 50 L18 100 M50 50 L82 100" stroke="#F5F2EA" stroke-width="2.4"/><path d="M50 56 L50 62 M50 68 L50 76 M50 82 L50 94" stroke="#FF7A1A" stroke-width="2.6" stroke-linecap="round"/></svg>`,
+    mark: `<span style="font-family:'Fraunces';font-style:italic;font-weight:600;font-size:78px;letter-spacing:-0.01em">getaway<span style="color:#FF7A1A">.</span></span>`,
+    handle: '@getaway.gg · @thegetaway.hq', why: 'A heist getaway and a Florida getaway in one word. Cinematic, aspirational, made to last past launch.' },
+  { name: 'riptide.',
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs>${G('rt1', '#2EE6D0', '#3B7BFF', 1, 0)}</defs><rect width="100" height="100" fill="#06121a"/><path d="M14 66 C 26 40, 52 28, 70 40 C 82 48, 78 64, 64 64 C 54 64, 52 54, 60 52" stroke="url(#rt1)" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M14 76 Q 30 70 46 76 T 86 76" stroke="#F5F2EA" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/></svg>`,
+    mark: `<span style="font-family:Bricolage;font-weight:800;font-size:72px;letter-spacing:-0.035em">rip<span style="color:#2EE6D0">tide</span>.</span>`,
+    handle: '@riptide.gg · @riptidehq', why: 'The Florida current that pulls you in. Once you watch one, you can\'t stop.' },
+  { name: 'off map.',
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><rect width="100" height="100" fill="#07070a"/><rect x="20" y="24" width="48" height="48" rx="6" fill="none" stroke="#F5F2EA" stroke-opacity="0.5" stroke-width="2.6" stroke-dasharray="5 5"/><path d="M60 66 L80 46" stroke="#FF7A1A" stroke-width="4" stroke-linecap="round"/><path d="M72 46 L80 46 L80 54" stroke="#FF7A1A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 36 C 36 36 33 42 33 46 C 33 54 44 62 44 62 C 44 62 55 54 55 46 C 55 42 52 36 44 36 Z" fill="#FF4FA3"/><circle cx="44" cy="46" r="4" fill="#07070a"/></svg>`,
+    mark: `<span style="font-family:'Space Grotesk';font-weight:700;font-size:72px;letter-spacing:-0.04em">off map<span style="color:#FF7A1A">.</span></span>`,
+    handle: '@offmap.gg · @offmaphq', why: 'Everything outside the usual GTA 6 talk. Out of the box facts, hidden details, places nobody shows.' },
+  { name: 'untold.',
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs>${G('ut1', '#FF7A1A', '#FF4FA3')}</defs><rect width="100" height="100" fill="#07070a"/><text x="50" y="66" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="62" fill="#F5F2EA">u</text><circle cx="70" cy="62" r="5" fill="url(#ut1)"/></svg>`,
+    mark: `<span style="font-family:'Instrument Serif';font-style:italic;font-size:100px">untold<span style="background:linear-gradient(90deg,#FF7A1A,#FF4FA3);-webkit-background-clip:text;color:transparent">.</span></span>`,
+    handle: '@untold.gg · @untoldhq', why: 'The untold side of GTA 6. Premium and mysterious, our own word, nothing borrowed.' },
+  { name: 'mission passed.',
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><defs>${G('mp1', '#FFB347', '#FF7A1A', 0, 1)}</defs><rect width="100" height="100" fill="#07070a"/><circle cx="50" cy="50" r="27" fill="none" stroke="url(#mp1)" stroke-width="5"/><path d="M38 51 L47 60 L63 41" stroke="#F5F2EA" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="78" y="30" font-family="Unbounded" font-weight="800" font-size="16" fill="#FF7A1A">+</text></svg>`,
+    mark: `<span style="font-family:Unbounded;font-weight:800;font-size:46px;letter-spacing:-0.03em">mission passed<span style="color:#FF7A1A">.</span></span>`,
+    handle: '@missionpassed.gg · @mission.passed', why: 'The feeling every GTA fan knows. Instantly recognizable worldwide, positive and memeable.' },
+];
+const solo = new URLSearchParams(location.search).get('solo');
+const page = document.getElementById('page');
+if (solo !== null) page.innerHTML = `<div class="solo"><div class="av">${NAMES[+solo].av}</div></div>`;
+else {
+  let h = `<div class="head"><h1>New names, new direction</h1><p>Words every GTA fan instantly feels: the six star wanted level, hotwiring a car, the heat, the getaway, mission passed. Nothing trademarked, nothing like the old sets.</p></div><div class="grid">`;
+  NAMES.forEach((n, i) => {
+    h += `<div class="card${n.top ? ' top' : ''}"><div class="num">${String(i + 1).padStart(2, '0')}</div>${n.top ? '<div class="pick">MY PICK</div>' : ''}<div class="av">${n.av}</div><div class="mark">${n.mark}</div><div class="handle">${n.handle}</div><div class="why">${n.why}</div></div>`;
+  });
+  page.innerHTML = h + '</div>';
+}
+window.NAMES_COUNT = NAMES.length;
+</script>
+</body>
+</html>
