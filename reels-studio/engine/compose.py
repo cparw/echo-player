@@ -30,7 +30,10 @@ ROTATED = ("7696925363795938573", "7502175479718284586")
 
 def clip_part(c, dur, outp):
     sh = SHOTS[c["shot"]]
-    src = sh["src"]; avail = max(0.3, sh["end"] - sh["start"] - c.get("offset", 0))
+    lo, hi = sh.get("safe", [0, sh["end"] - sh["start"]])
+    off = min(max(c.get("offset", 0), lo), max(lo, hi - 0.6))
+    c = dict(c, offset=off)
+    src = sh["src"]; avail = max(0.3, hi - off)
     slow = min(1.5, max(1.0, dur / avail))
     rot = any(r in src for r in ROTATED) if c.get("rot") is None else c["rot"]
     cx = c.get("cx", 0.5)
@@ -38,8 +41,8 @@ def clip_part(c, dur, outp):
         geo = f"transpose=2,crop=608:1080:x='(iw-ow)*{cx}':y=0,scale=1080:1920:flags=lanczos"
     else:
         geo = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
-    vf = f"setpts={slow:.3f}*PTS,{geo},fps=30,eq=saturation=1.06:contrast=1.03,setsar=1,format=yuv420p"
-    run(["-ss", str(sh["start"] + c.get("offset", 0)), "-i", src, "-t", str(dur + 0.3), "-vf", vf, "-t", str(dur), "-an",
+    vf = f"trim=duration={avail:.3f},setpts=PTS-STARTPTS,setpts={slow:.3f}*PTS,{geo},fps=30,tpad=stop_mode=clone:stop_duration=3,eq=saturation=1.06:contrast=1.03,setsar=1,format=yuv420p"
+    run(["-ss", str(sh["start"] + c.get("offset", 0)), "-i", src, "-vf", vf, "-t", str(dur), "-an",
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", "-r", "30", outp])
 
 # 1) background segments (official footage, stills, AI b-roll, or brand black)

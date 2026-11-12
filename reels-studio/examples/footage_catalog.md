@@ -5,15 +5,16 @@ Use in a beat as: "clips": [{"shot": N, "offset": seconds_into_shot (optional), 
 The engine rotates and crops automatically. Visual reference sheet: land_sheet.jpg (same folder). Data in shots.json.
 Credit is added automatically on screen: "FOOTAGE: ROCKSTAR GAMES".
 
-AVOID (violence, guns, explosions, logos or title cards): 0, 7, 19, 23, 25, 26, 41, 53, 61, 63, 66, 67, 70, 73, 75.
+AVOID (violence, guns, explosions, logos or title cards): 0, 7, 19, 23, 25, 26, 53, 61, 63, 66, 67, 70, 73, 75.
+SAFE WINDOWS (the mixer clamps clips into these; use offsets inside them): shot 5 only 3.5 to 7.5 s (car at night, then an iguana on a car); shot 15 only 0 to 4.5 s (sports cars on Ocean Drive, man on a ledge); shot 24 only 0 to 2.2 s (purple lit figures; the rest is the logo and preorder card); shot 41 only 0 to 3.5 s (Lucia and Jason by a car; then a title card); shot 62 only 0 to 13 s (truck taillights 0, bedroom 2, boat 4, convertible at night 6, man 8, SUNSET VICE CITY AERIAL 10 to 13; after 13 s the VI logo and an outdated May 26 date card).
 
 | shot | length | what it shows (landscape unless noted) | good for |
 |---|---|---|---|
-| 1 | 7.2s | aerial over a marina and city | establishing, Vice City, money |
+| 1 | 7.2s | street with a truck (0), MARINA aerial (2), hand polishing a car (5) | establishing, money |
 | 2 | 1.8s | yacht detail, bright | luxury, money |
 | 3 | 2.2s | Jason on a phone call | news, calls, statements |
 | 4 | 0.9s | beach with a seaplane | short accent |
-| 5 | 11.1s | night car interior, two people | tension, night, rehook |
+| 5 | use offset 3.5 to 7.5 | car with headlights at night (3.5), iguana on a car (6) | tension, Florida humor |
 | 6 | 1.4s | Lucia and Jason in a convertible | iconic duo |
 | 8 | 3.3s | dark green neon interior | mood |
 | 9 | 1.3s | neon street at night | mood |
@@ -22,18 +23,18 @@ AVOID (violence, guns, explosions, logos or title cards): 0, 7, 19, 23, 25, 26, 
 | 12 | 1.8s | Lucia and Jason leaning on a red car | iconic duo |
 | 13 | 2.6s | hand on glass | waiting, longing |
 | 14 | 1.8s | club dancer in pink neon | nightlife, music |
-| 15 | 8.1s | motorcycle on a dusty road | journey, distance |
+| 15 | use offset 0 to 4.5 | sports cars on Ocean Drive (0), man on a ledge (2) | Vice City, money, speed |
 | 16 | 1.8s | crowded beach, skyline, banner plane | crowds, popularity |
 | 17 | 1.3s | gym, boxing | effort |
 | 20 | 2.9s | teal underwater style shot | mystery |
 | 21 | 1.4s | couple at sunset | emotion |
 | 22 | 4.1s | night aerial, moving vehicle | speed, network, night |
-| 24 | 14.8s | Vice City skyline at night, aerial | city, midnight, launch |
+| 24 | 2.2s usable | purple lit figures (rest is logo card) | mood only |
 | 27 | 1.6s | stilt house in the Keys | Leonida, places |
 | 28 | 1.6s | white pickup, man walking | locals |
 | 30 | 5.1s | man gesturing by a truck | characters |
 | 31 | 4.3s | wooden dock walkway | Keys, calm |
-| 32 | 11.2s | Jason driving, daytime | driving, journey |
+| 32 | 11.2s | shirtless man at a stilt house (0 to 3), Jason driving (5 to 9), hands counting cash at a desk (10) | driving, money |
 | 33 | 3.7s | highway with skyline and green road signs | Vice City, travel, traffic |
 | 34 | 3.1s | muscle beach outdoor gym | culture, crowds |
 | 35 | 3.6s | walking through a store | retail, shopping, boxes |
@@ -54,7 +55,7 @@ AVOID (violence, guns, explosions, logos or title cards): 0, 7, 19, 23, 25, 26, 
 | 57 | 4.9s | waterfront restaurant | lifestyle |
 | 59 | 1.8s | boat wake on the sea | speed |
 | 60 | 1.7s | Jason and Lucia on a jet ski | fun, hype |
-| 62 | 23.0s | Vice City at sunset, aerial | openers, hooks, establishing |
+| 62 | 13s usable | mixed: truck 0s, bedroom 2s, boat 4s, convertible at night 6s, man 8s, SUNSET VICE CITY AERIAL at offset 10 | openers (use offset 10 for the aerial) |
 | 64 | 2.4s | purple neon (native vertical) | music, nightlife |
 | 65 | 1.5s | man celebrating near a ferris wheel (native vertical) | celebration, launch |
 | 68 | 1.4s | yacht close up (native vertical) | luxury |
@@ -68,3 +69,6 @@ AVOID (violence, guns, explosions, logos or title cards): 0, 7, 19, 23, 25, 26, 
 Official still images (4K, Rockstar) in assets/official/: keyart_nov19, boxart_standard, couple_sunset_palms, couple_greencar_skyline, cheetah_artdeco_garage, cheetah_headlights_night, safehouse_stilt_house, kayak_sunset, squalo_boat_skyline_dusk, boats_aerial, stanier_neon, extended_look_art, vice_city_skyline_aerial, launch_trailer_keyframe, lowrider_gold, ganado_yellow_pickup, ocean_view_hotel_neon, club_dance_80s. Use as "media": "<path>.jpg" with "pan": [start, end].
 
 AI b roll (label shows "AI VISUAL"), for things footage cannot show: assets/broll_3 dark living room with controller; broll_6 server aisle; broll_8 fiber optic light pulses; broll_9 Earth at night with light arcs; broll_10 trading screens; broll_11 clock to midnight; broll_12 crowd outside a glowing store in rain; broll_13 harbor city at midnight.
+
+| 41 | use offset 0 to 3.5 | Lucia and Jason by a car in daylight | iconic duo |
+| 26 | use offset 7.3 only | aerial of the Keys islands (very short) | Leonida |
