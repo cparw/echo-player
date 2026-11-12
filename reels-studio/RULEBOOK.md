@@ -99,6 +99,7 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 
 ## 9. Feedback log (newest first)
 
+* 12 Nov: "Not do more research. I want something modern, minimalistic, professional, new, Gen Z, futuristic logo ... it just has to be one logo ... you can't write so much because it's an Instagram logo." Deliver ONE logo, not option sheets; a simple mark that reads as a tiny circle, no long text. Sent: six star. (a bold star with a 6 cut out, sunset gradient on black; `engine/logo_sixstar.html`, `brand/six_star_profile_picture.png`).
 * 12 Nov: "I already told you I didn't like them. I need something new, different, nice." The second name set (paused., loredrop., afterglow. ...) is rejected too. Third set sent: six star., hotwire., heat., getaway., riptide., off map., untold., mission passed. Never resend rejected names.
 * 12 Nov: "Make them more interesting. See the features which hit the most ... out of the box information that they would love ... make it more curious." Reels lead with the GTA 6 features that got the biggest reaction online, told through surprising, curiosity driven facts.
 * 12 Nov: "We should be very thoughtful how we start the reels, because that is where we catch the attention of the audience, and that has to be done to its perfect level." Every hook gets 3 written options, the strongest is picked deliberately, with the most stunning shot and big on screen text from frame 1.

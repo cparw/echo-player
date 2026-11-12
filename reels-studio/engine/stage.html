@@ -457,6 +457,16 @@ window.renderAt = function (t) {
       root.appendChild(A);
     }
   }
+  if (sc.headline) {
+    // hook headline: fully visible from the very first frame (stops the scroll before the first word lands)
+    const Hd = document.createElement('div');
+    const e = ease.outBack(prog(t, sc.start, 0.35));
+    Hd.style.cssText = `position:absolute;left:60px;right:60px;top:${sc.headlineTop || 400}px;text-align:center;font-family:Anton;text-transform:uppercase;` +
+      `font-size:${sc.headlineSize || 128}px;line-height:1.02;color:${th.fg};text-shadow:0 6px 30px rgba(0,0,0,0.85);transform:scale(${1.06 - 0.06 * e})`;
+    Hd.innerHTML = String(sc.headline).replace(/\*([^*]+)\*/g, `<span style="background:${th.accent};color:${th.ink};padding:0 0.08em">$1</span>`)
+      .replace(/\^([^^]+)\^/g, `<span style="color:${th.accent}">$1</span>`).replace(/\n/g, '<br>');
+    root.appendChild(Hd);
+  }
   if (sc.footnote) {
     const F = document.createElement('div'); F.className = 'foot';
     F.style.top = (sc.footTop || 1236) + 'px'; F.style.color = th.fg; F.style.opacity = 0.62 * prog(t, sc.start + 0.25, 0.3);

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Unbounded'; font-weight: 800; src: url('node_modules/@fontsource/unbounded/files/unbounded-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 600; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 800; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2') format('woff2'); }
+html, body { margin: 0; background: #07070A; }
+.mock { width: 1080px; height: 760px; background: #000; color: #F5F2EA; font-family: 'Inter Tight'; position: relative; }
+.mock .pfp { position: absolute; left: 60px; top: 70px; width: 250px; height: 250px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 3px #222; }
+.mock .stats { position: absolute; left: 360px; top: 120px; display: flex; gap: 70px; font-weight: 800; font-size: 44px; text-align: center; }
+.mock .stats span { display: block; font-weight: 600; font-size: 28px; color: #bbb; margin-top: 6px; }
+.mock .name { position: absolute; left: 60px; top: 350px; font-weight: 800; font-size: 40px; }
+.mock .bio { position: absolute; left: 60px; top: 408px; font-weight: 600; font-size: 31px; line-height: 1.38; color: #e8e8e8; }
+.mock .btn { position: absolute; left: 60px; right: 60px; top: 590px; height: 84px; border-radius: 18px; background: #0095F6; color: #fff; font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; }
+.mock .small { position: absolute; right: 70px; top: 330px; width: 120px; height: 120px; border-radius: 50%; overflow: hidden; }
+.mock .tiny { position: absolute; right: 214px; top: 360px; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; }
+</style>
+</head>
+<body>
+<div id="page"></div>
+<script>
+function starPoints(cx, cy, R, ratio) {
+  const pts = [];
+  for (let i = 0; i < 10; i++) {
+    const a = -Math.PI / 2 + i * Math.PI / 5, r = i % 2 ? R * ratio : R;
+    pts.push(`${(cx + r * Math.cos(a)).toFixed(2)},${(cy + r * Math.sin(a)).toFixed(2)}`);
+  }
+  return pts.join(' ');
+}
+function logo() {
+  const P = starPoints(540, 572, 360, 0.5);
+  return `<svg viewBox="0 0 1080 1080" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.48" r="0.62"><stop offset="0" stop-color="#1d0f24"/><stop offset="0.6" stop-color="#0b0710"/><stop offset="1" stop-color="#050507"/></radialGradient>
+    <linearGradient id="g" x1="0.15" y1="0.05" x2="0.85" y2="0.95"><stop offset="0" stop-color="#FFC24B"/><stop offset="0.5" stop-color="#FF7A1A"/><stop offset="1" stop-color="#FF2E7E"/></linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A1A" stop-opacity="0.0"/><stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.55"/><stop offset="1" stop-color="#FF2E7E" stop-opacity="0.0"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="38"/></filter>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.28"/><stop offset="0.45" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <mask id="cut"><rect width="1080" height="1080" fill="#fff"/>
+      <text x="540" y="756" text-anchor="middle" font-family="Unbounded" font-weight="800" font-size="372" fill="#000">6</text></mask>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <circle cx="540" cy="540" r="452" fill="none" stroke="url(#ring)" stroke-width="5"/>
+  <g mask="url(#cut)"><polygon points="${P}" fill="url(#g)" opacity="0.55" filter="url(#glow)"/></g>
+  <g mask="url(#cut)">
+    <polygon points="${P}" fill="url(#g)" stroke="url(#g)" stroke-width="34" stroke-linejoin="round"/>
+    <polygon points="${P}" fill="url(#sheen)" stroke="none"/>
+  </g>
+</svg>`;
+}
+const mode = new URLSearchParams(location.search).get('mode') || 'pfp';
+const page = document.getElementById('page');
+if (mode === 'pfp') page.innerHTML = `<div style="width:1080px;height:1080px">${logo()}</div>`;
+else page.innerHTML = `<div class="mock"><div class="pfp">${logo()}</div>
+  <div class="stats"><div>24<span>posts</span></div><div>12.4K<span>followers</span></div><div>3<span>following</span></div></div>
+  <div class="name">six star.</div>
+  <div class="bio">GTA 6, decoded daily. Gameplay, secrets, facts.<br>Not affiliated with Rockstar Games.</div>
+  <div class="small">${logo()}</div><div class="tiny">${logo()}</div>
+  <div class="btn">Follow</div></div>`;
+window.READY = true;
+</script>
+</body>
+</html>
