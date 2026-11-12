@@ -13,7 +13,7 @@ Owner: Chaitanya. Project: GTA 6 explainer reels account (Instagram first, then 
 
 ## Account ownership (stated by the owner, 12 Nov 2026)
 * The Instagram account is owned and run by the owner's mother, an Indian citizen living in India; payouts go to her. The owner makes the reels (his cloned voice).
-* TikTok is banned in India (since June 2020; still blocked as of mid 2026), so no TikTok money channel for her. Facebook Creator Fast Track is US, CA, UK and AU only.
+* Platform split (owner wants Instagram, TikTok and YouTube): Instagram and YouTube are the mother's accounts (India, payouts to her). TikTok is banned in India (since June 2020; still blocked as of mid 2026), so TikTok is held by the owner in the US as a reach channel with monetization OFF (TikTok pays only the account holder). Never suggest a VPN to run TikTok from India. Facebook Creator Fast Track is US, CA, UK and AU only.
 * Instagram in India: Gifts about 500 followers, Creator Marketplace about 1,000, Subscriptions about 10,000 (third party sources; confirm in app). YouTube Partner Program works in India (1,000 subscribers plus 10M Shorts views in 90 days).
 * Posting from India: 12:00 ET is 22:30 IST (post live); 18:00 ET is 04:30 IST (use Instagram's Schedule). Deliver each reel with caption and cover ready to schedule.
 * Recommended: a fresh dedicated account (@hardnumbers.daily) switched to Creator, not her existing personal account.
