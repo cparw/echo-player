@@ -99,6 +99,8 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 
 ## 9. Feedback log (newest first)
 
+* 12 Nov: "We should be very thoughtful how we start the reels, because that is where we catch the attention of the audience, and that has to be done to its perfect level." Every hook gets 3 written options, the strongest is picked deliberately, with the most stunning shot and big on screen text from frame 1.
+
 * 12 Nov (research, not owner): the reference reel's "they DM you, then ask you to follow" step is a follow gate under Meta's Spam standard. We keep the 90/10 DM but never gate it on a follow.
 
 * 12 Nov: "Make a rule book ... so again and again I don't have to tell you these things." This file.
