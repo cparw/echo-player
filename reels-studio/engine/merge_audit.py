@@ -14,6 +14,8 @@ for i, sh in enumerate(shots):
     sh["segments"] = segs
     clean = []
     for s in segs:
+        badge_only = s["flags"] == ["rating_badge"] and sh.get("crop_box")
+        if badge_only: s["clean"], s["flags"] = True, ["none"]; s["content"] += " (badge removed by crop_box)"
         if s["clean"] and s["flags"] == ["none"] and s["to"] - s["from"] >= 0.3:
             # trim 0.1 s at both ends so a cut never lands on a neighbouring frame
             lo, hi = round(s["from"] + 0.1, 2), round(s["to"] - 0.1, 2)

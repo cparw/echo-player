@@ -160,6 +160,57 @@ function waffleBlock(sc, t, th) {
   return F;
 }
 
+// Side by side comparison card: sc.topic, sc.left / sc.right = {label, value, sub, t}; the right side is the hero (accent)
+function fitText(txt, family, weight, maxW, start) {
+  const m = document.createElement('span');
+  m.style.cssText = `position:absolute;visibility:hidden;white-space:nowrap;font-family:${family};font-weight:${weight}`;
+  document.body.appendChild(m); m.textContent = txt;
+  let s = start;
+  for (; s > 40; s -= 4) { m.style.fontSize = s + 'px'; if (m.getBoundingClientRect().width <= maxW) break; }
+  m.remove(); return s;
+}
+function versusBlock(sc, t, th) {
+  const F = document.createElement('div'); F.className = 'layer';
+  const top = sc.vsTop || 760, colW = 430;
+  if (sc.topic) {
+    const T = document.createElement('div'); T.className = 'label';
+    T.style.cssText += `position:absolute;left:0;right:0;text-align:center;top:${top - 96}px;font-size:32px;color:${th.fg};opacity:${0.9 * prog(t, sc.start, 0.3)};text-shadow:0 3px 14px rgba(0,0,0,0.8)`;
+    T.textContent = sc.topic; F.appendChild(T);
+  }
+  const div = document.createElement('div');
+  const dp = ease.out(prog(t, sc.start + 0.05, 0.4));
+  div.style.cssText = `position:absolute;left:539px;width:2px;top:${top}px;height:${330 * dp}px;background:rgba(245,242,234,0.35)`;
+  F.appendChild(div);
+  const vs = document.createElement('div'); vs.className = 'label';
+  vs.style.cssText += `position:absolute;left:${540 - 38}px;top:${top + 130}px;width:76px;height:76px;border-radius:50%;background:${th.bg};border:2px solid rgba(245,242,234,0.35);` +
+    `display:flex;align-items:center;justify-content:center;font-size:24px;color:${th.fg};opacity:${dp}`;
+  vs.textContent = 'VS'; F.appendChild(vs);
+  [['left', 270, false], ['right', 810, true]].forEach(([k, cx, hero]) => {
+    const s = sc[k]; if (!s) return;
+    const p = prog(t, s.t != null ? s.t : sc.start + (hero ? 0.6 : 0.2), 0.3);
+    if (p <= 0) return;
+    const e = ease.outBack(p);
+    const C = document.createElement('div');
+    C.style.cssText = `position:absolute;left:${cx - colW / 2}px;width:${colW}px;top:${top}px;text-align:center;opacity:${clamp(p * 1.5, 0, 1)};` +
+      `transform:translateY(${(1 - e) * 36}px) scale(${0.92 + 0.08 * e});text-shadow:0 4px 22px rgba(0,0,0,0.8)`;
+    const lab = document.createElement('div'); lab.className = 'label';
+    lab.style.cssText += `font-size:28px;color:${hero ? th.accent : th.fg};opacity:${hero ? 1 : 0.75}`;
+    lab.textContent = s.label;
+    const val = document.createElement('div'); val.className = 'num';
+    const size = fitText(String(s.value), 'Anton', 400, colW - 30, s.size || 170);
+    val.style.cssText += `font-size:${size}px;color:${hero ? th.accent : th.fg};opacity:${hero ? 1 : 0.82};margin-top:22px;line-height:1.0;white-space:nowrap`;
+    val.textContent = s.value;
+    C.appendChild(lab); C.appendChild(val);
+    if (s.sub) {
+      const sub = document.createElement('div');
+      sub.style.cssText = `font-family:'Inter Tight';font-weight:600;font-size:32px;line-height:1.2;color:${th.fg};opacity:0.78;margin-top:18px`;
+      sub.textContent = s.sub; C.appendChild(sub);
+    }
+    F.appendChild(C);
+  });
+  return F;
+}
+
 // Dot matrix world map (Natural Earth land, equirectangular) with city pins and an optional westward midnight sweep
 function mapBlock(sc, t, th) {
   const M = window.MAPDOTS;
@@ -374,6 +425,9 @@ window.renderAt = function (t) {
   } else if (sc.layout === 'map') {
     if (sc.lines && sc.lines.length) root.appendChild(wordsBlock(sc, t, th, sc.wordsTop || 470));
     root.appendChild(mapBlock(sc, t, th));
+  } else if (sc.layout === 'versus') {
+    if (sc.lines && sc.lines.length) root.appendChild(wordsBlock(sc, t, th, sc.wordsTop || 470));
+    root.appendChild(versusBlock(sc, t, th));
   } else if (sc.lines && sc.lines.length) {
     const h = sc.lines.length * sc._size * sc._font.lh;
     const center = sc.centerY || 820;

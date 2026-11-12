@@ -16,6 +16,8 @@ for n in ids:
     if any(r in src for r in ROTATED):
         H, Y = next((v for k, v in LETTERBOX.items() if k in src), (1080, 0)); W = int(round(H * 9 / 16 / 2) * 2)
         geo = f"transpose=2,crop=1920:{H}:0:{Y},crop={W}:{H}:x='(iw-ow)*{cx}':y=0,scale=216:384"
+    elif sh.get("crop_box"):
+        x, y, w, h = sh["crop_box"]; geo = f"crop={w}:{h}:{x}:{y},scale=216:384"
     else:
         geo = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,scale=216:384"
     k = max(1, int(L / step + 0.999)); k = min(k, 30)

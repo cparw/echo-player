@@ -74,6 +74,10 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
     wt = lambda a: round(sw[min(a, M - 1)]["start"], 3) if M else sc["start"]
     if b.get("layout") == "waffle":
         sc["t0"] = wt(b.get("fill_at", 0))
+    if b.get("layout") == "versus":
+        for side in ("left", "right"):
+            if sc.get(side) and "at" in sc[side]:
+                sc[side]["t"] = wt(sc[side]["at"])
     if b.get("layout") == "map":
         for cy in sc.get("cities", []):
             cy["t"] = wt(cy.get("at", 0))

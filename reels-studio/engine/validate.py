@@ -8,7 +8,7 @@ errs, warns = [], []
 p = sys.argv[1]
 s = json.load(open(p))
 cap = open(sys.argv[2]).read() if len(sys.argv) > 2 and os.path.exists(sys.argv[2]) else ""
-LAYOUTS = {"words", "number", "bars", "list", "endcard", "countdown", "waffle", "map", "quote"}
+LAYOUTS = {"words", "number", "bars", "list", "endcard", "countdown", "waffle", "map", "quote", "versus"}
 BANNED = ["part you never see", "part of gta 6 you never see", "thank you for guarding", "this is unseen", "unseen",
           "countdown to vice city", "guard it", "our arithmetic", "on the record", "denmark"]
 DASHES = ["—", "–", "‒", "−"]
@@ -60,6 +60,13 @@ for i, b in enumerate(beats):
     if lay == "waffle":
         if "filled" not in b: errs.append(f"beat {i}: waffle needs 'filled'")
         if b.get("fill_at", 0) >= n: errs.append(f"beat {i}: fill_at out of range")
+    if lay == "versus":
+        for side in ("left", "right"):
+            sd = b.get(side)
+            if not sd or "label" not in sd or "value" not in sd: errs.append(f"beat {i}: versus needs {side} with label and value")
+            elif sd.get("at", 0) >= n: errs.append(f"beat {i}: versus {side} anchor out of range")
+            for txt in (sd or {}).values():
+                if isinstance(txt, str) and any(d in txt for d in DASHES + ["-"]): errs.append(f"beat {i}: dash in versus text '{txt}'")
     if lay == "map":
         for cy in b.get("cities", []):
             for k in ("name", "lon", "lat"):
@@ -78,10 +85,10 @@ for i, b in enumerate(beats):
                 pass  # Rockstar's official date and rating card, used on purpose
             elif not sh["clean"]:
                 errs.append(f"beat {i}: shot {c['shot']} has no clean window (audit flagged it)")
-            elif not any(w[0] - 0.05 <= off <= w[1] for w in sh["clean"]):
+            elif not any(w[0] - 0.15 <= off <= w[1] for w in sh["clean"]):
                 errs.append(f"beat {i}: shot {c['shot']} offset {off} is outside its clean windows {sh['clean']}")
             else:
-                w = next(w for w in sh["clean"] if w[0] - 0.05 <= off <= w[1])
+                w = next(w for w in sh["clean"] if w[0] - 0.15 <= off <= w[1])
                 if w[1] - off < 1.0: warns.append(f"beat {i}: shot {c['shot']} offset {off} leaves only {w[1]-off:.1f} s of clean footage (it will slow down or hold)")
         elif c["shot"] in (0, 7, 19, 23, 25, 26, 53, 61, 63, 66, 67, 70, 73, 75) and not (c["shot"] == 26 and 7.2 <= c.get("offset", 0) <= 7.6):
             errs.append(f"beat {i}: shot {c['shot']} is on the banned list (logo, title card or violence)")

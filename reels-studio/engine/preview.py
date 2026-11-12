@@ -29,6 +29,8 @@ for t in times:
         if any(r in src for r in ROTATED) if c.get("rot") is None else c["rot"]:
             H, Y = next((v for k, v in LETTERBOX.items() if k in src), (1080, 0)); W = int(round(H * 9 / 16 / 2) * 2)
             geo = f"transpose=2,crop=1920:{H}:0:{Y},crop={W}:{H}:x='(iw-ow)*{c.get('cx', 0.5)}':y=0,scale=1080:1920:flags=lanczos"
+        elif sh.get("crop_box"):
+            x, y, w, h = sh["crop_box"]; geo = f"crop={w}:{h}:{x}:{y},scale=1080:1920:flags=lanczos"
         else:
             geo = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
         cmd = ["-ss", f"{ss:.3f}", "-i", src, "-frames:v", "1", "-vf", f"{geo},{grade}"]

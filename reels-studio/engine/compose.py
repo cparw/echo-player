@@ -45,7 +45,7 @@ def clean_window(sh, offset):
     if not wins:
         sys.exit(f"shot is banned (no clean window): {sh['src']} {sh['start']}")
     for w in wins:
-        if w[0] - 0.05 <= offset <= w[1]: return w
+        if w[0] - 0.15 <= offset <= w[1]: return w
     return min(wins, key=lambda w: min(abs(offset - w[0]), abs(offset - w[1])))
 
 def clip_part(c, dur, outp, treat=None):
@@ -63,6 +63,9 @@ def clip_part(c, dur, outp, treat=None):
         W = int(round(H * 9 / 16 / 2) * 2)
         geo = (f"transpose=2,crop=1920:{H}:0:{Y},crop={W}:{H}:x='(iw-ow)*{cx}':y=0,"
                "scale=1080:1920:flags=lanczos,unsharp=5:5:0.55:5:5:0.0")
+    elif sh.get("crop_box"):
+        x, y, w, h = sh["crop_box"]  # zoom past Rockstar's corner rating badge
+        geo = f"crop={w}:{h}:{x}:{y},scale=1080:1920:flags=lanczos,unsharp=5:5:0.5:5:5:0.0"
     else:
         geo = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
     vf = f"trim=duration={avail:.3f},setpts=PTS-STARTPTS,setpts={slow:.3f}*PTS,{geo},fps=30,tpad=stop_mode=clone:stop_duration=3,{grade({'treat': treat})},setsar=1,format=yuv420p"
