@@ -29,6 +29,9 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 
 ### Structure of a reel
 * **Hook in the first 1 to 2 seconds**, 12 words or fewer, with the strongest gameplay shot on screen immediately.
+  * The hook is a surprising, checkable GTA 6 fact or contrast that makes people curious ("Vice City is twice the size of Los Santos", "after inflation GTA 6 costs less than GTA 5 did", "Florida's highest point is 345 feet, so why does GTA 6 have a mountain?", "real Florida warns about falling iguanas"). Lead with the features that got the biggest reaction. No vague openers.
+  * The whole hook sentence is on screen from frame one (`"instant": true` on the first beat), big Anton text, key word highlighted as it is spoken. The first shot matches the line and is the most stunning one in the reel.
+  * Write 3 hook options, pick the strongest deliberately; the cover repeats the hook.
 * **Save prompt early** when the reel is useful ("Save this before launch").
 * **Share prompt before the best part** ("Send this to the friend who still plays GTA 5").
 * **Midpoint rehook** so the second half holds.
@@ -56,6 +59,7 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 * The clone was made from one 30 second sample. If likeness ever comes up again, ask him to add 2 to 3 minutes of clean recordings to the clone in ElevenLabs.
 * Never clone or imitate anyone else's voice, including the reference narrator.
 * To change only the visuals of a reel, reuse its approved narration and word timings (no new voice credits).
+* To change only the hook, record just the new opening and stitch it on (`engine/splice_hook.py`, about 80 credits), then level its loudness to the following narration. Re-record the whole reel only when middle lines change.
 
 ## 4. Footage and safety
 

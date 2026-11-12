@@ -59,7 +59,7 @@ def clip_part(c, dur, outp, treat=None):
     off = min(max(c.get("offset", 0), lo), max(lo, hi - 0.6))
     c = dict(c, offset=off)
     src = sh["src"]; avail = max(0.3, hi - off)
-    slow = min(1.5, max(1.0, dur / avail))
+    slow = c.get("slow") or min(1.5, max(1.0, dur / avail))  # a clip may ask for slow motion to hold a moment (e.g. the cat on the ATM)
     rot = any(r in src for r in ROTATED) if c.get("rot") is None else c["rot"]
     cx = c.get("cx", 0.5)
     if rot:

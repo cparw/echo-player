@@ -286,7 +286,8 @@ function wordsBlock(sc, t, th, topPx) {
     ln.forEach((x, i) => {
       const s = document.createElement('span'); s.className = 'w';
       const txt = f.upper ? x.w.toUpperCase() : x.w;
-      const p = prog(t, x.t, 0.16);
+      // instant scenes (hooks): every word is on screen from frame one; highlights still land on the spoken word
+      const p = sc.instant ? 1 : prog(t, x.t, 0.16);
       if (p <= 0) { s.style.opacity = 0; }
       else {
         const e = ease.outBack(p);
