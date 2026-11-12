@@ -48,4 +48,4 @@ Setup once per session: `cd reels-studio/engine && npm install` (fonts) and `pip
 * Monid CLI (owner suggested): paid data endpoints; needs the owner's Monid API key. Use only for data the owner's own tools cannot get, and never to get around a platform's login wall or bot check.
 
 ## Research
-`research/all_streams.json`: 12 research streams from 12 Nov 2026 (facts with sources and confidence, algorithm, monetization, legal, production, hooks, creators). Recheck time sensitive facts before each post.
+`research/all_streams.json` and the launch plan in `PLAYBOOK.md`: 12 research streams from 12 Nov 2026 (facts with sources and confidence, algorithm, monetization, legal, production, hooks, creators). Recheck time sensitive facts before each post.
