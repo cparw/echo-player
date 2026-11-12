@@ -66,6 +66,16 @@ Setup once per session: `cd reels-studio/engine && npm install` (fonts) and `pip
 4. Shot library: `python3 engine/shots.py <out_dir> <clips...>` detects cuts and makes numbered contact sheets.
 5. Cover: `node engine/cover.js cover.json cover.png`.
 
+## Engine v4 (12 Nov 2026, after the owner asked for continuous full colour GTA 6 footage)
+* `bg: "scrim"` is the default for every beat: vivid footage (saturation 1.10, contrast 1.05) with a soft local shadow behind the text block plus light top and bottom bands. `duo` and `black` are no longer used (validator errors on black or footage free beats).
+* End card sits over blurred footage: give the endcard beat `clips` (one calm clean shot).
+* `layout: "versus"` for comparisons: `topic`, `left` and `right` = {label, value, sub, at}; the right side is the hero in orange.
+* Extended Look gameplay clips carry `crop_box: [170, 140, 910, 1618]` in shots.json to zoom past Rockstar's rating badge.
+* Voice: `voice_preset: 1` (approved). `engine/voice_only.sh reelDir` makes narration.mp3 and words.json in reelDir/voice.
+* Fast checks before rendering: `engine/preview.py <built dir> sheet.jpg` (graphics over the real frames) and `engine/shot_frames.py` (audit tiles).
+* Render: `engine/render_par.sh timeline.json graphics.mov 3` (parallel chunks), then `engine/compose.py dir music.mp3 out.mp4`.
+* Instagram plays reels at 1080x1920, so that is our output; quality comes from the sharpest sources (native vertical gameplay, 4K stills) and, where needed, Topaz upscaling of trailer clips via Higgsfield.
+
 ## Skills worth using (installed here or from github.com/ComposioHQ/awesome-claude-skills)
 * Research: deep-research, recursive-research, article-extractor, youtube-transcript, reddit-fetch, Content Research Writer.
 * Growth: Twitter Algorithm Optimizer, Competitive Ads Extractor, Domain Name Brainstormer (handles), Raffle Winner Picker (giveaways), CSV Data Summarizer (Insights exports).

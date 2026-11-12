@@ -28,6 +28,7 @@ for i, b in enumerate(beats):
     if lay == "endcard":
         for k in ["brand", "series", "episode", "cta"]:
             if k not in b: errs.append(f"endcard missing {k}")
+        if not (b.get("clips") or b.get("media")): errs.append("endcard needs footage behind it (clips or media): no void frames")
         continue
     say = b.get("say", "")
     if not say: errs.append(f"beat {i}: empty say"); continue
@@ -53,6 +54,12 @@ for i, b in enumerate(beats):
         for it in b.get("items", []):
             for key in ("at", "strike_at"):
                 if key in it and it[key] >= n: errs.append(f"beat {i}: list {key} out of range")
+    if b.get("bg") == "black" or not (b.get("clips") or b.get("media")):
+        errs.append(f"beat {i}: every frame must show GTA 6 footage (RULEBOOK 1.1): give it clips or an official still")
+    if b.get("bg") in ("duo",):
+        warns.append(f"beat {i}: bg duo tints the footage; RULEBOOK 1.2 prefers full colour (bg scrim)")
+    if len(b.get("clips") or []) == 1 and n >= 9:
+        warns.append(f"beat {i}: {n} words on one shot; cut every 1.5 to 2.5 s with a second clip anchored on a word")
     if b.get("bg") in ("dim", "duo") and not b.get("media") and not b.get("media_request") and not b.get("clips"):
         errs.append(f"beat {i}: bg {b.get('bg')} needs clips, media or media_request")
     if lay == "countdown" and not isinstance(b.get("remaining"), (int, float)):

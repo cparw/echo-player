@@ -16,7 +16,7 @@ DUO = ("hue=s=0,eq=contrast=1.12,gblur=sigma=1.4,"
 tiles = []
 for t in times:
     seg = next((s for s in plan["segments"] if s["start"] <= t < s["end"]), plan["segments"][-1])
-    grade = DUO if seg.get("treat") == "duo" else "eq=saturation=1.06:contrast=1.03"
+    grade = DUO if seg.get("treat") == "duo" else ("gblur=sigma=10,eq=saturation=1.15:brightness=-0.04" if seg.get("treat") == "blur" else "eq=saturation=1.10:contrast=1.05")
     bgp = os.path.join(pv, f"b_{t:.2f}.png"); out = os.path.join(pv, f"c_{t:.2f}.jpg")
     if seg.get("clips"):
         cl = seg["clips"]; c = cl[0]

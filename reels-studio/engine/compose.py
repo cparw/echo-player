@@ -34,8 +34,13 @@ LETTERBOX = {"7696925363795938573": (960, 60), "7502175479718284586": (864, 108)
 DUO = ("hue=s=0,eq=contrast=1.12,gblur=sigma=1.4,"
        "curves=r='0/0.03 0.5/0.21 1/0.66':g='0/0.03 0.5/0.11 1/0.37':b='0/0.08 0.5/0.25 1/0.54'")
 
+VIVID = "eq=saturation=1.10:contrast=1.05"
+
 def grade(s):
-    return DUO if s.get("treat") == "duo" else "eq=saturation=1.06:contrast=1.03"
+    t = s.get("treat")
+    if t == "duo": return DUO
+    if t == "blur": return "gblur=sigma=10,eq=saturation=1.15:brightness=-0.04"
+    return VIVID
 
 def clean_window(sh, offset):
     """The audited clean window that contains offset (else the nearest one); falls back to the old safe window."""

@@ -102,8 +102,11 @@ duration = scenes[-1]["end"]
 if end_beat:
     ec = {k2: v for k2, v in end_beat.items() if k2 not in ("say", "show", "hold")}
     ec.update({"start": duration, "end": round(duration + end_beat.get("hold", 2.0), 3), "noTag": True})
+    ec.pop("clips", None); ec.pop("media", None)
+    if end_beat.get("clips") or end_beat.get("media"): ec["overFootage"] = True
     scenes.append(ec)
-    bg.append({"start": ec["start"], "media": None, "media_offset": 0})
+    bg.append({"start": ec["start"], "media": end_beat.get("media"), "media_offset": 0, "pan": end_beat.get("pan", [0.45, 0.55]),
+               "clips": [dict(c) for c in end_beat.get("clips") or []] or None, "treat": "blur" if (end_beat.get("clips") or end_beat.get("media")) else None})
     duration = ec["end"]
 for k in range(len(bg)):
     bg[k]["end"] = scenes[k]["end"]
