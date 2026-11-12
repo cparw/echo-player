@@ -1,0 +1,724 @@
+{
+ "title": "GTA 6 trailer details: the wildlife hiding in the trailers",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8
+ },
+ "fps": 30,
+ "tag": "GTA 6",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "beats": [
+  {
+   "say": "Real Florida warns people about falling iguanas. GTA Six put the iguanas in.",
+   "instant": true,
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "REAL@0",
+     "FLORIDA@1"
+    ],
+    [
+     "WARNS@2",
+     "ABOUT@4"
+    ],
+    [
+     "*FALLING*@5",
+     "*IGUANAS.*@6"
+    ],
+    [
+     "GTA 6 PUT@7",
+     "THEM IN.@11"
+    ]
+   ],
+   "footnote": "NWS Miami, January 2020, via NPR",
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 6.1,
+     "slow": 2.2
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "That iguana in the launch trailer isn't native. Florida's wildlife agency lists green iguanas as invasive.",
+   "show": [
+    [
+     "That@0",
+     "iguana@1"
+    ],
+    [
+     "isn't@6",
+     "*native.*@7"
+    ],
+    [
+     "Florida@8",
+     "lists@11",
+     "it@12"
+    ],
+    [
+     "as@14",
+     "^invasive.^@15"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 104,
+   "centerY": 1130,
+   "footTop": 1410,
+   "footnote": "FWC: green iguanas are a prohibited, invasive species in Florida",
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 6.6,
+     "slow": 1.5
+    },
+    {
+     "shot": 27,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Rockstar says the game has over one hundred seventy animal species.",
+   "show": [],
+   "layout": "number",
+   "from": 0,
+   "to": 170,
+   "suffix": "+",
+   "count_at": 6,
+   "count_dur": 1.1,
+   "label": "animal species, per Rockstar",
+   "numSize": 300,
+   "bg": "scrim",
+   "footnote": "REPORTED: Rockstar to Game Informer, Sept 2026, via VGC",
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "cx": 0.5
+    },
+    {
+     "shot": 62,
+     "offset": 10.3,
+     "cx": 0.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Sixty kinds of birds. Thirty plus land mammals. Sharks, whales, jellyfish.",
+   "show": [
+    [
+     "*60*@0",
+     "kinds@1",
+     "of@2",
+     "birds.@3"
+    ],
+    [
+     "*30+*@4",
+     "land@6",
+     "mammals.@7"
+    ],
+    [
+     "Sharks,@8",
+     "whales,@9"
+    ],
+    [
+     "jellyfish.@10"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 96,
+   "centerY": 700,
+   "footnote": "REPORTED: Game Informer, via VGC and Kotaku",
+   "footTop": 1010,
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.3,
+     "cx": 0.5
+    },
+    {
+     "shot": 88,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 84,
+     "offset": 0.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Some are rare. Some are legendary, Red Dead style.",
+   "show": [
+    [
+     "Some@0",
+     "are@1",
+     "rare.@2"
+    ],
+    [
+     "Some@3",
+     "are@4"
+    ],
+    [
+     "*legendary.*@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 112,
+   "centerY": 1150,
+   "footnote": "REPORTED: GamesRadar, Rare, Discoverable, Legendary",
+   "footTop": 1420,
+   "clips": [
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "cx": 0.5
+    },
+    {
+     "shot": 24,
+     "offset": 0.1,
+     "cx": 0.5,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "And just like real Florida, the newcomers. Armadillos. Iguanas. Even monkeys.",
+   "show": [
+    [
+     "Just@1",
+     "like@2",
+     "real@3",
+     "^Florida:^@4"
+    ],
+    [
+     "Armadillos.@7"
+    ],
+    [
+     "Iguanas.@8"
+    ],
+    [
+     "Even@9",
+     "*monkeys.*@10"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 104,
+   "centerY": 1150,
+   "footTop": 1420,
+   "footnote": "REPORTED: Kotaku, nonnative species include monkeys",
+   "clips": [
+    {
+     "shot": 31,
+     "offset": 2.8,
+     "cx": 0.5
+    },
+    {
+     "shot": 33,
+     "offset": 2.0,
+     "cx": 0.5,
+     "at": 5
+    },
+    {
+     "shot": 77,
+     "offset": 0.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Florida really has wild monkeys.",
+   "show": [
+    [
+     "Florida@0",
+     "really@1",
+     "has@2"
+    ],
+    [
+     "*wild*@3",
+     "*monkeys.*@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 118,
+   "centerY": 1150,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/kayak_sunset.jpg",
+   "pan": [
+    0.32,
+    0.46
+   ]
+  },
+  {
+   "say": "In the nineteen thirties, a glass bottom boat operator released about six to attract tourists. They're still there.",
+   "show": [
+    [
+     "In@0",
+     "the@1",
+     "^1930s,^@2"
+    ],
+    [
+     "a@4",
+     "boat@7",
+     "operator@8"
+    ],
+    [
+     "released@9",
+     "about@10",
+     "*6.*@11"
+    ],
+    [
+     "They're@15",
+     "still@16",
+     "there.@17"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 96,
+   "centerY": 1130,
+   "footTop": 1410,
+   "footnote": "UF/IFAS: rhesus macaques at Silver Springs since the 1930s",
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.1,
+     "cx": 0.4
+    },
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "cx": 0.3,
+     "at": 4
+    },
+    {
+     "shot": 16,
+     "offset": 0.1,
+     "cx": 0.5,
+     "at": 11
+    },
+    {
+     "shot": 102,
+     "offset": 0.1,
+     "at": 15
+    }
+   ]
+  },
+  {
+   "say": "Now rewatch the trailers like a nature documentary.",
+   "show": [
+    [
+     "Now@0",
+     "rewatch@1"
+    ],
+    [
+     "the@2",
+     "trailers@3"
+    ],
+    [
+     "like@4",
+     "a@5",
+     "*nature*@6"
+    ],
+    [
+     "*documentary.*@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 112,
+   "flash": true,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/desktop.00.5pzu2sm-z4.jpg",
+   "pan": [
+    0.3,
+    0.52
+   ],
+   "centerY": 1180
+  },
+  {
+   "say": "The Keys welcome sign has a heron and a shark on it.",
+   "show": [
+    [
+     "The@0",
+     "Keys@1",
+     "sign:@3"
+    ],
+    [
+     "a@5",
+     "^heron^@6"
+    ],
+    [
+     "and@7",
+     "a@8",
+     "^shark.^@9"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 92,
+   "centerY": 1330,
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 0.1
+    },
+    {
+     "shot": 1,
+     "offset": 0.8,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "In Trailer Two, a cat sits on an ATM.",
+   "show": [
+    [
+     "A@4",
+     "*cat*@4"
+    ],
+    [
+     "on@6",
+     "an@7"
+    ],
+    [
+     "^ATM.^@8"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 104,
+   "centerY": 1290,
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.1
+    },
+    {
+     "shot": 35,
+     "offset": 0.1,
+     "cx": 0.88,
+     "at": 3,
+     "slow": 1.6
+    }
+   ]
+  },
+  {
+   "say": "In the Extended Look, two gulls brawl on a sidewalk. Very Florida.",
+   "show": [
+    [
+     "Two@4",
+     "gulls@5"
+    ],
+    [
+     "*brawling*@6"
+    ],
+    [
+     "on@7",
+     "a@8",
+     "sidewalk.@9"
+    ],
+    [
+     "Very@10",
+     "^Florida.^@11"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 100,
+   "centerY": 590,
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 1.8
+    },
+    {
+     "shot": 47,
+     "offset": 0.8,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "say": "Dolphins swim right off the boat in Rockstar's own screenshots.",
+   "show": [
+    [
+     "*Dolphins*@0"
+    ],
+    [
+     "right@2",
+     "off@3",
+     "the@4",
+     "boat.@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 112,
+   "centerY": 560,
+   "footnote": "Rockstar GTA VI site, Ultimate Edition screenshot",
+   "footTop": 1480,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_SQUALO_03.0quncwrsw97j1.jpg",
+   "pan": [
+    0.86,
+    0.94
+   ]
+  },
+  {
+   "say": "And someone's pet snake, just hanging out.",
+   "show": [
+    [
+     "Someone's@1"
+    ],
+    [
+     "pet@2",
+     "*snake.*@3"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 112,
+   "centerY": 1300,
+   "clips": [
+    {
+     "shot": 58,
+     "offset": 0.1,
+     "cx": 0.5
+    }
+   ]
+  },
+  {
+   "say": "One last real Florida detail.",
+   "show": [
+    [
+     "One@0",
+     "last@1"
+    ],
+    [
+     "real@2",
+     "^Florida^@3"
+    ],
+    [
+     "detail.@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 112,
+   "centerY": 1250,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/vice_city_skyline_aerial.jpg",
+   "pan": [
+    0.36,
+    0.52
+   ]
+  },
+  {
+   "say": "When it gets cold enough, iguanas freeze up and fall out of trees.",
+   "show": [
+    [
+     "When@0",
+     "it@1",
+     "gets@2",
+     "*cold,*@3"
+    ],
+    [
+     "iguanas@5",
+     "^freeze^@6"
+    ],
+    [
+     "and@8",
+     "fall@9",
+     "out@10",
+     "of@11"
+    ],
+    [
+     "trees.@12"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 100,
+   "centerY": 1160,
+   "footTop": 1420,
+   "footnote": "FWC: cold stunned iguanas lose muscle control and can fall",
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 6.1
+    },
+    {
+     "shot": 26,
+     "offset": 6.3,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Miami's National Weather Service office once actually warned people about it.",
+   "show": [
+    [
+     "Miami's@0",
+     "weather@2",
+     "service@3"
+    ],
+    [
+     "actually@6",
+     "*warned*@7"
+    ],
+    [
+     "people.@8"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 104,
+   "centerY": 820,
+   "footnote": "NWS Miami, January 2020, via NPR",
+   "footTop": 1110,
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 9.6
+    },
+    {
+     "shot": 30,
+     "offset": 0.1,
+     "cx": 0.5,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "So which animal are you finding first? Tell me in the comments.",
+   "show": [
+    [
+     "Which@1",
+     "animal@2"
+    ],
+    [
+     "are@3",
+     "you@4",
+     "finding@5"
+    ],
+    [
+     "*first?*@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 112,
+   "clips": [
+    {
+     "shot": 61,
+     "offset": 0.1,
+     "cx": 0.5
+    },
+    {
+     "shot": 74,
+     "offset": 36.0,
+     "at": 6
+    }
+   ],
+   "centerY": 1300
+  },
+  {
+   "say": "Follow for tomorrow. See you in Leonida.",
+   "show": [
+    [
+     "Follow@0",
+     "for@1",
+     "tomorrow.@2"
+    ],
+    [
+     "See@3",
+     "you@4",
+     "in@5"
+    ],
+    [
+     "^Leonida.^@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "inter",
+   "maxW": 800,
+   "bg": "scrim",
+   "size": 118,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/couple_sunset_palms.jpg",
+   "pan": [
+    0.2,
+    0.24
+   ],
+   "centerY": 1280
+  },
+  {
+   "layout": "endcard",
+   "hold": 2.8,
+   "brand": "GTA 6",
+   "series": "Trailer details",
+   "episode": "The wildlife",
+   "cta": "Follow for tomorrow",
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 10.7,
+     "cx": 0.5
+    }
+   ],
+   "bg": "scrim"
+  }
+ ],
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "voice_preset": 1
+}

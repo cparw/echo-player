@@ -1,0 +1,933 @@
+{
+ "title": "GTA 6 People: Your friend group is already in Leonida",
+ "voice_id": "IKne3meq5aSn9XLyUdCD",
+ "model_id": "eleven_v4",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8
+ },
+ "fps": 30,
+ "tag": "GTA 6",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "voice_preset": 1,
+ "beats": [
+  {
+   "say": "One of these eight GTA Six characters is definitely your friend.",
+   "instant": true,
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "ONE@0",
+     "OF@1",
+     "THESE@2",
+     "*8*@3"
+    ],
+    [
+     "GTA 6@4",
+     "CHARACTERS@6"
+    ],
+    [
+     "IS@7",
+     "DEFINITELY@8"
+    ],
+    [
+     "^YOUR FRIEND.^@9"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 7.1
+    },
+    {
+     "shot": 47,
+     "offset": 0.8,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "The one who thinks everything online is true?",
+   "show": [
+    [
+     "Everything@4",
+     "online@5"
+    ],
+    [
+     "is@6",
+     "*true?*@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1250,
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 0.1,
+     "cx": 0.5
+    }
+   ]
+  },
+  {
+   "say": "Cal Hampton. He feels safest at home,",
+   "show": [
+    [
+     "^Cal^@0",
+     "^Hampton^@1"
+    ],
+    [
+     "Safest@4",
+     "at@5",
+     "home.@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1270,
+   "footTop": 1500,
+   "footnote": "Official bio: Jason's friend, snooping on Coast Guard comms",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Cal_Hampton_03.jpg",
+   "pan": [
+    0.36,
+    0.44
+   ]
+  },
+  {
+   "say": "with a few beers",
+   "show": [
+    [
+     "A@1",
+     "few@2",
+     "beers.@3"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 560,
+   "clips": [
+    {
+     "shot": 47,
+     "offset": 0.1,
+     "cx": 0.5
+    }
+   ]
+  },
+  {
+   "say": "and some private browser tabs open.",
+   "show": [
+    [
+     "*Private*@2",
+     "*tabs.*@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1200,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Cal_Hampton_04.jpg",
+   "pan": [
+    0.46,
+    0.54
+   ]
+  },
+  {
+   "say": "His quote: there are way too many",
+   "show": [
+    [
+     "“There@2",
+     "are@3",
+     "way@4"
+    ],
+    [
+     "too@5",
+     "many@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "serif",
+   "bg": "scrim",
+   "centerY": 1290,
+   "footTop": 1500,
+   "footnote": "Cal's quote, Rockstar's official GTA VI site",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Jason_Duval_03.jpg",
+   "pan": [
+    0.72,
+    0.92
+   ]
+  },
+  {
+   "say": "birds flying around in perfect formation.",
+   "show": [
+    [
+     "*birds*@0",
+     "flying@1",
+     "around@2"
+    ],
+    [
+     "in@3",
+     "perfect@4",
+     "formation.”@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "serif",
+   "bg": "scrim",
+   "centerY": 1240,
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1,
+     "cx": 0.35
+    }
+   ]
+  },
+  {
+   "say": "The one who lets others do the dirty work?",
+   "show": [
+    [
+     "Lets@3",
+     "others@4",
+     "do@5"
+    ],
+    [
+     "the@6",
+     "*dirty*@7",
+     "*work.*@8"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 500,
+   "clips": [
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "cx": 0.6
+    },
+    {
+     "shot": 29,
+     "offset": 0.1,
+     "cx": 0.5,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Brian Heder. Nothing better than",
+   "show": [
+    [
+     "^Brian^@0",
+     "^Heder^@1"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1250,
+   "footTop": 1490,
+   "footnote": "Official bio: his boat yard, his third wife Lori",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Brian_Heder_02.jpg",
+   "pan": [
+    0.5,
+    0.62
+   ]
+  },
+  {
+   "say": "a Mudslide at sunset.",
+   "show": [
+    [
+     "Mudslide@1",
+     "at@2",
+     "sunset.@3"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1180,
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "cx": 0.6
+    }
+   ]
+  },
+  {
+   "say": "All smiles until it's time to talk business?",
+   "show": [
+    [
+     "All@0",
+     "smiles@1"
+    ],
+    [
+     "until@2",
+     "*business.*@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1280,
+   "clips": [
+    {
+     "shot": 48,
+     "offset": 0.1,
+     "cx": 0.6
+    },
+    {
+     "shot": 51,
+     "offset": 3.1,
+     "cx": 0.55,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Boobie Ike. A Vice City legend,",
+   "show": [
+    [
+     "^Boobie^@0",
+     "^Ike^@1"
+    ],
+    [
+     "Vice@3",
+     "City@4",
+     "legend.@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1300,
+   "footTop": 1520,
+   "footnote": "Official bio: real estate, a strip club, a recording studio",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Boobie_Ike_02.jpg",
+   "pan": [
+    0.04,
+    0.18
+   ]
+  },
+  {
+   "say": "and he acts like it.",
+   "show": [
+    [
+     "Acts@2",
+     "like@3",
+     "*it.*@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1330,
+   "clips": [
+    {
+     "shot": 65,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "The one chasing a music dream?",
+   "show": [
+    [
+     "*Music*@4",
+     "*dream.*@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1250,
+   "clips": [
+    {
+     "shot": 72,
+     "offset": 0.9
+    },
+    {
+     "shot": 69,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Dre'Quan Priest.",
+   "show": [
+    [
+     "^Dre'Quan^@0",
+     "^Priest^@1"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1250,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/DreQuan_Priest_04.jpg",
+   "pan": [
+    0.08,
+    0.14
+   ]
+  },
+  {
+   "say": "Always more of a hustler than a gangster.",
+   "show": [
+    [
+     "More@1",
+     "hustler@4"
+    ],
+    [
+     "than@5",
+     "gangster.@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1270,
+   "footTop": 1500,
+   "footnote": "Official bio: Boobie's partner in Only Raw Records",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/DreQuan_Priest_03.jpg",
+   "pan": [
+    0.38,
+    0.46
+   ]
+  },
+  {
+   "say": "The duo who've been friends since high school, and film everything?",
+   "show": [
+    [
+     "Friends@4",
+     "since@5"
+    ],
+    [
+     "high@6",
+     "school.@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1390,
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 0.1
+    },
+    {
+     "shot": 54,
+     "offset": 4.9,
+     "cx": 0.5,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Real Dimez. Viral videos, viral hooks.",
+   "show": [
+    [
+     "^Real^@0",
+     "^Dimez^@1"
+    ],
+    [
+     "*Viral*@2",
+     "*hooks.*@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1290,
+   "footTop": 1510,
+   "footnote": "Official bio: now signed to Only Raw Records",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Real_Dimez_04.jpg",
+   "pan": [
+    0.35,
+    0.65
+   ]
+  },
+  {
+   "say": "The smooth talker who's always recruiting?",
+   "show": [
+    [
+     "Always@4",
+     "*recruiting.*@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1300,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Raul_Bautista_01.jpg",
+   "pan": [
+    0.56,
+    0.64
+   ]
+  },
+  {
+   "say": "Raul Bautista. Confidence, charm and cunning.",
+   "show": [
+    [
+     "^Raul^@0",
+     "^Bautista^@1"
+    ],
+    [
+     "Confidence,@2",
+     "charm,@3"
+    ],
+    [
+     "cunning.@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1210,
+   "footTop": 1500,
+   "footnote": "Official bio: a seasoned bank robber, always hunting for talent",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Raul_Bautista_03.jpg",
+   "pan": [
+    0.62,
+    0.72
+   ]
+  },
+  {
+   "say": "Experience counts.",
+   "show": [
+    [
+     "Experience@0",
+     "*counts.*@1"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 700,
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 9.6
+    }
+   ]
+  },
+  {
+   "say": "The one who never catches a break?",
+   "show": [
+    [
+     "Never@3",
+     "catches@4"
+    ],
+    [
+     "a@5",
+     "*break.*@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1340,
+   "clips": [
+    {
+     "shot": 3,
+     "offset": 0.1,
+     "cx": 0.5
+    }
+   ]
+  },
+  {
+   "say": "Jason Duval.",
+   "show": [
+    [
+     "^Jason^@0",
+     "^Duval^@1"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1250,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Jason_Duval_02.jpg",
+   "pan": [
+    0.22,
+    0.3
+   ]
+  },
+  {
+   "say": "He wants an easy life, but things just keep getting harder.",
+   "show": [
+    [
+     "Wants@1",
+     "an@2",
+     "*easy*@3",
+     "life.@4"
+    ],
+    [
+     "Keeps@8",
+     "getting@9",
+     "*harder.*@10"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1150,
+   "footTop": 1460,
+   "footnote": "Official bio: grifters, then the Army, then the Keys",
+   "clips": [
+    {
+     "shot": 83,
+     "offset": 0.1
+    },
+    {
+     "shot": 38,
+     "offset": 0.1,
+     "cx": 0.35,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "And the one who's been through it all?",
+   "show": [
+    [
+     "Been@4",
+     "through@5"
+    ],
+    [
+     "it@6",
+     "*all?*@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1260,
+   "clips": [
+    {
+     "shot": 37,
+     "offset": 0.1,
+     "cx": 0.55
+    },
+    {
+     "shot": 6,
+     "offset": 0.1,
+     "cx": 0.3,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Lucia Caminos. Her father taught her",
+   "show": [
+    [
+     "^Lucia^@0",
+     "^Caminos^@1"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1300,
+   "footTop": 1500,
+   "footnote": "Official bio: Leonida Penitentiary. Sheer luck got her out.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Lucia_Caminos_01.jpg",
+   "pan": [
+    0.72,
+    0.82
+   ]
+  },
+  {
+   "say": "to fight as soon as she could walk.",
+   "show": [
+    [
+     "*Fighting*@1",
+     "since@2"
+    ],
+    [
+     "she@5",
+     "could@6",
+     "walk.@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1330,
+   "clips": [
+    {
+     "shot": 85,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Only smart moves from here.",
+   "show": [
+    [
+     "Only@0",
+     "smart@1",
+     "moves.@2"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1330,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Lucia_Caminos_02.jpg",
+   "pan": [
+    0.48,
+    0.56
+   ]
+  },
+  {
+   "say": "Now the part that got me.",
+   "show": [
+    [
+     "The@1",
+     "part@2",
+     "that@3"
+    ],
+    [
+     "*got*@4",
+     "*me.*@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1380,
+   "flash": true,
+   "clips": [
+    {
+     "shot": 60,
+     "offset": 0.35,
+     "cx": 0.5
+    },
+    {
+     "shot": 21,
+     "offset": 0.1,
+     "cx": 0.5,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "His page says meeting Lucia could be",
+   "show": [
+    [
+     "^His^@0",
+     "^page:^@1"
+    ],
+    [
+     "“Meeting@3",
+     "Lucia@4"
+    ],
+    [
+     "could@5",
+     "be@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "serif",
+   "bg": "scrim",
+   "centerY": 1290,
+   "footTop": 1520,
+   "footnote": "Jason's official page, Rockstar Games",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/couple_sunset_palms.jpg",
+   "pan": [
+    0.26,
+    0.34
+   ]
+  },
+  {
+   "say": "the best or worst thing to ever happen to him.",
+   "show": [
+    [
+     "the@0",
+     "*best*@1",
+     "or@2",
+     "*worst*@3"
+    ],
+    [
+     "thing@4",
+     "to@5",
+     "ever@6"
+    ],
+    [
+     "happen@7",
+     "to@8",
+     "him.”@9"
+    ]
+   ],
+   "layout": "words",
+   "font": "serif",
+   "bg": "scrim",
+   "centerY": 1300,
+   "maxH": 380,
+   "footTop": 1520,
+   "footnote": "Jason's official page, Rockstar Games",
+   "clips": [
+    {
+     "shot": 42,
+     "offset": 0.1,
+     "cx": 0.3
+    },
+    {
+     "shot": 89,
+     "offset": 0.1,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "Hers says a life with Jason could be her way out.",
+   "show": [
+    [
+     "^Hers:^@0"
+    ],
+    [
+     "“A@2",
+     "life@3",
+     "with@4",
+     "Jason@5"
+    ],
+    [
+     "could@6",
+     "be@7",
+     "her@8"
+    ],
+    [
+     "*way*@9",
+     "*out.”*@10"
+    ]
+   ],
+   "layout": "words",
+   "font": "serif",
+   "bg": "scrim",
+   "centerY": 1230,
+   "maxH": 480,
+   "footTop": 1530,
+   "footnote": "Lucia's official page. Trailer 2: the day she gets out",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 16.0
+    },
+    {
+     "shot": 40,
+     "offset": 0.1,
+     "cx": 0.4,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "So which one are you?",
+   "show": [
+    [
+     "Which@1",
+     "one@2"
+    ],
+    [
+     "are@3",
+     "*you?*@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1200,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Jason_Duval_04.jpg",
+   "pan": [
+    0.3,
+    0.38
+   ]
+  },
+  {
+   "say": "Send this to your Cal.",
+   "show": [
+    [
+     "Send@0",
+     "this@1",
+     "to@2"
+    ],
+    [
+     "your@3",
+     "^Cal.^@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1200,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/people/Cal_Hampton_01.jpg",
+   "pan": [
+    0.76,
+    0.84
+   ]
+  },
+  {
+   "say": "Follow for tomorrow. See you in Leonida.",
+   "show": [
+    [
+     "Follow@0",
+     "for@1",
+     "tomorrow.@2"
+    ],
+    [
+     "See@3",
+     "you@4",
+     "in@5"
+    ],
+    [
+     "*Leonida.*@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 1290,
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.2,
+     "cx": 0.6
+    },
+    {
+     "shot": 1,
+     "offset": 0.6,
+     "cx": 0.5,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "hold": 2.8,
+   "brand": "GTA 6",
+   "series": "People of Leonida",
+   "episode": "Who's in your crew?",
+   "cta": "Follow for tomorrow",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 6.0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,540 @@
+{
+ "title": "GTA 5 vs GTA 6: what 13 years changed",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "fps": 30,
+ "tag": "GTA 5 VS GTA 6",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six's Vice City is twice the size of Los Santos.",
+   "instant": true,
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "GTA 6's@0",
+     "^VICE CITY^@2"
+    ],
+    [
+     "IS@4",
+     "*TWICE*@5",
+     "THE@6",
+     "SIZE@7"
+    ],
+    [
+     "OF@8",
+     "LOS@9",
+     "SANTOS.@10"
+    ]
+   ],
+   "footnote": "Rockstar to The New York Times.",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    },
+    {
+     "shot": 91,
+     "offset": 2.5,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "And that's not even the biggest change.",
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "And@0",
+     "that's@1",
+     "not@2",
+     "even@3"
+    ],
+    [
+     "the@4",
+     "^biggest^@5",
+     "change.@6"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 104,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Save this for launch night.",
+   "show": [
+    [
+     "*Save*@0",
+     "this@1"
+    ],
+    [
+     "for@2",
+     "launch@3",
+     "night.@4"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 88,
+     "offset": 0.1
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "GTA Five came five years after GTA Four. GTA Six took thirteen. Nearly two and a half times longer.",
+   "layout": "versus",
+   "topic": "YEARS SINCE THE LAST GTA",
+   "show": [],
+   "left": {
+    "label": "GTA V",
+    "value": "5 YRS",
+    "sub": "after GTA IV",
+    "at": 0
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "13 YRS",
+    "sub": "after GTA V",
+    "at": 9
+   },
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    },
+    {
+     "shot": 43,
+     "offset": 0.1,
+     "at": 9
+    },
+    {
+     "shot": 21,
+     "offset": 0.1,
+     "at": 13
+    }
+   ],
+   "footnote": "Our math: 1,967 days (IV to V) vs 4,811 days (V to VI).",
+   "bg": "scrim"
+  },
+  {
+   "say": "Five gave you three heroes. Six gives you two, Jason and Lucia.",
+   "layout": "versus",
+   "topic": "PLAYABLE PROTAGONISTS",
+   "show": [],
+   "left": {
+    "label": "GTA V",
+    "value": "3",
+    "sub": "Michael, Franklin, Trevor",
+    "at": 0
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "2",
+    "sub": "Jason and Lucia",
+    "at": 5
+   },
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 13.0
+    },
+    {
+     "shot": 6,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 9
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "The whole map? Rockstar says it's about twice GTA Five's.",
+   "layout": "versus",
+   "topic": "MAP SIZE",
+   "show": [],
+   "left": {
+    "label": "GTA V",
+    "value": "1x",
+    "sub": "Los Santos and Blaine County",
+    "at": 0
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "2x",
+    "sub": "Leonida, per Rockstar",
+    "at": 7
+   },
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.2
+    },
+    {
+     "shot": 33,
+     "offset": 0.1,
+     "at": 5
+    }
+   ],
+   "footnote": "Rockstar North's Aaron Garbut to Game Informer.",
+   "bg": "scrim"
+  },
+  {
+   "say": "GTA Five never gave an animal count. GTA Six has over a hundred seventy species, sharks and whales included.",
+   "layout": "versus",
+   "topic": "WILDLIFE",
+   "show": [],
+   "left": {
+    "label": "GTA V",
+    "value": "?",
+    "sub": "no official count",
+    "at": 0
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "170+",
+    "sub": "species, per Rockstar",
+    "at": 7
+   },
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 6.1
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 84,
+     "offset": 0.1,
+     "at": 14
+    }
+   ],
+   "footnote": "Rockstar to Game Informer: 60+ bird types, 30+ land mammals, sharks, whales, jellyfish.",
+   "bg": "scrim"
+  },
+  {
+   "say": "Send this to the friend who says it's just GTA Five again.",
+   "show": [
+    [
+     "*Send*@0",
+     "this@1",
+     "to@2"
+    ],
+    [
+     "the@3",
+     "friend@4",
+     "who@5",
+     "says@6"
+    ],
+    [
+     "it's@7",
+     "just@8",
+     "^GTA 5^@9",
+     "again.@11"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 47,
+     "offset": 0.8
+    },
+    {
+     "shot": 48,
+     "offset": 0.1,
+     "at": 6
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Five had rain, fog and thunderstorms. Six adds tropical storms and hurricanes, and it can rain on one street while the next one stays dry.",
+   "layout": "versus",
+   "topic": "WEATHER",
+   "show": [],
+   "left": {
+    "label": "GTA V",
+    "value": "RAIN",
+    "sub": "fog, thunderstorms",
+    "at": 0
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "HURRICANES",
+    "sub": "local, persistent weather",
+    "at": 5
+   },
+   "clips": [
+    {
+     "shot": 31,
+     "offset": 1.5
+    },
+    {
+     "shot": 1,
+     "offset": 2.2,
+     "at": 10
+    },
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "at": 17
+    }
+   ],
+   "footnote": "Owen Shepherd, Rockstar, to Game Informer.",
+   "bg": "scrim"
+  },
+  {
+   "say": "And the animations. Fifty five thousand in GTA Five. Over six hundred thousand in Six.",
+   "layout": "versus",
+   "topic": "NPC ANIMATIONS",
+   "show": [],
+   "left": {
+    "label": "GTA V",
+    "value": "55K",
+    "sub": "animations",
+    "at": 3
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "600K+",
+    "sub": "well over, per Rockstar",
+    "at": 9
+   },
+   "clips": [
+    {
+     "shot": 51,
+     "offset": 0.1
+    },
+    {
+     "shot": 47,
+     "offset": 0.8,
+     "at": 3
+    },
+    {
+     "shot": 48,
+     "offset": 0.1,
+     "at": 9
+    }
+   ],
+   "footnote": "Rockstar figures via The New York Times. Our math: over 10x.",
+   "bg": "scrim"
+  },
+  {
+   "say": "The wanted level goes to six stars now. GTA Five stopped at five.",
+   "layout": "versus",
+   "topic": "WANTED LEVEL",
+   "show": [],
+   "left": {
+    "label": "GTA V",
+    "value": "5 STARS",
+    "sub": "maximum",
+    "at": 9
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "6 STARS",
+    "sub": "seen in the Extended Look",
+    "at": 0
+   },
+   "clips": [
+    {
+     "shot": 65,
+     "offset": 0.1
+    },
+    {
+     "shot": 15,
+     "offset": 1.9,
+     "at": 7
+    }
+   ],
+   "footnote": "Reported: six stars on the HUD in the Extended Look (Shacknews).",
+   "bg": "scrim"
+  },
+  {
+   "say": "GTA Online arrived two weeks after Five. Six launches single player only.",
+   "layout": "versus",
+   "topic": "ONLINE AT LAUNCH",
+   "show": [],
+   "left": {
+    "label": "GTA V",
+    "value": "14 DAYS",
+    "sub": "until GTA Online",
+    "at": 0
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "SOLO",
+    "sub": "no online mode announced",
+    "at": 6
+   },
+   "clips": [
+    {
+     "shot": 40,
+     "offset": 0.1
+    },
+    {
+     "shot": 94,
+     "offset": 0.1,
+     "at": 6
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "And it's bigger on your drive. About eighty seven gigabytes then. Up to two hundred twelve now.",
+   "layout": "versus",
+   "topic": "INSTALL SIZE",
+   "show": [],
+   "left": {
+    "label": "GTA V, PS5",
+    "value": "87 GB",
+    "sub": "in 2022",
+    "at": 6
+   },
+   "right": {
+    "label": "GTA VI",
+    "value": "212 GB",
+    "sub": "up to, per Rockstar",
+    "at": 11
+   },
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 5.3
+    },
+    {
+     "shot": 89,
+     "offset": 0.1,
+     "at": 9
+    }
+   ],
+   "footnote": "GTA V PS5 size reported by Windows Central. GTA VI: Rockstar, up to 212 GB by device.",
+   "bg": "scrim"
+  },
+  {
+   "say": "There's one more difference I couldn't fit. Comment SIX and I'll send it to you.",
+   "show": [
+    [
+     "One@1",
+     "more@2",
+     "difference.@3"
+    ],
+    [
+     "Comment@7",
+     "*SIX*@8"
+    ],
+    [
+     "I'll@10",
+     "send@11",
+     "it.@13"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 1.8
+    },
+    {
+     "shot": 83,
+     "offset": 0.1,
+     "at": 6
+    },
+    {
+     "shot": 85,
+     "offset": 0.1,
+     "at": 11
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Which change are you most excited about?",
+   "show": [
+    [
+     "Which@0",
+     "*change*@1"
+    ],
+    [
+     "are@2",
+     "you@3",
+     "most@4"
+    ],
+    [
+     "excited@5",
+     "about?@6"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 46,
+     "offset": 0.1
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 3
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Follow for tomorrow. See you in Leonida.",
+   "font": "anton",
+   "show": [
+    [
+     "Follow@0",
+     "for@1",
+     "tomorrow.@2"
+    ],
+    [
+     "See@3",
+     "you@4",
+     "in@5"
+    ],
+    [
+     "*Leonida.*@6"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 20.0
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "layout": "endcard",
+   "hold": 2.6,
+   "brand": "GTA 6",
+   "series": "GTA 5 vs GTA 6",
+   "episode": "What 13 years changed",
+   "cta": "Follow for tomorrow",
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ]
+  }
+ ]
+}

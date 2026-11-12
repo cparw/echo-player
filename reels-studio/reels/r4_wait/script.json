@@ -1,0 +1,656 @@
+{
+ "title": "Reel 1: The Wait (7 days out)",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.85
+ },
+ "fps": 30,
+ "tag": "GTA 6 · 7 DAYS OUT",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "beats": [
+  {
+   "say": "If you were born the day GTA Five came out, you're thirteen now.",
+   "show": [
+    [
+     "If@0",
+     "you@1",
+     "were@2",
+     "*born*@3"
+    ],
+    [
+     "the@4",
+     "day@5",
+     "GTA@6",
+     "V@7"
+    ],
+    [
+     "came@8",
+     "out,@9"
+    ],
+    [
+     "you're@10",
+     "^13^@11",
+     "now.@12"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "footnote": "GTA V launched 17 Sept 2013 on PS3 and Xbox 360",
+   "clips": [
+    {
+     "shot": 104,
+     "offset": 0.1
+    },
+    {
+     "shot": 91,
+     "offset": 2.6,
+     "at": 10
+    }
+   ],
+   "instant": true
+  },
+  {
+   "say": "And you're still four years too young for GTA Six's rating.",
+   "show": [
+    [
+     "Still@2"
+    ],
+    [
+     "*4*@3",
+     "*years*@4"
+    ],
+    [
+     "too@5",
+     "young.@6"
+    ],
+    [
+     "^RATED^@9",
+     "^M^@9",
+     "^17+^@10"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "footnote": "ESRB: GTA VI is rated M (Mature 17+)",
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 1.3
+    },
+    {
+     "shot": 24,
+     "offset": 0.1,
+     "at": 8
+    }
+   ],
+   "size": 130,
+   "centerY": 940
+  },
+  {
+   "say": "That's how long this wait has been.",
+   "show": [
+    [
+     "That's@0",
+     "how@1",
+     "long@2"
+    ],
+    [
+     "this@3",
+     "*wait*@4"
+    ],
+    [
+     "has@5",
+     "been.@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "icon": "hourglass",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/kayak_sunset.jpg",
+   "pan": [
+    0.36,
+    0.46
+   ]
+  },
+  {
+   "say": "Four thousand, eight hundred and eleven days.",
+   "show": [],
+   "layout": "number",
+   "from": 0,
+   "to": 4811,
+   "count_at": 0,
+   "count_dur": 1.7,
+   "label": "days from GTA V to GTA VI",
+   "numSize": 300,
+   "bg": "scrim",
+   "footnote": "Our math: 17 Sept 2013 to 19 Nov 2026",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/vice_city_skyline_aerial.jpg",
+   "pan": [
+    0.22,
+    0.4
+   ],
+   "scrimY": 840
+  },
+  {
+   "say": "But here's the part nobody talks about.",
+   "show": [
+    [
+     "But@0",
+     "here's@1",
+     "the@2",
+     "part@3"
+    ],
+    [
+     "*nobody*@4"
+    ],
+    [
+     "talks@5",
+     "about.@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "flash": true,
+   "clips": [
+    {
+     "shot": 84,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "The gap between GTA games used to be one year. Then two. Then three and a half. Then over five. This one? Thirteen.",
+   "show": [
+    [
+     "Years@0",
+     "between@1",
+     "GTA@3",
+     "games@4"
+    ]
+   ],
+   "layout": "bars",
+   "font": "inter",
+   "bg": "scrim",
+   "wordsTop": 560,
+   "barsTop": 760,
+   "bars": [
+    {
+     "label": "III to VC",
+     "value": 1.0,
+     "text": "1 yr",
+     "at": 8
+    },
+    {
+     "label": "VC to SA",
+     "value": 2.0,
+     "text": "2 yrs",
+     "at": 11
+    },
+    {
+     "label": "SA to IV",
+     "value": 3.5,
+     "text": "3.5 yrs",
+     "at": 13
+    },
+    {
+     "label": "IV to V",
+     "value": 5.4,
+     "text": "5.4 yrs",
+     "at": 19
+    },
+    {
+     "label": "V to VI",
+     "value": 13.2,
+     "text": "13.2 yrs",
+     "accent": true,
+     "at": 22
+    }
+   ],
+   "footnote": "Years between North American launches. Our math.",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 6.6
+    },
+    {
+     "shot": 88,
+     "offset": 0.1,
+     "at": 8
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 13
+    },
+    {
+     "shot": 31,
+     "offset": 1.6,
+     "at": 20
+    }
+   ],
+   "footTop": 1272
+  },
+  {
+   "say": "A whole console generation came and went without a new GTA.",
+   "show": [
+    [
+     "A@0",
+     "whole@1",
+     "console@2"
+    ],
+    [
+     "generation@3"
+    ],
+    [
+     "came@4",
+     "and@5",
+     "went.@6"
+    ],
+    [
+     "*Zero*@7",
+     "new@9",
+     "GTAs.@10"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "footnote": "PS4 and Xbox One era, 2013 to 2020: no new numbered GTA",
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    },
+    {
+     "shot": 58,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "It was supposed to land in twenty twenty five. Then May twenty twenty six. Then November nineteenth.",
+   "show": [
+    [
+     "Release@0",
+     "date@1"
+    ]
+   ],
+   "layout": "list",
+   "font": "inter",
+   "bg": "scrim",
+   "wordsTop": 520,
+   "listTop": 700,
+   "items": [
+    {
+     "text": "2025",
+     "at": 6,
+     "strike_at": 9
+    },
+    {
+     "text": "MAY 26, 2026",
+     "at": 10,
+     "strike_at": 14
+    },
+    {
+     "text": "NOV 19, 2026",
+     "at": 15,
+     "final": true
+    }
+   ],
+   "footnote": "Rockstar Newswire: delays announced 2 May 2025 and 6 Nov 2025",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.6
+    },
+    {
+     "shot": 37,
+     "offset": 0.1,
+     "at": 9
+    },
+    {
+     "shot": 1,
+     "offset": 0.1,
+     "at": 14
+    }
+   ]
+  },
+  {
+   "say": "Rockstar apologized. Twice.",
+   "show": [
+    [
+     "Rockstar@0"
+    ],
+    [
+     "apologized.@1"
+    ],
+    [
+     "*Twice.*@2"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/stanier_neon.jpg",
+   "pan": [
+    0.42,
+    0.58
+   ],
+   "centerY": 1060
+  },
+  {
+   "say": "We are very sorry that this is later than you expected.",
+   "show": [
+    [
+     "We@0",
+     "are@1",
+     "very@2",
+     "*sorry*@3"
+    ],
+    [
+     "that@4",
+     "this@5",
+     "is@6",
+     "later@7"
+    ],
+    [
+     "than@8",
+     "you@9",
+     "expected.@10"
+    ]
+   ],
+   "layout": "quote",
+   "bg": "scrim",
+   "attrib": "ROCKSTAR GAMES, 2 MAY 2025",
+   "clips": [
+    {
+     "shot": 27,
+     "offset": 0.1
+    },
+    {
+     "shot": 5,
+     "offset": 6.1,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "And nobody left.",
+   "show": [
+    [
+     "And@0",
+     "*nobody*@1",
+     "left.@2"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 47,
+     "offset": 0.8
+    }
+   ],
+   "centerY": 1100
+  },
+  {
+   "say": "It's now the most preordered game in PlayStation Store history.",
+   "show": [
+    [
+     "The@2",
+     "^most^@3"
+    ],
+    [
+     "preordered@4",
+     "game@5"
+    ],
+    [
+     "in@6",
+     "PlayStation@7"
+    ],
+    [
+     "Store@8",
+     "*history.*@9"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "footnote": "PlayStation Blog, 10 Nov 2026. Xbox says the same for Microsoft Store.",
+   "clips": [
+    {
+     "shot": 65,
+     "offset": 0.1
+    },
+    {
+     "shot": 74,
+     "offset": 12.4,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "The first trailer pulled over ninety million YouTube views in a single day.",
+   "show": [
+    [
+     "Trailer@2",
+     "1@2"
+    ],
+    [
+     "*90M+*@5"
+    ],
+    [
+     "views@8",
+     "in@9",
+     "one@10",
+     "day.@12"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "footnote": "Guinness World Records: 90,421,491 YouTube views in 24 hours (Dec 2023)",
+   "icon": "play",
+   "clips": [
+    {
+     "shot": 15,
+     "offset": 2.0
+    },
+    {
+     "shot": 89,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "That's about a thousand people pressing play, every second, for twenty four hours straight.",
+   "show": [],
+   "layout": "number",
+   "from": 0,
+   "to": 1046,
+   "count_at": 2,
+   "count_dur": 1.1,
+   "label": "views every second, for 24 hours",
+   "numSize": 300,
+   "bg": "scrim",
+   "footnote": "Our math: 90,421,491 views / 86,400 seconds",
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1
+    },
+    {
+     "shot": 85,
+     "offset": 0.1,
+     "at": 6
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 10
+    }
+   ],
+   "numTop": 900,
+   "scrimY": 1040,
+   "footTop": 1300
+  },
+  {
+   "say": "Trailer two? Rockstar says four hundred seventy five million views, across every platform.",
+   "show": [],
+   "layout": "number",
+   "from": 0,
+   "to": 475,
+   "suffix": "M",
+   "count_at": 4,
+   "count_dur": 1.2,
+   "label": "Trailer 2 views in 24 hours",
+   "numSize": 300,
+   "bg": "scrim",
+   "footnote": "Rockstar's own figure (May 2025), all platforms combined, not YouTube alone",
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 4.6,
+     "at": 4
+    },
+    {
+     "shot": 26,
+     "offset": 6.3,
+     "at": 9
+    }
+   ],
+   "scrimY": 840
+  },
+  {
+   "say": "And now, it's seven days away.",
+   "show": [],
+   "layout": "number",
+   "from": 4811,
+   "to": 7,
+   "count_at": 3,
+   "count_dur": 0.9,
+   "label": "days to go",
+   "numSize": 460,
+   "bg": "scrim",
+   "footnote": "19 Nov 2026, midnight local time (Rockstar Support)",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
+   "pan": [
+    0.05,
+    0.22
+   ],
+   "scrimY": 920
+  },
+  {
+   "say": "So tell me. How old were you when GTA Five came out? I'll go first in the comments.",
+   "show": [
+    [
+     "How@3",
+     "old@4",
+     "were@5",
+     "you@6"
+    ],
+    [
+     "when@7",
+     "GTA@8",
+     "V@9"
+    ],
+    [
+     "came@10",
+     "*out?*@11"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 3,
+     "offset": 0.1
+    },
+    {
+     "shot": 83,
+     "offset": 0.1,
+     "at": 8
+    },
+    {
+     "shot": 29,
+     "offset": 0.1,
+     "at": 12
+    }
+   ],
+   "centerY": 1250
+  },
+  {
+   "say": "Follow for tomorrow. See you in Leonida.",
+   "show": [
+    [
+     "Follow@0",
+     "for@1",
+     "tomorrow.@2"
+    ],
+    [
+     "See@3",
+     "you@4",
+     "in@5"
+    ],
+    [
+     "*Leonida.*@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 10.3,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "hold": 2.6,
+   "brand": "GTA 6",
+   "series": "7 days out",
+   "episode": "The Wait",
+   "cta": "Follow for tomorrow",
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.1
+    }
+   ],
+   "bg": "scrim"
+  }
+ ],
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "guide_voice_id": "nPczCjzI2devNBz1zQrb",
+ "guide_speed": 1.08,
+ "guide_stability": 0.3,
+ "guide_style": 0.25,
+ "voice_preset": 1
+}
