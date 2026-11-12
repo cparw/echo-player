@@ -11,6 +11,13 @@ Owner: Chaitanya. Project: GTA 6 explainer reels account (Instagram first, then 
 6. Every fact verified with a source; label CONFIRMED, REPORTED, ESTIMATE, OUR MATH. Never invent numbers.
 7. No dash characters (hyphen, en dash, em dash) in any prose shown to the owner, captions or on screen text.
 
+## Account ownership (stated by the owner, 12 Nov 2026)
+* The Instagram account is owned and run by the owner's mother, an Indian citizen living in India; payouts go to her. The owner makes the reels (his cloned voice).
+* TikTok is banned in India (since June 2020; still blocked as of mid 2026), so no TikTok money channel for her. Facebook Creator Fast Track is US, CA, UK and AU only.
+* Instagram in India: Gifts about 500 followers, Creator Marketplace about 1,000, Subscriptions about 10,000 (third party sources; confirm in app). YouTube Partner Program works in India (1,000 subscribers plus 10M Shorts views in 90 days).
+* Posting from India: 12:00 ET is 22:30 IST (post live); 18:00 ET is 04:30 IST (use Instagram's Schedule). Deliver each reel with caption and cover ready to schedule.
+* Recommended: a fresh dedicated account (@hardnumbers.daily) switched to Creator, not her existing personal account.
+
 ## Accounts and limits (as of 12 Nov 2026)
 * ElevenLabs: Starter plan, 40,000 characters a month. API reached through the environment proxy (no key needed in code; send header `xi-api-key: dummy`). Speech to text costs about 3 credits per second, so avoid it. `mp3_44100_192` needs the Creator tier; use `mp3_44100_128`. Eleven v4 supports `/with-timestamps`. Voice Remix endpoint exists (`/v1/text-to-voice/{voice_id}/remix`) for nudging accent.
 * Higgsfield (MCP): Plus plan, about 2,000 credits. Kling 4.0 text to video 9:16 5 s 1080p is about 16 credits; ElevenLabs Music v2.5 instrumental 75 s is about 11 credits. Higgsfield can also publish to TikTok (tiktok_connect, tiktok_prepare_publish).
@@ -29,7 +36,7 @@ Owner: Chaitanya. Project: GTA 6 explainer reels account (Instagram first, then 
 * Look: near black, off white, orange #FF7A1A highlighter boxes, Anton headlines, JetBrains Mono labels, tiny source footnotes, credit tags (FOOTAGE: ROCKSTAR GAMES, AI VISUAL).
 * Caption labels: ROCKSTAR SAYS, REPORTED, ANALYST ESTIMATE, OUR MATH. Max 5 hashtags. End with an easy riffable question and a follow line. Sign off: "That's the number. Follow, and I'll see you tomorrow."
 * Do not auto share reels to Facebook (keeps Creator Fast Track eligibility). TikTok account must be personal, not business, for Creator Rewards.
-* Compliance: if the owner is on F-1 status, no payouts, affiliate or paid deals until a DSO confirms work authorization.
+* Compliance: the account and payouts belong to the owner's mother in India. If the owner is on a US student visa, he should still confirm with his DSO, since the rules look at who does the work.
 
 ## Engine (this folder)
 Setup once per session: `cd reels-studio/engine && npm install` (fonts) and `pip install -U yt-dlp`. Playwright and Chromium are preinstalled in the cloud image.
