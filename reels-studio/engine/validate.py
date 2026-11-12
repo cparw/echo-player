@@ -50,8 +50,13 @@ for i, b in enumerate(beats):
         for it in b.get("items", []):
             for key in ("at", "strike_at"):
                 if key in it and it[key] >= n: errs.append(f"beat {i}: list {key} out of range")
-    if b.get("bg") == "dim" and not b.get("media") and not b.get("media_request"):
-        errs.append(f"beat {i}: bg dim needs media or media_request")
+    if b.get("bg") == "dim" and not b.get("media") and not b.get("media_request") and not b.get("clips"):
+        errs.append(f"beat {i}: bg dim needs clips, media or media_request")
+    for c in b.get("clips", []) or []:
+        if not isinstance(c, dict) or "shot" not in c:
+            errs.append(f"beat {i}: each clip needs a 'shot' number")
+        elif c["shot"] in (0, 7, 19, 23, 25, 26, 53, 61, 63, 66, 67, 70, 73, 75) and not (c["shot"] == 26 and 7.2 <= c.get("offset", 0) <= 7.6):
+            errs.append(f"beat {i}: shot {c['shot']} is on the banned list (logo, title card or violence)")
     if b.get("media") and not os.path.exists(b["media"]) and not b.get("media_request"):
         warns.append(f"beat {i}: media file not found yet: {b['media']}")
     if b.get("footnote") and any(d in b["footnote"] for d in DASHES): errs.append(f"beat {i}: dash in footnote")

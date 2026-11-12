@@ -27,6 +27,7 @@ def clip_len(p):
 # official trailer shots: [{shot, offset?, cx?}] resolved from shots.json; Rockstar TikTok trailers are stored rotated 90 deg
 SHOTS = json.load(open(plan["shots_json"])) if plan.get("shots_json") else []
 ROTATED = ("7696925363795938573", "7502175479718284586")
+LETTERBOX = {"7696925363795938573": (960, 60), "7502175479718284586": (864, 108)}  # active height, top offset after transpose (cropdetect)
 
 def clip_part(c, dur, outp):
     sh = SHOTS[c["shot"]]
@@ -38,7 +39,11 @@ def clip_part(c, dur, outp):
     rot = any(r in src for r in ROTATED) if c.get("rot") is None else c["rot"]
     cx = c.get("cx", 0.5)
     if rot:
-        geo = f"transpose=2,crop=608:1080:x='(iw-ow)*{cx}':y=0,scale=1080:1920:flags=lanczos"
+        # trailers are letterboxed cinema widescreen inside the rotated frame: crop the active picture first
+        H, Y = next((v for k, v in LETTERBOX.items() if k in src), (1080, 0))
+        W = int(round(H * 9 / 16 / 2) * 2)
+        geo = (f"transpose=2,crop=1920:{H}:0:{Y},crop={W}:{H}:x='(iw-ow)*{cx}':y=0,"
+               "scale=1080:1920:flags=lanczos,unsharp=5:5:0.55:5:5:0.0")
     else:
         geo = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
     vf = f"trim=duration={avail:.3f},setpts=PTS-STARTPTS,setpts={slow:.3f}*PTS,{geo},fps=30,tpad=stop_mode=clone:stop_duration=3,eq=saturation=1.06:contrast=1.03,setsar=1,format=yuv420p"
