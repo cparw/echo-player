@@ -50,6 +50,14 @@ Owner: Chaitanya. Project: GTA 6 explainer reels account (Instagram first, then 
 * Do not auto share reels to Facebook (keeps Creator Fast Track eligibility). TikTok account must be personal, not business, for Creator Rewards.
 * Compliance: the account and payouts belong to the owner's mother in India. If the owner is on a US student visa, he should still confirm with his DSO, since the rules look at who does the work.
 
+## Footage safety (12 Nov 2026, important)
+* The first shot catalog was WRONG in places: a reviewer found a man holding a submachine gun in shot 5 at 4.0 to 5.6 s (Reel 1 v1 used it at 11 s), and fights, a robbery, pasties, a pole dancer, a gun store and police chases inside shots the catalog called safe (5, 8, 9, 10, 11, 15, 22, 52, 54, 56, 57). The cut detector also merged several real shots into one "shot".
+* Rule: never trust a description alone. Check frames with `engine/shot_frames.py` (tiles every 0.4 s in the exact 9:16 crop) or `engine/preview.py` (graphics composited over the real frames) before any render. Use only audited clean windows; no weapons, violence, sexual or suggestive content, police action, logos or rating badges (except shot 72 at 4.6 s, by choice).
+
+## Open decisions (asked 12 Nov 2026)
+* Voice: owner said "I don't recognize my voice", wants about 10% more of his own voice and asked to choose from options. Lineup sent (same Reel 1 opening, paced alike): 1 Brian guide STS (current), 2 Brian guide STS with timbre locked (stability 0.8, similarity 1.0), 3 clone direct (multilingual v2), 4 clone direct (eleven_v4), 5 Indian American guide (Teja) STS, 6 Indian guide (Viraj) STS, 7 option 2 pitched down 2 semitones to his real pitch (rubberband, formants kept; his real F0 is about 97 Hz, STS output was about 108 Hz). Tool: `engine/voice_lineup.py`. His clone was made from ONE 30 second sample; 2 to 3 more minutes of clean recordings would raise likeness for every option.
+* Name: owner wants modern, Gen Z, global, unique names in the spirit of Unseen with logos. Sheet sent (`engine/brand_names.html`): paused. (recommended), loredrop., afterglow., palm reader., redacted., deep cut., humid., sixsense.
+
 ## Engine (this folder)
 Setup once per session: `cd reels-studio/engine && npm install` (fonts) and `pip install -U yt-dlp`. Playwright and Chromium are preinstalled in the cloud image.
 1. Write `reelNN/script.json` (format: see `examples/reel01_script_v2.json`; markup `*word*` box, `^word^` orange, `@k` sync to spoken word k; layouts words, number, bars, list, endcard; footage via `clips: [{shot, offset, cx}]` from `shots.json`).

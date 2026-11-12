@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Unbounded'; font-weight: 800; src: url('node_modules/@fontsource/unbounded/files/unbounded-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Bricolage'; font-weight: 800; src: url('node_modules/@fontsource/bricolage-grotesque/files/bricolage-grotesque-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Fraunces'; font-weight: 600; font-style: italic; src: url('node_modules/@fontsource/fraunces/files/fraunces-latin-600-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Fraunces'; font-weight: 600; font-style: normal; src: url('node_modules/@fontsource/fraunces/files/fraunces-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Syne'; font-weight: 800; src: url('node_modules/@fontsource/syne/files/syne-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('node_modules/@fontsource/space-grotesk/files/space-grotesk-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Instrument Serif'; font-style: italic; src: url('node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url('node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 600; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 800; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2') format('woff2'); }
+:root { --bg: #08080B; --card: #111116; --fg: #F5F2EA; --mute: rgba(245,242,234,0.62); --coral: #FF6A5C; --orange: #FF7A1A; --pink: #FF4FA3; --teal: #2EE6D0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--fg); width: 1080px; }
+.head { padding: 72px 64px 24px; }
+.head h1 { font-family: 'Inter Tight'; font-weight: 800; font-size: 64px; margin: 0; letter-spacing: -0.02em; }
+.head p { font-family: 'Inter Tight'; font-weight: 600; font-size: 28px; color: var(--mute); margin: 14px 0 0; line-height: 1.35; }
+.grid { padding: 24px 40px 72px; display: grid; gap: 28px; }
+.card { background: var(--card); border: 1px solid rgba(245,242,234,0.08); border-radius: 40px; padding: 36px; display: flex; gap: 36px; align-items: center; position: relative; }
+.card.top { border: 2px solid var(--coral); }
+.badge { position: absolute; top: 22px; right: 26px; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 20px; letter-spacing: 0.16em; color: var(--coral); }
+.num { position: absolute; top: 22px; left: 30px; font-family: 'JetBrains Mono'; font-size: 20px; color: var(--mute); }
+.av { width: 230px; height: 230px; flex: none; border-radius: 50%; overflow: hidden; background: #000; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 2px rgba(245,242,234,0.1); }
+.body { flex: 1; min-width: 0; }
+.mark { line-height: 1; white-space: nowrap; }
+.handles { font-family: 'JetBrains Mono'; font-weight: 500; font-size: 22px; color: var(--teal); margin-top: 18px; }
+.why { font-family: 'Inter Tight'; font-weight: 600; font-size: 25px; color: var(--mute); margin-top: 12px; line-height: 1.32; }
+.grad { background: linear-gradient(100deg, var(--orange), var(--pink)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.solo { width: 1080px; height: 1080px; display: flex; align-items: center; justify-content: center; background: var(--bg); }
+.solo .av { width: 1080px; height: 1080px; border-radius: 0; box-shadow: none; }
+</style>
+</head>
+<body>
+<div id="page"></div>
+<script>
+const C = { coral: '#FF6A5C', orange: '#FF7A1A', pink: '#FF4FA3', teal: '#2EE6D0', fg: '#F5F2EA' };
+const gradDef = id => `<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${C.orange}"/><stop offset="1" stop-color="${C.pink}"/></linearGradient></defs>`;
+const NAMES = [
+  { name: 'paused.', top: true,
+    mark: `<span style="font-family:Unbounded;font-weight:800;font-size:76px;letter-spacing:-0.03em">paused<span style="display:inline-block;width:0.34em;height:0.62em;margin-left:0.12em;vertical-align:baseline;position:relative;top:0.02em"><span style="position:absolute;left:0;bottom:0;width:0.11em;height:100%;border-radius:0.05em;background:${C.coral}"></span><span style="position:absolute;right:0;bottom:0;width:0.11em;height:100%;border-radius:0.05em;background:${C.coral}"></span></span></span>`,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><rect width="100" height="100" fill="#08080B"/><rect x="33" y="28" width="11" height="44" rx="5.5" fill="${C.coral}"/><rect x="56" y="28" width="11" height="44" rx="5.5" fill="${C.coral}"/></svg>`,
+    handles: '@paused.gg · @wepaused · @paused.hq',
+    why: 'We pause every trailer so you don\'t have to. Frame by frame, decoded. Works for GTA 6 now and every big drop after.' },
+  { name: 'loredrop.',
+    mark: `<span style="font-family:Bricolage;font-weight:800;font-size:82px;letter-spacing:-0.035em">loredrop<svg viewBox="0 0 20 28" style="width:0.26em;height:0.36em;margin-left:0.05em;vertical-align:baseline">${gradDef('ld')}<path d="M10 1 C10 1 2 12 2 18 a8 8 0 0 0 16 0 C18 12 10 1 10 1 Z" fill="url(#ld)"/></svg></span>`,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%">${gradDef('lda')}<rect width="100" height="100" fill="#08080B"/><path d="M50 18 C50 18 29 46 29 60 a21 21 0 0 0 42 0 C71 46 50 18 50 18 Z" fill="url(#lda)"/><path d="M43 61 a8 8 0 0 0 8 8" stroke="#fff" stroke-opacity="0.75" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>`,
+    handles: '@loredrop · @loredrop.gg · @loredrop.daily',
+    why: 'Gen Z slang for new story info. News, lore and secrets the moment they land. Easy to say in any language.' },
+  { name: 'afterglow.',
+    mark: `<span class="grad" style="font-family:Fraunces;font-style:italic;font-weight:600;font-size:88px;letter-spacing:-0.02em">afterglow.</span>`,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%">${gradDef('ag')}<rect width="100" height="100" fill="#08080B"/><clipPath id="sun"><circle cx="50" cy="58" r="26"/></clipPath><g clip-path="url(#sun)"><rect x="20" y="30" width="60" height="28" fill="url(#ag)"/><rect x="20" y="60" width="60" height="4" fill="url(#ag)"/><rect x="20" y="67" width="60" height="3" fill="url(#ag)"/><rect x="20" y="73" width="60" height="2" fill="url(#ag)"/></g></svg>`,
+    handles: '@afterglow.tv · @afterglow.hq · @theafterglow',
+    why: 'That neon sunset feeling. Cinematic and premium, and it outlives the launch hype.' },
+  { name: 'palm reader.',
+    mark: `<span style="font-family:'Instrument Serif';font-style:italic;font-size:100px;letter-spacing:-0.01em">palm reader<span style="color:${C.coral}">.</span></span>`,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><rect width="100" height="100" fill="#08080B"/><path d="M18 50 Q50 22 82 50 Q50 78 18 50 Z" fill="none" stroke="${C.fg}" stroke-width="3.2"/><circle cx="50" cy="50" r="10.5" fill="${C.coral}"/><path d="M50 28 L50 20 M38 31 L34 24 M62 31 L66 24" stroke="${C.fg}" stroke-width="3" stroke-linecap="round"/></svg>`,
+    handles: '@palmreader.gg · @thepalmreader',
+    why: 'Florida palms plus reading the signs. Predictions and hidden details, a little mystical and very shareable.' },
+  { name: 'redacted.',
+    mark: `<span style="font-family:'JetBrains Mono';font-weight:500;font-size:78px;letter-spacing:-0.02em">red<span style="background:${C.coral};color:#08080B;padding:0 0.04em">act</span>ed.</span>`,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><rect width="100" height="100" fill="#08080B"/><rect x="24" y="33" width="52" height="4" rx="2" fill="${C.fg}" fill-opacity="0.45"/><rect x="24" y="44" width="52" height="12" rx="2" fill="${C.coral}"/><rect x="24" y="63" width="36" height="4" rx="2" fill="${C.fg}" fill-opacity="0.45"/></svg>`,
+    handles: '@redacted.gg · @redacted.hq',
+    why: 'The part nobody says out loud. Mystery reveals with sources. Same energy as the account you like, its own word.' },
+  { name: 'deep cut.',
+    mark: `<span style="position:relative;display:inline-block;font-family:Syne;font-weight:800;font-size:84px;letter-spacing:-0.02em"><span style="clip-path:polygon(0 0,100% 0,100% 64%,0 74%)">deep cut.</span><span style="position:absolute;left:0.05em;top:0.035em;clip-path:polygon(0 74%,100% 64%,100% 100%,0 100%);color:${C.coral}">deep cut.</span></span>`,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><rect width="100" height="100" fill="#08080B"/><clipPath id="t"><polygon points="0,0 100,0 100,42 0,58"/></clipPath><clipPath id="b"><polygon points="0,58 100,42 100,100 0,100"/></clipPath><circle cx="48" cy="48" r="26" fill="${C.fg}" clip-path="url(#t)"/><circle cx="53" cy="53" r="26" fill="${C.coral}" clip-path="url(#b)"/></svg>`,
+    handles: '@deepcut.gg · @deepcuts.hq',
+    why: 'The details only real fans catch. Sounds like music culture, works for trailers, maps and lore.' },
+  { name: 'humid.',
+    mark: `<span style="font-family:Fraunces;font-weight:600;font-size:92px;letter-spacing:-0.03em">humid<span style="color:${C.teal}">.</span></span><svg viewBox="0 0 300 20" style="display:block;width:300px;height:20px;margin-top:6px"><path d="M2 10 Q 20 0 38 10 T 74 10 T 110 10 T 146 10 T 182 10 T 218 10 T 254 10 T 290 10" stroke="${C.coral}" stroke-width="5" fill="none" stroke-linecap="round"/></svg>`,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%"><rect width="100" height="100" fill="#08080B"/><text x="50" y="62" text-anchor="middle" font-family="Fraunces" font-weight="600" font-size="52" fill="${C.fg}">h<tspan fill="${C.teal}">.</tspan></text><path d="M26 74 Q 32 70 38 74 T 50 74 T 62 74 T 74 74" stroke="${C.coral}" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg>`,
+    handles: '@humid.gg · @stayhumid',
+    why: 'Florida in one word. Weird, funny, unforgettable. The boldest pick here, pure Gen Z.' },
+  { name: 'sixsense.',
+    mark: `<span style="font-family:'Space Grotesk';font-weight:700;font-size:84px;letter-spacing:-0.04em"><span class="grad">six</span>sense.</span>`,
+    av: `<svg viewBox="0 0 100 100" width="100%" height="100%">${gradDef('ss')}<rect width="100" height="100" fill="#08080B"/><path d="M22 54 Q50 30 78 54 Q50 76 22 54 Z" fill="none" stroke="url(#ss)" stroke-width="3.5"/><circle cx="50" cy="54" r="8" fill="${C.fg}"/><g stroke="url(#ss)" stroke-width="3.2" stroke-linecap="round"><path d="M50 36 L50 26"/><path d="M39 38 L34 29"/><path d="M61 38 L66 29"/><path d="M30 43 L23 36"/><path d="M70 43 L77 36"/><path d="M50 26 L50 26"/></g></svg>`,
+    handles: '@sixsense.gg · @sixsense.hq',
+    why: 'A sixth sense for what\'s next, with a quiet nod to the sixth game. Short, global, no trademarks in it.' },
+];
+const mode = new URLSearchParams(location.search).get('solo');
+const page = document.getElementById('page');
+if (mode !== null) {
+  const n = NAMES[+mode];
+  page.innerHTML = `<div class="solo"><div class="av">${n.av}</div></div>`;
+} else {
+  let html = `<div class="head"><h1>Channel name + logo options</h1><p>All lowercase with a period, Unseen style but our own words. No GTA, Rockstar or VI in the name, so it stays safe and keeps value after launch.</p></div><div class="grid">`;
+  NAMES.forEach((n, i) => {
+    html += `<div class="card${n.top ? ' top' : ''}"><div class="num">${String(i + 1).padStart(2, '0')}</div>${n.top ? '<div class="badge">MY PICK</div>' : ''}
+      <div class="av">${n.av}</div><div class="body"><div class="mark">${n.mark}</div><div class="handles">${n.handles}</div><div class="why">${n.why}</div></div></div>`;
+  });
+  page.innerHTML = html + '</div>';
+}
+window.NAMES_COUNT = NAMES.length;
+</script>
+</body>
+</html>
