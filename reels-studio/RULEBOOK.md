@@ -32,7 +32,11 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 * **Save prompt early** when the reel is useful ("Save this before launch").
 * **Share prompt before the best part** ("Send this to the friend who still plays GTA 5").
 * **Midpoint rehook** so the second half holds.
-* **90/10 rule:** give 90% of the value in the reel; offer the rest with "Comment WORD and I'll DM you ...". A comment to DM tool sends it and asks them to follow. This turns views into followers.
+* **90/10 rule:** give 90% of the value in the reel; offer the rest with "Comment WORD and I'll DM you ...". Rules from Meta's own policies (researched 12 Nov 2026):
+  * NEVER make a follow, like, share or tag the price of the DM (a "follow gate"). Meta's Spam standard bans it and a strike kills a new account's reach. The DM gives everything promised, then a soft "Follow for tomorrow" line.
+  * The keyword is a word, never "6" (SIX, CHECK). The DM says it is an auto reply. Tell people it may land in message requests.
+  * Arm the automation before posting (one private reply per comment, within 7 days). Only DM people who commented the word. Keep public auto replies off or varied.
+  * Tools: start with manual replies or a free official option (Meta Business Suite "Comment to message", or SuperProfile free, which uses Meta's API). ManyChat Free now covers only 25 contacts a month; use Essential (250) or Pro (2,500) once volume grows.
 * **End** on an easy question people can answer in one line, then "Follow for tomorrow. See you in Leonida."
 * Length 61 to 90 seconds (TikTok rewards need over a minute). 175 to 190 words a minute. Short sentences, second person, calm and cinematic like Unseen.
 
@@ -94,6 +98,8 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 5. Facts, labels and numbers match between the video and the caption.
 
 ## 9. Feedback log (newest first)
+
+* 12 Nov (research, not owner): the reference reel's "they DM you, then ask you to follow" step is a follow gate under Meta's Spam standard. We keep the 90/10 DM but never gate it on a follow.
 
 * 12 Nov: "Make a rule book ... so again and again I don't have to tell you these things." This file.
 * 12 Nov: "Show more and more GTA 6 graphics in the whole reel continuously. Do not let any frame be void ... different gameplays ... best quality ... make six reels like that." Rules 1.1 to 1.4 and 1.10.

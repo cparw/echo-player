@@ -4,7 +4,7 @@
 set -euo pipefail
 TL="$1"; OUT="$2"; N="${3:-3}"
 ENGINE="$(cd "$(dirname "$0")" && pwd)"
-TMP="$(dirname "$OUT")/_chunks"; rm -rf "$TMP"; mkdir -p "$TMP"
+TMP="$(cd "$(dirname "$OUT")" && pwd)/_chunks"; rm -rf "$TMP"; mkdir -p "$TMP"
 read FPS FRAMES < <(python3 -c "import json,sys;t=json.load(open(sys.argv[1]));f=t.get('fps',30);print(f, round(t['duration']*f))" "$TL")
 pids=()
 for ((i=0;i<N;i++)); do
