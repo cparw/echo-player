@@ -28,7 +28,7 @@ SAFE WINDOWS (the mixer clamps clips into these; use offsets inside them): shot 
 | 17 | 1.3s | gym, boxing | effort |
 | 20 | 2.9s | teal underwater style shot | mystery |
 | 21 | 1.4s | couple at sunset | emotion |
-| 22 | 4.1s | night aerial, moving vehicle | speed, network, night |
+| 22 | 4.1s | ACTION: helicopter smashes skyscraper glass (0 to 2 s), man on a helicopter over city lights (2.2), sheriff cars (2.6 on) | stakes only; never for calm beats or closers |
 | 24 | 2.2s usable | purple lit figures (rest is logo card) | mood only |
 | 27 | 1.6s | stilt house in the Keys | Leonida, places |
 | 28 | 1.6s | white pickup, man walking | locals |
@@ -61,8 +61,8 @@ SAFE WINDOWS (the mixer clamps clips into these; use offsets inside them): shot 
 | 68 | 1.4s | yacht close up (native vertical) | luxury |
 | 69 | 1.4s | neon sign (native vertical) | nightlife |
 | 71 | 0.9s | man in sunglasses (native vertical) | character |
-| 72 | 10.0s | official card: logo, November 19 2026, ESRB M, captured on PS5 (native vertical) | rating, release date |
-| 74 | 40.9s | Jason and Lucia walking (native vertical) | closers, CTA |
+| 72 | 10.0s | car on Ocean Drive at night (0.5), dancer (2.5), official card with logo, November 19 2026 and ESRB MATURE 17+ (4.6 to 7), Rockstar logo (8.5) (native vertical) | rating, release date (offset 4.6) |
+| 74 | 40.9s | Jason and Lucia walking (native vertical); 14.5 = hand in hand onto a rooftop bar; avoid offset 2 (rating badge) | closers, CTA |
 | 76 | 13.9s | van in a parking lot (native vertical) | everyday Leonida |
 | 77 | 18.4s | van driving down a street (native vertical) | everyday Leonida |
 

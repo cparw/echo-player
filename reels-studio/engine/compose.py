@@ -29,7 +29,15 @@ SHOTS = json.load(open(plan["shots_json"])) if plan.get("shots_json") else []
 ROTATED = ("7696925363795938573", "7502175479718284586")
 LETTERBOX = {"7696925363795938573": (960, 60), "7502175479718284586": (864, 108)}  # active height, top offset after transpose (cropdetect)
 
-def clip_part(c, dur, outp):
+# Our sunset duotone for footage behind data cards: grey, soft focus, shadows to deep indigo, highlights to dusty rose
+# (dark enough that the orange accent and off white text still pop on top)
+DUO = ("hue=s=0,eq=contrast=1.12,gblur=sigma=1.4,"
+       "curves=r='0/0.03 0.5/0.21 1/0.66':g='0/0.03 0.5/0.11 1/0.37':b='0/0.08 0.5/0.25 1/0.54'")
+
+def grade(s):
+    return DUO if s.get("treat") == "duo" else "eq=saturation=1.06:contrast=1.03"
+
+def clip_part(c, dur, outp, treat=None):
     sh = SHOTS[c["shot"]]
     lo, hi = sh.get("safe", [0, sh["end"] - sh["start"]])
     off = min(max(c.get("offset", 0), lo), max(lo, hi - 0.6))
@@ -46,7 +54,7 @@ def clip_part(c, dur, outp):
                "scale=1080:1920:flags=lanczos,unsharp=5:5:0.55:5:5:0.0")
     else:
         geo = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
-    vf = f"trim=duration={avail:.3f},setpts=PTS-STARTPTS,setpts={slow:.3f}*PTS,{geo},fps=30,tpad=stop_mode=clone:stop_duration=3,eq=saturation=1.06:contrast=1.03,setsar=1,format=yuv420p"
+    vf = f"trim=duration={avail:.3f},setpts=PTS-STARTPTS,setpts={slow:.3f}*PTS,{geo},fps=30,tpad=stop_mode=clone:stop_duration=3,{grade({'treat': treat})},setsar=1,format=yuv420p"
     run(["-ss", str(sh["start"] + c.get("offset", 0)), "-i", src, "-vf", vf, "-t", str(dur), "-an",
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", "-r", "30", outp])
 
@@ -57,16 +65,22 @@ for i, s in enumerate(plan["segments"]):
     p = os.path.join(od, f"seg_{i:02d}.mp4")
     if s.get("clips"):
         n = len(s["clips"]); parts = []
+        if all("t" in c for c in s["clips"][1:]) and n > 1:
+            # cuts on spoken words (times from build.py), snapped to whole frames
+            cuts = [s["start"]] + [c["t"] for c in s["clips"][1:]] + [s["end"]]
+            fr = [round((x - s["start"]) * FPS) for x in cuts]
+            durs = [max(1, fr[j + 1] - fr[j]) / FPS for j in range(n)]
+        else:
+            durs = [round(dur / n, 3) if j < n - 1 else round(dur - round(dur / n, 3) * (n - 1), 3) for j in range(n)]
         for j, c in enumerate(s["clips"]):
-            d = round(dur / n, 3) if j < n - 1 else round(dur - round(dur / n, 3) * (n - 1), 3)
-            pp = os.path.join(od, f"seg_{i:02d}_{j}.mp4"); clip_part(c, d, pp); parts.append(pp)
+            pp = os.path.join(od, f"seg_{i:02d}_{j}.mp4"); clip_part(c, durs[j], pp, s.get("treat")); parts.append(pp)
         pl = os.path.join(od, f"seg_{i:02d}.txt"); open(pl, "w").write("".join(f"file '{os.path.abspath(x)}'\n" for x in parts))
         run(["-f", "concat", "-safe", "0", "-i", pl, "-c", "copy", p])
     elif s.get("media") and s["media"].lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
         a, b2 = s.get("pan", [0.40, 0.60])
         frames = int(round(dur * FPS))
         vf = (f"scale=-2:2400,crop=1350:2400:x='(iw-ow)*({a}+({b2}-{a})*min(1,t/{max(dur,0.1)}))':y='(ih-oh)/2',"
-              "scale=1080:1920,eq=saturation=1.05:contrast=1.03,setsar=1,format=yuv420p")
+              f"scale=1080:1920,{grade(s)},setsar=1,format=yuv420p")
         run(["-loop", "1", "-framerate", "30", "-t", str(dur), "-i", s["media"], "-vf", vf, "-frames:v", str(frames),
              "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", "-r", "30", p])
     elif s.get("media"):
@@ -74,7 +88,7 @@ for i, s in enumerate(plan["segments"]):
         slow = min(1.45, max(1.0, dur / max(avail, 0.5)))  # stretch slightly instead of looping when possible
         vf = (f"setpts={slow:.3f}*PTS,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,"
               f"zoompan=z='min(1.0+0.0010*on,1.14)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1080x1920:fps=30,"
-              "eq=saturation=1.08:contrast=1.04,setsar=1,format=yuv420p")
+              f"{grade(s) if s.get('treat') == 'duo' else 'eq=saturation=1.08:contrast=1.04'},setsar=1,format=yuv420p")
         run(["-stream_loop", "-1", "-ss", str(s.get("media_offset", 0)), "-i", s["media"], "-t", str(dur * 1.0 + 0.2), "-vf", vf,
              "-t", str(dur), "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", "-r", "30", p])
     else:

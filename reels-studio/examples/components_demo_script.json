@@ -1,0 +1,223 @@
+{
+ "title": "Reel 1: The Wait (7 days out)",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "fps": 30,
+ "tag": "GTA 6 \u00b7 7 DAYS OUT",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "Seven days. That's all that's left now.",
+   "show": [
+    [
+     "^Seven^@0",
+     "days.@1"
+    ],
+    [
+     "That's@2",
+     "all@3",
+     "that's@4",
+     "*left.*@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "dim",
+   "icon": "hourglass",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10
+    },
+    {
+     "shot": 16,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "say": "Four thousand eight hundred and eleven days.",
+   "layout": "number",
+   "from": 0,
+   "to": 4811,
+   "count_at": 0,
+   "count_dur": 1.4,
+   "label": "days from GTA V to GTA VI",
+   "bg": "duo",
+   "show": [
+    [
+     "The@0",
+     "*wait*@1"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 41
+    }
+   ],
+   "footnote": "17 Sept 2013 to 19 Nov 2026. Our math."
+  },
+  {
+   "say": "And the clock is still running.",
+   "layout": "countdown",
+   "remaining": 561605,
+   "caption": "UNTIL MIDNIGHT, 19 NOV, NEW YORK",
+   "bg": "duo",
+   "show": [
+    [
+     "The@1",
+     "*clock*@2"
+    ],
+    [
+     "is@3",
+     "still@4",
+     "running.@5"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 22
+    }
+   ]
+  },
+  {
+   "say": "One in four of you will be waiting at midnight.",
+   "layout": "waffle",
+   "filled": 25,
+   "fill_at": 0,
+   "caption": "TEST DATA: 1 IN 4",
+   "bg": "duo",
+   "show": [
+    [
+     "*One*@0",
+     "in@1",
+     "four@2"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 15
+    }
+   ]
+  },
+  {
+   "say": "Midnight rolls west, one time zone at a time.",
+   "layout": "map",
+   "bg": "black",
+   "show": [
+    [
+     "Midnight@0",
+     "rolls@1",
+     "*west.*@2"
+    ]
+   ],
+   "sweep": {
+    "from": 180,
+    "to": -130,
+    "at": 1,
+    "dur": 2.4
+   },
+   "cities": [
+    {
+     "name": "AUCKLAND",
+     "lon": 174.76,
+     "lat": -36.85,
+     "time": "THU 00:00",
+     "at": 0,
+     "side": "l"
+    },
+    {
+     "name": "TOKYO",
+     "lon": 139.69,
+     "lat": 35.69,
+     "time": "WED 20:00",
+     "at": 2,
+     "side": "l"
+    },
+    {
+     "name": "MUMBAI",
+     "lon": 72.88,
+     "lat": 19.08,
+     "time": "WED 16:30",
+     "at": 3,
+     "side": "r",
+     "dy": 70
+    },
+    {
+     "name": "LONDON",
+     "lon": -0.13,
+     "lat": 51.51,
+     "time": "WED 11:00",
+     "at": 4,
+     "side": "r",
+     "dy": -40
+    },
+    {
+     "name": "NEW YORK",
+     "lon": -74.0,
+     "lat": 40.71,
+     "time": "WED 06:00",
+     "at": 5,
+     "side": "r",
+     "dy": 90
+    },
+    {
+     "name": "LOS ANGELES",
+     "lon": -118.24,
+     "lat": 34.05,
+     "time": "WED 03:00",
+     "at": 6,
+     "side": "r",
+     "dy": 150,
+     "dx": -30
+    }
+   ]
+  },
+  {
+   "say": "We are very sorry that this is later than you expected.",
+   "layout": "quote",
+   "bg": "duo",
+   "attrib": "ROCKSTAR GAMES, 2 MAY 2025",
+   "show": [
+    [
+     "We@0",
+     "are@1",
+     "very@2",
+     "*sorry*@3"
+    ],
+    [
+     "that@4",
+     "this@5",
+     "is@6",
+     "later@7"
+    ],
+    [
+     "than@8",
+     "you@9",
+     "expected.@10"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 4
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "hold": 2.0,
+   "brand": "GTA 6",
+   "series": "Engine test",
+   "episode": "v3 components",
+   "cta": "Follow for tomorrow"
+  }
+ ]
+}

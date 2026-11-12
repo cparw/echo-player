@@ -24,6 +24,8 @@ html, body { margin: 0; width: 1080px; height: 1920px; background: transparent; 
 </head>
 <body>
 <div id="root"></div>
+<script src="icons.js"></script>
+<script src="mapdots.js"></script>
 <script>
 let TL = null;
 const root = document.getElementById('root');
@@ -70,7 +72,10 @@ function fitScene(sc) {
 
 window.init = function (tl) {
   TL = tl;
-  for (const sc of TL.scenes) if (sc.lines && sc.lines.length) fitScene(sc);
+  for (const sc of TL.scenes) {
+    if (sc.layout === 'quote' && !sc.font) { sc.font = 'serif'; sc.size = sc.size || 120; sc.maxH = sc.maxH || 560; }
+    if (sc.lines && sc.lines.length) fitScene(sc);
+  }
   return true;
 };
 
@@ -79,7 +84,138 @@ function bgLayer(sc, t, th) {
   if (sc.bg === 'black') L.style.background = th.bg;
   else if (sc.bg === 'dim') L.style.background = 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 35%, rgba(0,0,0,0.30) 62%, rgba(0,0,0,0.78) 100%)';
   else if (sc.bg === 'grad') L.style.background = 'radial-gradient(ellipse at 50% 40%, rgba(0,0,0,0.15), rgba(0,0,0,0.75))';
+  // duotone footage (graded in compose): keep the card readable with a soft dark centre band and darker edges
+  else if (sc.bg === 'duo') L.style.background = 'linear-gradient(180deg, rgba(8,8,11,0.72) 0%, rgba(8,8,11,0.42) 24%, rgba(8,8,11,0.50) 55%, rgba(8,8,11,0.88) 100%)';
   return L;
+}
+
+const shadowed = sc => sc.bg === 'dim' || sc.bg === 'duo';
+
+// Lucide icon (ISC) that draws itself on: p = 0..1 stroke progress
+function iconEl(name, size, color, p, topPx) {
+  const inner = (window.ICONS || {})[name];
+  if (!inner) return null;
+  const d = document.createElement('div');
+  d.style.cssText = `position:absolute;left:50%;top:${topPx}px;width:${size}px;height:${size}px;margin-left:${-size / 2}px;opacity:${clamp(p * 3, 0, 1)};filter:drop-shadow(0 4px 18px rgba(0,0,0,0.6))`;
+  d.innerHTML = `<svg viewBox="0 0 24 24" width="${size}" height="${size}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="overflow:visible;stroke-dasharray:1 1;stroke-dashoffset:${(1 - p).toFixed(4)}">${inner}</svg>`;
+  return d;
+}
+
+// Live countdown clock: sc.remaining = seconds left at scene start; ticks in real time
+function countdownBlock(sc, t, th) {
+  const B = document.createElement('div'); B.className = 'block';
+  B.style.top = (sc.clockTop || 780) + 'px';
+  const rem = Math.max(0, sc.remaining - Math.max(0, t - sc.start));
+  const vals = [Math.floor(rem / 86400), Math.floor((rem % 86400) / 3600), Math.floor((rem % 3600) / 60), Math.floor(rem % 60)];
+  const labs = sc.labels || ['DAYS', 'HRS', 'MIN', 'SEC'];
+  const tick = ease.out(clamp((Math.ceil(rem) - rem) / 0.22, 0, 1));
+  const row = document.createElement('div'); row.style.cssText = 'display:flex;gap:18px;justify-content:center;';
+  vals.forEach((v, i) => {
+    const p = ease.outBack(prog(t, sc.start + 0.05 + i * 0.07, 0.32));
+    const cell = document.createElement('div');
+    cell.style.cssText = `width:${sc.cellW || 210}px;padding:28px 0 22px;border-radius:24px;background:rgba(8,8,11,0.62);` +
+      `border:2px solid ${i === 0 ? th.accent : 'rgba(245,242,234,0.24)'};opacity:${clamp(p * 1.4, 0, 1)};transform:translateY(${(1 - p) * 44}px)`;
+    const n = document.createElement('div'); n.className = 'num';
+    n.style.cssText += `font-size:${sc.numSize || 150}px;color:${i === 0 ? th.accent : th.fg};height:1.0em;line-height:1.0em;overflow:hidden;`;
+    const inner = document.createElement('div');
+    inner.textContent = String(v).padStart(2, '0');
+    if (i === 3 && rem > 0) { inner.style.transform = `translateY(${(1 - tick) * -0.55}em)`; inner.style.opacity = 0.25 + 0.75 * tick; }
+    n.appendChild(inner);
+    const l = document.createElement('div'); l.className = 'label';
+    l.style.cssText += `font-size:24px;color:${th.fg};opacity:0.78;margin-top:14px`; l.textContent = labs[i];
+    cell.appendChild(n); cell.appendChild(l); row.appendChild(cell);
+  });
+  B.appendChild(row);
+  if (sc.caption) {
+    const C = document.createElement('div'); C.className = 'label';
+    C.style.cssText += `font-size:28px;color:${th.fg};opacity:${0.8 * prog(t, sc.start + 0.4, 0.3)};margin-top:34px`;
+    C.textContent = sc.caption; B.appendChild(C);
+  }
+  return B;
+}
+
+// Waffle grid: cols x rows cells, the first sc.filled light up from sc.t0 over sc.fill_dur
+function waffleBlock(sc, t, th) {
+  const cols = sc.cols || 10, rows = sc.rows || 10, n = cols * rows;
+  const cell = sc.cell || 58, gap = sc.gap || 12, fd = sc.fill_dur || 1.2, top = sc.waffleTop || 820;
+  const W = cols * cell + (cols - 1) * gap, H = rows * cell + (rows - 1) * gap;
+  const F = document.createElement('div'); F.className = 'layer';
+  const G = document.createElement('div');
+  G.style.cssText = `position:absolute;left:${(1080 - W) / 2}px;top:${top}px;width:${W}px;display:grid;grid-template-columns:repeat(${cols},${cell}px);gap:${gap}px;`;
+  for (let i = 0; i < n; i++) {
+    const c = document.createElement('div');
+    const a = prog(t, sc.start + 0.08 + i * 0.005, 0.2);
+    const on = i < sc.filled ? prog(t, sc.t0 + (i / Math.max(1, sc.filled)) * fd, 0.2) : 0;
+    const s = on > 0 ? 0.72 + 0.28 * ease.outBack(on) : 1;
+    c.style.cssText = `width:${cell}px;height:${cell}px;border-radius:${Math.round(cell * 0.22)}px;opacity:${a};` +
+      `background:${on > 0 ? th.accent : 'rgba(245,242,234,0.17)'};transform:scale(${s})`;
+    G.appendChild(c);
+  }
+  F.appendChild(G);
+  if (sc.caption) {
+    const C = document.createElement('div'); C.className = 'label';
+    C.style.cssText += `position:absolute;left:80px;right:80px;text-align:center;top:${top + H + 40}px;font-size:30px;color:${th.fg};opacity:${prog(t, sc.t0 + fd, 0.3)}`;
+    C.textContent = sc.caption; F.appendChild(C);
+  }
+  return F;
+}
+
+// Dot matrix world map (Natural Earth land, equirectangular) with city pins and an optional westward midnight sweep
+function mapBlock(sc, t, th) {
+  const M = window.MAPDOTS;
+  const lonMin = sc.lonMin != null ? sc.lonMin : -130, lonMax = sc.lonMax != null ? sc.lonMax : 180;
+  const c0 = Math.max(0, Math.floor((lonMin - M.lon0) / M.step)), c1 = Math.min(M.cols, Math.ceil((lonMax - M.lon0) / M.step));
+  const W = sc.mapW || 1040, cell = W / (c1 - c0), H = cell * M.rows;
+  const left = (1080 - W) / 2, top = sc.mapTop || 900;
+  const lonL = M.lon0 + c0 * M.step;
+  const xOf = lon => left + ((lon - lonL) / M.step) * cell, yOf = lat => top + ((M.lat0 - lat) / M.step) * cell;
+  const F = document.createElement('div'); F.className = 'layer';
+  const cv = document.createElement('canvas'); cv.width = Math.ceil(W); cv.height = Math.ceil(H);
+  cv.style.cssText = `position:absolute;left:${left}px;top:${top}px;`;
+  const g = cv.getContext('2d');
+  const appear = prog(t, sc.start, 0.6);
+  const band = sc.sweep ? sc.sweep.from + (sc.sweep.to - sc.sweep.from) * ease.inOut(prog(t, sc.sweep.t, sc.sweep.dur || 2.0)) : null;
+  for (const [c, r] of M.dots) {
+    if (c < c0 || c >= c1) continue;
+    const x = (c - c0 + 0.5) * cell, y = (r + 0.5) * cell;
+    const rv = clamp(appear * 1.6 - (x / W) * 0.6, 0, 1);
+    if (rv <= 0) continue;
+    const lit = band != null && M.lon0 + (c + 0.5) * M.step >= band;
+    g.globalAlpha = (lit ? 0.92 : 0.30) * rv;
+    g.fillStyle = lit ? th.accent : th.fg;
+    g.beginPath(); g.arc(x, y, cell * 0.31, 0, Math.PI * 2); g.fill();
+  }
+  F.appendChild(cv);
+  if (band != null && band > lonMin && band < lonMax && t >= sc.sweep.t) {
+    const bx = xOf(band);
+    const L = document.createElement('div');
+    L.style.cssText = `position:absolute;left:${bx - 1.5}px;top:${top - 30}px;width:3px;height:${H + 60}px;background:${th.accent};box-shadow:0 0 24px ${th.accent}`;
+    F.appendChild(L);
+    const T = document.createElement('div'); T.className = 'label';
+    T.style.cssText += `position:absolute;left:${bx - 150}px;width:300px;text-align:center;top:${top - 76}px;font-size:24px;color:${th.accent}`;
+    T.textContent = sc.sweep.label || 'MIDNIGHT';
+    F.appendChild(T);
+  }
+  for (const cy of sc.cities || []) {
+    const p = prog(t, cy.t, 0.35);
+    if (p <= 0) continue;
+    const x = xOf(cy.lon), y = yOf(cy.lat), col = cy.accent === false ? th.fg : th.accent;
+    const pr = ((t - cy.t) % 1.6) / 1.6;
+    const ring = document.createElement('div');
+    ring.style.cssText = `position:absolute;left:${x - 34}px;top:${y - 34}px;width:68px;height:68px;border-radius:50%;border:3px solid ${col};opacity:${(1 - pr) * 0.85};transform:scale(${0.25 + pr})`;
+    const dot = document.createElement('div');
+    const e = ease.outBack(p);
+    dot.style.cssText = `position:absolute;left:${x - 10}px;top:${y - 10}px;width:20px;height:20px;border-radius:50%;background:${col};border:3px solid ${th.fg};transform:scale(${e})`;
+    F.appendChild(ring); F.appendChild(dot);
+    const lab = document.createElement('div');
+    const side = cy.side || 'r', dx = cy.dx || 0, dy = cy.dy || 0;
+    lab.style.cssText = `position:absolute;top:${y - 58 + dy}px;${side === 'r' ? `left:${x + 26 + dx}px` : `right:${1080 - x + 26 - dx}px`};` +
+      `text-align:${side === 'r' ? 'left' : 'right'};opacity:${clamp(p * 1.5, 0, 1)};transform:translateY(${(1 - e) * 16}px);text-shadow:0 3px 14px rgba(0,0,0,0.85);white-space:nowrap`;
+    lab.innerHTML = `<div class="label" style="font-size:24px;color:${th.fg}">${cy.name}</div>` +
+      (cy.time ? `<div class="num" style="font-size:52px;color:${col};margin-top:4px">${cy.time}</div>` : '');
+    F.appendChild(lab);
+  }
+  return F;
 }
 
 function wordsBlock(sc, t, th, topPx) {
@@ -88,7 +224,7 @@ function wordsBlock(sc, t, th, topPx) {
   B.style.top = topPx + 'px';
   B.style.fontFamily = f.family; B.style.fontWeight = f.weight; B.style.fontStyle = f.style || 'normal';
   B.style.fontSize = size + 'px'; B.style.lineHeight = f.lh; B.style.color = th.fg;
-  if (sc.bg === 'dim') B.style.textShadow = '0 4px 22px rgba(0,0,0,0.75), 0 1px 3px rgba(0,0,0,0.6)';
+  if (shadowed(sc)) B.style.textShadow = '0 4px 22px rgba(0,0,0,0.75), 0 1px 3px rgba(0,0,0,0.6)';
   for (const ln of sc.lines) {
     const L = document.createElement('div'); L.className = 'line';
     ln.forEach((x, i) => {
@@ -229,10 +365,38 @@ window.renderAt = function (t) {
   } else if (sc.layout === 'bars') {
     if (sc.lines && sc.lines.length) root.appendChild(wordsBlock(sc, t, th, sc.wordsTop || 560));
     root.appendChild(barsBlock(sc, t, th));
+  } else if (sc.layout === 'countdown') {
+    if (sc.lines && sc.lines.length) root.appendChild(wordsBlock(sc, t, th, sc.wordsTop || 500));
+    root.appendChild(countdownBlock(sc, t, th));
+  } else if (sc.layout === 'waffle') {
+    if (sc.lines && sc.lines.length) root.appendChild(wordsBlock(sc, t, th, sc.wordsTop || 470));
+    root.appendChild(waffleBlock(sc, t, th));
+  } else if (sc.layout === 'map') {
+    if (sc.lines && sc.lines.length) root.appendChild(wordsBlock(sc, t, th, sc.wordsTop || 470));
+    root.appendChild(mapBlock(sc, t, th));
   } else if (sc.lines && sc.lines.length) {
     const h = sc.lines.length * sc._size * sc._font.lh;
     const center = sc.centerY || 820;
-    root.appendChild(wordsBlock(sc, t, th, Math.round(center - h / 2)));
+    const top = Math.round(center - h / 2);
+    if (sc.layout === 'quote') {
+      const Q = document.createElement('div');
+      Q.style.cssText = `position:absolute;left:0;right:0;text-align:center;top:${top - 250}px;font-family:'Instrument Serif';font-style:italic;font-size:300px;line-height:1;color:${th.accent};opacity:${0.9 * prog(t, sc.start, 0.3)};transform:translateY(${(1 - ease.out(prog(t, sc.start, 0.4))) * 30}px)`;
+      Q.textContent = '“';
+      root.appendChild(Q);
+    } else if (sc.icon) {
+      const size = sc.iconSize || 132;
+      const I = iconEl(sc.icon, size, sc.iconColor === 'fg' ? th.fg : th.accent, ease.out(prog(t, sc.start + 0.02, 0.6)), top - size - 44);
+      if (I) root.appendChild(I);
+    }
+    root.appendChild(wordsBlock(sc, t, th, top));
+    if (sc.attrib) {
+      const A = document.createElement('div'); A.className = 'label';
+      const last = sc.lines[sc.lines.length - 1];
+      const ta = last.length ? last[last.length - 1].t + 0.25 : sc.start + 0.6;
+      A.style.cssText += `position:absolute;left:80px;right:80px;text-align:center;top:${top + h + 50}px;font-size:28px;color:${th.fg};opacity:${0.85 * prog(t, ta, 0.35)};text-shadow:0 3px 14px rgba(0,0,0,0.8)`;
+      A.textContent = sc.attrib;
+      root.appendChild(A);
+    }
   }
   if (sc.footnote) {
     const F = document.createElement('div'); F.className = 'foot';

@@ -1,25 +1,25 @@
 #!/usr/bin/env bash
-# One command reel build: voice (ElevenLabs with timestamps) -> pace fix -> timeline -> graphics -> mix.
-# Usage: bash make_reel.sh <reel_dir> <voice_id> <out_name> [music.mp3] [target_wpm]
+# One command reel build in the owner's voice:
+# validate -> guide performance (licensed ElevenLabs voice, word timestamps) -> Speech to Speech into the owner's clone
+# -> pace fix toward the target wpm -> timeline -> graphics (headless Chromium) -> footage, music, mix, loudness.
+# Usage: bash make_reel.sh <reel_dir> <out_name> [music.mp3] [target_wpm]
+# script.json must carry voice_id (the owner's clone) and the guide_* settings (see STUDIO.md, "Voice").
 set -euo pipefail
-REEL="$1"; VOICE="$2"; NAME="$3"; MUSIC="${4:-}"; TARGET="${5:-178}"
+REEL="$1"; NAME="$2"; MUSIC="${3:-}"; TARGET="${4:-184}"
 ENGINE="$(cd "$(dirname "$0")" && pwd)"
 OUT="$REEL/$NAME"
 mkdir -p "$OUT"
-python3 - "$REEL/script.json" "$OUT/script.json" "$VOICE" <<'EOF'
-import json, sys
-s = json.load(open(sys.argv[1])); s["voice_id"] = sys.argv[3]
-json.dump(s, open(sys.argv[2], "w"), indent=1)
-EOF
-python3 "$ENGINE/tts.py" "$OUT/script.json" "$OUT"
-# pace: speed up (never slow down) toward TARGET wpm, capped at 1.10 to keep the voice natural
-F=$(python3 - "$OUT/words.json" "$TARGET" <<'EOF'
+cp "$REEL/script.json" "$OUT/script.json"
+python3 "$ENGINE/validate.py" "$OUT/script.json" "$REEL/caption.txt"
+python3 "$ENGINE/tts_sts.py" "$OUT/script.json" "$OUT"
+F=$(python3 - "$OUT/words.json" "$TARGET" <<'PY'
 import json, sys
 w = json.load(open(sys.argv[1])); wpm = len(w) / w[-1]["end"] * 60
-print(f"{min(1.10, max(1.0, float(sys.argv[2]) / wpm)):.3f}")
-EOF
+f = min(1.10, max(0.92, float(sys.argv[2]) / wpm))
+print(f"{f:.3f}" if abs(f - 1) > 0.03 else "1.000")
+PY
 )
-echo "tempo factor $F"
+echo "pace factor $F"
 if [ "$F" != "1.000" ]; then python3 "$ENGINE/tempo.py" "$OUT" "$F"; fi
 python3 "$ENGINE/build.py" "$OUT/script.json" "$OUT/words.json" "$OUT"
 node "$ENGINE/render.js" "$OUT/timeline.json" "$OUT/graphics.mov"

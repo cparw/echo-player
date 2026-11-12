@@ -8,10 +8,12 @@ errs, warns = [], []
 p = sys.argv[1]
 s = json.load(open(p))
 cap = open(sys.argv[2]).read() if len(sys.argv) > 2 and os.path.exists(sys.argv[2]) else ""
-LAYOUTS = {"words", "number", "bars", "list", "endcard"}
+LAYOUTS = {"words", "number", "bars", "list", "endcard", "countdown", "waffle", "map", "quote"}
 BANNED = ["part you never see", "part of gta 6 you never see", "thank you for guarding", "this is unseen", "unseen",
           "countdown to vice city", "guard it", "our arithmetic", "on the record", "denmark"]
 DASHES = ["—", "–", "‒", "−"]
+_ij = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.js")
+ICONS = set(re.findall(r'"([a-z0-9-]+)": "', open(_ij).read())) if os.path.exists(_ij) else set()
 
 for k in ["voice_id", "model_id", "tag", "theme", "beats"]:
     if k not in s: errs.append(f"missing top level key: {k}")
@@ -50,8 +52,22 @@ for i, b in enumerate(beats):
         for it in b.get("items", []):
             for key in ("at", "strike_at"):
                 if key in it and it[key] >= n: errs.append(f"beat {i}: list {key} out of range")
-    if b.get("bg") == "dim" and not b.get("media") and not b.get("media_request") and not b.get("clips"):
-        errs.append(f"beat {i}: bg dim needs clips, media or media_request")
+    if b.get("bg") in ("dim", "duo") and not b.get("media") and not b.get("media_request") and not b.get("clips"):
+        errs.append(f"beat {i}: bg {b.get('bg')} needs clips, media or media_request")
+    if lay == "countdown" and not isinstance(b.get("remaining"), (int, float)):
+        errs.append(f"beat {i}: countdown needs 'remaining' (seconds left at the start of the beat)")
+    if lay == "waffle":
+        if "filled" not in b: errs.append(f"beat {i}: waffle needs 'filled'")
+        if b.get("fill_at", 0) >= n: errs.append(f"beat {i}: fill_at out of range")
+    if lay == "map":
+        for cy in b.get("cities", []):
+            for k in ("name", "lon", "lat"):
+                if k not in cy: errs.append(f"beat {i}: map city missing {k}")
+            if cy.get("at", 0) >= n: errs.append(f"beat {i}: city anchor out of range")
+        if b.get("sweep", {}).get("at", 0) >= n: errs.append(f"beat {i}: sweep anchor out of range")
+    if b.get("icon") and b["icon"] not in ICONS: warns.append(f"beat {i}: unknown icon {b['icon']} (have: {', '.join(sorted(ICONS))})")
+    for c in b.get("clips", []) or []:
+        if isinstance(c, dict) and c.get("at", 0) >= n: errs.append(f"beat {i}: clip anchor at={c['at']} out of range")
     for c in b.get("clips", []) or []:
         if not isinstance(c, dict) or "shot" not in c:
             errs.append(f"beat {i}: each clip needs a 'shot' number")

@@ -71,8 +71,24 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
             item["t"] = round(sw[min(item.get("at", 0), M - 1)]["start"], 3)
             if "strike_at" in item:
                 item["ts"] = round(sw[min(item["strike_at"], M - 1)]["start"], 3)
+    wt = lambda a: round(sw[min(a, M - 1)]["start"], 3) if M else sc["start"]
+    if b.get("layout") == "waffle":
+        sc["t0"] = wt(b.get("fill_at", 0))
+    if b.get("layout") == "map":
+        for cy in sc.get("cities", []):
+            cy["t"] = wt(cy.get("at", 0))
+        if sc.get("sweep"):
+            sc["sweep"]["t"] = wt(sc["sweep"].get("at", 0))
+    clips = None
+    if b.get("clips"):
+        # cut on the spoken word: a clip with "at" starts LEAD before that word; the first clip starts with the scene
+        clips = [dict(c) for c in b["clips"]]
+        for q, c in enumerate(clips):
+            if q == 0: c["t"] = sc["start"]
+            elif "at" in c: c["t"] = round(max(sc["start"], wt(c["at"]) - LEAD), 3)
     scenes.append(sc)
-    bg.append({"start": sc["start"], "media": b.get("media"), "media_offset": b.get("media_offset", 0), "pan": b.get("pan", [0.40, 0.60]), "clips": b.get("clips")})
+    bg.append({"start": sc["start"], "media": b.get("media"), "media_offset": b.get("media_offset", 0), "pan": b.get("pan", [0.40, 0.60]),
+               "clips": clips, "treat": "duo" if b.get("bg") == "duo" else b.get("treat")})
 
 for k in range(len(scenes)):
     scenes[k]["end"] = scenes[k + 1]["start"] if k + 1 < len(scenes) else round(voice_end + 0.35, 3)
