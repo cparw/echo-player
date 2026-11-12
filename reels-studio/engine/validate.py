@@ -18,6 +18,7 @@ ICONS = set(re.findall(r'"([a-z0-9-]+)": "', open(_ij).read())) if os.path.exist
 for k in ["voice_id", "model_id", "tag", "theme", "beats"]:
     if k not in s: errs.append(f"missing top level key: {k}")
 beats = s.get("beats", [])
+SHOTS = json.load(open(s["shots_json"])) if s.get("shots_json") and os.path.exists(s["shots_json"]) else []
 if not beats or beats[-1].get("layout") != "endcard":
     errs.append("last beat must be the endcard")
 total = 0
@@ -71,6 +72,17 @@ for i, b in enumerate(beats):
     for c in b.get("clips", []) or []:
         if not isinstance(c, dict) or "shot" not in c:
             errs.append(f"beat {i}: each clip needs a 'shot' number")
+        elif SHOTS and c["shot"] < len(SHOTS) and SHOTS[c["shot"]].get("clean") is not None:
+            sh, off = SHOTS[c["shot"]], c.get("offset", 0)
+            if c.get("card") and c["shot"] == 72:
+                pass  # Rockstar's official date and rating card, used on purpose
+            elif not sh["clean"]:
+                errs.append(f"beat {i}: shot {c['shot']} has no clean window (audit flagged it)")
+            elif not any(w[0] - 0.05 <= off <= w[1] for w in sh["clean"]):
+                errs.append(f"beat {i}: shot {c['shot']} offset {off} is outside its clean windows {sh['clean']}")
+            else:
+                w = next(w for w in sh["clean"] if w[0] - 0.05 <= off <= w[1])
+                if w[1] - off < 1.0: warns.append(f"beat {i}: shot {c['shot']} offset {off} leaves only {w[1]-off:.1f} s of clean footage (it will slow down or hold)")
         elif c["shot"] in (0, 7, 19, 23, 25, 26, 53, 61, 63, 66, 67, 70, 73, 75) and not (c["shot"] == 26 and 7.2 <= c.get("offset", 0) <= 7.6):
             errs.append(f"beat {i}: shot {c['shot']} is on the banned list (logo, title card or violence)")
     if b.get("media") and not os.path.exists(b["media"]) and not b.get("media_request"):

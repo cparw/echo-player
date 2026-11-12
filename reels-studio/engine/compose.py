@@ -37,9 +37,20 @@ DUO = ("hue=s=0,eq=contrast=1.12,gblur=sigma=1.4,"
 def grade(s):
     return DUO if s.get("treat") == "duo" else "eq=saturation=1.06:contrast=1.03"
 
+def clean_window(sh, offset):
+    """The audited clean window that contains offset (else the nearest one); falls back to the old safe window."""
+    wins = sh.get("clean")
+    if wins is None:
+        return sh.get("safe", [0, sh["end"] - sh["start"]])
+    if not wins:
+        sys.exit(f"shot is banned (no clean window): {sh['src']} {sh['start']}")
+    for w in wins:
+        if w[0] - 0.05 <= offset <= w[1]: return w
+    return min(wins, key=lambda w: min(abs(offset - w[0]), abs(offset - w[1])))
+
 def clip_part(c, dur, outp, treat=None):
     sh = SHOTS[c["shot"]]
-    lo, hi = sh.get("safe", [0, sh["end"] - sh["start"]])
+    lo, hi = clean_window(sh, c.get("offset", 0))
     off = min(max(c.get("offset", 0), lo), max(lo, hi - 0.6))
     c = dict(c, offset=off)
     src = sh["src"]; avail = max(0.3, hi - off)

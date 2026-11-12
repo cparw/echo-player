@@ -22,7 +22,8 @@ for t in times:
         cl = seg["clips"]; c = cl[0]
         for x in cl[1:]:
             if "t" in x and x["t"] <= t: c = x
-        sh = SHOTS[c["shot"]]; lo, hi = sh.get("safe", [0, sh["end"] - sh["start"]])
+        sh = SHOTS[c["shot"]]; wins = sh.get("clean") or [sh.get("safe", [0, sh["end"] - sh["start"]])]
+        o0 = c.get("offset", 0); lo, hi = next((w for w in wins if w[0] - 0.05 <= o0 <= w[1]), min(wins, key=lambda w: min(abs(o0 - w[0]), abs(o0 - w[1]))))
         off = min(max(c.get("offset", 0), lo), max(lo, hi - 0.6)); src = sh["src"]
         start = c.get("t", seg["start"]); ss = sh["start"] + off + min(max(0, t - start), max(0, hi - off - 0.05))
         if any(r in src for r in ROTATED) if c.get("rot") is None else c["rot"]:
