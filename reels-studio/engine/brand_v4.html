@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Unbounded'; font-weight: 800; src: url('node_modules/@fontsource/unbounded/files/unbounded-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Unbounded'; font-weight: 600; src: url('node_modules/@fontsource/unbounded/files/unbounded-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 600; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 800; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2') format('woff2'); }
+html, body { margin: 0; background: #07070A; color: #F5F2EA; font-family: 'Inter Tight'; }
+.mock { width: 1080px; height: 760px; background: #000; position: relative; }
+.mock .pfp { position: absolute; left: 60px; top: 70px; width: 250px; height: 250px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 3px #222; }
+.mock .stats { position: absolute; left: 360px; top: 120px; display: flex; gap: 70px; font-weight: 800; font-size: 44px; text-align: center; }
+.mock .stats span { display: block; font-weight: 600; font-size: 28px; color: #bbb; margin-top: 6px; }
+.mock .name { position: absolute; left: 60px; top: 350px; font-weight: 800; font-size: 40px; }
+.mock .bio { position: absolute; left: 60px; top: 408px; font-weight: 600; font-size: 31px; line-height: 1.38; color: #e8e8e8; }
+.mock .btn { position: absolute; left: 60px; right: 60px; top: 590px; height: 84px; border-radius: 18px; background: #0095F6; color: #fff; font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; }
+.mock .small { position: absolute; right: 70px; top: 330px; width: 110px; height: 110px; border-radius: 50%; overflow: hidden; }
+.mock .tiny { position: absolute; right: 214px; top: 352px; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; }
+.word { font-family: 'Unbounded'; font-weight: 800; letter-spacing: -0.02em; }
+.word i { font-style: normal; background: linear-gradient(135deg, #FFC24B, #FF7A1A 50%, #FF2E7E); -webkit-background-clip: text; background-clip: text; color: transparent; }
+</style>
+</head>
+<body>
+<div id="page"></div>
+<script src="brand_board_data.js"></script>
+<script>
+let U = 0;
+function defs(u) {
+  return `<radialGradient id="${u}bg" cx="0.5" cy="0.46" r="0.66"><stop offset="0" stop-color="#21122a"/><stop offset="0.55" stop-color="#0c0812"/><stop offset="1" stop-color="#050507"/></radialGradient>
+  <linearGradient id="${u}g" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="0.5" stop-color="#FF7A1A"/><stop offset="1" stop-color="#FF2E7E"/></linearGradient>
+  <linearGradient id="${u}gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC24B"/><stop offset="0.5" stop-color="#FF7A1A"/><stop offset="1" stop-color="#FF2E7E"/></linearGradient>
+  <linearGradient id="${u}ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF7A1A" stop-opacity="0"/><stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.55"/><stop offset="1" stop-color="#FF2E7E" stop-opacity="0"/></linearGradient>
+  <linearGradient id="${u}sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.30"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="${u}glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="34"/></filter>
+  <filter id="${u}soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter>`;
+}
+const MARKS = {
+  // the round corner map from every open world game: gradient ring, GPS route, waypoint, you are the arrow
+  minimap: (u) => `
+    <clipPath id="${u}map"><circle cx="540" cy="540" r="398"/></clipPath>
+    <g clip-path="url(#${u}map)">
+      <rect width="1080" height="1080" fill="#120c1a"/>
+      <path d="M 100 742 C 270 690, 400 800, 580 752 S 880 640, 1000 700 L 1000 1000 L 100 1000 Z" fill="#0c2030"/>
+      <g stroke="#fff" stroke-opacity="0.10" stroke-width="18" fill="none" stroke-linecap="round">
+        <path d="M 540 130 L 540 950"/><path d="M 130 408 L 950 392"/><path d="M 752 130 L 752 690"/>
+        <path d="M 300 160 C 330 300, 320 520, 360 700"/><path d="M 130 588 C 330 560, 420 600, 540 590"/>
+      </g>
+      <path d="M 540 470 L 540 401 L 752 397 L 752 318" fill="none" stroke="url(#${u}g)" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="752" cy="300" r="40" fill="#FF2E7E" opacity="0.6" filter="url(#${u}soft)"/>
+      <circle cx="752" cy="300" r="38" fill="url(#${u}g)"/><circle cx="752" cy="300" r="14" fill="#fff"/>
+    </g>
+    <circle cx="540" cy="540" r="414" fill="none" stroke="url(#${u}g)" stroke-width="32"/>
+    <polygon points="540,440 628,664 540,616 452,664" fill="#fff" opacity="0.45" filter="url(#${u}glow)"/>
+    <polygon points="540,440 628,664 540,616 452,664" fill="#fff" stroke="#fff" stroke-width="10" stroke-linejoin="round"/>`,
+  // the floating "!" over a quest giver
+  sidequest: (u) => `
+    <circle cx="540" cy="540" r="452" fill="none" stroke="url(#${u}ring)" stroke-width="5"/>
+    <ellipse cx="540" cy="884" rx="140" ry="22" fill="#FF7A1A" opacity="0.45" filter="url(#${u}soft)"/>
+    <g opacity="0.6" filter="url(#${u}glow)"><path d="M 478 262 Q 478 200 540 200 Q 602 200 602 262 L 578 610 Q 575 646 540 646 Q 505 646 502 610 Z" fill="url(#${u}gv)"/><circle cx="540" cy="752" r="60" fill="url(#${u}gv)"/></g>
+    <path d="M 478 262 Q 478 200 540 200 Q 602 200 602 262 L 578 610 Q 575 646 540 646 Q 505 646 502 610 Z" fill="url(#${u}gv)"/>
+    <circle cx="540" cy="752" r="60" fill="url(#${u}gv)"/>
+    <path d="M 478 262 Q 478 200 540 200 Q 602 200 602 262 L 590 430 L 490 430 Z" fill="url(#${u}sheen)"/>`,
+  // a sunset cut into a scene: letterbox cuts through the sun
+  cutscene: (u) => `
+    <mask id="${u}cut"><rect width="1080" height="1080" fill="#fff"/>
+      <rect x="0" y="574" width="1080" height="16" fill="#000"/><rect x="0" y="634" width="1080" height="22" fill="#000"/>
+      <rect x="0" y="700" width="1080" height="30" fill="#000"/><rect x="0" y="774" width="1080" height="40" fill="#000"/></mask>
+    <circle cx="540" cy="540" r="452" fill="none" stroke="url(#${u}ring)" stroke-width="5"/>
+    <g mask="url(#${u}cut)"><circle cx="540" cy="540" r="320" fill="url(#${u}gv)" opacity="0.55" filter="url(#${u}glow)"/>
+      <circle cx="540" cy="540" r="320" fill="url(#${u}gv)"/><circle cx="540" cy="540" r="320" fill="url(#${u}sheen)"/></g>`,
+  // fr. : free roam, and Gen Z "for real"
+  freeroam: (u) => `
+    <circle cx="540" cy="540" r="452" fill="none" stroke="url(#${u}ring)" stroke-width="5"/>
+    <text x="540" y="700" text-anchor="middle" font-family="Unbounded" font-weight="800" font-size="420" letter-spacing="-18" fill="#F5F2EA">fr<tspan fill="url(#${u}g)">.</tspan></text>`,
+  // the little info box that pops up over anything: a rounded bubble with an "i" cut out
+  tooltip: (u) => `
+    <mask id="${u}tip"><rect width="1080" height="1080" fill="#fff"/>
+      <circle cx="540" cy="372" r="44" fill="#000"/><rect x="502" y="448" width="76" height="186" rx="38" fill="#000"/></mask>
+    <circle cx="540" cy="540" r="452" fill="none" stroke="url(#${u}ring)" stroke-width="5"/>
+    <g mask="url(#${u}tip)">
+      <path d="M 350 262 H 730 Q 810 262 810 342 V 610 Q 810 690 730 690 H 608 L 540 790 L 472 690 H 350 Q 270 690 270 610 V 342 Q 270 262 350 262 Z" fill="url(#${u}g)" opacity="0.55" filter="url(#${u}glow)"/>
+      <path d="M 350 262 H 730 Q 810 262 810 342 V 610 Q 810 690 730 690 H 608 L 540 790 L 472 690 H 350 Q 270 690 270 610 V 342 Q 270 262 350 262 Z" fill="url(#${u}g)" stroke="url(#${u}g)" stroke-width="16" stroke-linejoin="round"/>
+      <path d="M 350 262 H 730 Q 810 262 810 342 V 470 H 270 V 342 Q 270 262 350 262 Z" fill="url(#${u}sheen)"/>
+    </g>`,
+  // a keyframe diamond with a motion trail
+  keyframe: (u) => `
+    <circle cx="540" cy="540" r="452" fill="none" stroke="url(#${u}ring)" stroke-width="5"/>
+    <polygon points="430,540 610,360 790,540 610,720" fill="none" stroke="url(#${u}g)" stroke-opacity="0.35" stroke-width="22" stroke-linejoin="round" transform="translate(-170 0)"/>
+    <polygon points="540,300 780,540 540,780 300,540" fill="url(#${u}g)" opacity="0.5" filter="url(#${u}glow)"/>
+    <polygon points="540,300 780,540 540,780 300,540" fill="url(#${u}g)" stroke="url(#${u}g)" stroke-width="40" stroke-linejoin="round"/>
+    <polygon points="540,300 780,540 540,780 300,540" fill="url(#${u}sheen)"/>`,
+  // a radar blip
+  blip: (u) => `
+    <g fill="none" stroke="#fff" stroke-opacity="0.10" stroke-width="8"><circle cx="540" cy="540" r="150"/><circle cx="540" cy="540" r="275"/><circle cx="540" cy="540" r="400"/></g>
+    <circle cx="540" cy="540" r="16" fill="#fff" opacity="0.7"/>
+    <circle cx="690" cy="372" r="70" fill="#FF2E7E" opacity="0.7" filter="url(#${u}glow)"/>
+    <circle cx="690" cy="372" r="56" fill="url(#${u}g)"/><circle cx="690" cy="372" r="56" fill="url(#${u}sheen)"/>`,
+};
+function logo(mark) {
+  const u = 'u' + (U++);
+  return `<svg viewBox="0 0 1080 1080" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs>${defs(u)}</defs>
+    <rect width="1080" height="1080" fill="url(#${u}bg)"/>${MARKS[mark](u)}</svg>`;
+}
+const q = new URLSearchParams(location.search);
+const mode = q.get('mode') || 'pfp', mark = q.get('mark') || 'minimap';
+const page = document.getElementById('page');
+if (mode === 'pfp') page.innerHTML = `<div style="width:1080px;height:1080px">${logo(mark)}</div>`;
+else if (mode === 'mock') {
+  const name = q.get('name') || mark, img = q.get('img');
+  const L = () => img ? `<img src="${img}" style="width:100%;height:100%;display:block">` : logo(mark);
+  page.innerHTML = `<div class="mock"><div class="pfp">${L()}</div>
+  <div class="stats"><div>24<span>posts</span></div><div>12.4K<span>followers</span></div><div>3<span>following</span></div></div>
+  <div class="name">${name}. | GTA 6</div>
+  <div class="bio">GTA 6 first, every big game next. Facts you missed.<br>Not affiliated with Rockstar Games.</div>
+  <div class="small">${L()}</div><div class="tiny">${L()}</div>
+  <div class="btn">Follow</div></div>`;
+} else if (mode === 'test') {
+  const list = (q.get('marks') || Object.keys(MARKS).join(',')).split(',');
+  page.innerHTML = `<div style="display:grid;grid-template-columns:repeat(3,360px);gap:0;width:1080px">` + list.map(m =>
+    `<div style="width:360px;height:470px;position:relative">
+      <div style="position:absolute;left:30px;top:20px;width:300px;height:300px;border-radius:50%;overflow:hidden">${logo(m)}</div>
+      <div style="position:absolute;left:30px;top:340px;width:110px;height:110px;border-radius:50%;overflow:hidden">${logo(m)}</div>
+      <div style="position:absolute;left:160px;top:372px;width:48px;height:48px;border-radius:50%;overflow:hidden">${logo(m)}</div>
+      <div class="word" style="position:absolute;left:226px;top:380px;font-size:26px">${m}<i>.</i></div></div>`).join('') + `</div>`;
+}
+else if (mode === 'lockup') {
+  const name = q.get('name') || mark;
+  page.innerHTML = `<div style="width:1600px;height:500px;display:flex;align-items:center;gap:56px;padding-left:110px;background:#07070A">
+    <div style="width:300px;height:300px;border-radius:50%;overflow:hidden;flex:none">${logo(mark)}</div>
+    <div class="word" style="font-size:170px">${name}<i>.</i></div></div>`;
+}
+else if (mode === 'board') {
+  const B = window.BOARD;
+  const pick = B.pick, img = q.get('img');
+  const big = img ? `<img src="${img}" style="width:100%;height:100%;display:block">` : logo(pick.mark);
+  page.innerHTML = `<div style="width:1080px;height:1920px;position:relative;background:radial-gradient(120% 70% at 50% 18%, #1a0f22 0%, #08070b 60%, #050507 100%);overflow:hidden">
+    <div style="position:absolute;top:84px;width:100%;text-align:center;font-weight:800;font-size:30px;letter-spacing:0.24em;color:#FF9A4A">OUR PICK</div>
+    <div style="position:absolute;left:250px;top:150px;width:580px;height:580px;border-radius:50%;overflow:hidden;box-shadow:0 30px 120px rgba(255,90,60,0.25)">${big}</div>
+    <div class="word" style="position:absolute;top:772px;width:100%;text-align:center;font-size:136px">${pick.name}<i>.</i></div>
+    <div style="position:absolute;top:958px;width:100%;text-align:center;font-weight:600;font-size:42px;color:#e6e0ec">${pick.tagline}</div>
+    <div style="position:absolute;left:110px;right:90px;top:1050px;font-weight:600;font-size:33px;line-height:1.36;color:#cfc8d8">${pick.why.map(w => `<div style="display:flex;gap:22px;margin-bottom:16px"><span style="flex:none;width:14px;height:14px;margin-top:15px;border-radius:50%;background:linear-gradient(135deg,#FFC24B,#FF2E7E)"></span><span>${w}</span></div>`).join('')}</div>
+    <div style="position:absolute;top:1452px;width:100%;text-align:center;font-weight:800;font-size:26px;letter-spacing:0.24em;color:#8d8598">ALSO STRONG</div>
+    <div style="position:absolute;top:1508px;left:60px;right:60px;display:flex;justify-content:center;gap:110px">${B.alts.map(a => `
+      <div style="width:300px;text-align:center"><div style="width:220px;height:220px;margin:0 auto;border-radius:50%;overflow:hidden">${logo(a.mark)}</div>
+      <div class="word" style="margin-top:20px;font-size:44px">${a.name}<i>.</i></div>
+      <div style="margin-top:8px;font-weight:600;font-size:25px;line-height:1.3;color:#a9a1b4">${a.line}</div></div>`).join('')}</div>
+  </div>`;
+}
+window.READY = true;
+</script>
+</body>
+</html>
