@@ -71,8 +71,9 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 
 ## 5. Brand (open decision)
 
-* The account covers everything GTA 6, not only numbers (owner rejected "HARD NUMBERS").
-* Wanted: modern, Gen Z, global, unique, minimal like "Unseen.", with a logo. Rejected by the owner: HARD NUMBERS, SUBTEXT, FOOTNOTE, PARALLAX, VANTAGE, paused., loredrop., afterglow., palm reader., redacted., deep cut., humid., sixsense. Third set sent 12 Nov (GTA feel words): six star. (recommended), hotwire., heat., getaway., riptide., off map., untold., mission passed. **Not picked yet.** Until then the end card says "GTA 6".
+* The account is mostly GTA 6 now, but the NAME must stay open for other games and topics later (owner, 12 Nov). No GTA only words in the name. GTA 6 goes in the display Name field and bio for search, not in the brand.
+* Wanted: modern, Gen Z, global, unique, minimal like "Unseen.", professional, futuristic, with ONE logo that reads as a tiny circle (no long text). Back names with real research (conflicts, handles, domains, platform rules).
+* Rejected by the owner, never resend: HARD NUMBERS, SUBTEXT, FOOTNOTE, PARALLAX, VANTAGE, paused., loredrop., afterglow., palm reader., redacted., deep cut., humid., sixsense., and the GTA only set six star., hotwire., heat., getaway., riptide., off map., untold., mission passed. **Not picked yet.** Until then the end card says "GTA 6".
 * The handle must not contain GTA, Rockstar, VI or Vice City. Bio and captions say "Not affiliated with Rockstar Games or Take Two".
 
 ## 6. Captions and posting
@@ -103,6 +104,7 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 
 ## 9. Feedback log (newest first)
 
+* 12 Nov: "It doesn't need to only be related to GTA 6 ... we want to keep it open for multiple things ... but mostly we'll have GTA 6. Suggest the name and the best logos with proper research ... do that fast." The name must be broad (gaming wide), GTA 6 lives in the Name field and bio. six star. and the rest of the GTA only set are out. Names now come with research (conflicts, handles, domains, platform rules) and one logo each, delivered fast.
 * 12 Nov: "Not do more research. I want something modern, minimalistic, professional, new, Gen Z, futuristic logo ... it just has to be one logo ... you can't write so much because it's an Instagram logo." Deliver ONE logo, not option sheets; a simple mark that reads as a tiny circle, no long text. Sent: six star. (a bold star with a 6 cut out, sunset gradient on black; `engine/logo_sixstar.html`, `brand/six_star_profile_picture.png`).
 * 12 Nov: "I already told you I didn't like them. I need something new, different, nice." The second name set (paused., loredrop., afterglow. ...) is rejected too. Third set sent: six star., hotwire., heat., getaway., riptide., off map., untold., mission passed. Never resend rejected names.
 * 12 Nov: "Make them more interesting. See the features which hit the most ... out of the box information that they would love ... make it more curious." Reels lead with the GTA 6 features that got the biggest reaction online, told through surprising, curiosity driven facts.
