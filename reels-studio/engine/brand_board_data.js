@@ -1,15 +1,15 @@
 window.BOARD = {
   pick: {
-    mark: 'minimap', name: 'minimap',
-    tagline: 'GTA 6 first. Every game world next.',
+    mark: 'plainsight', name: 'plain sight',
+    tagline: 'It was right there. You missed it.',
     why: [
-      'Every open world game has a minimap, so the name grows with us: GTA 6 now, any game next.',
-      'The logo IS a minimap: one bold mark that fills Instagram\'s tiny 110 px circle.',
-      'No GTA in the handle, so nothing to report. "GTA 6" sits in the Name field, which Instagram search reads.',
+      'The name is the hook: "hidden in plain sight" makes everyone ask what they missed.',
+      'The message is clear: the details right in front of you, in GTA 6 now and any game next.',
+      'The logo is an eye and an eclipse at once: the light hides in front of you, and one flash gives it away.',
     ],
   },
   alts: [
-    { mark: 'tooltip', name: 'tooltip', line: 'The pop up box of facts. Cleanest name we found.' },
-    { mark: 'cutscene', name: 'cutscene', line: 'Cinematic moments from games, films and shows.' },
+    { mark: 'oneframe', name: 'one frame', line: 'It was on screen for one frame. We caught it.' },
+    { mark: 'lookagain', name: 'look again', line: 'The cleanest name we checked. Says it straight.' },
   ],
 };
