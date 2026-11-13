@@ -28,3 +28,7 @@ Reel: Rockstar hid two Vice City release dates inside GTA 6. Posts Wed 18 Nov 20
 ## Checks
 * Rockstar's GTA VI page re read 13 Nov 2026 (14:10 UTC): "Channel the Original Kingpin", the palm tree button up line (Rockstar writes it with a hyphen, our card has none) and "sourced from the Vercetti Estate" are live. Re read on 18 Nov before posting if possible.
 * "Rockstar hasn't said" is true at the post time; the game unlocks in some time zones before 21:00 ET, but players finding Tommy would not change what Rockstar has said.
+
+## Safety fix (13 Nov, after final QA)
+* Beat 8 ("That's place one"): shot 74 from 0.3 s showed Lucia posing in the elevator (now on the do not use list). It now starts at 5.0 s (Jason walking out of the elevator into the hallway). Only those 85 frames were rebuilt and spliced into the master; the voice, graphics and everything else are unchanged.
+* Shot 88 is used from 0.2 to 2.5 s only (the list allows up to 3.4 s). Shot 74 is used only between 5.0 and 24.0 s.
