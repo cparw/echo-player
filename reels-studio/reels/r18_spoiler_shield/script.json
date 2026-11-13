@@ -1,0 +1,957 @@
+{
+ "title": "Spoiler shield: GTA 6 reaches New Zealand 18 hours before New York",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "hook_options": [
+  "GTA 6 unlocks at 6 AM New York time. Just not there. (12 words, PICKED: a checkable time with a contradiction that forces the question 'then where?')",
+  "New Zealand plays GTA 6 eighteen hours before New York. (10 words, gives the answer away in the hook)",
+  "Someone in Auckland plays GTA 6 while New York eats breakfast. (11 words, softer, no number)"
+ ],
+ "hook_pick": "Option 1 (owner approved): a checkable time with a contradiction that forces the question 'then where?'",
+ "ending": "check it yourself, closing question, then the follow plus comment line (owner CTA rule, 13 Nov), then the noticed. end card",
+ "time_sensitive": "Posts Wed 18 Nov 2026 04:30 ET (hard latest 05:00 ET, one hour before New Zealand unlocks at 06:00 ET). Every Wednesday line stays true at post time.",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six unlocks at six a.m. New York time.",
+   "instant": true,
+   "bg": "scrim",
+   "push": 0.06,
+   "capsY": 1080,
+   "caps": [
+    {
+     "text": "GTA 6 unlocks at 6 AM / New York time. / Just not there.",
+     "at": 0,
+     "key": [
+      "not there"
+     ]
+    }
+   ],
+   "chip": {
+    "text": "NEW YORK, 6:00 AM WED",
+    "at": 0,
+    "y": 420,
+    "size": 30
+   },
+   "footnote": "OUR MATH: midnight in New Zealand = 6 AM in New York.",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    },
+    {
+     "shot": 26,
+     "offset": 6.3,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Just not there.",
+   "instant": true,
+   "flash": true,
+   "sfx": "hit",
+   "bg": "scrim",
+   "capsY": 1080,
+   "caps": [
+    {
+     "text": "GTA 6 unlocks at 6 AM / New York time. / Just not there.",
+     "at": 0,
+     "key": [
+      "not there"
+     ]
+    }
+   ],
+   "footnote": "OUR MATH: midnight in New Zealand = 6 AM in New York.",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "It's midnight in New Zealand.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "stamp": {
+    "big": "12:00 AM",
+    "small": "AUCKLAND, THU 19 NOV",
+    "size": 250,
+    "cy": 700
+   },
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "It's midnight / in New Zealand.",
+     "at": 0,
+     "key": [
+      "midnight"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Vice; IBTimes UK; GameRant. Midnight NZDT.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.3,
+    0.4
+   ]
+  },
+  {
+   "say": "Spoilers get an eighteen hour head start.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "Spoilers get an / 18 hour head start.",
+     "at": 0,
+     "key": [
+      "18 hour"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Vice; eXputer. 18 hours: OUR MATH.",
+   "clips": [
+    {
+     "shot": 20,
+     "offset": 0.1
+    },
+    {
+     "shot": 72,
+     "offset": 0.2,
+     "at": 2,
+     "slow": 1.2
+    },
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "It unlocks at midnight on the nineteenth, store by store.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "PLAYSTATION STORE LISTINGS",
+     "head": "Midnight on 19 Nov, store by store",
+     "mark": "19 Nov",
+     "mark_at": 6,
+     "tag": "REPORTED",
+     "source": "Vice; IBTimes UK: 15 windows, 63 countries",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: Vice; IBTimes UK; GameRant.",
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 2.6
+    },
+    {
+     "shot": 61,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "The clock decides who plays first.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "The clock decides / who plays first.",
+     "at": 0,
+     "key": [
+      "first"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/desktop.00.5pzu2sm-z4.jpg",
+   "pan": [
+    0.36,
+    0.48
+   ]
+  },
+  {
+   "say": "And the trick everyone's planning?",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "And the trick / everyone's planning?",
+     "at": 0,
+     "key": [
+      "trick"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.2
+    }
+   ]
+  },
+  {
+   "say": "Not that simple.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "dim": {
+    "text": "Not that simple.",
+    "at": 0,
+    "cy": 1020
+   },
+   "clips": [
+    {
+     "shot": 24,
+     "offset": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Save this. You'll need it Wednesday.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1080,
+   "caps": [
+    {
+     "text": "Save this.",
+     "at": 0,
+     "key": [
+      "Save"
+     ]
+    },
+    {
+     "text": "You'll need it / Wednesday.",
+     "at": 2,
+     "key": [
+      "Wednesday"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Leonida_Keys_01.jpg",
+   "pan": [
+    0.12,
+    0.26
+   ]
+  },
+  {
+   "layout": "map",
+   "mapCard": true,
+   "lonMin": -130,
+   "lonMax": 180,
+   "latTop": 62,
+   "latBot": -48,
+   "mapW": 1000,
+   "mapTop": 560,
+   "say": "Here's the order, in New York time. New Zealand, six a.m. Wednesday. Sydney, eight. Tokyo, ten. India, half past one. London, seven p.m. And New York? Midnight. Thursday.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1170,
+   "caps": [
+    {
+     "text": "Here's the order, / in New York time.",
+     "at": 0,
+     "key": [
+      "New York time"
+     ]
+    },
+    {
+     "text": "And New York? / Midnight. Thursday.",
+     "at": 23,
+     "key": [
+      "Midnight",
+      "Thursday"
+     ]
+    }
+   ],
+   "cities": [
+    {
+     "name": "AUCKLAND",
+     "lon": 174.76,
+     "lat": -36.85,
+     "time": "6 AM WED",
+     "at": 7,
+     "side": "l",
+     "dy": 50
+    },
+    {
+     "name": "SYDNEY",
+     "lon": 151.21,
+     "lat": -33.87,
+     "time": "8 AM",
+     "at": 12,
+     "side": "l",
+     "dy": -70
+    },
+    {
+     "name": "TOKYO",
+     "lon": 139.69,
+     "lat": 35.68,
+     "time": "10 AM",
+     "at": 14,
+     "side": "l"
+    },
+    {
+     "name": "INDIA",
+     "lon": 77.21,
+     "lat": 28.61,
+     "time": "1:30 PM",
+     "at": 16,
+     "side": "l"
+    },
+    {
+     "name": "LONDON",
+     "lon": -0.13,
+     "lat": 51.51,
+     "time": "7 PM",
+     "at": 20,
+     "side": "r"
+    },
+    {
+     "name": "NEW YORK",
+     "lon": -74.01,
+     "lat": 40.71,
+     "time": "12 AM THU",
+     "at": 24,
+     "side": "r"
+    }
+   ],
+   "sweep": {
+    "from": 180,
+    "to": -76,
+    "at": 7,
+    "dur": 7.0,
+    "label": "MIDNIGHT"
+   },
+   "footnote": "REPORTED: Vice; IBTimes UK; GameRant. Times: OUR MATH.",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 0.3
+    },
+    {
+     "shot": 82,
+     "offset": 0.3,
+     "at": 7
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 12
+    },
+    {
+     "shot": 81,
+     "offset": 0.1,
+     "at": 14
+    },
+    {
+     "shot": 83,
+     "offset": 0.1,
+     "at": 16
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 20
+    },
+    {
+     "shot": 89,
+     "offset": 1.2,
+     "at": 23
+    }
+   ]
+  },
+  {
+   "say": "And Los Angeles? Same second. Nine p.m. Wednesday. US stores run on New York time.",
+   "layout": "map",
+   "mapCard": true,
+   "lonMin": -128,
+   "lonMax": -62,
+   "latTop": 52,
+   "latBot": 22,
+   "mapW": 960,
+   "mapTop": 560,
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1190,
+   "caps": [
+    {
+     "text": "And Los Angeles? / Same second.",
+     "at": 0,
+     "key": [
+      "Same second"
+     ]
+    },
+    {
+     "text": "US stores run on / New York time.",
+     "at": 8,
+     "key": [
+      "New York time"
+     ]
+    }
+   ],
+   "cities": [
+    {
+     "name": "NEW YORK",
+     "lon": -74.01,
+     "lat": 40.71,
+     "time": "12 AM THU",
+     "at": 3,
+     "side": "l"
+    },
+    {
+     "name": "LOS ANGELES",
+     "lon": -118.24,
+     "lat": 34.05,
+     "time": "9 PM WED",
+     "at": 5,
+     "side": "r"
+    }
+   ],
+   "chip": {
+    "text": "PS5, US STORE",
+    "at": 8,
+    "y": 455,
+    "size": 26
+   },
+   "footnote": "REPORTED: Vice; IBTimes UK; GameRant (US store on Eastern time).",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 9.05
+    },
+    {
+     "shot": 1,
+     "offset": 0.1,
+     "at": 3
+    },
+    {
+     "shot": 33,
+     "offset": 1.8,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Six a.m. to midnight. Eighteen hours.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "6 AM to midnight.",
+     "at": 0,
+     "key": [
+      "midnight"
+     ]
+    }
+   ],
+   "counter": {
+    "to": 18,
+    "at": 4,
+    "dur": 0.6,
+    "label": "HOURS",
+    "label2": "6 AM WED TO MIDNIGHT THU, NEW YORK TIME",
+    "cy": 720
+   },
+   "footnote": "OUR MATH: 11:00 UTC Wed to 05:00 UTC Thu.",
+   "clips": [
+    {
+     "shot": 29,
+     "offset": 0.1
+    },
+    {
+     "shot": 1,
+     "offset": 2.3,
+     "at": 2
+    },
+    {
+     "shot": 62,
+     "offset": 5.5,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Now, that trick. Just switching your PS Five to New Zealand? Reports say that's not enough.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "Now, that trick.",
+     "at": 0,
+     "key": [
+      "trick"
+     ]
+    },
+    {
+     "text": "Just switching your PS5 / to New Zealand?",
+     "at": 3,
+     "key": [
+      "New Zealand"
+     ]
+    },
+    {
+     "text": "Reports say / that's not enough.",
+     "at": 11,
+     "key": [
+      "not enough"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: IBTimes UK; Vice.",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 7.0
+    },
+    {
+     "shot": 88,
+     "offset": 0.3,
+     "at": 3
+    },
+    {
+     "shot": 15,
+     "offset": 1.95,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "Your unlock follows the country on your PlayStation account, not your console. And PlayStation won't let you change that country.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "paper": [
+    {
+     "label": "YOUR UNLOCK FOLLOWS",
+     "head": "Your PlayStation account's country",
+     "mark": "account's country",
+     "mark_at": 8,
+     "tag": "NOT THE CONSOLE",
+     "source": "Vice; IBTimes UK",
+     "at": 0
+    },
+    {
+     "label": "SONY'S RULE",
+     "head": "That country can't be changed",
+     "mark": "can't be changed",
+     "mark_at": 17,
+     "source": "Vice; IBTimes UK, citing Sony",
+     "at": 12
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: Vice; IBTimes UK.",
+   "clips": [
+    {
+     "shot": 3,
+     "offset": 0.1
+    },
+    {
+     "shot": 30,
+     "offset": 0.2,
+     "at": 7
+    },
+    {
+     "shot": 41,
+     "offset": 0.3,
+     "at": 12
+    },
+    {
+     "shot": 28,
+     "offset": 0.1,
+     "at": 16
+    }
+   ]
+  },
+  {
+   "say": "So send this to the friend who gets spoiled every single time.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "So send this to the friend / who gets spoiled / every single time.",
+     "at": 0,
+     "key": [
+      "send this",
+      "spoiled"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 21,
+     "offset": 0.1
+    },
+    {
+     "shot": 43,
+     "offset": 0.1,
+     "at": 6
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "Here's your shield. Set it up before six a.m. Wednesday.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1100,
+   "caps": [
+    {
+     "text": "Here's your shield.",
+     "at": 0,
+     "key": [
+      "shield"
+     ]
+    },
+    {
+     "text": "Set it up before / 6 AM Wednesday.",
+     "at": 3,
+     "key": [
+      "6 AM"
+     ]
+    }
+   ],
+   "chip": {
+    "text": "NEW YORK TIME",
+    "at": 7,
+    "y": 880,
+    "size": 28
+   },
+   "footnote": "OUR MATH: the New Zealand unlock, in New York time.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/vice_city_skyline_aerial.jpg",
+   "pan": [
+    0.3,
+    0.44
+   ]
+  },
+  {
+   "say": "On X, mute the words. On TikTok, filter them from your For You feed. On Instagram, add them to Hidden Words.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "ON X",
+     "head": "Mute the words",
+     "mark": "Mute",
+     "mark_at": 2,
+     "source": "Muted words, in X settings",
+     "at": 0
+    },
+    {
+     "label": "ON TIKTOK",
+     "head": "Filter them from For You",
+     "mark": "Filter",
+     "mark_at": 7,
+     "source": "Keyword filters, TikTok",
+     "at": 5
+    },
+    {
+     "label": "ON INSTAGRAM",
+     "head": "Add them to Hidden Words",
+     "mark": "Hidden Words",
+     "mark_at": 19,
+     "source": "Meta Transparency Center",
+     "at": 14
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: app help pages; Meta Transparency Center.",
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 1.9
+    },
+    {
+     "shot": 65,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "at": 9
+    },
+    {
+     "shot": 27,
+     "offset": 0.1,
+     "at": 14
+    },
+    {
+     "shot": 84,
+     "offset": 0.2,
+     "at": 18
+    }
+   ]
+  },
+  {
+   "say": "Don't mute GTA Six itself, you'd lose the hype. Mute the words that give the story away.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "Don't mute GTA 6 itself, / you'd lose the hype.",
+     "at": 0,
+     "key": [
+      "hype"
+     ]
+    },
+    {
+     "text": "Mute the words that / give the story away.",
+     "at": 9,
+     "key": [
+      "story"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 6,
+     "offset": 0.1
+    },
+    {
+     "shot": 67,
+     "offset": 0.1,
+     "at": 3
+    },
+    {
+     "shot": 40,
+     "offset": 0.4,
+     "at": 5
+    },
+    {
+     "shot": 77,
+     "offset": 11.5,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "Want proof? At six a.m. Wednesday, check a clock in Auckland.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "Want proof?",
+     "at": 0,
+     "key": [
+      "proof"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "CHECK IT YOURSELF",
+     "head": "New York 6 AM Wed = Auckland 12 AM Thu",
+     "mark": "Auckland 12 AM Thu",
+     "mark_at": 10,
+     "source": "OUR MATH: NZDT is UTC+13, EST is UTC minus 5",
+     "at": 2
+    }
+   ],
+   "footnote": "OUR MATH: time zone offsets from the IANA database.",
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 1.6
+    },
+    {
+     "shot": 1,
+     "offset": 4.3,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "say": "It'll say midnight. Thursday.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "It'll say midnight. / Thursday.",
+     "at": 0,
+     "key": [
+      "midnight",
+      "Thursday"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/stanier_neon.jpg",
+   "pan": [
+    0.42,
+    0.54
+   ]
+  },
+  {
+   "say": "So what time does it unlock where you are?",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "So what time does it unlock / where you are?",
+     "at": 0,
+     "key": [
+      "where you are"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
+   "pan": [
+    0.44,
+    0.56
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment SHIELD.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "Follow"
+     ]
+    }
+   ],
+   "stamp": {
+    "big": "SHIELD",
+    "small": "COMMENT THIS WORD",
+    "at": 5,
+    "size": 280,
+    "cy": 700,
+    "color": "accent"
+   },
+   "clips": [
+    {
+     "shot": 4,
+     "offset": 0.1
+    },
+    {
+     "shot": 35,
+     "offset": 0.2,
+     "at": 2
+    },
+    {
+     "shot": 31,
+     "offset": 2.3,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "My full mute list, plus the unlock time for twelve big cities, lands straight in your inbox.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "THE SPOILER SHIELD",
+     "head": "Mute list + 12 city unlock times",
+     "mark": "12 city unlock times",
+     "mark_at": 9,
+     "source": "Store windows: Vice; IBTimes UK; GameRant",
+     "at": 0
+    }
+   ],
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "lands straight / in your inbox.",
+     "at": 12,
+     "key": [
+      "inbox"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 69,
+     "offset": 0.1
+    },
+    {
+     "shot": 32,
+     "offset": 6.8,
+     "at": 6
+    },
+    {
+     "shot": 91,
+     "offset": 5.4,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6 · Launch week",
+   "episode": "The full spoiler shield lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT SHIELD",
+   "hold": 2.0,
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ]
+  }
+ ]
+}
