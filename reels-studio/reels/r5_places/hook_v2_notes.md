@@ -42,3 +42,7 @@ One real place for each GTA 6 region (the links are our reading; Rockstar never 
 5. Ambrosia: the sugar towns on Lake Okeechobee's south shore. Growers burn cane before harvest and locals call the ash black snow (AP, 2019).
 6. Mount Kalaga: Britton Hill in Walton County, near the Alabama line: Florida's highest natural point, 345 feet (USGS).
 That's the full route. New GTA 6 breakdown every day on @noticed.daily. See you in Leonida.
+
+## QA (render)
+* R5_six_regions_v2.mp4: 1080x1920 30/1 fps | 86.87 s | -14.0 LUFS | TP -1.5 dBTP | 77.9 MB | end card from 84.87 s | freezes outside end card: none | PASS
+* Published as reels-studio/media/R5_six_regions_v2.mp4 with cover reels-studio/media/r5_cover_v2.jpg.
