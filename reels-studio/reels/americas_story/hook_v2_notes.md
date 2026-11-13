@@ -46,3 +46,7 @@ Auto reply: here's the full Project Americas timeline, with every source 🗺️
 8. 19 Nov 2026: launch.
 Sources: Bloomberg Businessweek (14 Oct 2026), The New York Times, Dazed, Guinness World Records, Know Your Meme.
 New GTA 6 breakdown every day on @noticed.daily. See you in Leonida.
+
+## QA (render)
+* R7_project_americas_v2.mp4: 1080x1920 30/1 fps | 70.67 s | -14.0 LUFS | TP -1.3 dBTP | 71.9 MB | end card from 68.67 s | freezes outside end card: none | PASS
+* Published as reels-studio/media/R7_project_americas_v2.mp4 with cover reels-studio/media/r7_cover_v2.jpg.
