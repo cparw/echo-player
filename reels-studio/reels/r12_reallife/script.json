@@ -1,5 +1,5 @@
 {
- "title": "Vice City is leaking into real life (story, silent preview)",
+ "title": "Vice City is leaking into real life (story, voiced)",
  "format": "story",
  "account": "@noticed.daily",
  "brand_name": "noticed.",
@@ -9,8 +9,8 @@
   "Vice City is leaking into real life."
  ],
  "hook_pick": "Option 1: one bold, clear claim with money in it that every GTA fan gets instantly (Vice City is Miami), and every beat after it is proof. Option 2 only lands if you know W Hotels; option 3 is vague.",
- "ending": "one line question, then the loop line 'Because right now,' that runs into the hook on replay, then the noticed. end card",
- "time_sensitive": "The Heat line is in the present tense for 18 Nov 2026; post before then or switch it to the past tense. Selfridges shop runs to 28 Nov; Y Hotel campaign to 31 Dec.",
+ "ending": "one line question, then the owner's CTA (13 Nov): follow noticed dot daily and comment MIAMI, the full list lands straight in your inbox, see you in Leonida; then the noticed. end card with the same CTA. No loop.",
+ "time_sensitive": "Posts Tue 17 Nov 2026 12:00 ET: the Heat line (18 Nov) is in the present tense, right for that date. Selfridges shop runs to 28 Nov; Y Hotel campaign to 31 Dec.",
  "voice_id": "bqoGL6z7prHxVFnnNfsb",
  "model_id": "eleven_v4",
  "voice_preset": 1,
@@ -103,7 +103,7 @@
     },
     {
      "shot": 83,
-     "offset": 1.6,
+     "offset": 0.1,
      "at": 4
     },
     {
@@ -147,6 +147,13 @@
      "key": [
       "voted"
      ]
+    },
+    {
+     "text": "One commissioner said",
+     "at": 10,
+     "key": [
+      "commissioner"
+     ]
     }
    ],
    "footnote": "REPORTED: Insider Gaming, 11 Sep 2026.",
@@ -188,8 +195,8 @@
    "sfx": "hit",
    "counter": {
     "to": 650000,
-    "at": 2,
-    "dur": 1.4,
+    "at": 0,
+    "dur": 1.2,
     "label": "US DOLLARS",
     "label2": "ONE HOTEL DEAL",
     "cy": 720
@@ -301,7 +308,7 @@
     {
      "shot": 68,
      "offset": 0.1,
-     "at": 2
+     "at": 4
     }
    ]
   },
@@ -356,7 +363,7 @@
      "at": 9
     },
     {
-     "shot": 94,
+     "shot": 2,
      "offset": 0.3,
      "at": 13
     }
@@ -388,8 +395,8 @@
    "caps": [],
    "clips": [
     {
-     "shot": 94,
-     "offset": 0.9
+     "shot": 42,
+     "offset": 0.1
     },
     {
      "shot": 81,
@@ -397,13 +404,18 @@
      "at": 4
     },
     {
+     "shot": 6,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
      "shot": 74,
      "offset": 0.6,
      "at": 10
     },
     {
-     "shot": 46,
-     "offset": 0.1,
+     "shot": 1,
+     "offset": 0.15,
      "at": 16
     }
    ]
@@ -476,8 +488,9 @@
     },
     {
      "shot": 72,
-     "offset": 0.4,
-     "at": 4
+     "offset": 0.2,
+     "at": 4,
+     "slow": 1.9
     },
     {
      "shot": 65,
@@ -495,8 +508,8 @@
      "at": 14
     },
     {
-     "shot": 89,
-     "offset": 2.4,
+     "shot": 15,
+     "offset": 2.2,
      "at": 19
     }
    ]
@@ -552,21 +565,118 @@
     },
     {
      "shot": 62,
-     "offset": 10.4,
+     "offset": 10.6,
      "at": 4
     }
    ]
   },
   {
-   "say": "Because right now,",
+   "say": "Follow noticed dot daily",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 71,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 9.0,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "say": "and comment MIAMI.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "MIAMI",
+    "small": "COMMENT THIS WORD",
+    "at": 0,
+    "size": 300,
+    "color": "accent",
+    "cy": 760
+   },
+   "caps": [],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_SQUALO_01.0cim7hj58ypb1.jpg",
+   "pan": [
+    0.3,
+    0.36
+   ]
+  },
+  {
+   "say": "The full list of real Vice City spots lands straight in your inbox.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "tiles": {
+    "items": [
+     {
+      "text": "Y HOTEL",
+      "at": 2
+     },
+     {
+      "text": "MUSCLE BEACH",
+      "at": 4
+     },
+     {
+      "text": "KASEYA CENTER",
+      "at": 6
+     }
+    ],
+    "y": 380,
+    "gap": 165,
+    "size": 88
+   },
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "The full list of / real Vice City spots",
+     "at": 0,
+     "key": [
+      "Vice City"
+     ]
+    },
+    {
+     "text": "lands straight / in your inbox.",
+     "at": 8,
+     "key": [
+      "inbox."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 12.4
+    },
+    {
+     "shot": 3,
+     "offset": 0.6,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
    "bg": "scrim",
    "capsY": 1150,
    "caps": [
     {
-     "text": "Because right now,",
+     "text": "See you in Leonida.",
      "at": 0,
      "key": [
-      "right now"
+      "Leonida."
      ]
     }
    ],
@@ -581,14 +691,16 @@
    "layout": "endcard",
    "brand": "noticed.",
    "series": "GTA 6",
-   "episode": "@noticed.daily",
-   "cta": "Follow for tomorrow",
-   "hold": 1.8,
+   "episode": "The full list of real Vice City spots lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT MIAMI",
+   "hold": 2.4,
    "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/k4ak9okk485712.0cj_8hoskvfgy.jpg",
    "pan": [
     0.55,
     0.62
-   ]
+   ],
+   "wordmark": true,
+   "handle": "@noticed.daily"
   }
  ]
 }

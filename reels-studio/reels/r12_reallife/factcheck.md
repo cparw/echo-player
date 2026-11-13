@@ -117,3 +117,15 @@ Only sources listed in `research/features_that_hit.md` (Vice City section) are u
 
 ## Footage (clean windows only, frames checked with shot_frames.py on 13 Nov)
 Extended Look gameplay first: shots 74, 77, 81, 83, 89, 91, 94, 97, 104. Trailer shots for variety: 4, 11, 16, 24, 26, 33, 34, 44, 46, 47, 48, 54, 62, 65, 68, 72 (20 Extended Look clip uses against 18 trailer ones). Official 4K screenshots from rockstargames.com/VI: night skyline (counter beat), Goodtime Gear (state line), day skyline (end card, blurred). No weapons, police, crashes, violence or suggestive shots in the windows used. Preview timing is synthetic (180 wpm); cuts will shift slightly with the real voice.
+
+## Addendum, 13 Nov 2026: voice v2 ending, MIAMI DM list
+The loop line "Because right now," was replaced by the owner's CTA (follow plus comment MIAMI, the list lands in your inbox). The DM sent to everyone who comments MIAMI, follower or not, lists only facts from the sources above. Plans are marked PLAN.
+* Kaseya Center roof sign: [GB] "A near-million-dollar "Welcome to Vice City" sign went up on the Kaseya Center roof in late September". REPORTED.
+* Kaseya Center food stands: [BB] "shortly after Rockstar brought GTA 6's Cluckin' Bell and Burger Shot food stands inside Miami's Kaseya Center" (article dated 23 Oct). REPORTED.
+* Heat night, 18 Nov: [GB] Bucks at the Kaseya Center, custom court, all new uniform, live on ESPN, "a Vice City merchandise line already live in the team store". REPORTED.
+* Beach chairs and umbrellas: [KO] spotted on a Miami beach "earlier this month" (October); [GB] "Miami Beach approved a multi-million-dollar deal to brand its beach chairs with Vice City logos from October through December". REPORTED.
+* PLAN, Y Hotel: [BB] W South Beach, 2201 Collins Avenue, $650,000, 15 Oct to 31 Dec.
+* PLAN, Muscle Beach: [BB] pink workout equipment and Vice Beach branding, work from 26 Oct.
+* PLAN, Vice Beach sign: [BB] "a giant pink Vice Beach sign at Lummus Park ... plans to unveil the sign on November 1". Not confirmed as installed by any source we opened.
+* Around Miami: [VGC] "the opening of in-game restaurant chains, advertisements for Weazel News, sports cars, and more" (9 Nov). REPORTED.
+* Bonus, outside Miami: [VGC] Selfridges London Bond Street and Manchester, opened Monday 9 Nov, runs until 28 Nov. REPORTED.
