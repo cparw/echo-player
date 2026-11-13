@@ -161,12 +161,17 @@
    "footnote": "Microsoft Store list prices, 12 Nov 2026. PlayStation has no upgrade price yet.",
    "clips": [
     {
-     "shot": 74,
-     "offset": 0.5
+     "shot": 15,
+     "offset": 2.0
     },
     {
-     "shot": 74,
-     "offset": 13.0,
+     "shot": 65,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 1,
+     "offset": 0.6,
      "at": 9
     }
    ],
@@ -506,12 +511,12 @@
    ],
    "clips": [
     {
-     "shot": 74,
-     "offset": 15.0
+     "shot": 41,
+     "offset": 0.1
     },
     {
-     "shot": 74,
-     "offset": 21.0,
+     "shot": 24,
+     "offset": 0.1,
      "at": 9
     }
    ],

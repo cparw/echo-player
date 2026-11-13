@@ -19,6 +19,7 @@ Opening only, with the older tool: `python3 $S/engine/splice_hook.py <dir holdin
 Result (`voice3/splice_report.txt`): opening 4 old lines (19 words) to 1 new (11 words), gain +2.0 dB; ending 2 old lines (12 words) to 3 new (20 words), gain +1.8 dB; 239 words, speech 77.35 s. The recorded text matches script_hook_v2.json word for word.
 
 ## What changed vs script.json
+* Do not use list (rulebook, 13 Nov): shot 74 replaced on "Hers says a life with Jason..." with shot 6 (Lucia at the red convertible). The first v2 render (commit 0c802bf) is superseded.
 * Beat 0: new hook (say, show, footnote); clips cut at word 6.
 * Brian Heder beat and the Mudslide beat: name chip added; footnotes swapped (REPORTED line on the Brian beat, the official bio line moved to the Mudslide beat).
 * Ending: as above; new CTA beats; end card cta and episode.

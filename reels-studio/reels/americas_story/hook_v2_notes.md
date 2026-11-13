@@ -14,6 +14,7 @@ S=/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scra
 n_old_beats_removed and n_new_hook_beats do not apply (no earlier take). Old beats 0 and 1 became the new beats 0 to 2. Result: 205 words, 180 wpm, speech 68.32 s; reel about 70.7 s. Recorded text matches script_hook_v2.json word for word.
 
 ## Changes vs script.json (spoken)
+* Do not use list (rulebook, 13 Nov): shot 74 replaced on the 2015 trip beat with shot 41. The first v2 render (commit 4ffbe11) is superseded.
 * Opening: old beats 0 and 1 ("GTA Six was first planned across parts of two continents." / "Then Rockstar cut it right back. And what they did with the piece that was left...") become the hook, the Vice City size line and "And how they built what was left is why this game looks so real." (collage kept).
 * Old beat 7 ("And what survived is still big. Vice City alone is twice the size of Los Santos.") folded into the opening; its 2x stamp moved there.
 * Old last beat "Imagine two continents." dropped (could read as whole continents).

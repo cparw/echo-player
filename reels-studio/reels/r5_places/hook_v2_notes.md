@@ -18,6 +18,7 @@ Opening only, with the older tool: `splice_hook.py <dir with the spec as script.
 Result: 249 words, speech 84.52 s; reel 86.9 s with the end card. Recorded text matches script_hook_v2.json word for word.
 
 ## What changed vs script.json
+* Do not use list (rulebook, 13 Nov): shot 88 now cuts to shot 102 at "Britton Hill", so it never runs past 3.1 s. The first v2 render (commit 447dad9) is superseded.
 * Beats 0 and 1: new hook, first shot and cover on Mount Kalaga.
 * "Real Florida leads America in sugarcane." CUT with its visuals (USDA ERS: Louisiana leads; removed from the voice by the main session). The black snow line stays.
 * Freeze fixes (no freeze rule): the 345 count beat pans 0.62 to 0.95 (was 1.0 to 0.995, nearly still); "River of Grass" pans 0.0 to 0.16 (was 0.04 to 0.0) and stays left of the helicopter part of that still; the first CTA beat gets a second clip.
