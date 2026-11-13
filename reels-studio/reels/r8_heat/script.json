@@ -149,7 +149,22 @@
    },
    "footnote": "GTA 5: officers' line of sight shows on the mini map.",
    "sfx": "hit",
-   "compare_todo": "GTA V: official GTA V gameplay with the radar showing police blips or vision cones (A side), then or beside the GTA VI shot of the next beat (B side); labels GTA V and GTA VI. No police action in frame.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 507,
+     "t": 0
+    },
+    "right": {
+     "shot": 77,
+     "t": 6.8
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   },
+   "compare_note": "The GTA V library has no radar or wanted HUD (every official shot of it shows police), so GTA 5 is shown with its freeway traffic at night beside a GTA 6 street.",
    "clips": [
     {
      "shot": 33,
@@ -186,7 +201,6 @@
    ],
    "footnote": "ROCKSTAR'S FOOTAGE: An Extended Look, 27 Aug 2026.",
    "sfx": "whoosh",
-   "compare_todo": "Same comparison, B side: GTA VI footage where the minimap shows no police (official GTA VI only, no chase in frame), after or beside the GTA V radar; labels GTA V and GTA VI.",
    "clips": [
     {
      "shot": 77,
@@ -222,12 +236,27 @@
     "at": 2,
     "dur": 0.5,
     "label": "WANTED STARS IN GTA 6",
-    "cy": 640
+    "cy": 1150
    },
-   "capsY": 1180,
+   "capsY": 700,
    "footnote": "ROCKSTAR'S FOOTAGE, via GamesRadar, 27 Aug 2026.",
    "sfx": "hit",
-   "compare_todo": "GTA V: the five star wanted meter on the GTA V HUD (A side) beside GTA VI's six star meter (B side, official GTA VI footage, no police action in frame); labels GTA V and GTA VI. Do not show or say what six stars does.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 500,
+     "t": 0
+    },
+    "right": {
+     "shot": 91,
+     "t": 2.5
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   },
+   "compare_note": "Split: the GTA 5 caption sits in the GTA 5 half (top), the six star counter in the GTA 6 half (bottom).",
    "clips": [
     {
      "shot": 91,

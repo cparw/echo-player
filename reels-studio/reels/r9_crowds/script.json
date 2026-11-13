@@ -48,7 +48,7 @@
     {
      "shot": 104,
      "offset": 0.3,
-     "at": 7
+     "at": 6
     },
     {
      "shot": 81,
@@ -141,7 +141,21 @@
    },
    "footnote": "ROCKSTAR SAYS: Rob Nelson to The New York Times.",
    "sfx": "hit",
-   "compare_todo": "GTA V: official GTA V street footage of Los Santos pedestrians walking past each other, no violence (A side), then or beside this GTA VI street shot (B side); labels GTA V and GTA VI.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 509,
+     "t": 0
+    },
+    "right": {
+     "shot": 74,
+     "t": 26.0
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   },
    "clips": [
     {
      "shot": 35,
@@ -333,7 +347,22 @@
    ],
    "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
    "sfx": "whoosh",
-   "compare_todo": "GTA V: official GTA V footage of a busy Los Santos street or beach, no weapons or violence (A side), then or beside this GTA VI crowd (B side); labels GTA V and GTA VI.",
+   "compare": {
+    "mode": "ab",
+    "left": {
+     "shot": 546,
+     "t": 0.1
+    },
+    "right": {
+     "shot": 74,
+     "t": 34.0
+    },
+    "at": 8,
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   },
    "clips": [
     {
      "shot": 16,
@@ -341,13 +370,13 @@
     },
     {
      "shot": 65,
-     "offset": 0.15,
+     "offset": 0.1,
      "at": 2
     },
     {
      "shot": 11,
      "offset": 0.1,
-     "at": 5
+     "at": 4
     },
     {
      "shot": 48,
@@ -509,12 +538,27 @@
     "label": "ANIMATIONS IN GTA 6",
     "label2": "WELL OVER. GTA 5 HAD 55,000",
     "chip": "ROCKSTAR SAYS",
-    "cy": 640
+    "cy": 1150
    },
-   "capsY": 1180,
+   "capsY": 700,
    "footnote": "ROCKSTAR SAYS: via The New York Times. OUR MATH: about 11x.",
    "sfx": "hit",
-   "compare_todo": "GTA V: official GTA V crowd or pedestrian footage labelled 55,000 animations (A side), beside this GTA VI crowd labelled 600,000 plus (B side); labels GTA V and GTA VI.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 501,
+     "t": 0
+    },
+    "right": {
+     "shot": 74,
+     "t": 26.5
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   },
+   "compare_note": "Split: the 600,000 counter sits in the GTA 6 half (bottom), the eleven times caption in the GTA 5 half (top).",
    "clips": [
     {
      "shot": 16,
@@ -617,7 +661,7 @@
     {
      "shot": 74,
      "offset": 33.0,
-     "at": 2
+     "at": 1
     }
    ]
   },

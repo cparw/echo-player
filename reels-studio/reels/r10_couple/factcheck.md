@@ -75,6 +75,11 @@
 ## End card
 noticed. wordmark, @noticed.daily, GTA 6, "Relationship guide lands straight in your inbox", FOLLOW @NOTICED.DAILY + COMMENT COUPLE, over blurred footage (engine `wordmark` and `handle` keys).
 
+## DM guide sources (COUPLE)
+* Builds the bond: [GTB] "Holding hands, opening doors for each other, calling regularly, promptly answering calls and texts, and accepting invitations to activities together can build their romantic bond." and "Robbing places together can also strengthen Jason and Lucia's relationship".
+* Pool, mini golf, kayaking: [INV] "The relationship system improves when the pair spend time together, whether that's playing pool, mini golf, kayaking or robbing banks." (https://www.invenglobal.com/articles/26913/gta-6-full-interview-with-rockstars-rob-nelson-reveals-new-details)
+* R2, the goodnight text, no gameplay bonus, story changes, no break up: see L0 and L7 to L11 above.
+
 ## Dropped or kept off screen
 * "Lucia is the first fully fleshed out female lead in a mainline GTA" and "the first playable couple" (both Dazed): cut for length.
 * "Four, one more than GTA 5": dropped so the reel needs no GTA 5 comparison beat.

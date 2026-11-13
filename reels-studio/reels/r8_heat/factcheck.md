@@ -94,6 +94,12 @@
 ## End card
 noticed. wordmark, @noticed.daily, GTA 6, "Getaway checklist lands straight in your inbox", FOLLOW @NOTICED.DAILY + COMMENT HEAT, over the blurred opening shot (engine `wordmark` and `handle` keys).
 
+## DM checklist sources (HEAT)
+* Items 1 to 6: see L0 to L12 above ([IGN1], [IGN2]).
+* Item 4, spare outfits: [IGN2] "call my personal vehicle, which has changes of outfits in the trunk."
+* Item 7: [IGN1] "If you get three stars in the city, it can sometimes be challenging to get away in a vehicle, unless it's a very fast vehicle or a sports bike. Your best option is usually to do this" ... "get off the streets and get on foot into the alleys."
+* Item 8: [IGN2] "[Nelson shows off the Focus mode, which makes a nearby cop glow.]"
+
 ## Dropped or kept off screen
 * The six clue icon names (camera footage, accomplice, clothing, face, weapon, vehicle): GamesRadar's reading [GR2], not in the owner's verified list; Rockstar's footage shows four [GR1]. The reel says face, clothes, car and couple, which Nelson says himself.
 * Star colours and hollow or solid stars, K9 units, spike strips: owner's rule.

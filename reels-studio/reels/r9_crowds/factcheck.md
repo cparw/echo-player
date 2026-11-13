@@ -74,6 +74,10 @@
 ## End card
 noticed. wordmark, @noticed.daily, GTA 6, "NPC cheat sheet lands straight in your inbox", FOLLOW @NOTICED.DAILY + COMMENT STARE, over blurred footage (engine `wordmark` and `handle` keys).
 
+## DM cheat sheet sources (STARE)
+* Items 1 to 4: see L0, L1, L4 and L5 above ([EDGE], [IGN2]).
+* Item 5: [STAR] "Exiting the apartment, Jason stooped down to pet a pedestrian's dog. Nelson said you could buy pet snacks from convenience stores and dole them out if you wished."
+
 ## Dropped or kept off screen
 * Nelson's "How many people are going to go for a weapon?" (weapon talk), Edge's swear line, the pet snacks detail, and "different districts have their own demographic and professional textures" (no room).
 * Edge's "around 600,000" vs the NYT's "well over 600,000": we use Rockstar's NYT wording.
