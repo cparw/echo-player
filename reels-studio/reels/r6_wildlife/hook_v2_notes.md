@@ -42,3 +42,7 @@ Where to look in Rockstar's own trailers and screenshots:
 The numbers (reported, Rockstar to Game Informer, Sept 2026): over 170 species, 60+ bird types, 30+ land mammals, plus sharks, whales and jellyfish. Some are Rare, Discoverable or Legendary.
 Real Florida bonus: rhesus macaques have lived wild at Silver Springs since the 1930s (UF/IFAS), and green iguanas are listed as invasive (FWC).
 Happy spotting. New GTA 6 breakdown every day on @noticed.daily. See you in Leonida.
+
+## QA (render)
+* R6_wildlife_v2.mp4: 1080x1920 30/1 fps | 76.53 s | -14.0 LUFS | TP -1.5 dBTP | 69.9 MB | end card from 73.73 s | freezes outside end card: none | PASS
+* Published as reels-studio/media/R6_wildlife_v2.mp4 with cover reels-studio/media/r6_cover_v2.jpg.
