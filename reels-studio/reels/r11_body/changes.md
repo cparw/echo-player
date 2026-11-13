@@ -21,3 +21,6 @@ Spoken words: exactly the recorded take in the owner's voice (178 words, voice v
 ## Checked and kept
 * Time check for Fri 20 Nov 2026 12:00 ET and after: launch night question in the past tense; "out 19 Nov 2026" and "Twenty two years later, it's back" stay true.
 * Duration 62.4 s (voice 59.7 s plus the end card), 1080x1920, 30 fps.
+
+## Safety patch (13 Nov, final QA)
+* Shot 74 from 0 to 4.6 s (Lucia posing in a mini dress in the elevator) is now banned. The "That's from Dazed's deep dive" beat opened on it (offset 0.8), so that clip now plays shot 74 from 6.0 s (Jason walking down the hallway). Only those 31 frames (2.7 to 3.7 s) were re-rendered and spliced into the master; the rest of the reel is unchanged.
