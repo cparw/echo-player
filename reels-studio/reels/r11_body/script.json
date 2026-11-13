@@ -1,5 +1,5 @@
 {
- "title": "Skip sleep in GTA 6 and it shows on your face (story, silent preview)",
+ "title": "Skip sleep in GTA 6 and it shows on your face (story, voiced)",
  "format": "story",
  "account": "@noticed.daily",
  "brand_name": "noticed.",
@@ -9,7 +9,7 @@
   "GTA 6 writes your worst habits on your face."
  ],
  "hook_pick": "Option 1: everyone skips sleep (launch night most of all), the face is instantly visual, it is new (San Andreas never tracked sleep) and it is checkable in Dazed. Option 2 is old news to San Andreas fans; option 3 is vaguer.",
- "ending": "one line question, then the loop line 'Just remember.' that runs into the hook on replay, then the noticed. end card",
+ "ending": "launch night question (past tense, posts 20 Nov), then the owner's CTA (13 Nov): follow noticed dot daily and comment BODY, the full list of body changes lands straight in your inbox, see you in Leonida; then the noticed. end card with the same CTA. No loop.",
  "voice_id": "bqoGL6z7prHxVFnnNfsb",
  "model_id": "eleven_v4",
  "voice_preset": 1,
@@ -51,8 +51,8 @@
     },
     {
      "shot": 101,
-     "offset": 0.3,
-     "at": 5
+     "offset": 0.1,
+     "at": 7
     }
    ]
   },
@@ -152,8 +152,13 @@
    "footnote": "REPORTED: Dazed; IGN interview. ROCKSTAR SAYS: NYT.",
    "clips": [
     {
-     "shot": 46,
+     "shot": 43,
      "offset": 0.1
+    },
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "at": 3
     },
     {
      "shot": 74,
@@ -219,7 +224,8 @@
     {
      "shot": 101,
      "offset": 0.1,
-     "at": 9
+     "at": 9,
+     "slow": 1.8
     },
     {
      "shot": 17,
@@ -301,8 +307,8 @@
      "at": 16
     },
     {
-     "shot": 85,
-     "offset": 2.0,
+     "shot": 6,
+     "offset": 0.1,
      "at": 18
     }
    ]
@@ -354,18 +360,62 @@
    ]
   },
   {
-   "say": "San Andreas did weight and muscle in two thousand four. GTA Four and Five dropped it. Twenty two years later, it's back.",
+   "say": "San Andreas did weight and muscle in two thousand four.",
    "bg": "scrim",
    "sfx": "hit",
    "stamp": {
     "big": "2004",
-    "small": "GTA SAN ANDREAS",
-    "until": 10
+    "small": "GTA SAN ANDREAS"
+   },
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "San Andreas did / weight and muscle",
+     "at": 0,
+     "key": [
+      "weight",
+      "muscle"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Eurogamer.",
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.3
+    },
+    {
+     "shot": 88,
+     "offset": 0.3,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "GTA Four and Five dropped it. Twenty two years later, it's back.",
+   "bg": "scrim",
+   "compare": {
+    "mode": "ab",
+    "left": {
+     "shot": 526,
+     "t": 0,
+     "cx": 0.38
+    },
+    "right": {
+     "shot": 31,
+     "t": 0.3,
+     "slow": 1.8
+    },
+    "at": 6,
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
    },
    "timeline": {
     "from": 2004,
     "to": 2026,
-    "at": 13,
+    "at": 6,
     "dur": 1.4,
     "label": "WEIGHT AND MUSCLE STATS",
     "big": "22 YEARS",
@@ -376,36 +426,27 @@
    "caps": [
     {
      "text": "GTA 4 and 5 / dropped it.",
-     "at": 10,
+     "at": 0,
      "key": [
       "dropped"
      ]
     },
     {
-     "text": "22 years later, / it's back.",
-     "at": 16,
+     "text": "22 years later,",
+     "at": 6,
      "key": [
-      "back"
+      "22"
+     ]
+    },
+    {
+     "text": "it's back.",
+     "at": 10,
+     "key": [
+      "back."
      ]
     }
    ],
-   "footnote": "REPORTED: Eurogamer. 22 YEARS: OUR MATH, 2004 to 2026.",
-   "clips": [
-    {
-     "shot": 41,
-     "offset": 0.3
-    },
-    {
-     "shot": 88,
-     "offset": 0.3,
-     "at": 10
-    },
-    {
-     "shot": 83,
-     "offset": 0.4,
-     "at": 16
-    }
-   ]
+   "footnote": "REPORTED: Eurogamer. 22 YEARS: OUR MATH, 2004 to 2026."
   },
   {
    "say": "Rob Nelson's hope? You get up, have a coffee, shower, and go out for a little exercise. In the game.",
@@ -464,7 +505,7 @@
    ]
   },
   {
-   "say": "So how many hours are you sleeping on launch night?",
+   "say": "So how many hours did you sleep on launch night?",
    "bg": "scrim",
    "sfx": "hit",
    "stamp": {
@@ -477,7 +518,7 @@
    "capsY": 1100,
    "caps": [
     {
-     "text": "So how many hours / are you sleeping / on launch night?",
+     "text": "So how many hours / did you sleep / on launch night?",
      "at": 0,
      "key": [
       "launch night"
@@ -503,22 +544,120 @@
    ]
   },
   {
-   "say": "Just remember.",
+   "say": "Follow noticed dot daily",
    "bg": "scrim",
-   "capsY": 1180,
+   "sfx": "whoosh",
+   "capsY": 1150,
    "caps": [
     {
-     "text": "Just remember.",
+     "text": "Follow @noticed.daily",
      "at": 0,
      "key": [
-      "remember"
+      "@noticed.daily"
      ]
     }
    ],
    "clips": [
     {
-     "shot": 85,
+     "shot": 71,
      "offset": 0.1
+    },
+    {
+     "shot": 65,
+     "offset": 0.1,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "say": "and comment BODY.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "BODY",
+    "small": "COMMENT THIS WORD",
+    "at": 0,
+    "size": 300,
+    "color": "accent",
+    "cy": 760
+   },
+   "caps": [],
+   "clips": [
+    {
+     "shot": 85,
+     "offset": 0.6
+    }
+   ]
+  },
+  {
+   "say": "The full list of body changes lands straight in your inbox.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "tiles": {
+    "items": [
+     {
+      "text": "WEIGHT",
+      "at": 2
+     },
+     {
+      "text": "MUSCLE",
+      "at": 4
+     },
+     {
+      "text": "FACE",
+      "at": 5
+     }
+    ],
+    "y": 380,
+    "gap": 165,
+    "size": 92
+   },
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "The full list of / body changes",
+     "at": 0,
+     "key": [
+      "body changes"
+     ]
+    },
+    {
+     "text": "lands straight / in your inbox.",
+     "at": 6,
+     "key": [
+      "inbox."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 48,
+     "offset": 0.1
+    },
+    {
+     "shot": 2,
+     "offset": 0.3,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
     }
    ]
   },
@@ -526,15 +665,18 @@
    "layout": "endcard",
    "brand": "noticed.",
    "series": "GTA 6",
-   "episode": "@noticed.daily",
-   "cta": "Follow for tomorrow",
-   "hold": 1.8,
+   "episode": "The full list of body changes lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT BODY",
+   "hold": 2.4,
    "clips": [
     {
-     "shot": 62,
-     "offset": 10.4
+     "shot": 91,
+     "offset": 6.0
     }
-   ]
+   ],
+   "wordmark": true,
+   "handle": "@noticed.daily"
   }
- ]
+ ],
+ "time_sensitive": "Posts Fri 20 Nov 2026 12:00 ET, the day after launch: the launch night question is in the past tense."
 }

@@ -111,3 +111,17 @@ Every page below was opened with curl on 13 Nov 2026; raw copies sit in the sess
 
 ## Footage (clean windows only, frames checked with shot_frames.py on 13 Nov)
 Extended Look gameplay first: shots 85, 101 (bench press, L2 and R2), 74, 81, 82, 83, 88, 89, 91, 94, 99, 102, 104. Trailer shots for variety: 17, 20, 21, 26, 34, 40, 41, 42, 44, 46, 47, 51, 58 (cx 0.75 so only the napping man is in frame), 62, 64, 72 (21 Extended Look clip uses against 17 trailer ones). Official 4K screenshot: Ultimate Edition, Sara's Salon 02. No weapons, police, crashes, violence or suggestive shots in the windows used. Preview timing is synthetic (180 wpm); cuts will shift slightly with the real voice.
+
+## Addendum, 13 Nov 2026: voice v2 (posts 20 Nov), BODY DM list
+* L16 is now "So how many hours did you sleep on launch night?" (R11 posts the day after launch). Question, no claim.
+* The loop line "Just remember." was replaced by the owner's CTA (follow plus comment BODY, the list lands in your inbox). The DM sent to everyone who comments BODY, follower or not, uses only the sources above:
+  * Weight: [DZ] "Food affects Jason and Lucia's weight"; [GF] "overeating puts on weight"; [INV] "overeating will cause the character to put on weight". REPORTED.
+  * Health: [GF] "Eating gives a substantial health buff"; [STAR] Nelson's apple and smoothie demo. REPORTED and ROCKSTAR SAYS.
+  * Muscle: [DZ] "exercising visibly builds and tones their muscles"; [INV] "Players can visit gyms to build strength". REPORTED.
+  * Gym controls: [TT1] L2 and R2 prompts on the bench press (our frame check); [STAR] trigger rhythm and stamina drain, seen on a squat rack. CONFIRMED on screen and REPORTED.
+  * Heavier weights: [STAR] "Unlocking higher weights requires working out and a mastery of technique." REPORTED.
+  * Faces: [DZ] the away from bed, on the run, multi day bender sentence. REPORTED.
+  * Train together: [GF] "if both characters go together, you manage both at once". REPORTED.
+  * History: [EG] San Andreas (2004) had these systems; "These systems were dropped for GTA 4 and GTA 5". REPORTED.
+  * Hair: [INV] "Hair can only be cut shorter or shaved at a safehouse, with new styles available at salons that each carry their own signature looks." REPORTED.
+* GTA V visual for the GTA 5 line: Rockstar's official GTA V screenshot of Michael on the phone at night (GTA V library id 526, audited by the compare kit agent).
