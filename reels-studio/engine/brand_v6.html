@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Unbounded'; font-weight: 500; src: url('node_modules/@fontsource/unbounded/files/unbounded-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Unbounded'; font-weight: 800; src: url('node_modules/@fontsource/unbounded/files/unbounded-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 600; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 800; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url('node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2') format('woff2'); }
+html, body { margin: 0; background: #050506; color: #F4F1EA; font-family: 'Inter Tight'; }
+.word { font-family: 'Unbounded'; font-weight: 500; letter-spacing: 0.03em; white-space: nowrap; }
+.word i { font-style: normal; color: #FF6B1A; }
+.num { font-family: 'JetBrains Mono'; font-weight: 500; color: #FF6B1A; }
+.circle { border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,0.09); background: #0B0B0D; }
+.circle img, .circle svg { width: 100%; height: 100%; display: block; }
+.mock { width: 1080px; height: 760px; background: #000; position: relative; }
+.mock .pfp { position: absolute; left: 60px; top: 70px; width: 250px; height: 250px; }
+.mock .stats { position: absolute; left: 360px; top: 120px; display: flex; gap: 70px; font-weight: 800; font-size: 44px; text-align: center; }
+.mock .stats span { display: block; font-weight: 600; font-size: 28px; color: #bbb; margin-top: 6px; }
+.mock .name { position: absolute; left: 60px; top: 350px; font-weight: 800; font-size: 40px; }
+.mock .bio { position: absolute; left: 60px; top: 408px; font-weight: 600; font-size: 31px; line-height: 1.38; color: #e8e8e8; }
+.mock .btn { position: absolute; left: 60px; right: 60px; top: 590px; height: 84px; border-radius: 18px; background: #0095F6; color: #fff; font-weight: 800; font-size: 34px; display: flex; align-items: center; justify-content: center; }
+.mock .small { position: absolute; right: 70px; top: 330px; width: 110px; height: 110px; }
+.mock .tiny { position: absolute; right: 214px; top: 365px; width: 40px; height: 40px; }
+</style>
+</head>
+<body>
+<div id="page"></div>
+<script src="brand_v6_data.js"></script>
+<script>
+const FG = '#F4F1EA', AC = '#FF6B1A', BG = '#0B0B0D';
+// Flat marks: two colours on near black, each with a second meaning.
+const FLAT = {
+  // missed. : a lowercase m whose last leg is an exclamation mark (the detail you missed)
+  m: () => `<g fill="none" stroke-width="92" stroke-linecap="butt" stroke="${FG}">
+      <path d="M 350 750 V 330"/>
+      <path d="M 350 471 A 95 95 0 0 1 540 471 V 750"/>
+      <path d="M 540 471 A 95 95 0 0 1 730 471"/>
+    </g>
+    <polygon points="684,470 776,470 764,624 696,624" fill="${AC}"/>
+    <circle cx="730" cy="704" r="46" fill="${AC}"/>`,
+  // blinked. : a closed eye (also the "hidden" icon) and the thing that happened while it was shut
+  blink: () => `<g fill="none" stroke="${FG}" stroke-width="58" stroke-linecap="round">
+      <path d="M 290 500 Q 540 716 790 500"/>
+      <path d="M 540 612 V 716"/><path d="M 404 574 L 350 660"/><path d="M 676 574 L 730 660"/></g>
+    <circle cx="772" cy="352" r="54" fill="${AC}"/>`,
+  // missed. : a blank and a full stop. The word itself is missing.
+  blank: () => `<path d="M 262 612 H 688" stroke="${FG}" stroke-width="48" stroke-linecap="round" fill="none"/>
+    <circle cx="798" cy="580" r="58" fill="${AC}"/>`,
+  // noticed. : an app tile with an unread badge
+  badge: () => `<rect x="296" y="394" width="392" height="392" rx="100" fill="${FG}"/>
+    <circle cx="690" cy="392" r="128" fill="${BG}"/><circle cx="690" cy="392" r="98" fill="${AC}"/>`,
+  // glimpse. : an eye peeking over the edge (also a sunrise)
+  peek: () => `<path d="M 250 664 H 830" stroke="${FG}" stroke-width="46" stroke-linecap="round" fill="none"/>
+    <path d="M 336 616 A 204 204 0 0 1 744 616 Z" fill="${FG}"/>
+    <path d="M 452 616 A 88 88 0 0 1 628 616 Z" fill="${AC}"/>`,
+  // decoded. : dash dot dot, the letter d in Morse code
+  morse: () => `<rect x="236" y="486" width="286" height="108" rx="54" fill="${FG}"/>
+    <circle cx="644" cy="540" r="54" fill="${FG}"/><circle cx="790" cy="540" r="54" fill="${AC}"/>`,
+  // overlooked. : both eyes look the wrong way; the thing is right there
+  eyes: () => `<circle cx="384" cy="458" r="132" fill="${FG}"/><circle cx="664" cy="458" r="132" fill="${FG}"/>
+    <circle cx="340" cy="414" r="58" fill="${BG}"/><circle cx="620" cy="414" r="58" fill="${BG}"/>
+    <circle cx="778" cy="730" r="54" fill="${AC}"/>`,
+};
+function flat(k) { return `<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg"><rect width="1080" height="1080" fill="${BG}"/>${FLAT[k]()}</svg>`; }
+function art(it) { return it.flat ? flat(it.flat) : `<img src="${it.img}">`; }
+const q = new URLSearchParams(location.search), mode = q.get('mode') || 'gallery';
+const page = document.getElementById('page'), D = window.DATA;
+if (mode === 'pfp') { const it = D.items[+q.get('n') - 1]; page.innerHTML = `<div style="width:1080px;height:1080px">${art(it)}</div>`; }
+else if (mode === 'flat') page.innerHTML = `<div style="width:1080px;height:1080px">${flat(q.get('k'))}</div>`;
+else if (mode === 'gallery') {
+  page.innerHTML = `<div style="width:1080px;padding:64px 0 56px">
+    <div style="text-align:center;font-weight:800;font-size:25px;letter-spacing:0.26em;color:#FF6B1A">LOGO GALLERY</div>
+    <div style="text-align:center;font-weight:600;font-size:31px;color:#cfc9d6;margin-top:14px">${D.sub}</div>
+    <div style="display:grid;grid-template-columns:repeat(3,346px);justify-content:center;margin-top:34px">` + D.items.map((it, i) => `
+      <div style="height:468px;position:relative;text-align:center">
+        <div class="num" style="position:absolute;left:30px;top:22px;font-size:26px">${String(i + 1).padStart(2, '0')}</div>
+        ${it.star ? `<div style="position:absolute;right:26px;top:22px;font-weight:800;font-size:17px;letter-spacing:0.14em;color:#0B0B0D;background:#FF6B1A;border-radius:20px;padding:5px 12px">MY PICK</div>` : ''}
+        <div class="circle" style="width:236px;height:236px;margin:64px auto 0">${art(it)}</div>
+        <div class="word" style="margin-top:22px;font-size:${it.name.length > 9 ? 30 : 34}px">${it.name}<i>.</i></div>
+        <div style="margin:9px 22px 0;font-weight:600;font-size:21.5px;line-height:1.3;color:#9a93a6">${it.line}</div>
+      </div>`).join('') + `</div></div>`;
+}
+else if (mode === 'top') {
+  const T = D.top.map(n => [n, D.items[n - 1]]);
+  page.innerHTML = `<div style="width:1080px;padding:70px 0 60px">
+    <div style="text-align:center;font-weight:800;font-size:25px;letter-spacing:0.26em;color:#FF6B1A">MY TOP 3, UP CLOSE</div>` + T.map(([n, it], j) => `
+    <div style="display:flex;align-items:center;gap:54px;padding:0 70px;margin-top:${j ? 64 : 54}px">
+      <div class="circle" style="width:400px;height:400px;flex:none">${art(it)}</div>
+      <div style="flex:1;min-width:0">
+        <div class="num" style="font-size:28px">${String(n).padStart(2, '0')}</div>
+        <div class="word" style="font-size:${it.name.length > 8 ? 54 : 66}px;margin-top:6px">${it.name}<i>.</i></div>
+        <div style="font-weight:600;font-size:28px;line-height:1.34;color:#bdb6c8;margin-top:14px">${D.why[n]}</div>
+        <div style="display:flex;align-items:center;gap:18px;margin-top:24px">
+          <div class="circle" style="width:110px;height:110px">${art(it)}</div><div class="circle" style="width:64px;height:64px">${art(it)}</div><div class="circle" style="width:40px;height:40px">${art(it)}</div>
+          <div style="font-weight:600;font-size:20px;color:#6f6878;line-height:1.25">real<br>Instagram sizes</div></div>
+      </div></div>`).join('') + `</div>`;
+}
+else if (mode === 'mock') {
+  const it = D.items[+q.get('n') - 1];
+  page.innerHTML = `<div class="mock"><div class="pfp circle">${art(it)}</div>
+  <div class="stats"><div>24<span>posts</span></div><div>12.4K<span>followers</span></div><div>3<span>following</span></div></div>
+  <div class="name">${it.name}. | GTA 6</div>
+  <div class="bio">${D.bio}<br>Not affiliated with Rockstar Games.</div>
+  <div class="small circle">${art(it)}</div><div class="tiny circle">${art(it)}</div>
+  <div class="btn">Follow</div></div>`;
+}
+else if (mode === 'lockup') {
+  const it = D.items[+q.get('n') - 1];
+  page.innerHTML = `<div style="width:1600px;height:500px;display:flex;align-items:center;gap:60px;padding-left:120px;background:#0B0B0D">
+    <div class="circle" style="width:300px;height:300px;flex:none;box-shadow:none">${art(it)}</div>
+    <div class="word" style="font-size:150px">${it.name}<i>.</i></div></div>`;
+}
+window.READY = true;
+</script>
+</body>
+</html>
