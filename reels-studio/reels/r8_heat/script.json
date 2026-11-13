@@ -1,0 +1,682 @@
+{
+ "title": "In GTA 6, the police remember your outfit (story, silent preview)",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand": "noticed.",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "In GTA Six, the police remember your outfit.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "In GTA 6, the police / remember your outfit.",
+     "at": 0,
+     "key": [
+      "your outfit."
+     ]
+    }
+   ],
+   "instant": true,
+   "push": 0.06,
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 0.3
+    },
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 41,
+     "offset": 0.4,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Rockstar's Rob Nelson told IGN they know your face, your clothes, your car.",
+   "bg": "scrim",
+   "caps": [],
+   "tiles": {
+    "items": [
+     {
+      "text": "FACE",
+      "at": 8
+     },
+     {
+      "text": "CLOTHES",
+      "at": 10
+     },
+     {
+      "text": "CAR",
+      "at": 12
+     }
+    ],
+    "y": 430,
+    "gap": 160,
+    "size": 100
+   },
+   "chip": {
+    "text": "ROB NELSON, CO STUDIO HEAD, ROCKSTAR NORTH",
+    "at": 0,
+    "until": 8,
+    "y": 960,
+    "size": 24
+   },
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 85,
+     "offset": 0.4
+    },
+    {
+     "shot": 69,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 101,
+     "offset": 0.1,
+     "at": 8
+    },
+    {
+     "shot": 74,
+     "offset": 2.0,
+     "at": 10
+    },
+    {
+     "shot": 89,
+     "offset": 0.2,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "And sunglasses won't save you.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "And sunglasses / won't save you.",
+     "at": 0,
+     "key": [
+      "sunglasses"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GOODTIME_GEAR_01.0t7de8dow381q.jpg",
+   "pan": [
+    0.5,
+    0.66
+   ]
+  },
+  {
+   "say": "Twenty thirteen. In GTA Five, you watched the cops on your radar.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "In GTA 5, you watched / the cops on your radar.",
+     "at": 2,
+     "key": [
+      "radar."
+     ]
+    }
+   ],
+   "stamp": {
+    "big": "2013",
+    "small": "GTA 5",
+    "until": 2,
+    "cy": 760
+   },
+   "footnote": "GTA 5: officers' line of sight shows on the mini map.",
+   "sfx": "hit",
+   "compare_todo": "GTA V: official GTA V gameplay with the radar showing police blips or vision cones (A side), then or beside the GTA VI shot of the next beat (B side); labels GTA V and GTA VI. No police action in frame.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.3
+    },
+    {
+     "shot": 89,
+     "offset": 1.0,
+     "at": 2
+    },
+    {
+     "shot": 20,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 77,
+     "offset": 12.0,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "Rockstar's footage shows GTA Six mostly hides them.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Rockstar's footage shows / GTA 6 mostly hides them.",
+     "at": 0,
+     "key": [
+      "hides them."
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR'S FOOTAGE: An Extended Look, 27 Aug 2026.",
+   "sfx": "whoosh",
+   "compare_todo": "Same comparison, B side: GTA VI footage where the minimap shows no police (official GTA VI only, no chase in frame), after or beside the GTA V radar; labels GTA V and GTA VI.",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 6.8
+    },
+    {
+     "shot": 62,
+     "offset": 10.3,
+     "at": 3
+    },
+    {
+     "shot": 26,
+     "offset": 6.35,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "It shows six wanted stars, too. GTA Five stopped at five.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "GTA 5 stopped / at five.",
+     "at": 6,
+     "key": [
+      "five."
+     ]
+    }
+   ],
+   "counter": {
+    "from": 5,
+    "to": 6,
+    "at": 2,
+    "dur": 0.5,
+    "label": "WANTED STARS IN GTA 6",
+    "cy": 640
+   },
+   "capsY": 1180,
+   "footnote": "ROCKSTAR'S FOOTAGE, via GamesRadar, 27 Aug 2026.",
+   "sfx": "hit",
+   "compare_todo": "GTA V: the five star wanted meter on the GTA V HUD (A side) beside GTA VI's six star meter (B side, official GTA VI footage, no police action in frame); labels GTA V and GTA VI. Do not show or say what six stars does.",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 2.5
+    },
+    {
+     "shot": 104,
+     "offset": 0.3,
+     "at": 3
+    },
+    {
+     "shot": 91,
+     "offset": 5.6,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "And small icons under the stars show what the police know.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "IN ROCKSTAR'S FOOTAGE",
+     "head": "Icons under the stars show what the police know.",
+     "mark": "what the police know.",
+     "mark_at": 7,
+     "source": "An Extended Look, Rockstar Games, 27 Aug 2026",
+     "at": 0,
+     "cy": 640
+    }
+   ],
+   "footnote": "ROCKSTAR'S FOOTAGE, via GamesRadar, 27 Aug 2026.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 9.3
+    },
+    {
+     "shot": 81,
+     "offset": 0.2,
+     "at": 3
+    },
+    {
+     "shot": 74,
+     "offset": 15.5,
+     "at": 6
+    },
+    {
+     "shot": 85,
+     "offset": 0.6,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "No witness, no alarm? Nelson says it never gets reported.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "No witness, no alarm?",
+     "at": 0
+    },
+    {
+     "text": "It never / gets reported.",
+     "at": 6,
+     "key": [
+      "never"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "The Wanted system in GTA 6 requires that someone witness the crime, or an alarm needs to be set off for it to be reported to the law.",
+     "qsize": 50,
+     "source": "Rob Nelson, Rockstar North, to IGN",
+     "at": 0,
+     "cy": 620
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 0.4
+    },
+    {
+     "shot": 3,
+     "offset": 0.6,
+     "at": 4
+    },
+    {
+     "shot": 81,
+     "offset": 0.15,
+     "at": 7
+    },
+    {
+     "shot": 28,
+     "offset": 0.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Get seen anyway? Nelson put on glasses and a hat. They still knew his outfit.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Get seen anyway?",
+     "at": 0
+    },
+    {
+     "text": "Nelson put on / glasses and a hat.",
+     "at": 3
+    },
+    {
+     "text": "They still knew / his outfit.",
+     "at": 10,
+     "key": [
+      "his outfit."
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 61,
+     "offset": 0.15
+    },
+    {
+     "shot": 47,
+     "offset": 0.1,
+     "at": 3
+    },
+    {
+     "shot": 67,
+     "offset": 0.1,
+     "at": 6
+    },
+    {
+     "shot": 99,
+     "offset": 0.1,
+     "at": 8
+    },
+    {
+     "shot": 74,
+     "offset": 2.6,
+     "at": 10
+    },
+    {
+     "shot": 74,
+     "offset": 5.0,
+     "at": 13
+    }
+   ]
+  },
+  {
+   "say": "Buy a new outfit,",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Buy a new outfit,",
+     "at": 0,
+     "key": [
+      "outfit,"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_STOCK_305_03.00wltke54q_n0.jpg",
+   "pan": [
+    0.78,
+    0.82
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN."
+  },
+  {
+   "say": "and the heat is gone.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "and the heat / is gone.",
+     "at": 0,
+     "key": [
+      "gone."
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_VICE_CITY_STYLE_04.1572kk.expq-n.jpg",
+   "pan": [
+    0.25,
+    0.33
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN."
+  },
+  {
+   "say": "Spare outfits even ride in your trunk.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Spare outfits even / ride in your trunk.",
+     "at": 0,
+     "key": [
+      "trunk."
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.3
+    },
+    {
+     "shot": 62,
+     "offset": 9.2,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "They know your car? Jump out. They know you're a couple? Split up.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "They know your car?",
+     "at": 0
+    },
+    {
+     "text": "They know you're a couple?",
+     "at": 6
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "JUMP OUT",
+      "at": 4
+     },
+     {
+      "text": "SPLIT UP",
+      "at": 11
+     }
+    ],
+    "y": 470,
+    "gap": 170
+   },
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 0.2
+    },
+    {
+     "shot": 76,
+     "offset": 7.2,
+     "at": 4
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 6
+    },
+    {
+     "shot": 21,
+     "offset": 0.1,
+     "at": 8
+    },
+    {
+     "shot": 74,
+     "offset": 18.5,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "But if either of you gets arrested, it's Busted.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "If either of you gets arrested, it's just 'Busted,' then it's a restart, a respawn.",
+     "qsize": 62,
+     "source": "Rob Nelson, Rockstar North, to IGN",
+     "at": 0,
+     "cy": 660
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "sfx": "hit",
+   "clips": [
+    {
+     "shot": 94,
+     "offset": 0.25
+    },
+    {
+     "shot": 40,
+     "offset": 0.5,
+     "at": 5
+    },
+    {
+     "shot": 37,
+     "offset": 0.1,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Nelson's best tip: get off the streets, on foot, into the alleys.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Nelson's best tip:",
+     "at": 0
+    },
+    {
+     "text": "get off the streets, / on foot, into the alleys.",
+     "at": 3,
+     "key": [
+      "alleys."
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 1.6
+    },
+    {
+     "shot": 28,
+     "offset": 0.2,
+     "at": 3
+    },
+    {
+     "shot": 94,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 31,
+     "offset": 1.7,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "New shirt, new car, or split up. What's your getaway?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "What's your getaway?",
+     "at": 7,
+     "key": [
+      "getaway?"
+     ]
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "NEW SHIRT",
+      "at": 1
+     },
+     {
+      "text": "NEW CAR",
+      "at": 3
+     },
+     {
+      "text": "SPLIT UP",
+      "at": 5
+     }
+    ],
+    "y": 430,
+    "gap": 160,
+    "size": 96
+   },
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 46,
+     "offset": 0.1
+    },
+    {
+     "shot": 89,
+     "offset": 1.7,
+     "at": 2
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 91,
+     "offset": 5.6,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Whatever you pick, change your shirt first.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Whatever you pick, / change your shirt first.",
+     "at": 0,
+     "key": [
+      "shirt first."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.5
+    },
+    {
+     "shot": 74,
+     "offset": 0.3,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "Your outfit is evidence",
+   "cta": "Follow for tomorrow",
+   "hold": 2.0,
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 0.8
+    }
+   ]
+  }
+ ],
+ "hook_options": [
+  "PICKED: In GTA 6, the police remember your outfit.",
+  "No witness, no alarm, no cops. GTA 6 changed the rules.",
+  "GTA 6's best getaway might be a new shirt."
+ ],
+ "loop_note": "The last spoken line runs back into the hook; the noticed. end card (wordmark and @noticed.daily handle) plays over the opening footage. The engine loop flag stays off because it drops the end card."
+}

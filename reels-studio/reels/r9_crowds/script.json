@@ -1,0 +1,690 @@
+{
+ "title": "Stare at a stranger in GTA 6. His dog might chase you (story, silent preview)",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand": "noticed.",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "Stare at a stranger in GTA Six. His dog might chase you.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Stare at a stranger / in GTA 6. / His dog might chase you.",
+     "at": 0,
+     "key": [
+      "dog"
+     ]
+    }
+   ],
+   "instant": true,
+   "push": 0.06,
+   "clips": [
+    {
+     "shot": 71,
+     "offset": 0.1
+    },
+    {
+     "shot": 61,
+     "offset": 0.15,
+     "at": 3
+    },
+    {
+     "shot": 104,
+     "offset": 0.3,
+     "at": 7
+    },
+    {
+     "shot": 81,
+     "offset": 1.9,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "say": "Edge magazine watched it happen. A man took Jason's stare as a test, squared up, unclipped the leash.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Edge magazine / watched it happen.",
+     "at": 0
+    },
+    {
+     "text": "Squared up, / unclipped the leash.",
+     "at": 13,
+     "key": [
+      "unclipped"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "EDGE MAGAZINE, GTA 6 COVER STORY",
+     "quote": "The man with the dog has decided that Jason's stare constitutes a test.",
+     "qsize": 60,
+     "source": "Edge GTA 6 cover story, 29 Oct 2026",
+     "at": 5,
+     "cy": 620
+    }
+   ],
+   "footnote": "REPORTED: Edge GTA 6 cover story.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 47,
+     "offset": 0.1
+    },
+    {
+     "shot": 99,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 30,
+     "offset": 0.6,
+     "at": 5
+    },
+    {
+     "shot": 31,
+     "offset": 0.15,
+     "at": 9
+    },
+    {
+     "shot": 30,
+     "offset": 2.5,
+     "at": 13
+    },
+    {
+     "shot": 88,
+     "offset": 0.4,
+     "at": 15
+    }
+   ]
+  },
+  {
+   "say": "Twenty thirteen. In GTA Five, bump into someone, he drops something, forgets it, walks away.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "In GTA 5, bump into someone, / he drops something,",
+     "at": 2
+    },
+    {
+     "text": "forgets it, / walks away.",
+     "at": 11,
+     "key": [
+      "forgets"
+     ]
+    }
+   ],
+   "stamp": {
+    "big": "2013",
+    "small": "GTA 5",
+    "until": 2,
+    "cy": 760
+   },
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to The New York Times.",
+   "sfx": "hit",
+   "compare_todo": "GTA V: official GTA V street footage of Los Santos pedestrians walking past each other, no violence (A side), then or beside this GTA VI street shot (B side); labels GTA V and GTA VI.",
+   "clips": [
+    {
+     "shot": 35,
+     "offset": 0.2
+    },
+    {
+     "shot": 2,
+     "offset": 0.2,
+     "at": 2
+    },
+    {
+     "shot": 29,
+     "offset": 0.2,
+     "at": 5
+    },
+    {
+     "shot": 27,
+     "offset": 0.1,
+     "at": 8
+    },
+    {
+     "shot": 28,
+     "offset": 0.1,
+     "at": 11
+    },
+    {
+     "shot": 35,
+     "offset": 2.2,
+     "at": 13
+    }
+   ]
+  },
+  {
+   "say": "Now pedestrians carry personality traits. Temper. Aggression. What they've seen. How you treated them.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Now pedestrians carry / personality traits.",
+     "at": 0,
+     "key": [
+      "personality traits."
+     ]
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "TEMPER",
+      "at": 5
+     },
+     {
+      "text": "AGGRESSION",
+      "at": 6
+     },
+     {
+      "text": "WHAT THEY'VE SEEN",
+      "at": 7
+     },
+     {
+      "text": "HOW YOU TREATED THEM",
+      "at": 10
+     }
+    ],
+    "y": 360,
+    "gap": 138,
+    "size": 76
+   },
+   "footnote": "REPORTED: Edge GTA 6 cover story.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1
+    },
+    {
+     "shot": 47,
+     "offset": 0.1,
+     "at": 2
+    },
+    {
+     "shot": 81,
+     "offset": 0.2,
+     "at": 4
+    },
+    {
+     "shot": 30,
+     "offset": 1.8,
+     "at": 5
+    },
+    {
+     "shot": 31,
+     "offset": 0.7,
+     "at": 6
+    },
+    {
+     "shot": 74,
+     "offset": 27.0,
+     "at": 7
+    },
+    {
+     "shot": 74,
+     "offset": 32.3,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "say": "Stand too close and listen in? They notice. Follow too closely, and they may get aggressive, or bolt.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Stand too close / and listen in?",
+     "at": 0
+    },
+    {
+     "text": "They notice.",
+     "at": 6,
+     "key": [
+      "notice."
+     ]
+    },
+    {
+     "text": "Follow too closely, / and they may get aggressive, / or bolt.",
+     "at": 8,
+     "key": [
+      "bolt."
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "clips": [
+    {
+     "shot": 47,
+     "offset": 1.15
+    },
+    {
+     "shot": 74,
+     "offset": 28.0,
+     "at": 3
+    },
+    {
+     "shot": 3,
+     "offset": 0.7,
+     "at": 6
+    },
+    {
+     "shot": 94,
+     "offset": 0.1,
+     "at": 8
+    },
+    {
+     "shot": 61,
+     "offset": 0.15,
+     "at": 11
+    },
+    {
+     "shot": 30,
+     "offset": 3.0,
+     "at": 14
+    },
+    {
+     "shot": 91,
+     "offset": 0.3,
+     "at": 16
+    }
+   ]
+  },
+  {
+   "say": "Rob Nelson: in old GTAs, act out and everyone would run in terror. This world is not like that.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "This world / is not like that.",
+     "at": 13,
+     "key": [
+      "not like that."
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "Apart from the police, everyone would run in terror from you if you started acting out. This world in GTA 6 is not like that.",
+     "qsize": 50,
+     "source": "Rob Nelson, Rockstar North, to IGN",
+     "at": 0,
+     "cy": 620
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "sfx": "whoosh",
+   "compare_todo": "GTA V: official GTA V footage of a busy Los Santos street or beach, no weapons or violence (A side), then or beside this GTA VI crowd (B side); labels GTA V and GTA VI.",
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1
+    },
+    {
+     "shot": 65,
+     "offset": 0.15,
+     "at": 2
+    },
+    {
+     "shot": 11,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 48,
+     "offset": 0.3,
+     "at": 8
+    },
+    {
+     "shot": 51,
+     "offset": 0.1,
+     "at": 11
+    },
+    {
+     "shot": 74,
+     "offset": 35.0,
+     "at": 13
+    },
+    {
+     "shot": 42,
+     "offset": 0.15,
+     "at": 16
+    }
+   ]
+  },
+  {
+   "say": "So Rockstar built a whole team in Los Angeles, just for people on the street.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "So Rockstar built / a whole team in Los Angeles,",
+     "at": 0
+    },
+    {
+     "text": "just for people / on the street.",
+     "at": 9,
+     "key": [
+      "on the street."
+     ]
+    }
+   ],
+   "layout": "map",
+   "mapCard": true,
+   "lonMin": -126,
+   "lonMax": -66,
+   "latTop": 50,
+   "latBot": 24,
+   "mapW": 700,
+   "mapTop": 330,
+   "cities": [
+    {
+     "name": "LOS ANGELES",
+     "lon": -118.24,
+     "lat": 34.05,
+     "at": 7,
+     "time": "NPC TEAM"
+    }
+   ],
+   "footnote": "REPORTED: The New York Times.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 0.15
+    },
+    {
+     "shot": 77,
+     "offset": 7.0,
+     "at": 3
+    },
+    {
+     "shot": 69,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 16,
+     "offset": 0.4,
+     "at": 9
+    },
+    {
+     "shot": 81,
+     "offset": 2.0,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "And art directed every single one of them by hand.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "And art directed / every single one of them",
+     "at": 0
+    },
+    {
+     "text": "by hand.",
+     "at": 8,
+     "key": [
+      "hand."
+     ]
+    }
+   ],
+   "collage": {
+    "cards": [
+     {
+      "shot": 30,
+      "offset": 1.0
+     },
+     {
+      "shot": 71,
+      "offset": 0.3
+     },
+     {
+      "shot": 61,
+      "offset": 0.5
+     },
+     {
+      "shot": 67,
+      "offset": 0.3
+     },
+     {
+      "shot": 47,
+      "offset": 0.3
+     }
+    ],
+    "survivor": 2,
+    "fill_at": 8
+   },
+   "capsY": 1190,
+   "footnote": "ROCKSTAR SAYS: Aaron Garbut to The New York Times.",
+   "sfx": "hit",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 36.0
+    },
+    {
+     "shot": 61,
+     "offset": 0.5,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Over six hundred thousand animations. GTA Five had fifty five thousand. About eleven times more.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "About eleven / times more.",
+     "at": 11,
+     "key": [
+      "eleven"
+     ]
+    }
+   ],
+   "counter": {
+    "to": 600000,
+    "at": 0,
+    "dur": 1.6,
+    "label": "ANIMATIONS IN GTA 6",
+    "label2": "WELL OVER. GTA 5 HAD 55,000",
+    "chip": "ROCKSTAR SAYS",
+    "cy": 640
+   },
+   "capsY": 1180,
+   "footnote": "ROCKSTAR SAYS: via The New York Times. OUR MATH: about 11x.",
+   "sfx": "hit",
+   "compare_todo": "GTA V: official GTA V crowd or pedestrian footage labelled 55,000 animations (A side), beside this GTA VI crowd labelled 600,000 plus (B side); labels GTA V and GTA VI.",
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.15
+    },
+    {
+     "shot": 74,
+     "offset": 10.0,
+     "at": 2
+    },
+    {
+     "shot": 48,
+     "offset": 0.3,
+     "at": 4
+    },
+    {
+     "shot": 65,
+     "offset": 0.15,
+     "at": 5
+    },
+    {
+     "shot": 34,
+     "offset": 0.2,
+     "at": 8
+    },
+    {
+     "shot": 17,
+     "offset": 0.1,
+     "at": 11
+    },
+    {
+     "shot": 83,
+     "offset": 0.3,
+     "at": 13
+    }
+   ]
+  },
+  {
+   "say": "Watch one per second, nonstop,",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Watch one per second, / nonstop,",
+     "at": 0
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/k4ak9okk485712.0cj_8hoskvfgy.jpg",
+   "pan": [
+    0.3,
+    0.5
+   ],
+   "footnote": "OUR MATH: 600,000 seconds is about 6.9 days."
+  },
+  {
+   "say": "and you'd need almost a week.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "you'd need / almost a week.",
+     "at": 1,
+     "key": [
+      "almost a week."
+     ]
+    }
+   ],
+   "stamp": {
+    "big": "6.9 DAYS",
+    "small": "ONE ANIMATION PER SECOND",
+    "at": 0,
+    "size": 230,
+    "color": "accent",
+    "cy": 720
+   },
+   "footnote": "OUR MATH: 600,000 seconds is about 6.9 days.",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    },
+    {
+     "shot": 44,
+     "offset": 0.2,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "So in GTA Six, do you stare, or pet the dog?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "So in GTA 6,",
+     "at": 0
+    },
+    {
+     "text": "do you stare, / or pet the dog?",
+     "at": 4,
+     "key": [
+      "pet the dog?"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: The New York Times saw Jason pet a dog.",
+   "clips": [
+    {
+     "shot": 60,
+     "offset": 0.15
+    },
+    {
+     "shot": 71,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 74,
+     "offset": 33.0,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Just remember what happens when you stare.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Just remember / what happens when you stare.",
+     "at": 0,
+     "key": [
+      "stare."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 0.4
+    },
+    {
+     "shot": 67,
+     "offset": 0.1,
+     "at": 3
+    },
+    {
+     "shot": 61,
+     "offset": 0.15,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "Strangers remember",
+   "cta": "Follow for tomorrow",
+   "hold": 2.0,
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 0.5
+    }
+   ]
+  }
+ ],
+ "hook_options": [
+  "PICKED: Stare at a stranger in GTA 6. His dog might chase you.",
+  "GTA 5 had 55,000 animations. GTA 6 has over 600,000.",
+  "In GTA 6, strangers remember how you treated them."
+ ],
+ "loop_note": "The last spoken line runs back into the hook; the noticed. end card (wordmark and @noticed.daily handle) plays over the opening footage. The engine loop flag stays off because it drops the end card."
+}

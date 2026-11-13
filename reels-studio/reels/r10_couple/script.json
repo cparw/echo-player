@@ -1,0 +1,641 @@
+{
+ "title": "You can't break up Jason and Lucia (story, silent preview)",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand": "noticed.",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "You can't break up Jason and Lucia. Rockstar won't let you.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "You can't break up / Jason and Lucia. / Rockstar won't let you.",
+     "at": 0,
+     "key": [
+      "won't let"
+     ]
+    }
+   ],
+   "instant": true,
+   "push": 0.06,
+   "clips": [
+    {
+     "shot": 21,
+     "offset": 0.1
+    },
+    {
+     "shot": 74,
+     "offset": 14.6,
+     "at": 3
+    },
+    {
+     "shot": 44,
+     "offset": 0.15,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "It starts with a GTA Six that never happened. Four playable characters.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "It starts with a GTA 6 / that never happened.",
+     "at": 0,
+     "key": [
+      "never happened."
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "THE FIRST PLAN",
+     "head": "Four playable characters",
+     "mark": "Four",
+     "mark_at": 9,
+     "source": "The New York Times; IGN",
+     "at": 9,
+     "cy": 620
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: via The New York Times and IGN.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 40,
+     "offset": 0.3
+    },
+    {
+     "shot": 83,
+     "offset": 0.3,
+     "at": 4
+    },
+    {
+     "shot": 27,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 85,
+     "offset": 0.4,
+     "at": 9
+    },
+    {
+     "shot": 41,
+     "offset": 0.4,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "Rockstar worried you wouldn't connect with four. Then came one idea.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Rockstar worried you / wouldn't connect with four.",
+     "at": 0
+    },
+    {
+     "text": "Then came / one idea.",
+     "at": 7,
+     "key": [
+      "one idea."
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: via The New York Times.",
+   "clips": [
+    {
+     "shot": 3,
+     "offset": 0.5
+    },
+    {
+     "shot": 94,
+     "offset": 0.15,
+     "at": 2
+    },
+    {
+     "shot": 83,
+     "offset": 1.2,
+     "at": 5
+    },
+    {
+     "shot": 44,
+     "offset": 0.15,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Bonnie and Clyde. Once Rockstar had it, they knew it was the only way.",
+   "bg": "scrim",
+   "caps": [],
+   "dim": {
+    "text": "Bonnie and Clyde.",
+    "until": 3,
+    "cy": 900
+   },
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "As soon as we had that Bonnie and Clyde concept, we knew it was the only way for us to go with this game.",
+     "qsize": 56,
+     "source": "Rob Nelson, Rockstar North, to The New York Times",
+     "at": 3,
+     "cy": 640
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to The New York Times.",
+   "sfx": "hit",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.3
+    },
+    {
+     "shot": 60,
+     "offset": 0.15,
+     "at": 3
+    },
+    {
+     "shot": 42,
+     "offset": 0.15,
+     "at": 5
+    },
+    {
+     "shot": 44,
+     "offset": 0.6,
+     "at": 8
+    },
+    {
+     "shot": 43,
+     "offset": 0.2,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "End of twenty nineteen. The story's skeleton: Jason and Lucia, a criminal couple.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Jason and Lucia, / a criminal couple.",
+     "at": 7,
+     "key": [
+      "criminal couple."
+     ]
+    }
+   ],
+   "stamp": {
+    "big": "2019",
+    "small": "THE STORY SKELETON",
+    "until": 7,
+    "cy": 760
+   },
+   "capsY": 1150,
+   "footnote": "REPORTED: Bloomberg Businessweek, 14 Oct 2026.",
+   "sfx": "hit",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 9.1
+    },
+    {
+     "shot": 1,
+     "offset": 0.2,
+     "at": 4
+    },
+    {
+     "shot": 41,
+     "offset": 0.4,
+     "at": 7
+    },
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "at": 10
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "Letting them do everything together took years of old school AI. Not ChatGPT.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Letting them do / everything together",
+     "at": 0,
+     "key": [
+      "together"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "BLOOMBERG BUSINESSWEEK",
+     "head": "Years of traditional AI. Not ChatGPT.",
+     "mark": "traditional AI.",
+     "mark_at": 8,
+     "source": "Bloomberg Businessweek, 14 Oct 2026",
+     "at": 5,
+     "cy": 620
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 60,
+     "offset": 0.15
+    },
+    {
+     "shot": 42,
+     "offset": 0.15,
+     "at": 3
+    },
+    {
+     "shot": 74,
+     "offset": 16.0,
+     "at": 5
+    },
+    {
+     "shot": 88,
+     "offset": 0.4,
+     "at": 8
+    },
+    {
+     "shot": 84,
+     "offset": 0.3,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "Because staff argued a game about a couple has to let them be a couple.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Because staff argued / a game about a couple",
+     "at": 0
+    },
+    {
+     "text": "has to let them / be a couple.",
+     "at": 8,
+     "key": [
+      "be a couple."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek.",
+   "clips": [
+    {
+     "shot": 69,
+     "offset": 0.1
+    },
+    {
+     "shot": 58,
+     "offset": 0.4,
+     "at": 2
+    },
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 74,
+     "offset": 21.0,
+     "at": 8
+    },
+    {
+     "shot": 43,
+     "offset": 0.6,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "So the bond is yours to build. Answer her texts. Open doors. Hold hands, literally R two.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "So the bond / is yours to build.",
+     "at": 0,
+     "key": [
+      "yours to build."
+     ]
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "ANSWER HER TEXTS",
+      "at": 7
+     },
+     {
+      "text": "OPEN DOORS",
+      "at": 10
+     },
+     {
+      "text": "HOLD HANDS: R2",
+      "at": 12
+     }
+    ],
+    "y": 400,
+    "gap": 160,
+    "size": 88
+   },
+   "footnote": "REPORTED: Game Informer. ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 4.6
+    },
+    {
+     "shot": 83,
+     "offset": 0.3,
+     "at": 4
+    },
+    {
+     "shot": 2,
+     "offset": 0.2,
+     "at": 7
+    },
+    {
+     "shot": 74,
+     "offset": 9.4,
+     "at": 10
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 12
+    },
+    {
+     "shot": 74,
+     "offset": 13.0,
+     "at": 14
+    }
+   ]
+  },
+  {
+   "say": "Ignore a goodnight text? Nelson says it may hurt things a bit.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Ignore a goodnight text?",
+     "at": 0,
+     "key": [
+      "goodnight"
+     ]
+    },
+    {
+     "text": "It may hurt things / a bit.",
+     "at": 6
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 1.3
+    },
+    {
+     "shot": 3,
+     "offset": 0.6,
+     "at": 3
+    },
+    {
+     "shot": 94,
+     "offset": 0.2,
+     "at": 6
+    },
+    {
+     "shot": 40,
+     "offset": 1.5,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "Friends or romance,",
+   "bg": "scrim",
+   "caps": [],
+   "tiles": {
+    "items": [
+     {
+      "text": "FRIENDS",
+      "at": 0
+     },
+     {
+      "text": "ROMANCE",
+      "at": 2
+     }
+    ],
+    "y": 300,
+    "gap": 170
+   },
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_VICE_CITY_STYLE_01.0.u1gt~99yzks.jpg",
+   "pan": [
+    0.02,
+    0.2
+   ],
+   "footnote": "REPORTED: Game Informer cover story."
+  },
+  {
+   "say": "there's no gameplay bonus.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "No gameplay bonus.",
+     "at": 1,
+     "key": [
+      "bonus."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Game Informer cover story.",
+   "clips": [
+    {
+     "shot": 34,
+     "offset": 0.3
+    }
+   ]
+  },
+  {
+   "say": "But it changes parts of the story.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "But it changes / parts of the story.",
+     "at": 0,
+     "key": [
+      "parts of the story."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Game Informer cover story.",
+   "clips": [
+    {
+     "shot": 82,
+     "offset": 0.3
+    },
+    {
+     "shot": 26,
+     "offset": 6.35,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "And the story asks whether love can survive this storm.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "And the story asks / whether love can",
+     "at": 0
+    }
+   ],
+   "dim": {
+    "text": "survive this storm.",
+    "at": 7,
+    "cy": 820
+   },
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to The New York Times.",
+   "sfx": "hit",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    },
+    {
+     "shot": 82,
+     "offset": 1.3,
+     "at": 4
+    },
+    {
+     "shot": 91,
+     "offset": 6.5,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Friends or lovers? How are you playing them?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "How are you / playing them?",
+     "at": 3,
+     "key": [
+      "playing them?"
+     ]
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "FRIENDS",
+      "at": 0
+     },
+     {
+      "text": "LOVERS",
+      "at": 2
+     }
+    ],
+    "y": 470,
+    "gap": 170
+   },
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 60,
+     "offset": 0.15
+    },
+    {
+     "shot": 24,
+     "offset": 1.2,
+     "at": 2
+    },
+    {
+     "shot": 44,
+     "offset": 0.15,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "Either way, they're stuck together.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Either way, / they're stuck together.",
+     "at": 0,
+     "key": [
+      "stuck together."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 50,
+     "offset": 0.1
+    },
+    {
+     "shot": 74,
+     "offset": 14.6,
+     "at": 2
+    },
+    {
+     "shot": 21,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "Bonnie and Clyde, by design",
+   "cta": "Follow for tomorrow",
+   "hold": 2.0,
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 15.5
+    }
+   ]
+  }
+ ],
+ "hook_options": [
+  "PICKED: You can't break up Jason and Lucia. Rockstar won't let you.",
+  "Rockstar first planned GTA 6 with four playable characters.",
+  "In GTA 6, ignoring a goodnight text can cost you."
+ ],
+ "loop_note": "The last spoken line runs back into the hook; the noticed. end card (wordmark and @noticed.daily handle) plays over the opening footage. The engine loop flag stays off because it drops the end card."
+}
