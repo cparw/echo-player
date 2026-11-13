@@ -1,0 +1,976 @@
+{
+ "title": "Rockstar hid two Vice City release dates inside GTA 6",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "reel": "R17",
+ "post": "Wed 18 Nov 2026, 21:00 ET (launch eve)",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "Rockstar hid two Vice City release dates inside GTA Six.",
+   "instant": true,
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 545,
+   "scrimY": 545,
+   "show": [
+    [
+     "ROCKSTAR@0",
+     "HID@1",
+     "TWO@2"
+    ],
+    [
+     "*VICE*@3",
+     "*CITY*@4"
+    ],
+    [
+     "RELEASE@5",
+     "DATES@6"
+    ],
+    [
+     "INSIDE@7",
+     "GTA 6@8"
+    ]
+   ],
+   "paper": [
+    {
+     "label": "2 RELEASE DATES",
+     "redact": true,
+     "source": "Rockstar's own 4K image, rockstargames.com/VI",
+     "at": 6,
+     "cy": 1088
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    },
+    {
+     "shot": 16,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "They're on Rockstar's own page, next to Vercetti. And Rockstar may have slipped.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "They're on Rockstar's / own page,",
+     "at": 0,
+     "key": [
+      "own page"
+     ]
+    },
+    {
+     "text": "next to Vercetti.",
+     "at": 5,
+     "key": [
+      "Vercetti"
+     ]
+    },
+    {
+     "text": "And Rockstar / may have slipped.",
+     "at": 8,
+     "key": [
+      "slipped"
+     ]
+    }
+   ],
+   "chip": {
+    "text": "TOMMY VERCETTI · VICE CITY, 2002",
+    "at": 7,
+    "y": 925
+   },
+   "paper": [
+    {
+     "label": "2 RELEASE DATES",
+     "redact": true,
+     "tag": "A SLIP?",
+     "source": "Rockstar's own 4K image, rockstargames.com/VI",
+     "at": 8,
+     "cy": 620
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: rockstargames.com/VI, read 13 Nov 2026.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.1
+    },
+    {
+     "shot": 72,
+     "offset": 0.22,
+     "at": 7,
+     "slow": 1.25
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Save this. You can check every part.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Save this.",
+     "at": 0,
+     "key": [
+      "Save"
+     ]
+    },
+    {
+     "text": "You can check / every part.",
+     "at": 2,
+     "key": [
+      "every part"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 5.6
+    }
+   ]
+  },
+  {
+   "say": "Twenty oh two. Vice City. You play Tommy Vercetti, voiced by Ray Liotta.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "2002",
+    "small": "VICE CITY",
+    "at": 0,
+    "until": 5,
+    "size": 340,
+    "cy": 760
+   },
+   "caps": [
+    {
+     "text": "You play / Tommy Vercetti,",
+     "at": 5,
+     "key": [
+      "Tommy Vercetti"
+     ]
+    },
+    {
+     "text": "voiced by / Ray Liotta.",
+     "at": 9,
+     "key": [
+      "Ray Liotta"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Wikipedia, Grand Theft Auto: Vice City.",
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 9.05,
+     "at": 5
+    },
+    {
+     "shot": 1,
+     "offset": 2.3,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "Twenty four years later,",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "2026",
+    "small": "24 YEARS LATER",
+    "color": "accent",
+    "at": 0,
+    "size": 340,
+    "cy": 760
+   },
+   "caps": [],
+   "footnote": "OUR MATH: 2002 to 2026 is 24 years.",
+   "clips": [
+    {
+     "shot": 104,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Rockstar's pre order page reads:",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Rockstar's / pre order page reads:",
+     "at": 0,
+     "key": [
+      "pre order page"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: rockstargames.com/VI, pre order.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_03.0dzlk-r0ehlu4.jpg",
+   "pan": [
+    0.3,
+    0.46
+   ]
+  },
+  {
+   "say": "Channel the Original Kingpin.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS · PRE ORDER",
+     "head": "Channel the Original Kingpin",
+     "mark": "Original Kingpin",
+     "mark_at": 2,
+     "source": "rockstargames.com/VI",
+     "at": 0,
+     "cy": 720
+    }
+   ],
+   "caps": [],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01.004m_8d1~qngy.jpg",
+   "pan": [
+    0.95,
+    0.82
+   ]
+  },
+  {
+   "say": "A pattern inspired by Tommy Vercetti's iconic palm tree button up. Rockstar's own words.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "…inspired by Tommy Vercetti's iconic palm tree button up",
+     "qsize": 80,
+     "source": "Rockstar Games, GTA VI pre order page",
+     "at": 0,
+     "cy": 660
+    }
+   ],
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "Rockstar's own words.",
+     "at": 11,
+     "key": [
+      "own words"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 6.7
+    },
+    {
+     "shot": 81,
+     "offset": 0.1,
+     "at": 6
+    },
+    {
+     "shot": 4,
+     "offset": 0.1,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "That's place one. Place two hides the dates.",
+   "bg": "scrim",
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "That's place one.",
+     "at": 0,
+     "key": [
+      "place one"
+     ]
+    },
+    {
+     "text": "Place two / hides the dates.",
+     "at": 3,
+     "key": [
+      "the dates"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "2 RELEASE DATES",
+     "redact": true,
+     "source": "Rockstar's own 4K image, rockstargames.com/VI",
+     "at": 5,
+     "cy": 620
+    }
+   ],
+   "footnote": "OUR MATH: Vercetti twice on rockstargames.com/VI.",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 0.3
+    },
+    {
+     "shot": 97,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Send this to the friend you played Vice City with.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Send this to the friend / you played Vice City with.",
+     "at": 0,
+     "key": [
+      "Send this"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.1
+    },
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "A his and hers Ultimate Edition pair, with classic Vice City stylings, sourced from the Vercetti Estate.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS · ULTIMATE EDITION",
+     "head": "His and hers… with classic Vice City stylings sourced from the Vercetti Estate",
+     "mark": "Vercetti Estate",
+     "mark_at": 15,
+     "source": "GTA VI Ultimate Edition, rockstargames.com/VI",
+     "at": 0,
+     "cy": 680
+    }
+   ],
+   "caps": [],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 14.0
+    },
+    {
+     "shot": 21,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 74,
+     "offset": 22.0,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "That's the mansion Tommy takes over in the original game.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "That's the mansion / Tommy takes over",
+     "at": 0,
+     "key": [
+      "takes over"
+     ]
+    },
+    {
+     "text": "in the original game.",
+     "at": 6,
+     "key": [
+      "original game"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Kotaku, 24 Jun 2026; Wikipedia.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_02.jpg",
+   "pan": [
+    0.1,
+    0.42
+   ]
+  },
+  {
+   "say": "Now zoom in.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "flash": true,
+   "push": 0.3,
+   "caps": [
+    {
+     "text": "Now zoom in.",
+     "at": 0,
+     "key": [
+      "zoom in"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 104,
+     "offset": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Hers reads two nine one oh oh two.",
+   "bg": "scrim",
+   "stamp": {
+    "big": "291002",
+    "small": "HERS",
+    "at": 2,
+    "size": 300,
+    "cy": 1010
+   },
+   "caps": [],
+   "footnote": "ROCKSTAR SAYS: Rockstar's official 4K image.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_02.12udfnroe-lah.jpg",
+   "pan": [
+    0.45,
+    0.52
+   ]
+  },
+  {
+   "say": "Vice City's US launch day.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Vice City's / US launch day.",
+     "at": 0,
+     "key": [
+      "US launch day"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Kotaku; GTA Wiki; Wikipedia.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_01.jpg",
+   "pan": [
+    0.08,
+    0.3
+   ]
+  },
+  {
+   "say": "Twenty nine October, two thousand two.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "29 OCT 2002",
+    "small": "VICE CITY · US LAUNCH",
+    "color": "accent",
+    "at": 0,
+    "size": 190,
+    "cy": 780
+   },
+   "caps": [],
+   "footnote": "OUR MATH: 29 10 02 read as day, month, year.",
+   "clips": [
+    {
+     "shot": 88,
+     "offset": 0.2
+    }
+   ]
+  },
+  {
+   "say": "His reads three one one oh oh six.",
+   "bg": "scrim",
+   "stamp": {
+    "big": "311006",
+    "small": "HIS",
+    "at": 2,
+    "size": 300,
+    "cy": 1010
+   },
+   "caps": [],
+   "footnote": "ROCKSTAR SAYS: Rockstar's official 4K image.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_05.01rxi8y_wrmf1.jpg",
+   "pan": [
+    0.5,
+    0.57
+   ]
+  },
+  {
+   "say": "Vice City Stories.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Vice City Stories.",
+     "at": 0,
+     "key": [
+      "Stories"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Kotaku; Multiplayer.it, 24 Jun 2026.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.2,
+    0.42
+   ]
+  },
+  {
+   "say": "Thirty one October, two thousand six.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "31 OCT 2006",
+    "small": "STORIES · US LAUNCH",
+    "color": "accent",
+    "at": 0,
+    "size": 190,
+    "cy": 780
+   },
+   "caps": [],
+   "footnote": "REPORTED: Wikipedia, Vice City Stories (US).",
+   "clips": [
+    {
+     "shot": 15,
+     "offset": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Two release dates, tucked into the details.",
+   "bg": "scrim",
+   "tiles": {
+    "items": [
+     {
+      "text": "29 OCT 2002",
+      "at": 0
+     },
+     {
+      "text": "31 OCT 2006",
+      "at": 1
+     }
+    ],
+    "y": 430,
+    "gap": 175,
+    "size": 104
+   },
+   "caps": [
+    {
+     "text": "Two release dates, / tucked into the details.",
+     "at": 0,
+     "key": [
+      "release dates"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: official image. REPORTED: Kotaku.",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Now the slip. Kotaku noticed one design is from Vice City Stories, set before Tommy owned that mansion. So how is it in his estate?",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "dim": {
+    "text": "Now the slip.",
+    "at": 0,
+    "until": 3,
+    "cy": 820
+   },
+   "paper": [
+    {
+     "label": "REPORTED · KOTAKU",
+     "head": "Uh, Rockstar, Please Fix This Massive GTA 6 Lore Mistake",
+     "mark": "Lore Mistake",
+     "mark_at": 12,
+     "tag": "THE SLIP",
+     "source": "Kotaku headline, 24 Jun 2026",
+     "at": 3,
+     "cy": 630
+    }
+   ],
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "One design is from / Vice City Stories,",
+     "at": 5,
+     "key": [
+      "Vice City Stories"
+     ]
+    },
+    {
+     "text": "set before Tommy / owned that mansion.",
+     "at": 12,
+     "key": [
+      "that mansion"
+     ]
+    },
+    {
+     "text": "So how is it / in his estate?",
+     "at": 18,
+     "key": [
+      "his estate?"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 9.7
+    },
+    {
+     "shot": 26,
+     "offset": 6.4,
+     "at": 5
+    },
+    {
+     "shot": 83,
+     "offset": 0.1,
+     "at": 12
+    },
+    {
+     "shot": 6,
+     "offset": 0.1,
+     "at": 18
+    }
+   ]
+  },
+  {
+   "say": "Is Tommy in GTA Six? Rockstar hasn't said.",
+   "bg": "scrim",
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "Is Tommy in GTA 6?",
+     "at": 0,
+     "key": [
+      "Tommy"
+     ]
+    },
+    {
+     "text": "Rockstar / hasn't said.",
+     "at": 5,
+     "key": [
+      "hasn't said"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "redact": true,
+     "source": "REPORTED: GTA Intel; Multiplayer.it",
+     "at": 5,
+     "cy": 620
+    }
+   ],
+   "clips": [
+    {
+     "shot": 65,
+     "offset": 0.1
+    },
+    {
+     "shot": 82,
+     "offset": 0.2,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Check one more yourself.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Check one more / yourself.",
+     "at": 0,
+     "key": [
+      "yourself"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 6.1
+    }
+   ]
+  },
+  {
+   "say": "Pause Trailer one at about thirty three seconds.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "0:33",
+    "small": "TRAILER 1",
+    "color": "accent",
+    "at": 0,
+    "size": 330,
+    "cy": 700
+   },
+   "caps": [
+    {
+     "text": "Pause Trailer 1 / at about 33 seconds.",
+     "at": 0,
+     "key": [
+      "33 seconds"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: SVG, 5 Dec 2023; GosuGamers.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/k4ak9okk485712.0cj_8hoskvfgy.jpg",
+   "pan": [
+    0.3,
+    0.55
+   ]
+  },
+  {
+   "say": "That neon sign behind the palms?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "That neon sign / behind the palms?",
+     "at": 0,
+     "key": [
+      "neon sign"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 72,
+     "offset": 0.22,
+     "slow": 1.5
+    },
+    {
+     "shot": 89,
+     "offset": 0.1,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "The Ocean View Hotel, Tommy's first safehouse.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "TRAILER 1 · 0:33",
+     "head": "The Ocean View Hotel",
+     "mark": "Ocean View Hotel",
+     "mark_at": 1,
+     "source": "REPORTED: SVG, 5 Dec 2023; GosuGamers",
+     "at": 0,
+     "cy": 630
+    }
+   ],
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "Tommy's / first safehouse.",
+     "at": 4,
+     "key": [
+      "first safehouse"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_SQUALO_01.0cim7hj58ypb1.jpg",
+   "pan": [
+    0.22,
+    0.42
+   ]
+  },
+  {
+   "say": "What's your first Vice City memory?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "What's your first / Vice City memory?",
+     "at": 0,
+     "key": [
+      "Vice City memory?"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment VICE.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 990,
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "COMMENT VICE",
+      "at": 5
+     }
+    ],
+    "y": 1110,
+    "size": 112
+   },
+   "clips": [
+    {
+     "shot": 3,
+     "offset": 0.8
+    }
+   ]
+  },
+  {
+   "say": "Every Vice City callback Rockstar has shown, and where to find it,",
+   "bg": "scrim",
+   "collage": {
+    "cards": [
+     {
+      "shot": 72,
+      "offset": 0.5
+     },
+     {
+      "shot": 41,
+      "offset": 1.0
+     },
+     {
+      "shot": 16,
+      "offset": 0.6
+     }
+    ],
+    "survivor": 0
+   },
+   "capsY": 1130,
+   "caps": [
+    {
+     "text": "Every Vice City callback / Rockstar has shown,",
+     "at": 0,
+     "key": [
+      "callback"
+     ]
+    },
+    {
+     "text": "and where / to find it,",
+     "at": 7,
+     "key": [
+      "where"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 16.0
+    }
+   ]
+  },
+  {
+   "say": "lands straight in your inbox.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "COMMENT VICE",
+     "head": "Lands straight in your inbox",
+     "mark": "your inbox",
+     "mark_at": 3,
+     "source": "Not following yet? Check your message requests.",
+     "at": 0,
+     "cy": 700
+    }
+   ],
+   "caps": [],
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 2.4
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "See you in / Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "Every Vice City callback lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT VICE",
+   "hold": 2.0,
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    }
+   ]
+  }
+ ]
+}
