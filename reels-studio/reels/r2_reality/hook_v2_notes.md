@@ -53,3 +53,7 @@ Auto reply: here's your GTA 6 launch checklist ✅
 That's the full list. New GTA 6 breakdown every day on @noticed.daily. See you in Leonida.
 
 (Changed from the 12 Nov version: no single US unlock time and no fixed pre load date, because reports conflict; the bonus rule follows Rockstar's digital and boxed wording.)
+
+## QA (render)
+* R2_reality_check_v2.mp4: 1080x1920 30/1 fps | 72.74 s | -14.0 LUFS | TP -1.5 dBTP | 74.9 MB | end card from 70.14 s | freezes outside end card: none | PASS
+* Published as reels-studio/media/R2_reality_check_v2.mp4 with cover reels-studio/media/r2_cover_v2.jpg.
