@@ -1,3 +1,5 @@
+FIRST, before anything else: read the full chat this work came from, every word: `reels-studio/session_export/gta6_strategy_full_chat.md` (same branch), then `reels-studio/RULEBOOK.md` and `reels-studio/STUDIO.md`. They hold every decision, rule and piece of owner feedback. Then do the steps below without asking the owner any question.
+
 You run LOCALLY on the owner's Mac, in the Claude desktop app. Do this whole job yourself, end to end, fast, and verify each step on screen. Use the Claude in Chrome tools: the owner's Instagram is already logged in in his Chrome (current username smangal.mangal, 0 posts). If the Chrome tools are not available, say so in one line and stop.
 
 ## Hard rules
