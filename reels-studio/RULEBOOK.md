@@ -44,8 +44,8 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 * **End** on an easy question people can answer in one line, then "Follow for tomorrow. See you in Leonida."
 * Length 61 to 90 seconds (TikTok rewards need over a minute). 175 to 190 words a minute. Short sentences, second person, calm and cinematic like Unseen.
 
-### Fast explainer format (from studying @cole.themanyt, 13 Nov; details in `research/reference_reels.md`)
-The owner shared this channel as the type of video to implement. Their police system reel reached 157K likes with this recipe. Our version keeps every non negotiable in section 1.
+### Fast explainer format (PARKED: the owner meant the other channel, see the story format below; from studying @cole.themanyt, 13 Nov; details in `research/reference_reels.md`)
+This channel was shared first by mistake. Their police system reel reached 157K likes with this recipe. Our version keeps every non negotiable in section 1.
 * **Promise formats:** "How X works in GTA 6" (one system, rule by rule) and "Everything to know before you play". One clear promise beats a generic list.
 * **Title card hook:** a topic tag and a two line title (key line in orange) on frame one over the best clean shot, held about 3 s. We write "GTA 6" in our own type; never Rockstar's logo.
 * **Rule by rule:** a small numbered header at the top for each item, and one explanatory graphic per beat (star bar, clue icons, map circle, meter). Ours are built only from sourced facts and carry an ILLUSTRATION tag plus the usual source footnote; never dress a guess up as game UI.
@@ -54,8 +54,8 @@ The owner shared this channel as the type of video to implement. Their police sy
 * **Dense:** a cut every 1.5 to 2 s and no dead air. Pace target about 210 words a minute (their 250 plus is an AI voice). PROPOSED until the owner approves a sample in his voice.
 * **Never copy:** weapons, robberies, police action, sexualised shots, unknown or AI clips shown as gameplay, unsourced leak claims, their lines or their green italic look.
 
-### Story format (from studying @dopemotionzone, 13 Nov; details in `research/reference_reels.md`)
-The owner sent a documentary style reel about Rockstar's secrecy with no comment. Read as: this storytelling and this level of design. It runs at about 180 words a minute, so it fits the owner's approved voice pace as it is.
+### Story format: THE MAIN STYLE (from studying @dopemotionzone, 13 Nov; details in `research/reference_reels.md`)
+The owner confirmed on 13 Nov that this channel is the model for how we make videos ("That channel, that's what I meant"): this storytelling and this level of motion design. It runs at about 180 words a minute, so it fits the owner's approved voice pace as it is.
 * **When to use:** "why" and origin stories (how GTA 6 began, why something is the way it is). Fast explainers stay for "how it works" and "before you play".
 * **Shape:** a question or surprising statement as the hook; the answer plus an open loop inside 8 s; dated chapters; a turn; the payoff; one detail viewers can check themselves; a closing question that points back at the hook.
 * **Look (our version):** story captions (small grotesk in sentence case, the key word of each line in large glowing italic serif), date stamps, typeset paper cards with a highlighter wipe and a source line, a dimmed footage look for big lines, light film grain, an image change about every second. Cards float over live GTA 6 footage; never a full black or paper frame.
@@ -126,6 +126,8 @@ The owner sent a documentary style reel about Rockstar's secrecy with no comment
 5. Facts, labels and numbers match between the video and the caption.
 
 ## 9. Feedback log (newest first)
+
+* 13 Nov: "That channel, that's what I meant. That's why I gave you that latest reel link as reference." The model for HOW we make videos is @dopemotionzone (the Rockstar secrecy reel and the channel's design craft), not @cole.themanyt; the first link was not the one he meant. The story format is now the main style for new reels. The fast explainer notes stay on file but are parked unless the owner asks for them.
 
 * 13 Nov: owner sent a second reel, DfG0di2REJO, with no comment, right after the @cole.themanyt reference. Treat it as another model to study (reel plus its channel) and fold what is new into the fast explainer format.
 
