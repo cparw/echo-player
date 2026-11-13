@@ -2,7 +2,7 @@
 Usage: python3 compose.py outdir [music.mp3|none] [final.mp4]
 Expects outdir/bgplan.json, outdir/graphics.mov, outdir/narration.mp3.
 Audio recipe (production research): voice HPF 90 Hz + 3:1 comp, bed about -20 LUFS ducked by sidechain
-(threshold 0.03, ratio 8), synthesized hits/whooshes, two pass loudnorm to -14 LUFS, TP -1.
+(threshold 0.03, ratio 8), synthesized hits/whooshes, two pass loudnorm to -14 LUFS, TP -1.5 (the AAC encode adds about 0.1 dB, so the final file stays under -1 dBTP).
 """
 import json, os, re, subprocess, sys
 
@@ -26,6 +26,9 @@ def clip_len(p):
 
 # official trailer shots: [{shot, offset?, cx?}] resolved from shots.json; Rockstar TikTok trailers are stored rotated 90 deg
 SHOTS = json.load(open(plan["shots_json"])) if plan.get("shots_json") else []
+if any(s.get("compare") or any(isinstance(c, dict) and c.get("shot", 0) >= 500 for c in s.get("clips") or []) for s in plan["segments"]):
+    import compare_kit  # compare kit: GTA V library (ids 500 and up) joins the shot table only when this plan uses it
+    SHOTS = compare_kit.load_table(plan.get("shots_json"), plan.get("shots_gta5_json"), SHOTS)
 ROTATED = ("7696925363795938573", "7502175479718284586")
 LETTERBOX = {"7696925363795938573": (960, 60), "7502175479718284586": (864, 108)}  # active height, top offset after transpose (cropdetect)
 
@@ -62,6 +65,10 @@ def blur_graph(b0, b1, full=False):
     return f",split=2[o][b];[b]gblur=sigma=22,format=rgba,geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='{a}'[m];[o][m]overlay=format=auto"
 
 def clip_part(c, dur, outp, treat=None, push=None, blur=None, blur_full=False):
+    if c["shot"] >= 500:  # compare kit: a GTA V library shot (landscape trailer clip or 4K still) used in plain clips
+        import compare_kit
+        bl = blur_graph(blur[0], blur[1], blur_full) if blur and blur[1] > 0 and blur[0] < dur else ""
+        return compare_kit.render_part(SHOTS[c["shot"]], c, dur, outp, 1080, 1920, run, grade({"treat": treat}), bl)
     sh = SHOTS[c["shot"]]
     lo, hi = clean_window(sh, c.get("offset", 0))
     off = min(max(c.get("offset", 0), lo), max(lo, hi - 0.6))
@@ -95,7 +102,10 @@ segs = []
 for i, s in enumerate(plan["segments"]):
     dur = round(s["end"] - s["start"], 3)
     p = os.path.join(od, f"seg_{i:02d}.mp4")
-    if s.get("clips"):
+    if s.get("compare"):  # compare kit: GTA 5 vs GTA 6 split screen or A/B cut (COMPARE.md)
+        import compare_kit
+        compare_kit.compare_segment(s, dur, p, SHOTS, od, i, run, clip_part, grade, blur_graph)
+    elif s.get("clips"):
         n = len(s["clips"]); parts = []
         if all("t" in c for c in s["clips"][1:]) and n > 1:
             # cuts on spoken words (times from build.py), snapped to whole frames
@@ -166,9 +176,9 @@ mixwav = os.path.join(od, "mix.wav")
 run(inputs + ["-filter_complex", ";".join(fc), "-map", "[a]", "-c:a", "pcm_s24le", "-ar", "48000", mixwav])
 
 # 4) two pass loudness: measure, then apply linearly in the final encode
-err = run(["-i", mixwav, "-af", "loudnorm=I=-14:TP=-1:LRA=11:print_format=json", "-f", "null", "-"], capture=True)
+err = run(["-i", mixwav, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"], capture=True)
 m = json.loads(re.search(r"\{[^{}]*\"input_i\"[^{}]*\}", err, re.S).group(0))
-ln = (f"loudnorm=I=-14:TP=-1:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
+ln = (f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
       f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,aresample=48000")
 
 # 5) final: overlay graphics with grain, encode once

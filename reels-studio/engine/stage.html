@@ -10,6 +10,7 @@
 @font-face { font-family: 'Inter Tight'; font-weight: 600; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Instrument Serif'; font-style: italic; src: url('node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2') format('woff2'); }
 @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url('node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Unbounded'; font-weight: 500; src: url('node_modules/@fontsource/unbounded/files/unbounded-latin-500-normal.woff2') format('woff2'); }
 html, body { margin: 0; width: 1080px; height: 1920px; background: transparent; overflow: hidden; }
 #root { position: absolute; inset: 0; }
 .layer { position: absolute; inset: 0; }
@@ -86,6 +87,13 @@ window.init = function (tl) {
       const im = new Image(); im.onload = () => { IMGS[c.img] = im; res(); }; im.onerror = () => res(); im.src = 'file://' + c.img; }))))
     .then(() => true);
   return true;
+};
+// end card wordmark (optional key): load its face before the first frame; scripts without it return exactly what init returned before
+const _initBase = window.init;
+window.init = function (tl) {
+  const r = _initBase(tl);
+  if (!tl.scenes.some(s => s.layout === 'endcard' && s.wordmark)) return r;
+  return Promise.resolve(r).then(() => document.fonts.load('500 100px Unbounded')).then(() => true);
 };
 
 // ===== Fast explainer kit (titlecard, section header, build captions, illustration cards). Only scenes with these keys use it. =====
@@ -868,6 +876,15 @@ function endCard(sc, t, th) {
   const brand = document.createElement('div');
   brand.style.cssText = `font-family:Anton;font-size:132px;letter-spacing:${0.06 + (1 - ease.out(p)) * 0.2}em;color:${th.fg};opacity:${p}`;
   brand.textContent = sc.brand;
+  // noticed. brand (13 Nov), optional end card keys: "wordmark": true sets the brand as the noticed. wordmark (Unbounded 500,
+  // the full stop in the accent colour); "handle" adds the account handle as a clean second line under it.
+  // Scripts without these keys build exactly the same card as before.
+  if (sc.wordmark) {
+    const m = /^(.*?)(\.?)$/.exec(String(sc.brand));
+    brand.style.cssText = `font-family:Unbounded;font-weight:500;font-size:${sc.brandSize || 112}px;white-space:nowrap;letter-spacing:${0.03 + (1 - ease.out(p)) * 0.2}em;color:${th.fg};opacity:${p}`;
+    brand.textContent = m[1];
+    if (m[2]) { const d = document.createElement('span'); d.style.color = th.accent; d.textContent = '.'; brand.appendChild(d); }
+  }
   const rule = document.createElement('div');
   rule.style.cssText = `height:6px;background:${th.accent};margin:34px auto 30px;width:${ease.out(prog(t, sc.start + 0.2, 0.5)) * 420}px`;
   const series = document.createElement('div'); series.className = 'label';
@@ -879,7 +896,14 @@ function endCard(sc, t, th) {
   const cta = document.createElement('div'); cta.className = 'label';
   cta.style.cssText += `font-size:26px;color:${th.fg};margin-top:60px;padding:16px 30px;border:2px solid ${th.fg};border-radius:999px;opacity:${prog(t, sc.start + 0.8, 0.4)}`;
   cta.textContent = sc.cta;
-  B.appendChild(brand); B.appendChild(rule); B.appendChild(series); B.appendChild(ep); B.appendChild(cta);
+  B.appendChild(brand);
+  if (sc.handle) {
+    const h = document.createElement('div');
+    h.style.cssText = `font-family:'JetBrains Mono';font-weight:500;font-size:38px;letter-spacing:0.04em;color:${th.fg};margin-top:4px;opacity:${0.92 * prog(t, sc.start + 0.25, 0.4)}`;
+    h.textContent = sc.handle;
+    B.appendChild(h);
+  }
+  B.appendChild(rule); B.appendChild(series); B.appendChild(ep); B.appendChild(cta);
   L.appendChild(B);
   return L;
 }
@@ -1002,6 +1026,48 @@ window.renderAt = function (t) {
     if (fp < 1) { const W = document.createElement('div'); W.className = 'layer'; W.style.background = '#fff'; W.style.opacity = 0.35 * (1 - fp); root.appendChild(W); }
   }
   if (TL.grain) root.appendChild(grainLayer(TL.grain, t));
+};
+// ===== Compare kit (GTA 5 vs GTA 6, owner rule 13 Nov; COMPARE.md): divider and labels over the split or A/B background.
+// Only scenes with "compare" use it; every other scene renders exactly as before. =====
+function cmpLabel(text, hero, top, p, th) {
+  const e = ease.outBack(clamp(p, 0, 1));
+  const L = document.createElement('div');
+  L.style.cssText = `position:absolute;left:48px;top:${top}px;height:62px;padding:2px 26px 0;border-radius:31px;box-sizing:border-box;display:flex;align-items:center;` +
+    `font-family:Anton;font-size:40px;letter-spacing:0.05em;line-height:1;white-space:nowrap;` +
+    (hero ? `background:${th.accent};color:${th.ink || '#0B0B0F'};` : `background:rgba(8,8,11,0.68);color:${th.fg};border:2px solid rgba(245,242,234,0.55);`) +
+    `box-shadow:0 6px 22px rgba(0,0,0,0.5);opacity:${clamp(p * 2, 0, 1)};transform:scale(${0.8 + 0.2 * e});transform-origin:0% 50%`;
+  L.textContent = String(text).toUpperCase();
+  return L;
+}
+// split: thin divider on the seam (drawn under the text) + GTA 5 label top left of the top half, GTA 6 (hero, orange) lower left of the
+// bottom half; ab: one label top left that switches on the cut. labelY = [top label y, bottom label y] moves them.
+function compareLayer(sc, t, th) {
+  const cp = sc.compare, F = document.createElement('div'); F.className = 'layer';
+  const labels = cp.labels === false ? [] : (cp.labels || ['GTA 5', 'GTA 6']);
+  const LY = cp.labelY || [sc.section ? 380 : 236, 1410];  // under the numbered section header when a fast explainer shows one
+  if (cp.mode === 'ab') {
+    const on = cp.ts != null && t >= cp.ts, k = on ? 1 : 0;
+    if (labels[k]) F.appendChild(cmpLabel(labels[k], k === 1, LY[0], prog(t, on ? cp.ts : sc.start + 0.05, 0.22), th));
+  } else {
+    const p = ease.out(prog(t, sc.start, 0.3));
+    const D = document.createElement('div');
+    D.style.cssText = `position:absolute;left:0;width:1080px;top:957px;height:6px;background:${th.fg};opacity:0.95;` +
+      `transform:scaleX(${p});transform-origin:50% 50%;box-shadow:0 0 18px rgba(0,0,0,0.6)`;
+    F.appendChild(D);
+    labels.slice(0, 2).forEach((l, i) => { if (l) F.appendChild(cmpLabel(l, i === 1, LY[i], prog(t, sc.start + 0.1 + i * 0.12, 0.3), th)); });
+  }
+  return F;
+}
+const _renderAtCompare = window.renderAt;
+window.renderAt = function (t) {
+  _renderAtCompare(t);
+  const sc = TL.scenes.find(s => t >= s.start && t < s.end) || TL.scenes[TL.scenes.length - 1];
+  if (!sc || !sc.compare || sc.layout === 'endcard') return;
+  root.insertBefore(compareLayer(sc, t, TL.theme), root.children[1] || null);  // above the shade layer, under every text layer
+  if (sc.compare.mode === 'ab' && sc.compare.flash !== false && sc.compare.ts != null) {  // 2 frame flash on the A/B cut
+    const f = Math.floor((t - sc.compare.ts) * (TL.fps || 30) + 1e-6);
+    if (f >= 0 && f < 2) { const W = document.createElement('div'); W.className = 'layer'; W.style.background = '#fff'; W.style.opacity = f === 0 ? 0.45 : 0.16; root.appendChild(W); }
+  }
 };
 </script>
 </body>

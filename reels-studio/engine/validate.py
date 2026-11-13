@@ -21,6 +21,13 @@ for k in ["voice_id", "model_id", "tag", "theme", "beats"]:
     if k not in s: errs.append(f"missing top level key: {k}")
 beats = s.get("beats", [])
 SHOTS = json.load(open(s["shots_json"])) if s.get("shots_json") and os.path.exists(s["shots_json"]) else []
+_G5 = {}
+def gta5_lib():
+    """compare kit: the GTA V library (official/gta5/shots_gta5.json, ids 500 and up), read on first use"""
+    if not _G5:
+        gp = s.get("shots_gta5_json") or (os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(s["shots_json"]))), "gta5", "shots_gta5.json") if s.get("shots_json") else None)
+        _G5.update({x["id"]: x for x in json.load(open(gp))} if gp and os.path.exists(gp) else {})
+    return _G5
 if s.get("loop"):
     # fast explainer loop: no end card; the last line runs back into the first
     if any(b.get("layout") == "endcard" for b in beats): warns.append("loop is set but the script has an endcard (loop reels end without one)")
@@ -34,6 +41,11 @@ for i, b in enumerate(beats):
         for k in ["brand", "series", "episode", "cta"]:
             if k not in b: errs.append(f"endcard missing {k}")
         if not (b.get("clips") or b.get("media")): errs.append("endcard needs footage behind it (clips or media): no void frames")
+        # optional brand keys (noticed., 13 Nov): handle = second line under the brand, wordmark = brand set as the wordmark
+        if "handle" in b and (not isinstance(b["handle"], str) or not b["handle"].startswith("@") or any(d in b["handle"] for d in ALLD)):
+            errs.append(f"endcard handle must look like @name with no dash characters: {b['handle']!r}")
+        if "wordmark" in b and not isinstance(b["wordmark"], bool): errs.append("endcard wordmark must be true or false")
+        if b.get("compare"): errs.append("endcard cannot use compare (compare kit)")
         continue
     say = b.get("say", "")
     if not say: errs.append(f"beat {i}: empty say"); continue
@@ -59,7 +71,7 @@ for i, b in enumerate(beats):
         for it in b.get("items", []):
             for key in ("at", "strike_at"):
                 if key in it and it[key] >= n: errs.append(f"beat {i}: list {key} out of range")
-    if b.get("bg") == "black" or not (b.get("clips") or b.get("media")):
+    if b.get("bg") == "black" or not (b.get("clips") or b.get("media") or b.get("compare")):
         errs.append(f"beat {i}: every frame must show GTA 6 footage (RULEBOOK 1.1): give it clips or an official still")
     if b.get("bg") in ("duo",):
         warns.append(f"beat {i}: bg duo tints the footage; RULEBOOK 1.2 prefers full colour (bg scrim)")
@@ -181,6 +193,84 @@ for i, b in enumerate(beats):
             errs.append(f"beat {i}: shot {c['shot']} is on the banned list (logo, title card or violence)")
     if b.get("media") and not os.path.exists(b["media"]) and not b.get("media_request"):
         warns.append(f"beat {i}: media file not found yet: {b['media']}")
+    # ---- compare kit (GTA 5 vs GTA 6, owner rule 13 Nov; COMPARE.md): GTA V ids (500 and up) only inside their clean windows ----
+    def side_ok(where, c):
+        if not isinstance(c, dict) or not isinstance(c.get("shot"), int):
+            errs.append(f"beat {i}: {where} needs a 'shot' number"); return
+        sid, off = c["shot"], c.get("t", c.get("offset", 0))
+        if sid >= 500:
+            sh = gta5_lib().get(sid)
+            if not sh: errs.append(f"beat {i}: {where}: GTA V shot {sid} is not in shots_gta5.json"); return
+            if not sh.get("clean"): errs.append(f"beat {i}: {where}: GTA V shot {sid} has no clean window"); return
+            w = next((w for w in sh["clean"] if w[0] - 0.15 <= off <= w[1]), None)
+            if w is None: errs.append(f"beat {i}: {where}: GTA V shot {sid} t={off} is outside its clean windows {sh['clean']}")
+            elif sh.get("kind") == "clip" and w[1] - off < 0.6: warns.append(f"beat {i}: {where}: GTA V shot {sid} t={off} leaves only {w[1] - off:.1f} s of clean footage (it will slow down or hold)")
+        elif SHOTS and sid < len(SHOTS) and SHOTS[sid].get("clean") is not None:
+            sh = SHOTS[sid]
+            if not sh["clean"]: errs.append(f"beat {i}: {where}: shot {sid} has no clean window (audit flagged it)")
+            elif not any(w[0] - 0.15 <= off <= w[1] for w in sh["clean"]): errs.append(f"beat {i}: {where}: shot {sid} t={off} is outside its clean windows {sh['clean']}")
+        elif SHOTS and sid >= len(SHOTS):
+            errs.append(f"beat {i}: {where}: shot {sid} does not exist")
+        elif sid in (0, 7, 19, 23, 25, 26, 53, 61, 63, 66, 67, 70, 73, 75):
+            errs.append(f"beat {i}: {where}: shot {sid} is on the banned list (logo, title card or violence)")
+    cpx = b.get("compare")
+    if cpx is not None:
+        if not isinstance(cpx, dict): errs.append(f"beat {i}: compare must be an object (see engine/COMPARE.md)")
+        else:
+            cmode = cpx.get("mode", "split")
+            if cmode not in ("split", "ab"): errs.append(f"beat {i}: compare mode must be split or ab")
+            sides = {}
+            for nm in ("left", "right"):  # a side is one shot or a list of shots cut on spoken words ("at" on every item after the first)
+                v = cpx.get(nm); its = v if isinstance(v, list) else [v]
+                if isinstance(v, list) and not v: errs.append(f"beat {i}: compare {nm} is an empty list")
+                for q, c in enumerate(its):
+                    side_ok(f"compare {nm}" + (f" item {q}" if isinstance(v, list) else ""), c)
+                    if isinstance(v, list) and q and isinstance(c, dict):
+                        if "at" not in c: warns.append(f"beat {i}: compare {nm} item {q} has no 'at' (the side is split evenly)")
+                        elif not isinstance(c["at"], int) or not 1 <= c["at"] < n: errs.append(f"beat {i}: compare {nm} item {q} at={c['at']} out of range ({n} words)")
+                sides[nm] = [c.get("shot") for c in its if isinstance(c, dict)]
+            lsid = (sides.get("left") or [None])[0]
+            if any(isinstance(x, int) and x >= 500 for x in sides.get("right", [])): errs.append(f"beat {i}: compare right must be GTA VI shots (below 500) so GTA 6 stays on screen")
+            if any(isinstance(x, int) and x < 500 for x in sides.get("left", [])): warns.append(f"beat {i}: compare left has a shot that is not in the GTA V library (ids 500 and up); the owner wants official GTA V visuals beside GTA VI")
+            labs = cpx.get("labels", ["GTA 5", "GTA 6"])
+            if labs is not False:
+                if not (isinstance(labs, list) and len(labs) == 2 and all(isinstance(x, str) for x in labs)): errs.append(f"beat {i}: compare labels must be two strings (or false)")
+                else:
+                    for x in labs:
+                        if any(d in x for d in ALLD): errs.append(f"beat {i}: dash in compare label '{x}'")
+                        if len(x) > 14: warns.append(f"beat {i}: compare label '{x}' is long (labels are small pills, 14 characters max)")
+            if cmode == "ab":
+                cat = cpx.get("at", max(1, n // 2))
+                if not isinstance(cat, int) or not 1 <= cat < n: errs.append(f"beat {i}: compare at={cat} must be a spoken word index from 1 to {n - 1}")
+                elif cat > max(3, n * 0.6): warns.append(f"beat {i}: the GTA 5 part runs {cat} of {n} words; keep the A/B cut early so GTA 6 stays on screen (RULEBOOK 1.1)")
+                ls = gta5_lib().get(lsid) if isinstance(lsid, int) else None
+                if ls and not ls.get("sharp_full", True): warns.append(f"beat {i}: GTA V shot {lsid} is {ls['res'][0]}x{ls['res'][1]}; full screen in ab mode it looks soft, prefer a 4K still or clip (sharp_full)")
+            elif "at" in cpx: warns.append(f"beat {i}: compare 'at' only applies to ab mode")
+            lyy = cpx.get("label_y")
+            if lyy is not None and not (isinstance(lyy, list) and len(lyy) == 2 and all(isinstance(v, (int, float)) for v in lyy)): errs.append(f"beat {i}: compare label_y must be [top_y, bottom_y]")
+            elif lyy and (min(lyy) < 220 or max(lyy) > 1440): warns.append(f"beat {i}: compare label_y {lyy} puts a label under an Instagram UI zone (keep 220 to 1440)")
+            def span_warn(nm, v, a0, a1):  # a side running out of clean footage holds (with a slow push): suggest another shot
+                its = v if isinstance(v, list) else [v]
+                bounds = [a0] + [c.get("at", a0) if isinstance(c, dict) else a0 for c in its[1:]] + [a1]
+                for q, c in enumerate(its):
+                    if not isinstance(c, dict) or not isinstance(c.get("shot"), int): continue
+                    sh = gta5_lib().get(c["shot"]) if c["shot"] >= 500 else (SHOTS[c["shot"]] if SHOTS and c["shot"] < len(SHOTS) else None)
+                    if not sh or sh.get("kind") == "still" or not sh.get("clean"): continue
+                    off = c.get("t", c.get("offset", 0)); w = next((w for w in sh["clean"] if w[0] - 0.15 <= off <= w[1]), None)
+                    if not w: continue
+                    need = max(0, bounds[q + 1] - bounds[q]) / max(n, 1) * (n / 3.0)  # seconds on screen, beat estimated at 180 words a minute
+                    have = (w[1] - max(off, w[0])) * 1.5
+                    if need > have + 0.3: warns.append(f"beat {i}: compare {nm} shot {c['shot']} has about {have:.1f} s of clean footage (slowed) for about {need:.1f} s on screen; it will hold on a slow push. Add a second shot to the {nm} list (cut on a word with at) to keep it moving")
+            cut_w = cpx.get("at", max(1, n // 2)) if cmode == "ab" else None
+            if isinstance(cut_w, int) or cut_w is None:
+                span_warn("left", cpx.get("left"), 0, cut_w if cmode == "ab" else n); span_warn("right", cpx.get("right"), cut_w if cmode == "ab" else 0, n)
+            if b.get("clips"): warns.append(f"beat {i}: clips are ignored while compare is on (compare supplies the footage)")
+            if b.get("collage"): errs.append(f"beat {i}: compare and collage cannot share a beat")
+    g5 = [c for c in b.get("clips") or [] if isinstance(c, dict) and isinstance(c.get("shot"), int) and c["shot"] >= 500]
+    if g5 and cpx is None:
+        for c in g5: side_ok("clip", c)
+        if len(g5) == len(b.get("clips") or []): errs.append(f"beat {i}: every clip is GTA V; every frame must show GTA 6 (RULEBOOK 1.1): use compare (split or ab) or add a GTA VI clip")
+        else: warns.append(f"beat {i}: GTA V shots in plain clips carry no label; prefer compare so viewers see which game is which")
     if b.get("footnote") and any(d in b["footnote"] for d in DASHES): errs.append(f"beat {i}: dash in footnote")
 text_all = " ".join(b.get("say", "") for b in beats).lower() + " " + cap.lower()
 for ph in BANNED:

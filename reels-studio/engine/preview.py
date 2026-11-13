@@ -13,6 +13,9 @@ times = [float(x) for x in sys.argv[3:]] or [round(s["start"] + min(1.6, (s["end
 pv = os.path.join(od, "_pv"); os.makedirs(pv, exist_ok=True)
 subprocess.run(["node", os.path.join(here, "stills.js"), os.path.join(od, "timeline.json"), pv] + [f"{t:.2f}" for t in times], check=True)
 SHOTS = json.load(open(plan["shots_json"])) if plan.get("shots_json") else []
+if any(s.get("compare") or any(isinstance(c, dict) and c.get("shot", 0) >= 500 for c in s.get("clips") or []) for s in plan["segments"]):
+    import compare_kit  # compare kit: GTA V library (ids 500 and up) joins the shot table only when this plan uses it
+    SHOTS = compare_kit.load_table(plan.get("shots_json"), plan.get("shots_gta5_json"), SHOTS)
 ROTATED = ("7696925363795938573", "7502175479718284586")
 LETTERBOX = {"7696925363795938573": (960, 60), "7502175479718284586": (864, 108)}
 DUO = ("hue=s=0,eq=contrast=1.12,gblur=sigma=1.4,"
@@ -23,7 +26,10 @@ for t in times:
     seg = next((s for s in plan["segments"] if s["start"] <= t < s["end"]), plan["segments"][-1])
     grade = DUO if seg.get("treat") == "duo" else ("gblur=sigma=10,eq=saturation=1.15:brightness=-0.04" if seg.get("treat") == "blur" else "eq=saturation=1.10:contrast=1.05")
     bgp = os.path.join(pv, f"b_{t:.2f}.png"); out = os.path.join(pv, f"c_{t:.2f}.jpg")
-    if seg.get("clips"):
+    if seg.get("compare") or any(isinstance(x, dict) and x.get("shot", 0) >= 500 for x in seg.get("clips") or []):
+        import compare_kit  # compare kit: split screen or A/B cut, or GTA V library shots in plain clips
+        cmd = compare_kit.preview_cmd(seg, t, SHOTS, grade)
+    elif seg.get("clips"):
         cl = seg["clips"]; c = cl[0]
         for x in cl[1:]:
             if "t" in x and x["t"] <= t: c = x

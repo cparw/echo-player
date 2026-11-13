@@ -198,6 +198,25 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
                 if "clear_at" in x: x["tc"] = wt(x["clear_at"])
             hud["items"] = items
         sc["hud"] = hud
+    # ---- compare kit (GTA 5 vs GTA 6, owner rule 13 Nov; COMPARE.md): split screen or A/B cut. Beats without "compare" build as before ----
+    cmp_bg = None
+    if b.get("compare"):
+        cp = b["compare"]; cmode = cp.get("mode", "split")
+        # ab: the cut lands LEAD before spoken word "at" (default: the middle word), like a clip anchor
+        cts = round(max(sc["start"] + 0.2, wt(cp.get("at", max(1, M // 2))) - LEAD), 3) if cmode == "ab" else None
+        def cside(v, t0):  # one shot {"shot", "t"} or a list of them; list items after the first cut LEAD before their spoken word "at"
+            if isinstance(v, list):
+                return [dict(cside(x, t0), cut=round(max(t0, wt(x["at"]) - LEAD), 3)) if q and "at" in x else cside(x, t0) for q, x in enumerate(v)]
+            return dict({k: v[k] for k in ("shot", "cx", "cy", "slow", "push", "rot") if k in v}, offset=v.get("t", v.get("offset", 0)))
+        cmp_bg = {"mode": cmode, "left": cside(cp["left"], sc["start"]), "right": cside(cp["right"], cts if cts is not None else sc["start"])}
+        scc = {"mode": cmode, "labels": cp.get("labels", ["GTA 5", "GTA 6"])}
+        if cp.get("label_y"): scc["labelY"] = cp["label_y"]
+        if cmode == "ab":
+            cmp_bg["ts"] = scc["ts"] = cts
+            if cp.get("flash") is False: scc["flash"] = False
+            scc["sfx"] = cp.get("sfx", "whoosh")
+        sc["compare"] = scc
+        sc.setdefault("credit", b.get("credit", "FOOTAGE: ROCKSTAR GAMES"))
     clips = None
     if b.get("clips"):
         # cut on the spoken word: a clip with "at" starts LEAD before that word; the first clip starts with the scene
@@ -208,6 +227,7 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
     scenes.append(sc)
     bg.append({"start": sc["start"], "media": b.get("media"), "media_offset": b.get("media_offset", 0), "pan": b.get("pan", [0.40, 0.60]),
                "clips": clips, "treat": "duo" if b.get("bg") == "duo" else b.get("treat")})
+    if cmp_bg: bg[-1]["compare"] = cmp_bg; bg[-1]["clips"] = None  # compare kit: compose.py renders this segment as split or A/B
     push = b.get("push", 0.07 if b.get("layout") == "titlecard" else None)  # slow push in (zoom gained over the beat)
     if push: bg[-1]["push"] = push
     if sc.get("dim"):  # story dim line: compose and preview blur the footage locally while it is up
@@ -244,6 +264,10 @@ if spec.get("sfx_default"):  # story reels: sound effects only where a beat asks
     sfx = [{"t": s["start"], "kind": s.get("sfx", spec["sfx_default"])} for s in scenes[1:] if s.get("sfx", spec["sfx_default"]) != "none"]
 else:
     sfx = [{"t": s["start"], "kind": "hit" if s.get("flash") or s.get("section_new") or s.get("layout") == "number" else "whoosh"} for s in scenes[1:]]
-json.dump({"duration": tl["duration"], "segments": bg, "shots_json": spec.get("shots_json"), "sfx": sfx},
-          open(os.path.join(out, "bgplan.json"), "w"), indent=1)
+for s in scenes:  # compare kit: sound on the A/B cut (scripts without compare keep exactly the same sfx list)
+    if (s.get("compare") or {}).get("mode") == "ab" and s["compare"].get("sfx") != "none" and spec.get("sfx_default") != "none":
+        sfx.append({"t": s["compare"]["ts"], "kind": s["compare"]["sfx"]})
+plan_out = {"duration": tl["duration"], "segments": bg, "shots_json": spec.get("shots_json"), "sfx": sfx}
+if spec.get("shots_gta5_json"): plan_out["shots_gta5_json"] = spec["shots_gta5_json"]  # compare kit: GTA V library path (default official/gta5)
+json.dump(plan_out, open(os.path.join(out, "bgplan.json"), "w"), indent=1)
 print(f"scenes={len(scenes)} duration={tl['duration']}s")

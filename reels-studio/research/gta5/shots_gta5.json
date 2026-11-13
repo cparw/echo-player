@@ -1,0 +1,4568 @@
+[
+ {
+  "id": 500,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "skyline_sunset_palm",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/500_skyline_sunset_palm.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.62,
+   0.4
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Downtown Los Santos skyline at sunset behind a tall palm, rail yards, streets and rooftops in front",
+  "tags": [
+   "skyline",
+   "city",
+   "sunset",
+   "Los Santos",
+   "streets"
+  ],
+  "gta_online": false,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/3871/07edb091bb329145ee3f3f01476adb40acc6457b.jpg",
+  "page_url": "https://www.rockstargames.com/gta-v",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Downtown Los Santos skyline at sunset behind a tall palm, rail yards, streets and rooftops in front (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "skyline",
+     "city",
+     "sunset",
+     "Los Santos",
+     "streets"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 501,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "downtown_day_park",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/501_downtown_day_park.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.45
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Downtown towers on a clear day over a palm lined park with a lake, footbridge, traffic, pedestrians and an ice cream truck",
+  "tags": [
+   "skyline",
+   "city",
+   "daytime",
+   "streets",
+   "pedestrians",
+   "park"
+  ],
+  "gta_online": false,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/gta-v/24ba6644deb404944cdbe64705285bbad80154a4.jpg",
+  "page_url": "https://www.rockstargames.com/gta-v",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Downtown towers on a clear day over a palm lined park with a lake, footbridge, traffic, pedestrians and an ice cream truck (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "skyline",
+     "city",
+     "daytime",
+     "streets",
+     "pedestrians",
+     "park"
+    ],
+    "audit": "checked at full size: ordinary pedestrians and traffic"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 502,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "skyline_dusk_golf",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/502_skyline_dusk_golf.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 2560,
+  "h": 1401,
+  "crop_box": [
+   0,
+   0,
+   2560,
+   1401
+  ],
+  "focus": [
+   0.45,
+   0.4
+  ],
+  "res": [
+   2560,
+   1401
+  ],
+  "sharp_full": false,
+  "desc": "Los Santos skyline at dusk over a golf course pond and trees (softly stylized, painterly look)",
+  "tags": [
+   "skyline",
+   "city",
+   "dusk",
+   "stylized"
+  ],
+  "gta_online": false,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/6a84/fdac18d4377f55a8b9aed1dcb882c4ffa0c60959.jpg",
+  "page_url": "https://www.rockstargames.com/gta-v",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Los Santos skyline at dusk over a golf course pond and trees (softly stylized, painterly look) (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "skyline",
+     "city",
+     "dusk",
+     "stylized"
+    ],
+    "audit": "whole frame clean; stylized grade"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 503,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "downtown_freeway_dusk",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/503_downtown_freeway_dusk.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.58,
+   0.45
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Downtown at dusk over a busy freeway interchange, a civilian helicopter and the torch monument",
+  "tags": [
+   "skyline",
+   "city",
+   "dusk",
+   "streets",
+   "traffic",
+   "freeway"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/10_gtavpc_03272015.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/1748koo9o829a9/screens-from-grand-theft-auto-v-for-pc",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Downtown at dusk over a busy freeway interchange, a civilian helicopter and the torch monument (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "skyline",
+     "city",
+     "dusk",
+     "streets",
+     "traffic",
+     "freeway"
+    ],
+    "audit": "helicopter checked at full size: civilian, no police markings"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 504,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "vinewood_sign_day",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/504_vinewood_sign_day.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.55,
+   0.45
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "From behind the Vinewood sign: the hills and downtown Los Santos on a clear day",
+  "tags": [
+   "landmark",
+   "Vinewood sign",
+   "city",
+   "wide",
+   "aerial",
+   "hills"
+  ],
+  "gta_online": false,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/172872k8a375k8/7248c8a095c3af9a0b646d2e7ac1661f7e49cbb5.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/172872k8a375k8/gtav-and-gta-online-coming-march-15-for-playstation-5-and-xbox-series",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "From behind the Vinewood sign: the hills and downtown Los Santos on a clear day (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "landmark",
+     "Vinewood sign",
+     "city",
+     "wide",
+     "aerial",
+     "hills"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 505,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "vinewood_sign_haze",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/505_vinewood_sign_haze.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.55
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Behind the Vinewood sign in golden afternoon haze, downtown towers and the hills beyond",
+  "tags": [
+   "landmark",
+   "Vinewood sign",
+   "city",
+   "golden hour",
+   "wide"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/pcvinewood_full.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/4k41288381494k/gtav-pc-new-release-date-first-screens-and-system-specs",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Behind the Vinewood sign in golden afternoon haze, downtown towers and the hills beyond (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "landmark",
+     "Vinewood sign",
+     "city",
+     "golden hour",
+     "wide"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 506,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "vinewood_sign_sunset",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/506_vinewood_sign_sunset.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   0,
+   1620,
+   1080
+  ],
+  "focus": [
+   0.33,
+   0.55
+  ],
+  "res": [
+   1620,
+   1080
+  ],
+  "sharp_full": false,
+  "desc": "The Vinewood sign on its hill at sunset with a radio mast, a passing jet and a helicopter, valley lights below",
+  "tags": [
+   "landmark",
+   "Vinewood sign",
+   "sunset",
+   "hills",
+   "aerial"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav_details09122014_002.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/89k8a55458a1ak/grand-theft-auto-v-release-dates-and-exclusive-content",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "The Vinewood sign on its hill at sunset with a radio mast, a passing jet and a helicopter, valley lights below (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "landmark",
+     "Vinewood sign",
+     "sunset",
+     "hills",
+     "aerial"
+    ],
+    "audit": "GTA V logo in the lower right corner removed by crop_box (x 1620 and up)"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 507,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "freeway_night",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/507_freeway_night.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Night freeway traffic heading to Downtown Los Santos, freeway signs, palms and lit towers",
+  "tags": [
+   "streets",
+   "cars",
+   "driving",
+   "night",
+   "traffic",
+   "city"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/pchighway_full.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/4k41288381494k/gtav-pc-new-release-date-first-screens-and-system-specs",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Night freeway traffic heading to Downtown Los Santos, freeway signs, palms and lit towers (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "streets",
+     "cars",
+     "driving",
+     "night",
+     "traffic",
+     "city"
+    ],
+    "audit": "cars checked at full size: no police"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 508,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "golf_skyline",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/508_golf_skyline.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A golfer tees off under palms with the downtown skyline and a jet overhead",
+  "tags": [
+   "city",
+   "skyline",
+   "leisure",
+   "golf",
+   "daytime"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_4.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/52396/new-grand-theft-auto-v-pc-screens",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A golfer tees off under palms with the downtown skyline and a jet overhead (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "skyline",
+     "leisure",
+     "golf",
+     "daytime"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 509,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "vinewood_blvd_crowd",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/509_vinewood_blvd_crowd.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   420,
+   0,
+   3000,
+   2160
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   3000,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Crowd on the Vinewood Boulevard walk of fame at dusk: tourists, taxis, theatre marquee and neon",
+  "tags": [
+   "crowds",
+   "pedestrians",
+   "streets",
+   "city",
+   "nightlife"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/7_gtavpc_03272015.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/1748koo9o829a9/screens-from-grand-theft-auto-v-for-pc",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Crowd on the Vinewood Boulevard walk of fame at dusk: tourists, taxis, theatre marquee and neon (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "crowds",
+     "pedestrians",
+     "streets",
+     "city",
+     "nightlife"
+    ],
+    "audit": "crowd checked at full size; crop_box trims a movie poster at the left edge"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 510,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "street_race_night",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/510_street_race_night.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.58,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A striped blue sports car with neon underglow leads a street race at dusk (GTA Online)",
+  "tags": [
+   "cars",
+   "driving",
+   "racing",
+   "GTA Online"
+  ],
+  "gta_online": true,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/gta-v/a9877dd12c6baf42e1def32e0218c540cc95a13d.jpg",
+  "page_url": "https://www.rockstargames.com/gta-v",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A striped blue sports car with neon underglow leads a street race at dusk (GTA Online) (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "cars",
+     "driving",
+     "racing",
+     "GTA Online"
+    ],
+    "audit": "car behind checked at full size: no police"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 511,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "supercar_drift_rain",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/511_supercar_drift_rain.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.55,
+   0.55
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A green supercar with a big rear wing drifts across a wet street at night, spray flying (GTA Online)",
+  "tags": [
+   "cars",
+   "driving",
+   "night",
+   "rain",
+   "GTA Online"
+  ],
+  "gta_online": true,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/4ka18ao8a4o227/abdd0e8b80a131af933993a9dd1a3bac6c25b5e6.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/4ka18ao8a4o227/grand-theft-auto-v-and-gta-online-out-now-on-playstation-5-and-xbox-se",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A green supercar with a big rear wing drifts across a wet street at night, spray flying (GTA Online) (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "cars",
+     "driving",
+     "night",
+     "rain",
+     "GTA Online"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 512,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "quad_coyote_canyon",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/512_quad_coyote_canyon.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 1620,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   1620
+  ],
+  "focus": [
+   0.5,
+   0.6
+  ],
+  "res": [
+   3840,
+   1620
+  ],
+  "sharp_full": true,
+  "desc": "A quad bike rider and a running coyote in a rocky canyon, a hawk and a small plane overhead",
+  "tags": [
+   "countryside",
+   "wildlife",
+   "driving",
+   "off road"
+  ],
+  "gta_online": false,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/7551a7k917554a/eaa402b2d9943ce9f1a3ea37dee8aab074a2a965.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/7551a7k917554a/free-upgrade-for-grand-theft-auto-v-on-pc-now-available",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A quad bike rider and a running coyote in a rocky canyon, a hawk and a small plane overhead (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "wildlife",
+     "driving",
+     "off road"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 513,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "quad_jump_skyline",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/513_quad_jump_skyline.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A quad bike leaps off a hilltop at sunset with the downtown skyline in the distance",
+  "tags": [
+   "driving",
+   "stunt",
+   "sunset",
+   "skyline",
+   "hills"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_5.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/52396/new-grand-theft-auto-v-pc-screens",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A quad bike leaps off a hilltop at sunset with the downtown skyline in the distance (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "driving",
+     "stunt",
+     "sunset",
+     "skyline",
+     "hills"
+    ],
+    "audit": "whole frame clean (a jump, no crash)"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 514,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "chiliad_cable_car",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/514_chiliad_cable_car.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.38,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Mount Chiliad cable car station with a gondola over the mountains, Los Santos far away on the horizon",
+  "tags": [
+   "countryside",
+   "mountains",
+   "landmark",
+   "wide",
+   "Mount Chiliad"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/6_gtavpc_03272015.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/1748koo9o829a9/screens-from-grand-theft-auto-v-for-pc",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Mount Chiliad cable car station with a gondola over the mountains, Los Santos far away on the horizon (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "mountains",
+     "landmark",
+     "wide",
+     "Mount Chiliad"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 515,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "country_train_plane",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/515_country_train_plane.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.6,
+   0.55
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A freight train winds through green hills by the Alamo Sea, a small plane flies close overhead",
+  "tags": [
+   "countryside",
+   "train",
+   "wide",
+   "Blaine County"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/12_gtavpc_03272015.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/1748koo9o829a9/screens-from-grand-theft-auto-v-for-pc",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A freight train winds through green hills by the Alamo Sea, a small plane flies close overhead (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "train",
+     "wide",
+     "Blaine County"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 516,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "train_bridge_lake",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/516_train_bridge_lake.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.35,
+   0.6
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A long freight train crosses a bridge above the Alamo Sea at golden hour, mountains behind",
+  "tags": [
+   "countryside",
+   "train",
+   "lake",
+   "golden hour",
+   "Blaine County"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_2.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/52396/new-grand-theft-auto-v-pc-screens",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A long freight train crosses a bridge above the Alamo Sea at golden hour, mountains behind (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "train",
+     "lake",
+     "golden hour",
+     "Blaine County"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 517,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "country_highway_biplane",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/517_country_highway_biplane.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Country highway past grain silos and farmland at dusk, a biplane crop duster overhead",
+  "tags": [
+   "countryside",
+   "driving",
+   "farm",
+   "dusk",
+   "Blaine County"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_10.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/52396/new-grand-theft-auto-v-pc-screens",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Country highway past grain silos and farmland at dusk, a biplane crop duster overhead (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "driving",
+     "farm",
+     "dusk",
+     "Blaine County"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 518,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "tree_rocky_point",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/518_tree_rocky_point.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.32,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A lone tree on a rocky point by the water, a dirt road and pines in the hills at dusk",
+  "tags": [
+   "countryside",
+   "nature",
+   "dusk",
+   "lake"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/pctree_full.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/4k41288381494k/gtav-pc-new-release-date-first-screens-and-system-specs",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A lone tree on a rocky point by the water, a dirt road and pines in the hills at dusk (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "nature",
+     "dusk",
+     "lake"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 519,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "river_waterfall_animals",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/519_river_waterfall_animals.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A river and waterfall under a bridge: rabbits in the grass, a deer on the rocks, a mountain lion drinking",
+  "tags": [
+   "wildlife",
+   "nature",
+   "countryside",
+   "river",
+   "animals"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_7.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/52396/new-grand-theft-auto-v-pc-screens",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A river and waterfall under a bridge: rabbits in the grass, a deer on the rocks, a mountain lion drinking (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "wildlife",
+     "nature",
+     "countryside",
+     "river",
+     "animals"
+    ],
+    "audit": "animals calm, nothing violent"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 520,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "stag_doe_sunset",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/520_stag_doe_sunset.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   560,
+   0,
+   3280,
+   2160
+  ],
+  "focus": [
+   0.37,
+   0.5
+  ],
+  "res": [
+   3280,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "A stag looks into the camera beside a grazing doe in a pine forest at sunset, a bridge behind",
+  "tags": [
+   "wildlife",
+   "deer",
+   "nature",
+   "sunset",
+   "forest"
+  ],
+  "gta_online": false,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/akk98a4o755825/4cad70fc6a2a979203c33ff0e9bec5ce0c020817.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/akk98a4o755825/free-upgrade-for-grand-theft-auto-v-on-pc-coming-march-4",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A stag looks into the camera beside a grazing doe in a pine forest at sunset, a bridge behind (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "wildlife",
+     "deer",
+     "nature",
+     "sunset",
+     "forest"
+    ],
+    "audit": "a police car chasing a car sits in the far lower left (x under 300): crop_box starts at x 560"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 521,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "deer_meadow",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/521_deer_meadow.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   0,
+   1620,
+   1080
+  ],
+  "focus": [
+   0.47,
+   0.55
+  ],
+  "res": [
+   1620,
+   1080
+  ],
+  "sharp_full": false,
+  "desc": "A stag and a doe in a grassy meadow below wooded hills",
+  "tags": [
+   "wildlife",
+   "deer",
+   "nature",
+   "countryside"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav_details09122014_008.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/89k8a55458a1ak/grand-theft-auto-v-release-dates-and-exclusive-content",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "A stag and a doe in a grassy meadow below wooded hills (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "wildlife",
+     "deer",
+     "nature",
+     "countryside"
+    ],
+    "audit": "GTA V logo in the lower right corner removed by crop_box"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 522,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "lighthouse_topdown",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/522_lighthouse_topdown.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.6,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Straight down on a red and white lighthouse on a rock, waves breaking, a speedboat passing",
+  "tags": [
+   "ocean",
+   "coast",
+   "aerial",
+   "boat"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/2_gtavpc_03272015.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/1748koo9o829a9/screens-from-grand-theft-auto-v-for-pc",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Straight down on a red and white lighthouse on a rock, waves breaking, a speedboat passing (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "ocean",
+     "coast",
+     "aerial",
+     "boat"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 523,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "pier_night_from_water",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/523_pier_night_from_water.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.45,
+   0.45
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Del Perro pier, its Ferris wheel and the downtown skyline at night seen from a boat; a hand holds a phone taking the photo",
+  "tags": [
+   "ocean",
+   "beach",
+   "night",
+   "skyline",
+   "pier"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_15.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/52396/new-grand-theft-auto-v-pc-screens",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Del Perro pier, its Ferris wheel and the downtown skyline at night seen from a boat; a hand holds a phone taking the photo (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "ocean",
+     "beach",
+     "night",
+     "skyline",
+     "pier"
+    ],
+    "audit": "whole frame clean"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 524,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "map_art_los_santos",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/524_map_art_los_santos.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 2560,
+  "h": 1321,
+  "crop_box": [
+   0,
+   0,
+   2560,
+   1321
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   2560,
+   1321
+  ],
+  "sharp_full": false,
+  "desc": "Rockstar's gold map art of Los Santos: the street grid, freeways and hills (graphic, not a game screenshot)",
+  "tags": [
+   "map",
+   "city",
+   "graphic"
+  ],
+  "gta_online": false,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/6a84/3360902d782314fee48567a8a70bb9996e569698.jpg",
+  "page_url": "https://www.rockstargames.com/gta-v",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Rockstar's gold map art of Los Santos: the street grid, freeways and hills (graphic, not a game screenshot) (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "map",
+     "city",
+     "graphic"
+    ],
+    "audit": "whole frame clean; no labels or logos"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 525,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "trevor_helicopter_sandy",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/525_trevor_helicopter_sandy.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.42,
+   0.45
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Trevor flies a helicopter low over the desert town of Sandy Shores",
+  "tags": [
+   "protagonists",
+   "Trevor",
+   "aerial",
+   "countryside",
+   "desert"
+  ],
+  "gta_online": false,
+  "source_url": "https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/gta-v/a457313ec277b6e74bd25238768cbcecda739549.jpg",
+  "page_url": "https://www.rockstargames.com/gta-v",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Trevor flies a helicopter low over the desert town of Sandy Shores (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Trevor",
+     "aerial",
+     "countryside",
+     "desert"
+    ],
+    "audit": "cockpit checked at full size: hands on the controls, no weapon"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 526,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "michael_phone_night",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/526_michael_phone_night.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.45,
+   0.4
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Michael on the phone on a terrace at night, downtown towers and the moon behind him",
+  "tags": [
+   "protagonists",
+   "Michael",
+   "night",
+   "skyline"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/3_gtavpc_03272015.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/1748koo9o829a9/screens-from-grand-theft-auto-v-for-pc",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Michael on the phone on a terrace at night, downtown towers and the moon behind him (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Michael",
+     "night",
+     "skyline"
+    ],
+    "audit": "calm moment, no weapon"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 527,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "franklin_chop_doorstep",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/527_franklin_chop_doorstep.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.42,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Franklin sits on his doorstep on the phone with his dog Chop beside him",
+  "tags": [
+   "protagonists",
+   "Franklin",
+   "dog",
+   "night",
+   "calm"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav02272015_14.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/52396/new-grand-theft-auto-v-pc-screens",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Franklin sits on his doorstep on the phone with his dog Chop beside him (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Franklin",
+     "dog",
+     "night",
+     "calm"
+    ],
+    "audit": "calm moment, phone in hand, no weapon"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 528,
+  "kind": "still",
+  "game": "GTA V",
+  "name": "michael_classic_car",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/img/528_michael_classic_car.jpg",
+  "start": 0.0,
+  "end": 10.0,
+  "dur": 10.0,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   0,
+   1620,
+   1080
+  ],
+  "focus": [
+   0.4,
+   0.55
+  ],
+  "res": [
+   1620,
+   1080
+  ],
+  "sharp_full": false,
+  "desc": "Michael leans on a red classic sports car in a sunny driveway while a cat walks past (his head is cropped by the top edge)",
+  "tags": [
+   "protagonists",
+   "Michael",
+   "cars",
+   "calm"
+  ],
+  "gta_online": false,
+  "source_url": "https://media.rockstargames.com/rockstargames/img/global/news/upload/gtav_details09122014_015.jpg",
+  "page_url": "https://www.rockstargames.com/newswire/article/89k8a55458a1ak/grand-theft-auto-v-release-dates-and-exclusive-content",
+  "segments": [
+   {
+    "from": 0.0,
+    "to": 10.0,
+    "content": "Michael leans on a red classic sports car in a sunny driveway while a cat walks past (his head is cropped by the top edge) (still image, held with a slow push in)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Michael",
+     "cars",
+     "calm"
+    ],
+    "audit": "GTA V logo in the lower right corner removed by crop_box"
+   }
+  ],
+  "clean": [
+   [
+    0.0,
+    10.0
+   ]
+  ],
+  "safe": [
+   0.0,
+   10.0
+  ],
+  "banned": false
+ },
+ {
+  "id": 530,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "sunset_power_lines",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/r3too449.mp4",
+  "start": 2.32,
+  "end": 4.05,
+  "dur": 1.73,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   216,
+   3840,
+   1728
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   1728
+  ],
+  "sharp_full": true,
+  "desc": "Golden hour over South Los Santos: power lines with sneakers hanging, palms and a street below",
+  "tags": [
+   "city",
+   "streets",
+   "sunset"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/r3too449/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/r3too449",
+  "source_title": "Coming March 2022 for PS5 and Xbox Series X|S (Sept 2021)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.73,
+    "content": "Golden hour over South Los Santos: power lines with sneakers hanging, palms and a street below",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "streets",
+     "sunset"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.63
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.63
+  ],
+  "banned": false
+ },
+ {
+  "id": 531,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "skyline_from_hills",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 2.82,
+  "end": 4.78,
+  "dur": 1.96,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.65,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Downtown Los Santos rising out of the morning haze, seen from the hills at sunrise",
+  "tags": [
+   "skyline",
+   "city",
+   "wide",
+   "sunrise"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.96,
+    "content": "Downtown Los Santos rising out of the morning haze, seen from the hills at sunrise",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "skyline",
+     "city",
+     "wide",
+     "sunrise"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.86
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.86
+  ],
+  "banned": false
+ },
+ {
+  "id": 532,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "skyscrapers_from_below",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 4.88,
+  "end": 6.88,
+  "dur": 2.0,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Looking straight up at glass skyscrapers in the sun",
+  "tags": [
+   "city",
+   "skyline",
+   "architecture"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 2.0,
+    "content": "Looking straight up at glass skyscrapers in the sun",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "skyline",
+     "architecture"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.9
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.9
+  ],
+  "banned": false
+ },
+ {
+  "id": 533,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "city_hall_tower",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 40.65,
+  "end": 41.62,
+  "dur": 0.97,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.55,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "The city hall tower and downtown high rises against the sun, palms at the edge",
+  "tags": [
+   "city",
+   "skyline",
+   "landmark"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 0.97,
+    "content": "The city hall tower and downtown high rises against the sun, palms at the edge",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "skyline",
+     "landmark"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    0.87
+   ]
+  ],
+  "safe": [
+   0.1,
+   0.87
+  ],
+  "banned": false
+ },
+ {
+  "id": 534,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "river_bridge_skyline",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 46.25,
+  "end": 48.02,
+  "dur": 1.77,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.6,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "An arched bridge over the Los Santos river channel with downtown behind",
+  "tags": [
+   "city",
+   "skyline",
+   "streets",
+   "bridge"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.77,
+    "content": "An arched bridge over the Los Santos river channel with downtown behind",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "skyline",
+     "streets",
+     "bridge"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.67
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.67
+  ],
+  "banned": false
+ },
+ {
+  "id": 535,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "smokestacks_sunset",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 29.45,
+  "end": 30.95,
+  "dur": 1.5,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.6,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "City lights at sunset with two smokestacks and a suspension bridge in the haze",
+  "tags": [
+   "city",
+   "skyline",
+   "sunset",
+   "industry"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.5,
+    "content": "City lights at sunset with two smokestacks and a suspension bridge in the haze",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "skyline",
+     "sunset",
+     "industry"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.4
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.4
+  ],
+  "banned": false
+ },
+ {
+  "id": 536,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "maze_tower_topdown",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 31.05,
+  "end": 31.98,
+  "dur": 0.93,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Straight down on the Maze Bank tower helipad and the city far below",
+  "tags": [
+   "aerial",
+   "city",
+   "skyline",
+   "landmark"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 0.93,
+    "content": "Straight down on the Maze Bank tower helipad and the city far below",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "aerial",
+     "city",
+     "skyline",
+     "landmark"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    0.83
+   ]
+  ],
+  "safe": [
+   0.1,
+   0.83
+  ],
+  "banned": false
+ },
+ {
+  "id": 537,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "richman_hotel",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 35.28,
+  "end": 36.25,
+  "dur": 0.97,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "The Richman Hotel sign and grounds with a distant tower",
+  "tags": [
+   "city",
+   "streets",
+   "landmark",
+   "hotel"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 0.97,
+    "content": "The Richman Hotel sign and grounds with a distant tower",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "streets",
+     "landmark",
+     "hotel"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    0.87
+   ]
+  ],
+  "safe": [
+   0.1,
+   0.87
+  ],
+  "banned": false
+ },
+ {
+  "id": 538,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "penthouse_skyline_view",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/r3too449.mp4",
+  "start": 55.85,
+  "end": 66.82,
+  "dur": 10.97,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   216,
+   3840,
+   1728
+  ],
+  "focus": [
+   0.55,
+   0.5
+  ],
+  "res": [
+   3840,
+   1728
+  ],
+  "sharp_full": true,
+  "desc": "A player in an orange jacket looks out of a penthouse window at the downtown skyline at sunset (GTA Online)",
+  "tags": [
+   "skyline",
+   "city",
+   "sunset",
+   "interior",
+   "GTA Online"
+  ],
+  "gta_online": true,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/r3too449/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/r3too449",
+  "source_title": "Coming March 2022 for PS5 and Xbox Series X|S (Sept 2021)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 5.1,
+    "content": "party in a penthouse with arcade cabinets whose art shows guns",
+    "flags": [
+     "weapon"
+    ],
+    "clean": false,
+    "good_for": []
+   },
+   {
+    "from": 5.1,
+    "to": 8.6,
+    "content": "player at the curved window looking at the skyline at sunset, a few guests",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "skyline",
+     "city",
+     "sunset",
+     "interior",
+     "GTA Online"
+    ]
+   },
+   {
+    "from": 8.6,
+    "to": 10.97,
+    "content": "jets fly in and explosions burst over the city",
+    "flags": [
+     "violence",
+     "crash_or_fire"
+    ],
+    "clean": false,
+    "good_for": []
+   }
+  ],
+  "clean": [
+   [
+    5.2,
+    8.5
+   ]
+  ],
+  "safe": [
+   5.2,
+   8.5
+  ],
+  "banned": false
+ },
+ {
+  "id": 539,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "neighborhood_skyline",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 43.33,
+  "end": 44.56,
+  "dur": 1.23,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   320,
+   108,
+   1600,
+   864
+  ],
+  "focus": [
+   0.6,
+   0.5
+  ],
+  "res": [
+   1600,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Low rise neighborhood with power lines, downtown towers in the haze (left edge with store signs cropped out)",
+  "tags": [
+   "city",
+   "streets",
+   "skyline",
+   "neighborhood"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.23,
+    "content": "Low rise neighborhood with power lines, downtown towers in the haze (left edge with store signs cropped out)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "streets",
+     "skyline",
+     "neighborhood"
+    ],
+    "audit": "liquor and beer signs at x under 290 removed by crop_box"
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.13
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.13
+  ],
+  "banned": false
+ },
+ {
+  "id": 540,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "vinewood_hills_sunset",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 50.77,
+  "end": 52.07,
+  "dur": 1.3,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Hillside villas, palms and a tennis court at sunset",
+  "tags": [
+   "city",
+   "hills",
+   "sunset",
+   "houses"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.3,
+    "content": "Hillside villas, palms and a tennis court at sunset",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "city",
+     "hills",
+     "sunset",
+     "houses"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.2
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.2
+  ],
+  "banned": false
+ },
+ {
+  "id": 541,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "freeway_interchange",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 11.15,
+  "end": 13.12,
+  "dur": 1.97,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Traffic on a curving freeway interchange in the morning haze",
+  "tags": [
+   "streets",
+   "traffic",
+   "driving",
+   "freeway",
+   "city"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.97,
+    "content": "Traffic on a curving freeway interchange in the morning haze",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "streets",
+     "traffic",
+     "driving",
+     "freeway",
+     "city"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.87
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.87
+  ],
+  "banned": false
+ },
+ {
+  "id": 542,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "freeway_signs",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/s6rrr5ao.mp4",
+  "start": 25.28,
+  "end": 26.61,
+  "dur": 1.33,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   110,
+   1920,
+   860
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   1920,
+   860
+  ],
+  "sharp_full": false,
+  "desc": "Driving under green freeway signs (Del Perro Fwy, W. Elipse Blvd) with palms and traffic",
+  "tags": [
+   "streets",
+   "driving",
+   "freeway",
+   "signs"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/s6rrr5ao/flv/en-us-1080p60.mp4",
+  "page_url": "https://www.rockstargames.com/videos/s6rrr5ao",
+  "source_title": "60 Frames Per Second PC Trailer (April 2015)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.33,
+    "content": "Driving under green freeway signs (Del Perro Fwy, W. Elipse Blvd) with palms and traffic",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "streets",
+     "driving",
+     "freeway",
+     "signs"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.23
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.23
+  ],
+  "banned": false
+ },
+ {
+  "id": 543,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "lowriders_downtown",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 26.52,
+  "end": 27.72,
+  "dur": 1.2,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Three lowriders roll toward the camera on a downtown street (GTA Online)",
+  "tags": [
+   "cars",
+   "streets",
+   "city",
+   "GTA Online"
+  ],
+  "gta_online": true,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.2,
+    "content": "Three lowriders roll toward the camera on a downtown street (GTA Online)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "cars",
+     "streets",
+     "city",
+     "GTA Online"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.1
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.1
+  ],
+  "banned": false
+ },
+ {
+  "id": 544,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "coastal_highway_drive",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/r3too449.mp4",
+  "start": 37.35,
+  "end": 39.12,
+  "dur": 1.77,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   216,
+   3840,
+   1728
+  ],
+  "focus": [
+   0.55,
+   0.5
+  ],
+  "res": [
+   3840,
+   1728
+  ],
+  "sharp_full": true,
+  "desc": "A red sports car cruises a coastal highway with traffic at sunset",
+  "tags": [
+   "cars",
+   "driving",
+   "coast",
+   "sunset"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/r3too449/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/r3too449",
+  "source_title": "Coming March 2022 for PS5 and Xbox Series X|S (Sept 2021)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.77,
+    "content": "A red sports car cruises a coastal highway with traffic at sunset",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "cars",
+     "driving",
+     "coast",
+     "sunset"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.67
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.67
+  ],
+  "banned": false
+ },
+ {
+  "id": 545,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "franklin_convertible_sunset",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/r3too449.mp4",
+  "start": 39.22,
+  "end": 40.98,
+  "dur": 1.76,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   216,
+   3840,
+   1728
+  ],
+  "focus": [
+   0.6,
+   0.5
+  ],
+  "res": [
+   3840,
+   1728
+  ],
+  "sharp_full": true,
+  "desc": "Franklin drives a convertible along the coast at sunset",
+  "tags": [
+   "protagonists",
+   "Franklin",
+   "driving",
+   "sunset"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/r3too449/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/r3too449",
+  "source_title": "Coming March 2022 for PS5 and Xbox Series X|S (Sept 2021)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.76,
+    "content": "Franklin drives a convertible along the coast at sunset",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Franklin",
+     "driving",
+     "sunset"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.66
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.66
+  ],
+  "banned": false
+ },
+ {
+  "id": 546,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "boardwalk_crowd_mime",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/kc1a9kco.mp4",
+  "start": 9.66,
+  "end": 11.29,
+  "dur": 1.63,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.55,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Busy Vespucci Beach boardwalk: tourists, beachgoers, a mime and Michael walking past",
+  "tags": [
+   "crowds",
+   "pedestrians",
+   "beach",
+   "Michael"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/kc1a9kco/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/kc1a9kco",
+  "source_title": "A Picket Fence and a Dog Named Skip (Sept 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.63,
+    "content": "Busy Vespucci Beach boardwalk: tourists, beachgoers, a mime and Michael walking past",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "crowds",
+     "pedestrians",
+     "beach",
+     "Michael"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.53
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.53
+  ],
+  "banned": false
+ },
+ {
+  "id": 547,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "mime_closeup",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/kc1a9kco.mp4",
+  "start": 11.39,
+  "end": 12.6,
+  "dur": 1.21,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "A mime performs on the boardwalk, passers by behind",
+  "tags": [
+   "pedestrians",
+   "beach",
+   "fun"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/kc1a9kco/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/kc1a9kco",
+  "source_title": "A Picket Fence and a Dog Named Skip (Sept 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.21,
+    "content": "A mime performs on the boardwalk, passers by behind",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "pedestrians",
+     "beach",
+     "fun"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.11
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.11
+  ],
+  "banned": false
+ },
+ {
+  "id": 548,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "sandy_shores_street",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/kc1a9kco.mp4",
+  "start": 14.7,
+  "end": 16.47,
+  "dur": 1.77,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.55,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Sandy Shores main road: a biplane flies over, cyclists, a dog and a local waving",
+  "tags": [
+   "countryside",
+   "pedestrians",
+   "small town",
+   "desert"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/kc1a9kco/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/kc1a9kco",
+  "source_title": "A Picket Fence and a Dog Named Skip (Sept 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.77,
+    "content": "Sandy Shores main road: a biplane flies over, cyclists, a dog and a local waving",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "pedestrians",
+     "small town",
+     "desert"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.67
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.67
+  ],
+  "banned": false
+ },
+ {
+  "id": 549,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "plane_over_countryside",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/r3too449.mp4",
+  "start": 32.28,
+  "end": 33.58,
+  "dur": 1.3,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   216,
+   3840,
+   1728
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   1728
+  ],
+  "sharp_full": true,
+  "desc": "A small plane flies over Blaine County toward mountains and white clouds",
+  "tags": [
+   "aerial",
+   "countryside",
+   "wide",
+   "plane"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/r3too449/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/r3too449",
+  "source_title": "Coming March 2022 for PS5 and Xbox Series X|S (Sept 2021)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 0.35,
+    "content": "end of the character switch transition (desaturated aerial)",
+    "flags": [
+     "transition"
+    ],
+    "clean": false,
+    "good_for": []
+   },
+   {
+    "from": 0.35,
+    "to": 1.3,
+    "content": "plane over the countryside, mountains and clouds",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "aerial",
+     "countryside",
+     "wide",
+     "plane"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.45,
+    1.2
+   ]
+  ],
+  "safe": [
+   0.45,
+   1.2
+  ],
+  "banned": false
+ },
+ {
+  "id": 550,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "chiliad_sunset",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 14.03,
+  "end": 17.3,
+  "dur": 3.27,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.7,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Mount Chiliad and misty ridges at sunset",
+  "tags": [
+   "countryside",
+   "mountains",
+   "sunset",
+   "Mount Chiliad"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 3.27,
+    "content": "Mount Chiliad and misty ridges at sunset",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "mountains",
+     "sunset",
+     "Mount Chiliad"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    3.17
+   ]
+  ],
+  "safe": [
+   0.1,
+   3.17
+  ],
+  "banned": false
+ },
+ {
+  "id": 551,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "train_forest",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 17.4,
+  "end": 19.3,
+  "dur": 1.9,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.3,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "A freight train comes round a bend through a pine forest",
+  "tags": [
+   "countryside",
+   "train",
+   "forest"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.9,
+    "content": "A freight train comes round a bend through a pine forest",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "train",
+     "forest"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.8
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.8
+  ],
+  "banned": false
+ },
+ {
+  "id": 552,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "lumber_mill",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 19.4,
+  "end": 21.24,
+  "dur": 1.84,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "A lumber mill with a smoking chimney and a train in forested hills",
+  "tags": [
+   "countryside",
+   "industry",
+   "forest"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.84,
+    "content": "A lumber mill with a smoking chimney and a train in forested hills",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "industry",
+     "forest"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.74
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.74
+  ],
+  "banned": false
+ },
+ {
+  "id": 553,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "quarry",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 21.34,
+  "end": 24.14,
+  "dur": 2.8,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "A miner by a giant dump truck, then workers overlooking a terraced quarry with the city far away",
+  "tags": [
+   "countryside",
+   "work",
+   "quarry"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 2.8,
+    "content": "A miner by a giant dump truck, then workers overlooking a terraced quarry with the city far away",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "countryside",
+     "work",
+     "quarry"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    2.7
+   ]
+  ],
+  "safe": [
+   0.1,
+   2.7
+  ],
+  "banned": false
+ },
+ {
+  "id": 554,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "paleto_bay_aerial",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/s6rrr5ao.mp4",
+  "start": 38.14,
+  "end": 39.44,
+  "dur": 1.3,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   110,
+   1920,
+   860
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   1920,
+   860
+  ],
+  "sharp_full": false,
+  "desc": "Aerial over the coastal town of Paleto Bay at sunset, pines in front",
+  "tags": [
+   "aerial",
+   "countryside",
+   "coast",
+   "sunset",
+   "small town"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/s6rrr5ao/flv/en-us-1080p60.mp4",
+  "page_url": "https://www.rockstargames.com/videos/s6rrr5ao",
+  "source_title": "60 Frames Per Second PC Trailer (April 2015)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.3,
+    "content": "Aerial over the coastal town of Paleto Bay at sunset, pines in front",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "aerial",
+     "countryside",
+     "coast",
+     "sunset",
+     "small town"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.2
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.2
+  ],
+  "banned": false
+ },
+ {
+  "id": 555,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "beach_topdown_island",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 48.12,
+  "end": 49.08,
+  "dur": 0.96,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Straight down on a beach party with tents, palms and turquoise water (Cayo Perico, GTA Online)",
+  "tags": [
+   "beach",
+   "ocean",
+   "aerial",
+   "GTA Online"
+  ],
+  "gta_online": true,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 0.96,
+    "content": "Straight down on a beach party with tents, palms and turquoise water (Cayo Perico, GTA Online)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "beach",
+     "ocean",
+     "aerial",
+     "GTA Online"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    0.86
+   ]
+  ],
+  "safe": [
+   0.1,
+   0.86
+  ],
+  "banned": false
+ },
+ {
+  "id": 556,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "vespucci_beach_pier",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/s6rrr5ao.mp4",
+  "start": 27.96,
+  "end": 29.48,
+  "dur": 1.52,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   110,
+   1920,
+   860
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   1920,
+   860
+  ],
+  "sharp_full": false,
+  "desc": "Vespucci Beach from above: palms, beachgoers and the Del Perro pier in the haze",
+  "tags": [
+   "beach",
+   "ocean",
+   "pier",
+   "wide"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/s6rrr5ao/flv/en-us-1080p60.mp4",
+  "page_url": "https://www.rockstargames.com/videos/s6rrr5ao",
+  "source_title": "60 Frames Per Second PC Trailer (April 2015)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.52,
+    "content": "Vespucci Beach from above: palms, beachgoers and the Del Perro pier in the haze",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "beach",
+     "ocean",
+     "pier",
+     "wide"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.42
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.42
+  ],
+  "banned": false
+ },
+ {
+  "id": 557,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "quad_beach_sunset",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/s6rrr5ao.mp4",
+  "start": 26.71,
+  "end": 27.86,
+  "dur": 1.15,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   110,
+   1920,
+   860
+  ],
+  "focus": [
+   0.55,
+   0.5
+  ],
+  "res": [
+   1920,
+   860
+  ],
+  "sharp_full": false,
+  "desc": "A quad bike rides across the beach into the sunset, people strolling",
+  "tags": [
+   "beach",
+   "driving",
+   "sunset"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/s6rrr5ao/flv/en-us-1080p60.mp4",
+  "page_url": "https://www.rockstargames.com/videos/s6rrr5ao",
+  "source_title": "60 Frames Per Second PC Trailer (April 2015)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.15,
+    "content": "A quad bike rides across the beach into the sunset, people strolling",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "beach",
+     "driving",
+     "sunset"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.05
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.05
+  ],
+  "banned": false
+ },
+ {
+  "id": 558,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "underwater_swimmer",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/1s626s55.mp4",
+  "start": 13.22,
+  "end": 15.18,
+  "dur": 1.96,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   0,
+   3840,
+   2160
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   2160
+  ],
+  "sharp_full": true,
+  "desc": "Looking up from underwater as a swimmer dives into the sunset sea",
+  "tags": [
+   "ocean",
+   "underwater"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/1s626s55/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/1s626s55",
+  "source_title": "Out Now on PlayStation 5 and Xbox Series X|S (March 2022)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.96,
+    "content": "Looking up from underwater as a swimmer dives into the sunset sea",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "ocean",
+     "underwater"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.86
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.86
+  ],
+  "banned": false
+ },
+ {
+  "id": 559,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "stag_hillside_sunset",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/r3too449.mp4",
+  "start": 13.38,
+  "end": 14.22,
+  "dur": 0.84,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   216,
+   3840,
+   1728
+  ],
+  "focus": [
+   0.4,
+   0.5
+  ],
+  "res": [
+   3840,
+   1728
+  ],
+  "sharp_full": true,
+  "desc": "A stag on a flowering hillside looks out over the mountains at sunset",
+  "tags": [
+   "wildlife",
+   "deer",
+   "nature",
+   "sunset"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/r3too449/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/r3too449",
+  "source_title": "Coming March 2022 for PS5 and Xbox Series X|S (Sept 2021)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 0.84,
+    "content": "A stag on a flowering hillside looks out over the mountains at sunset",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "wildlife",
+     "deer",
+     "nature",
+     "sunset"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    0.74
+   ]
+  ],
+  "safe": [
+   0.1,
+   0.74
+  ],
+  "banned": false
+ },
+ {
+  "id": 560,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "deer_forest",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 8.53,
+  "end": 11.16,
+  "dur": 2.63,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Deer graze in a forest clearing below tall pines and a mountain",
+  "tags": [
+   "wildlife",
+   "deer",
+   "nature",
+   "forest"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 2.63,
+    "content": "Deer graze in a forest clearing below tall pines and a mountain",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "wildlife",
+     "deer",
+     "nature",
+     "forest"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    2.53
+   ]
+  ],
+  "safe": [
+   0.1,
+   2.53
+  ],
+  "banned": false
+ },
+ {
+  "id": 561,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "hammerhead_sharks",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 11.26,
+  "end": 13.93,
+  "dur": 2.67,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Hammerhead sharks circle underwater, the sun above the surface",
+  "tags": [
+   "wildlife",
+   "ocean",
+   "underwater",
+   "sharks"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 2.67,
+    "content": "Hammerhead sharks circle underwater, the sun above the surface",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "wildlife",
+     "ocean",
+     "underwater",
+     "sharks"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    2.57
+   ]
+  ],
+  "safe": [
+   0.1,
+   2.57
+  ],
+  "banned": false
+ },
+ {
+  "id": 562,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "orca",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/kc1a9kco.mp4",
+  "start": 29.38,
+  "end": 30.58,
+  "dur": 1.2,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.3,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "An orca glides past underwater (dark blue water)",
+  "tags": [
+   "wildlife",
+   "ocean",
+   "underwater",
+   "orca"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/kc1a9kco/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/kc1a9kco",
+  "source_title": "A Picket Fence and a Dog Named Skip (Sept 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.2,
+    "content": "An orca glides past underwater (dark blue water)",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "wildlife",
+     "ocean",
+     "underwater",
+     "orca"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.1
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.1
+  ],
+  "banned": false
+ },
+ {
+  "id": 563,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "dog",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/kc1a9kco.mp4",
+  "start": 44.86,
+  "end": 45.6,
+  "dur": 0.74,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.35,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "A golden retriever beside a man's legs on a dirt path",
+  "tags": [
+   "animals",
+   "dog",
+   "pets"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/kc1a9kco/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/kc1a9kco",
+  "source_title": "A Picket Fence and a Dog Named Skip (Sept 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 0.74,
+    "content": "A golden retriever beside a man's legs on a dirt path",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "animals",
+     "dog",
+     "pets"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    0.64
+   ]
+  ],
+  "safe": [
+   0.1,
+   0.64
+  ],
+  "banned": false
+ },
+ {
+  "id": 564,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "trio_kitchen",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/r3too449.mp4",
+  "start": 46.92,
+  "end": 48.35,
+  "dur": 1.43,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   216,
+   3840,
+   1728
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   3840,
+   1728
+  ],
+  "sharp_full": true,
+  "desc": "Michael, Franklin and Trevor talk in a kitchen, Trevor gesturing",
+  "tags": [
+   "protagonists",
+   "Michael",
+   "Franklin",
+   "Trevor",
+   "calm"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/r3too449/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/r3too449",
+  "source_title": "Coming March 2022 for PS5 and Xbox Series X|S (Sept 2021)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.43,
+    "content": "Michael, Franklin and Trevor talk in a kitchen, Trevor gesturing",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Michael",
+     "Franklin",
+     "Trevor",
+     "calm"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.33
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.33
+  ],
+  "banned": false
+ },
+ {
+  "id": 565,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "michael_tennis_court",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/r3too449.mp4",
+  "start": 26.32,
+  "end": 28.92,
+  "dur": 2.6,
+  "w": 3840,
+  "h": 2160,
+  "crop_box": [
+   0,
+   216,
+   3840,
+   1728
+  ],
+  "focus": [
+   0.45,
+   0.5
+  ],
+  "res": [
+   3840,
+   1728
+  ],
+  "sharp_full": true,
+  "desc": "Michael walks across his tennis court as a woman in white passes",
+  "tags": [
+   "protagonists",
+   "Michael",
+   "calm",
+   "home"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/r3too449/flv/en-us-2160p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/r3too449",
+  "source_title": "Coming March 2022 for PS5 and Xbox Series X|S (Sept 2021)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 2.3,
+    "content": "Michael at his tennis court, sunny, a woman in a white jacket passes",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Michael",
+     "calm",
+     "home"
+    ]
+   },
+   {
+    "from": 2.3,
+    "to": 2.6,
+    "content": "darkens into the character switch",
+    "flags": [
+     "transition"
+    ],
+    "clean": false,
+    "good_for": []
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    2.2
+   ]
+  ],
+  "safe": [
+   0.1,
+   2.2
+  ],
+  "banned": false
+ },
+ {
+  "id": 566,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "michael_yoga",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 52.17,
+  "end": 53.44,
+  "dur": 1.27,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Michael does a yoga pose on his patio",
+  "tags": [
+   "protagonists",
+   "Michael",
+   "calm",
+   "home",
+   "yoga"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.27,
+    "content": "Michael does a yoga pose on his patio",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Michael",
+     "calm",
+     "home",
+     "yoga"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.17
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.17
+  ],
+  "banned": false
+ },
+ {
+  "id": 567,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "yoga_by_the_pool",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/tr45r42o.mp4",
+  "start": 53.54,
+  "end": 55.17,
+  "dur": 1.63,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   108,
+   1920,
+   864
+  ],
+  "focus": [
+   0.65,
+   0.5
+  ],
+  "res": [
+   1920,
+   864
+  ],
+  "sharp_full": false,
+  "desc": "Yoga by the pool: Amanda and the instructor hold a pose while Michael wobbles",
+  "tags": [
+   "protagonists",
+   "Michael",
+   "calm",
+   "home",
+   "humor"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/tr45r42o/flv/en-us-1080p.mp4",
+  "page_url": "https://www.rockstargames.com/videos/tr45r42o",
+  "source_title": "PlayStation 4, Xbox One and PC Announcement Trailer (June 2014)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.63,
+    "content": "Yoga by the pool: Amanda and the instructor hold a pose while Michael wobbles",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Michael",
+     "calm",
+     "home",
+     "humor"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.53
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.53
+  ],
+  "banned": false
+ },
+ {
+  "id": 568,
+  "kind": "clip",
+  "game": "GTA V",
+  "name": "trio_car_lester",
+  "src": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/gta5/vid/s6rrr5ao.mp4",
+  "start": 41.72,
+  "end": 43.04,
+  "dur": 1.32,
+  "w": 1920,
+  "h": 1080,
+  "crop_box": [
+   0,
+   110,
+   1920,
+   860
+  ],
+  "focus": [
+   0.5,
+   0.5
+  ],
+  "res": [
+   1920,
+   860
+  ],
+  "sharp_full": false,
+  "desc": "Lester, Trevor and Michael sit in a red car at a gas station",
+  "tags": [
+   "protagonists",
+   "Michael",
+   "Trevor",
+   "Lester",
+   "calm"
+  ],
+  "gta_online": false,
+  "source_url": "https://videos-rockstargames-com.akamaized.net/v4/s6rrr5ao/flv/en-us-1080p60.mp4",
+  "page_url": "https://www.rockstargames.com/videos/s6rrr5ao",
+  "source_title": "60 Frames Per Second PC Trailer (April 2015)",
+  "segments": [
+   {
+    "from": 0,
+    "to": 1.32,
+    "content": "Lester, Trevor and Michael sit in a red car at a gas station",
+    "flags": [
+     "none"
+    ],
+    "clean": true,
+    "good_for": [
+     "protagonists",
+     "Michael",
+     "Trevor",
+     "Lester",
+     "calm"
+    ]
+   }
+  ],
+  "clean": [
+   [
+    0.1,
+    1.22
+   ]
+  ],
+  "safe": [
+   0.1,
+   1.22
+  ],
+  "banned": false
+ }
+]
