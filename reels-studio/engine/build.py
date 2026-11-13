@@ -88,7 +88,26 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
         if sc.get("sweep"):
             sc["sweep"]["t"] = wt(sc["sweep"].get("at", 0))
     # ---- fast explainer keys (new; absent in older scripts, so they render exactly as before) ----
-    if b.get("caps") is not None:
+    cstyle = b.get("caps_style", spec.get("caps_style"))
+    if cstyle and b.get("caps") is not None: sc["caps_style"] = cstyle
+    if b.get("caps") is not None and cstyle == "story":
+        # story captions: sentence case, each word lands on its own spoken word (all at once on an instant hook)
+        caps = []
+        for cp in b["caps"]:
+            keyw = {x.strip(".,!?:").lower() for ph in cp.get("key", []) for x in ph.split()}
+            a0 = cp.get("at", 0); q = 0; rows = []
+            t0 = sc["start"] if (a0 == 0 or b.get("instant")) else wt(a0)
+            for ln in cp["text"].split(" / "):
+                row = []
+                for w in ln.split():
+                    tw = t0 if b.get("instant") else (sc["start"] if a0 + q == 0 else wt(a0 + q))
+                    item = {"w": w, "t": round(tw, 3)}
+                    if w.strip(".,!?:").lower() in keyw: item["kind"] = "key"
+                    row.append(item); q += 1
+                rows.append(row)
+            caps.append({"t0": t0, "lines": rows})
+        sc["caps"] = caps
+    elif b.get("caps") is not None:
         caps = []
         for cp in b["caps"]:
             keyw = {x.strip(".,!?").upper() for ph in cp.get("key", []) for x in ph.split()}
@@ -110,6 +129,25 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
         sc["section"] = section_cur; sc["section_new"] = True
     elif section_cur is not None and b.get("layout") != "titlecard":
         sc["section"] = section_cur
+    # ---- story style keys ----
+    at_t = lambda a: sc["start"] if not a else wt(a)
+    if b.get("stamp"):
+        st = dict(b["stamp"]); st["t"] = at_t(st.get("at", 0))
+        if "until" in st: st["tu"] = wt(st["until"]) - LEAD
+        sc["stamp"] = st
+    if b.get("dim"):
+        dm = dict(b["dim"]); dm["t"] = at_t(dm.get("at", 0))
+        if "until" in dm: dm["tu"] = wt(dm["until"]) - LEAD
+        sc["dim"] = dm
+    if b.get("paper"):
+        cards = [dict(c) for c in b["paper"]]
+        for c in cards:
+            c["t"] = at_t(c.get("at", 0))
+            if "mark_at" in c: c["tm"] = wt(c["mark_at"])
+        sc["paper"] = cards
+    if b.get("layout") == "map":
+        for k in ("region", "collapse"):
+            if sc.get(k): sc[k] = dict(sc[k], t=wt(sc[k].get("at", 0)))
     if b.get("hud"):
         hud = dict(b["hud"])
         if hud.get("type") == "stars":
@@ -134,6 +172,8 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
                "clips": clips, "treat": "duo" if b.get("bg") == "duo" else b.get("treat")})
     push = b.get("push", 0.07 if b.get("layout") == "titlecard" else None)  # slow push in (zoom gained over the beat)
     if push: bg[-1]["push"] = push
+    if sc.get("dim"):  # story dim line: compose and preview blur the footage locally while it is up
+        bg[-1]["blur"] = [sc["dim"]["t"], sc["dim"].get("tu")]
 
 for k in range(len(scenes)):
     scenes[k]["end"] = scenes[k + 1]["start"] if k + 1 < len(scenes) else round(voice_end + 0.35, 3)
@@ -155,6 +195,9 @@ for k in range(len(bg)):
 tl = {"fps": fps, "duration": round(duration, 3), "tag": spec.get("tag"), "theme": spec["theme"], "scenes": scenes,
       "stills": [round((s["start"] + s["end"]) / 2 + 0.3, 2) for s in scenes]}
 if spec.get("loop"): tl["loop"] = True
+if spec.get("grain"): tl["grain"] = spec["grain"]
+for k in range(len(bg)):
+    if bg[k].get("blur") and bg[k]["blur"][1] is None: bg[k]["blur"][1] = bg[k]["end"]
 os.makedirs(out, exist_ok=True)
 json.dump(tl, open(os.path.join(out, "timeline.json"), "w"), indent=1)
 json.dump({"duration": tl["duration"], "segments": bg, "shots_json": spec.get("shots_json"), "sfx": [{"t": s["start"], "kind": "hit" if s.get("flash") or s.get("section_new") or s.get("layout") == "number" else "whoosh"} for s in scenes[1:]]},

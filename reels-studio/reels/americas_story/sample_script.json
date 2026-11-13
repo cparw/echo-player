@@ -1,0 +1,196 @@
+{
+ "title": "GTA 6 was first planned across two continents (story style sample, silent)",
+ "format": "story",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "loop": true,
+ "grain": 0.06,
+ "caps_style": "story",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six was first planned across parts of two continents.",
+   "instant": true,
+   "bg": "scrim",
+   "push": 0.06,
+   "caps": [
+    {
+     "text": "GTA 6 was first planned / across parts of / two continents",
+     "at": 0,
+     "key": [
+      "two continents"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Twenty fifteen. Miami. Rockstar's Rob Nelson lands with senior staff, on the game's very first research trip.",
+   "bg": "scrim",
+   "stamp": {
+    "big": "2015",
+    "small": "MIAMI, FLORIDA",
+    "until": 3
+   },
+   "caps": [
+    {
+     "text": "Rockstar's Rob Nelson lands / with senior staff,",
+     "at": 3
+    },
+    {
+     "text": "on the game's very / first research trip.",
+     "at": 10,
+     "key": [
+      "first research trip"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek, 14 Oct 2026.",
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.4
+    },
+    {
+     "shot": 33,
+     "offset": 0.3,
+     "at": 3
+    },
+    {
+     "shot": 74,
+     "offset": 5.4,
+     "at": 7
+    },
+    {
+     "shot": 77,
+     "offset": 7.0,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "The code name: Project Americas.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "CODE NAME",
+     "head": "Project Americas",
+     "mark": "Americas",
+     "mark_at": 4,
+     "source": "Bloomberg Businessweek, 14 Oct 2026",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Because the plan covered large stretches of North and South America.",
+   "layout": "map",
+   "bg": "scrim",
+   "lonMin": -130,
+   "lonMax": -30,
+   "latTop": 62,
+   "latBot": -56,
+   "mapW": 560,
+   "mapTop": 300,
+   "mapCard": true,
+   "region": {
+    "lonMax": -30,
+    "at": 4
+   },
+   "collapse": {
+    "lon": -81.4,
+    "lat": 27.6,
+    "at": 10,
+    "label": "FLORIDA",
+    "dur": 0.35
+   },
+   "capsY": 1130,
+   "caps": [
+    {
+     "text": "Because the plan covered / large stretches of",
+     "at": 0
+    },
+    {
+     "text": "North and South America.",
+     "at": 7,
+     "key": [
+      "North and South America"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek, 14 Oct 2026.",
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 6.1
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 62,
+     "offset": 9.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Then it shrank. To one city, and the land around it.",
+   "bg": "scrim",
+   "dim": {
+    "text": "Then it shrank.",
+    "until": 3
+   },
+   "caps": [
+    {
+     "text": "To one city, / and the land around it.",
+     "at": 3,
+     "key": [
+      "one city"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.1
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  }
+ ]
+}

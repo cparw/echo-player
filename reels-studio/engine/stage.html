@@ -6,6 +6,7 @@
 @font-face { font-family: 'Anton'; src: url('node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Inter Tight'; font-weight: 800; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Inter Tight'; font-weight: 800; font-style: italic; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight Story'; font-weight: 700; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-700-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Inter Tight'; font-weight: 600; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Instrument Serif'; font-style: italic; src: url('node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2') format('woff2'); }
 @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url('node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2') format('woff2'); }
@@ -78,12 +79,14 @@ window.init = function (tl) {
     if (sc.lines && sc.lines.length) fitScene(sc);
   }
   // fast explainer scenes measure their text at render time; make sure the italic caption face is loaded first
-  if (TL.scenes.some(isPunch)) return document.fonts.load('italic 800 100px "Inter Tight"').then(() => document.fonts.load('400 100px Anton')).then(() => true);
+  if (TL.scenes.some(isPunch)) return document.fonts.load('italic 800 100px "Inter Tight"').then(() => document.fonts.load('400 100px Anton'))
+    .then(() => document.fonts.load('700 100px "Inter Tight Story"')).then(() => document.fonts.load('italic 400 100px "Instrument Serif"'))
+    .then(() => document.fonts.load('800 100px "Inter Tight"')).then(() => document.fonts.load('500 30px "JetBrains Mono"')).then(() => true);
   return true;
 };
 
 // ===== Fast explainer kit (titlecard, section header, build captions, illustration cards). Only scenes with these keys use it. =====
-const isPunch = sc => !!(sc.caps || sc.section || sc.hud || sc.layout === 'titlecard');
+const isPunch = sc => !!(sc.caps || sc.section || sc.hud || sc.layout === 'titlecard' || sc.stamp || sc.paper || sc.dim);
 const PK = { orange: '#FF7A1A', red: '#FF3B30', capCx: 490, capW: 860, capCy: 1180, capMaxH: 240, headTop: 252, cardTop: 416,
              foot: 1310, credit: 1352, shadow: '0 6px 26px rgba(0,0,0,0.85), 0 2px 5px rgba(0,0,0,0.75)' };
 const _mctx = document.createElement('canvas').getContext('2d');
@@ -183,6 +186,128 @@ function capBlock(sc, t) {
     B.appendChild(L);
   }
   return B;
+}
+
+// ===== Story kit (documentary collage style): story captions, date stamp, paper card, dim line, grain =====
+const SK = { cx: 490, w: 860, cy: 1110, size: 88, keyK: 1.9, paper: '#ECEBE6', yellow: '#F5E400',
+             shadow: '0 3px 16px rgba(0,0,0,0.75), 0 1px 3px rgba(0,0,0,0.6)', glow: '0 0 26px rgba(255,255,255,0.45), 0 4px 18px rgba(0,0,0,0.65)' };
+const GRAIN_SVG = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")";
+function localDark(cy, rx, ry, a) {
+  const L = document.createElement('div'); L.className = 'layer';
+  L.style.background = `radial-gradient(ellipse ${rx}% ${ry}% at 50% ${cy}px, rgba(6,6,9,${a}) 0%, rgba(6,6,9,${a * 0.55}) 55%, rgba(6,6,9,0) 100%)`;
+  return L;
+}
+function storyCaps(sc, t) {
+  let cap = null;
+  for (const c of sc.caps) if (t >= c.t0) cap = c;
+  if (!cap) return null;
+  const z = SK.size, zk = z * SK.keyK;
+  const fontOf = (x, k) => x.kind === 'key' ? `italic 400 ${zk * k}px "Instrument Serif"` : `700 ${z * k}px "Inter Tight Story"`;
+  if (!cap._ks) cap._ks = cap.lines.map(r => {  // each line is scaled on its own so a long key line never shrinks the rest
+    const w = r.reduce((a, x) => a + textW(x.w, fontOf(x, 1)), 0) + (r.length - 1) * z * 0.26;
+    return Math.min(1, SK.w / w);
+  });
+  const lh = cap.lines.map((r, i) => (r.some(x => x.kind === 'key') ? zk * 0.98 : z * 1.18) * cap._ks[i]);
+  const H = lh.reduce((a, b) => a + b, 0);
+  const B = document.createElement('div');
+  B.style.cssText = `position:absolute;left:${SK.cx - SK.w / 2}px;width:${SK.w}px;top:${Math.round((sc.capsY || SK.cy) - H / 2)}px;text-align:center;color:#FFFFFF`;
+  cap.lines.forEach((r, li) => {
+    const k = cap._ks[li];
+    const L = document.createElement('div'); L.style.cssText = `white-space:nowrap;height:${lh[li]}px;line-height:${lh[li]}px`;
+    r.forEach((x, i) => {
+      const sp = document.createElement('span'); sp.style.display = 'inline-block';
+      const p = prog(t, x.t, 0.18);
+      sp.style.opacity = p <= 0 ? 0 : clamp(p * 1.6, 0, 1);
+      sp.style.transform = `translateY(${(1 - ease.out(p)) * 14}px)`;
+      if (x.kind === 'key') sp.style.cssText += `;font-family:'Instrument Serif';font-style:italic;font-weight:400;font-size:${zk * k}px;text-shadow:${SK.glow}`;
+      else sp.style.cssText += `;font-family:'Inter Tight Story';font-weight:700;font-size:${z * k}px;text-shadow:${SK.shadow}`;
+      sp.textContent = x.w; L.appendChild(sp);
+      if (i < r.length - 1) { const g = document.createElement('span'); g.style.cssText = `display:inline-block;width:${z * 0.26 * k}px`; L.appendChild(g); }
+    });
+    B.appendChild(L);
+  });
+  return B;
+}
+function stampBlock(st, t) {
+  const F = document.createElement('div'); F.className = 'layer';
+  const pin = prog(t, st.t, 0.35), out = st.tu != null ? prog(t, st.tu, 0.22) : 0, vis = clamp(pin * 2, 0, 1) * (1 - out);
+  if (vis <= 0) return null;
+  const D = localDark(st.cy || 800, 85, 22, 0.62); D.style.opacity = vis; F.appendChild(D);
+  const e = ease.out(pin);
+  const Y = document.createElement('div');
+  Y.style.cssText = `position:absolute;left:0;right:0;top:${(st.cy || 800) - 230}px;text-align:center;font-family:Anton;font-size:${st.size || 360}px;line-height:1;color:#FFFFFF;` +
+    `letter-spacing:0.01em;text-shadow:0 10px 40px rgba(0,0,0,0.6);opacity:${vis};filter:blur(${(1 - e) * 16}px);transform:scale(${1.14 - 0.14 * e})`;
+  Y.textContent = st.big; F.appendChild(Y);
+  if (st.small) {
+    const S = document.createElement('div');
+    S.style.cssText = `position:absolute;left:0;right:0;top:${(st.cy || 800) + 140}px;text-align:center;font-family:'JetBrains Mono';font-weight:500;font-size:42px;letter-spacing:0.3em;` +
+      `color:#FFFFFF;text-shadow:0 2px 14px rgba(0,0,0,0.95);opacity:${vis}`;
+    S.textContent = String(st.small).toUpperCase(); F.appendChild(S);
+  }
+  return F;
+}
+function paperBlock(sc, t) {
+  let c = null;
+  for (const x of sc.paper) if (t >= x.t) c = x;
+  if (!c) return null;
+  const W = Math.round(1080 * 0.78), H = Math.round(1920 * 0.26), cy = c.cy || 700, rot = c.rot != null ? c.rot : -1.6;
+  const p = prog(t, c.t, 0.32), e = ease.outBack(p);
+  const P = document.createElement('div');
+  P.style.cssText = `position:absolute;left:${540 - W / 2}px;top:${cy - H / 2}px;width:${W}px;height:${H}px;box-sizing:border-box;padding:44px 52px;background:${SK.paper};` +
+    `border-radius:6px;box-shadow:0 24px 60px rgba(0,0,0,0.55), 0 4px 12px rgba(0,0,0,0.35);opacity:${clamp(p * 2, 0, 1)};` +
+    `transform:translateY(${(1 - e) * 60}px) rotate(${rot * (0.4 + 0.6 * e)}deg) scale(${0.94 + 0.06 * e});overflow:hidden`;
+  const G = document.createElement('div'); G.style.cssText = `position:absolute;inset:0;background-image:${GRAIN_SVG};opacity:0.22;mix-blend-mode:multiply;pointer-events:none`;
+  P.appendChild(G);
+  if (c.label) {
+    const L = document.createElement('div');
+    L.style.cssText = `position:relative;font-family:'JetBrains Mono';font-weight:500;font-size:26px;letter-spacing:0.22em;color:#6B6A66`;
+    L.textContent = String(c.label).toUpperCase(); P.appendChild(L);
+  }
+  const head = String(c.head), mk = c.mark && head.indexOf(c.mark) >= 0 ? c.mark : null;
+  const Hd = document.createElement('div');
+  if (!c._z) {
+    const m = document.createElement('div'); m.style.cssText = `position:absolute;visibility:hidden;width:${W - 104}px;font-family:'Inter Tight';font-weight:800;line-height:1.04;letter-spacing:-0.01em`;
+    document.body.appendChild(m); m.textContent = head;
+    let z = c.size || 128;
+    for (; z > 40; z -= 2) { m.style.fontSize = z + 'px'; let ok = m.scrollHeight <= H - 190; for (const w of head.split(' ')) if (textW(w, `800 ${z}px "Inter Tight"`) > W - 104) ok = false; if (ok) break; }
+    m.remove(); c._z = z;
+  }
+  Hd.style.cssText = `position:relative;margin-top:22px;font-family:'Inter Tight';font-weight:800;font-size:${c._z}px;line-height:1.04;letter-spacing:-0.01em;color:#111111`;
+  if (mk) {
+    const i = head.indexOf(mk), hp = c.tm != null ? ease.out(prog(t, c.tm, 0.35)) : 1;
+    Hd.appendChild(document.createTextNode(head.slice(0, i)));
+    const M = document.createElement('span');
+    M.style.cssText = `background:linear-gradient(${SK.yellow},${SK.yellow}) no-repeat;background-size:${(hp * 100).toFixed(1)}% 78%;background-position:0 62%;` +
+      `-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 0.06em;margin:0 -0.06em`;
+    M.textContent = mk; Hd.appendChild(M);
+    Hd.appendChild(document.createTextNode(head.slice(i + mk.length)));
+  } else Hd.textContent = head;
+  P.appendChild(Hd);
+  if (c.source) {
+    const S = document.createElement('div');
+    S.style.cssText = `position:absolute;left:52px;right:52px;bottom:34px;font-family:'JetBrains Mono';font-weight:500;font-size:21px;letter-spacing:0.04em;color:#6B6A66;border-top:2px solid rgba(0,0,0,0.14);padding-top:14px`;
+    S.textContent = c.source; P.appendChild(S);
+  }
+  return P;
+}
+function dimBlock(dm, t) {
+  const F = document.createElement('div'); F.className = 'layer';
+  const pin = prog(t, dm.t, 0.3), out = dm.tu != null ? prog(t, dm.tu, 0.25) : 0, vis = clamp(pin * 1.6, 0, 1) * (1 - out);
+  if (vis <= 0) return null;
+  const cy = dm.cy || 820;
+  const D = localDark(cy, 95, 30, 0.6); D.style.opacity = vis; F.appendChild(D);
+  if (!dm._z) { let z = dm.size || 200; for (; z > 50; z -= 4) if (textW(dm.text, `italic 400 ${z}px "Instrument Serif"`) <= 900) break; dm._z = z; }
+  const T = document.createElement('div');
+  T.style.cssText = `position:absolute;left:0;right:0;top:${cy - dm._z * 0.55}px;text-align:center;font-family:'Instrument Serif';font-style:italic;font-size:${dm._z}px;line-height:1;color:#FFFFFF;` +
+    `text-shadow:0 0 40px rgba(255,255,255,0.5), 0 0 12px rgba(255,255,255,0.35), 0 6px 26px rgba(0,0,0,0.6);opacity:${vis};transform:scale(${1.05 - 0.05 * ease.out(pin)});white-space:nowrap`;
+  T.textContent = dm.text; F.appendChild(T);
+  return F;
+}
+function grainLayer(amount, t) {
+  const fr = Math.round(t * (TL.fps || 30));
+  const L = document.createElement('div'); L.className = 'layer';
+  L.style.cssText += `;background-image:${GRAIN_SVG};background-size:240px 240px;background-position:${(fr * 73) % 240}px ${(fr * 151) % 240}px;opacity:${clamp(amount * 4, 0, 0.5)};mix-blend-mode:normal`;
+  return L;
 }
 
 // Illustration card (stars bar or clue chips): dark translucent box, thin orange outline, soft glow, ILLUSTRATION tag
@@ -385,27 +510,55 @@ function mapBlock(sc, t, th) {
   const M = window.MAPDOTS;
   const lonMin = sc.lonMin != null ? sc.lonMin : -130, lonMax = sc.lonMax != null ? sc.lonMax : 180;
   const c0 = Math.max(0, Math.floor((lonMin - M.lon0) / M.step)), c1 = Math.min(M.cols, Math.ceil((lonMax - M.lon0) / M.step));
-  const W = sc.mapW || 1040, cell = W / (c1 - c0), H = cell * M.rows;
-  const left = (1080 - W) / 2, top = sc.mapTop || 900;
+  const r0 = sc.latTop != null ? Math.max(0, Math.floor((M.lat0 - sc.latTop) / M.step)) : 0;
+  const r1 = sc.latBot != null ? Math.min(M.rows, Math.ceil((M.lat0 - sc.latBot) / M.step)) : M.rows;
+  const W = sc.mapW || 1040, cell = W / (c1 - c0), H = cell * (r1 - r0);
+  const left = (sc.mapCx != null ? sc.mapCx : 540) - W / 2, top = sc.mapTop || 900;
   const lonL = M.lon0 + c0 * M.step;
-  const xOf = lon => left + ((lon - lonL) / M.step) * cell, yOf = lat => top + ((M.lat0 - lat) / M.step) * cell;
+  const xOf = lon => left + ((lon - lonL) / M.step) * cell, yOf = lat => top + ((M.lat0 - lat) / M.step - r0) * cell;
   const F = document.createElement('div'); F.className = 'layer';
+  if (sc.mapCard) {  // story: the map floats on a dark glass card over the live footage
+    const K = document.createElement('div');
+    K.style.cssText = `position:absolute;left:${left - 40}px;top:${top - 40}px;width:${W + 80}px;height:${H + 80}px;border-radius:28px;background:rgba(10,10,14,0.62);` +
+      `box-shadow:0 20px 60px rgba(0,0,0,0.5);opacity:${prog(t, sc.start, 0.3)}`;
+    F.appendChild(K);
+  }
+  const reg = sc.region ? ease.out(prog(t, sc.region.t, 0.5)) : 0, col = sc.collapse ? ease.inOut(prog(t, sc.collapse.t, sc.collapse.dur || 0.6)) : 0;
   const cv = document.createElement('canvas'); cv.width = Math.ceil(W); cv.height = Math.ceil(H);
   cv.style.cssText = `position:absolute;left:${left}px;top:${top}px;`;
   const g = cv.getContext('2d');
   const appear = prog(t, sc.start, 0.6);
   const band = sc.sweep ? sc.sweep.from + (sc.sweep.to - sc.sweep.from) * ease.inOut(prog(t, sc.sweep.t, sc.sweep.dur || 2.0)) : null;
   for (const [c, r] of M.dots) {
-    if (c < c0 || c >= c1) continue;
-    const x = (c - c0 + 0.5) * cell, y = (r + 0.5) * cell;
+    if (c < c0 || c >= c1 || r < r0 || r >= r1) continue;
+    const x = (c - c0 + 0.5) * cell, y = (r - r0 + 0.5) * cell;
     const rv = clamp(appear * 1.6 - (x / W) * 0.6, 0, 1);
     if (rv <= 0) continue;
     const lit = band != null && M.lon0 + (c + 0.5) * M.step >= band;
     g.globalAlpha = (lit ? 0.92 : 0.30) * rv;
     g.fillStyle = lit ? th.accent : th.fg;
+    if (sc.region && M.lon0 + (c + 0.5) * M.step <= sc.region.lonMax) {
+      const k = reg * (1 - col);
+      g.globalAlpha = (0.30 + 0.62 * k) * rv * (1 - 0.75 * col); g.fillStyle = k > 0.5 ? th.accent : th.fg;
+    } else if (sc.collapse) g.globalAlpha *= (1 - 0.6 * col);
     g.beginPath(); g.arc(x, y, cell * 0.31, 0, Math.PI * 2); g.fill();
   }
   F.appendChild(cv);
+  if (sc.collapse && col > 0) {
+    const x = xOf(sc.collapse.lon), y = yOf(sc.collapse.lat), rr = 6 + 16 * ease.outBack(clamp(col * 1.4, 0, 1));
+    const D = document.createElement('div');
+    D.style.cssText = `position:absolute;left:${x - rr}px;top:${y - rr}px;width:${rr * 2}px;height:${rr * 2}px;border-radius:50%;background:${th.accent};box-shadow:0 0 ${30 * col}px ${th.accent}`;
+    F.appendChild(D);
+    const pr = ((t - sc.collapse.t) % 1.4) / 1.4;
+    const R = document.createElement('div');
+    R.style.cssText = `position:absolute;left:${x - 40}px;top:${y - 40}px;width:80px;height:80px;border-radius:50%;border:3px solid ${th.accent};opacity:${(1 - pr) * col};transform:scale(${0.3 + pr})`;
+    F.appendChild(R);
+    if (sc.collapse.label) {
+      const Lb = document.createElement('div'); Lb.className = 'label';
+      Lb.style.cssText += `position:absolute;left:${x + 34}px;top:${y - 18}px;font-size:28px;color:${th.fg};white-space:nowrap;opacity:${clamp(col * 2 - 1, 0, 1)};text-shadow:0 3px 12px rgba(0,0,0,0.9)`;
+      Lb.textContent = sc.collapse.label; F.appendChild(Lb);
+    }
+  }
   if (band != null && band > lonMin && band < lonMax && t >= sc.sweep.t) {
     const bx = xOf(band);
     const L = document.createElement('div');
@@ -577,13 +730,20 @@ window.renderAt = function (t) {
   const sc = TL.scenes.find(s => t >= s.start && t < s.end) || TL.scenes[TL.scenes.length - 1];
   if (sc.layout === 'endcard') { root.appendChild(endCard(sc, t, th)); return; }
   const punch = isPunch(sc);
-  if (punch && !sc.scrimY) sc.scrimY = sc.layout === 'titlecard' ? (sc.titleBottom || 955) - 150 : PK.capCy;
+  if (punch && !sc.scrimY) sc.scrimY = sc.layout === 'titlecard' ? (sc.titleBottom || 955) - 150 : (sc.caps_style === 'story' ? (sc.capsY || SK.cy) : PK.capCy);
   root.appendChild(bgLayer(sc, t, th));
   if (punch) {
     if (sc.layout === 'titlecard') root.appendChild(titleCard(sc, t, th));
     if (sc.hud) root.appendChild(hudCard(sc, t));
     if (sc.section) root.appendChild(sectionHeader(sc.section, t));
-    if (sc.caps) { const C = capBlock(sc, t); if (C) root.appendChild(C); }
+    if (sc.stamp) { const X = stampBlock(sc.stamp, t); if (X) root.appendChild(X); }
+    if (sc.dim) { const X = dimBlock(sc.dim, t); if (X) root.appendChild(X); }
+    if (sc.paper) { const X = paperBlock(sc, t); if (X) root.appendChild(X); }
+    if (sc.caps) {
+      const C = sc.caps_style === 'story' ? storyCaps(sc, t) : capBlock(sc, t);
+      if (C && sc.caps_style === 'story') root.appendChild(localDark(sc.capsY || SK.cy, 78, 9, 0.38));  // soft local shadow, never a box
+      if (C) root.appendChild(C);
+    }
   }
   if (sc.layout === 'number') {
     root.appendChild(numberBlock(sc, t, th));
@@ -676,6 +836,7 @@ window.renderAt = function (t) {
     const fp = prog(t, sc.start, 0.12);
     if (fp < 1) { const W = document.createElement('div'); W.className = 'layer'; W.style.background = '#fff'; W.style.opacity = 0.35 * (1 - fp); root.appendChild(W); }
   }
+  if (TL.grain) root.appendChild(grainLayer(TL.grain, t));
 };
 </script>
 </body>

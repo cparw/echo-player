@@ -97,7 +97,7 @@ for i, b in enumerate(beats):
             txt = cp.get("text", "")
             if not txt.strip(): errs.append(f"beat {i}: caption with empty text"); continue
             if len(txt.split(" / ")) > 3: errs.append(f"beat {i}: caption '{txt}' has more than 3 lines")
-            if len(txt.replace(" / ", " ").split()) > 8: warns.append(f"beat {i}: caption '{txt}' is long (key phrases, about 6 words)")
+            if len(txt.replace(" / ", " ").split()) > 8 and b.get("caps_style", s.get("caps_style")) != "story": warns.append(f"beat {i}: caption '{txt}' is long (key phrases, about 6 words)")
             if any(d in txt.replace(" / ", " ") for d in ALLD): errs.append(f"beat {i}: dash in caption '{txt}'")
             if not isinstance(cp.get("at", 0), int) or cp.get("at", 0) >= n: errs.append(f"beat {i}: caption '{txt}' anchor at={cp.get('at')} out of range ({n} words)")
             words_up = {w.strip(".,!?").upper() for w in txt.replace(" / ", " ").split()}
@@ -107,6 +107,33 @@ for i, b in enumerate(beats):
                         if w.strip(".,!?").upper() not in words_up: errs.append(f"beat {i}: {kk} word '{w}' is not in caption '{txt}'")
         ats = [cp.get("at", 0) for cp in b["caps"] if isinstance(cp, dict)]
         if ats != sorted(ats): errs.append(f"beat {i}: captions must be in spoken order")
+    # ---- story style keys ----
+    cst = b.get("caps_style", s.get("caps_style"))
+    if cst not in (None, "build", "story"): errs.append(f"beat {i}: caps_style must be build or story")
+    if cst == "story" and isinstance(b.get("caps"), list):
+        for cp in b["caps"]:
+            nw = len(cp.get("text", "").replace(" / ", " ").split())
+            if not b.get("instant") and cp.get("at", 0) + nw > n: warns.append(f"beat {i}: story caption '{cp.get('text')}' has more words than are left to speak")
+    for key in ("stamp", "dim"):
+        o = b.get(key)
+        if o:
+            txt = o.get("big" if key == "stamp" else "text")
+            if not txt: errs.append(f"beat {i}: {key} needs {'big' if key == 'stamp' else 'text'}")
+            for v in (o.get("big"), o.get("small"), o.get("text")):
+                if isinstance(v, str) and any(d in v for d in ALLD): errs.append(f"beat {i}: dash in {key} text '{v}'")
+            for k2 in ("at", "until"):
+                if k2 in o and o[k2] >= n: errs.append(f"beat {i}: {key} {k2} out of range ({n} words)")
+    for c in b.get("paper") or []:
+        if not c.get("head"): errs.append(f"beat {i}: paper card needs head")
+        if c.get("mark") and c["mark"] not in c.get("head", ""): errs.append(f"beat {i}: paper mark '{c['mark']}' is not in the headline")
+        if not c.get("source"): warns.append(f"beat {i}: paper card without a source line")
+        for v in (c.get("label"), c.get("head"), c.get("source")):
+            if isinstance(v, str) and any(d in v for d in ALLD): errs.append(f"beat {i}: dash in paper text '{v}'")
+        for k2 in ("at", "mark_at"):
+            if k2 in c and c[k2] >= n: errs.append(f"beat {i}: paper {k2} out of range ({n} words)")
+    if lay == "map":
+        for k2 in ("region", "collapse"):
+            if b.get(k2, {}).get("at", 0) >= n: errs.append(f"beat {i}: map {k2} anchor out of range")
     if b.get("section"):
         sec = b["section"]
         if not isinstance(sec.get("n"), int) or not sec.get("title"): errs.append(f"beat {i}: section needs n (int) and title")
