@@ -21,3 +21,6 @@ Spoken words: exactly the recorded take in the owner's voice (183 words, voice v
 * Time check for Tue 17 Nov 2026 12:00 ET: the Heat line ("November eighteenth ... play as Vice City") is in the present tense, right for that date. Selfridges runs to 28 Nov; the Y Hotel campaign to 31 Dec.
 * No GTA 5 vs GTA 6 beat in this reel, so no GTA V visuals are needed.
 * Duration 63.4 s (voice 60.7 s plus the end card), 1080x1920, 30 fps.
+
+## Safety patch (13 Nov, final QA)
+* Shot 74 from 0 to 4.6 s (Lucia posing in a mini dress in the elevator) is now banned. The merch beat's jacket line used it (offset 0.6), so that clip now plays shot 74 from 22.6 s (Jason and Lucia walking across the rooftop bar). Only those 43 frames (32.9 to 34.4 s) were re-rendered and spliced into the master; the rest of the reel is unchanged.
