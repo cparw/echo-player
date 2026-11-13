@@ -29,3 +29,14 @@ Their formula (same in all four):
 Why the last two took off (our read): one clear promise ("how X works", "everything you need to know before you play") instead of a generic list; a strong first frame; a graphic for every claim; captions the whole way through; the police system is also the top feature in `features_that_hit.md` (9.5).
 
 Do NOT copy: Rockstar's logo on screen; guns, robberies, shooting at police, sexualised shots; fan made HUD and AI or unknown clips passed off as real gameplay; mechanics stated as fact without a source (several echo the 2022 leaks); their exact lines and their green italic look.
+
+## @dopemotionzone (Ankush Goyal, "Visual Strategist"), reel DfG0di2REJO, studied 13 Nov 2026 (the owner sent it with no comment)
+A motion design and editing channel, 20.5K followers, not a GTA channel. The linked reel (30 Oct 2026, 98.6 s, landscape 16:9, 7.9K likes, its most liked recent post) is a mini documentary: "Why does Rockstar show you almost nothing about GTA 6?" Files in the session scratchpad under `ref4/`.
+
+Story pattern: a question hook; the answer plus an open loop inside 8 s ("it cost them 40 million dollars"); dated chapters (1997, 2001, 2005, 2020, 2022); a villain; the turn; the payoff that closes the loop; one detail viewers can check themselves; a closing question that points back at the hook. No spoken call to action. 179 words a minute while speaking (close to our approved 184), but the picture changes about every 0.8 s (117 cuts).
+
+Design system: three surfaces (off white paper #ECEBE9 collage cards, near black with light leaks for big lines, full bleed archive footage) tied together by grain; captions are a small plain grotesk in sentence case with the key word of each line switched to a large glowing italic serif; huge bold years; evidence on screen (articles and tabloids with yellow and red highlighter wipes, redaction bars, name labels with hand drawn arrows, a ring chart for the money); cut out photos; slow push ins, parallax, pixel dissolves.
+
+The other five recent reels are lead magnets for editors ("Comment CREATE / STYLE / FRAME / ASTRA / PIXELY and I'll DM it"): comments per like run from 0.43 to 1.55, highest where the freebie is concrete (a doc of styles, a free plugin). Four captions add "Follow for more", worded as a plug, not a condition.
+
+Do NOT copy: their script or topic; news screenshots, photos of real people, logos and the weapon cut out (rights, likeness, our safety rules); full black or full paper frames (our rule: every frame shows GTA 6, so our cards float over footage); any follow wording attached to a DM offer.

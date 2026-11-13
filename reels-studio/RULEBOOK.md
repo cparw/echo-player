@@ -54,6 +54,14 @@ The owner shared this channel as the type of video to implement. Their police sy
 * **Dense:** a cut every 1.5 to 2 s and no dead air. Pace target about 210 words a minute (their 250 plus is an AI voice). PROPOSED until the owner approves a sample in his voice.
 * **Never copy:** weapons, robberies, police action, sexualised shots, unknown or AI clips shown as gameplay, unsourced leak claims, their lines or their green italic look.
 
+### Story format (from studying @dopemotionzone, 13 Nov; details in `research/reference_reels.md`)
+The owner sent a documentary style reel about Rockstar's secrecy with no comment. Read as: this storytelling and this level of design. It runs at about 180 words a minute, so it fits the owner's approved voice pace as it is.
+* **When to use:** "why" and origin stories (how GTA 6 began, why something is the way it is). Fast explainers stay for "how it works" and "before you play".
+* **Shape:** a question or surprising statement as the hook; the answer plus an open loop inside 8 s; dated chapters; a turn; the payoff; one detail viewers can check themselves; a closing question that points back at the hook.
+* **Look (our version):** story captions (small grotesk in sentence case, the key word of each line in large glowing italic serif), date stamps, typeset paper cards with a highlighter wipe and a source line, a dimmed footage look for big lines, light film grain, an image change about every second. Cards float over live GTA 6 footage; never a full black or paper frame.
+* **Evidence is typeset by us** from sourced quotes and numbers. No news screenshots, photos of real people, logos or weapon cut outs.
+* **Comment keyword learning:** on that channel the most concrete freebies drew the most comments (up to 1.5 comments per like). Keep our DM offers concrete (a checklist, a map, a list), and never attach follow wording to them.
+
 ### Visual grammar (from studying @unseenbyneuralway)
 * Footage first. Cut every 1.5 to 2.5 seconds, on a spoken word, never one shot behind a long line.
 * Match each shot to the line it sits under.
