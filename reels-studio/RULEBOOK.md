@@ -127,6 +127,8 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 
 ## 9. Feedback log (newest first)
 
+* 13 Nov: owner, angry: "Don't ask me a single question, just complete it." Never ask him questions; decide and act. When something is truly impossible from a cloud session (clicking in his Chrome, starting a session on his Mac), say it once in one line and give the single action that unblocks it. The local task card and `posting_kit/LOCAL_SESSION_PROMPT.md` hold everything a session on his Mac needs.
+
 * 13 Nov: "The AI label should be turned off ... I will take care of it. You don't do anything about the AI label." Never touch the AI label in any posting step. Also: he wants to SEE changes happen live and fast; a cloud session cannot click in his Chrome, so live changes come from the Claude extension side panel in his Chrome or a local desktop session on his Mac (choose Local, not Cloud).
 
 * 13 Nov: owner rejected the flat badge logo ("I don't like this logo ... futuristic nice logo") and wants zero manual work: "I want you to do everything ... you take control". New logo: a chrome glass letter n with an orange notification dot (`brand/noticed/noticed_logo_chrome_n.png`, also `posting_kit/profile_picture.jpg`). Execution on his Mac goes through a one click desktop task (Claude session on his machine with Chrome and his G-DRIVE SSD; folder `noticed_studio` on the drive). Category for the Creator account: Gaming Video Creator. Reel 4 (The Wait) stays unposted: it says seven days away.
