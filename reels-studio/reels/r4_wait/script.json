@@ -1,5 +1,5 @@
 {
- "title": "Reel 1: The Wait (7 days out)",
+ "title": "R4: The Wait, launch day recut (the wait is over)",
  "voice_id": "bqoGL6z7prHxVFnnNfsb",
  "model_id": "eleven_v4",
  "voice_settings": {
@@ -7,7 +7,7 @@
   "similarity_boost": 0.85
  },
  "fps": 30,
- "tag": "GTA 6 · 7 DAYS OUT",
+ "tag": "GTA 6",
  "theme": {
   "bg": "#08080B",
   "fg": "#F5F2EA",
@@ -15,6 +15,13 @@
   "accent2": "#2EE6D0",
   "ink": "#0B0B0F"
  },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "guide_voice_id": "nPczCjzI2devNBz1zQrb",
+ "guide_speed": 1.08,
+ "guide_stability": 0.3,
+ "guide_style": 0.25,
+ "voice_preset": 1,
+ "note": "Recut 13 Nov 2026 for launch day (post 19 Nov 2026 or later). Lines 1 to 15 unchanged; the last three lines recorded again in voice2. Compare beats (GTA 5 top, GTA 6 bottom) per the owner rule.",
  "beats": [
   {
    "say": "If you were born the day GTA Five came out, you're thirteen now.",
@@ -45,18 +52,32 @@
    "font": "anton",
    "bg": "scrim",
    "footnote": "GTA V launched 17 Sept 2013 on PS3 and Xbox 360",
-   "clips": [
-    {
-     "shot": 104,
-     "offset": 0.1
+   "instant": true,
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 500,
+     "t": 0
     },
-    {
-     "shot": 91,
-     "offset": 2.6,
-     "at": 10
-    }
-   ],
-   "instant": true
+    "right": [
+     {
+      "shot": 104,
+      "t": 0.1,
+      "cy": 0.3
+     },
+     {
+      "shot": 91,
+      "t": 2.6,
+      "at": 10,
+      "cy": 0.25
+     }
+    ],
+    "labels": [
+     "GTA 5 · 2013",
+     "GTA 6 · 2026"
+    ]
+   },
+   "noTag": true
   },
   {
    "say": "And you're still four years too young for GTA Six's rating.",
@@ -219,28 +240,53 @@
     }
    ],
    "footnote": "Years between North American launches. Our math.",
-   "clips": [
-    {
-     "shot": 77,
-     "offset": 6.6
-    },
-    {
-     "shot": 88,
-     "offset": 0.1,
-     "at": 8
-    },
-    {
-     "shot": 82,
-     "offset": 0.1,
-     "at": 13
-    },
-    {
-     "shot": 31,
-     "offset": 1.6,
-     "at": 20
-    }
-   ],
-   "footTop": 1272
+   "footTop": 1272,
+   "compare": {
+    "mode": "split",
+    "left": [
+     {
+      "shot": 503,
+      "t": 0
+     },
+     {
+      "shot": 534,
+      "t": 0.1,
+      "at": 8
+     },
+     {
+      "shot": 545,
+      "t": 0.1,
+      "at": 13
+     },
+     {
+      "shot": 505,
+      "t": 0,
+      "at": 20
+     }
+    ],
+    "right": [
+     {
+      "shot": 77,
+      "t": 6.6
+     },
+     {
+      "shot": 88,
+      "t": 0.1,
+      "at": 8
+     },
+     {
+      "shot": 82,
+      "t": 0.1,
+      "at": 13
+     },
+     {
+      "shot": 31,
+      "t": 1.6,
+      "at": 20
+     }
+    ]
+   },
+   "noTag": true
   },
   {
    "say": "A whole console generation came and went without a new GTA.",
@@ -541,26 +587,32 @@
    "scrimY": 840
   },
   {
-   "say": "And now, it's seven days away.",
-   "show": [],
-   "layout": "number",
-   "from": 4811,
-   "to": 7,
-   "count_at": 3,
-   "count_dur": 0.9,
-   "label": "days to go",
-   "numSize": 460,
-   "bg": "scrim",
-   "footnote": "19 Nov 2026, midnight local time (Rockstar Support)",
-   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
-   "pan": [
-    0.05,
-    0.22
+   "say": "And now, the wait is over.",
+   "show": [
+    [
+     "The@2",
+     "wait@3"
+    ],
+    [
+     "is@4",
+     "*over.*@5"
+    ]
    ],
-   "scrimY": 920
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "size": 210,
+   "flash": true,
+   "footnote": "Out 19 Nov 2026 on PS5 and Xbox Series X|S (Rockstar Games)",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 5.4
+    }
+   ]
   },
   {
-   "say": "So tell me. How old were you when GTA Five came out? I'll go first in the comments.",
+   "say": "So tell me. How old were you when GTA Five came out?",
    "show": [
     [
      "How@3",
@@ -581,39 +633,46 @@
    "layout": "words",
    "font": "anton",
    "bg": "scrim",
-   "clips": [
-    {
-     "shot": 3,
-     "offset": 0.1
-    },
-    {
-     "shot": 83,
-     "offset": 0.1,
-     "at": 8
-    },
-    {
-     "shot": 29,
-     "offset": 0.1,
-     "at": 12
-    }
-   ],
-   "centerY": 1250
+   "centerY": 960,
+   "noTag": true,
+   "compare": {
+    "mode": "split",
+    "left": [
+     {
+      "shot": 526,
+      "t": 0
+     },
+     {
+      "shot": 564,
+      "t": 0.1,
+      "at": 8
+     }
+    ],
+    "right": [
+     {
+      "shot": 3,
+      "t": 0.1
+     },
+     {
+      "shot": 83,
+      "t": 0.1,
+      "at": 8
+     }
+    ]
+   }
   },
   {
-   "say": "Follow for tomorrow. See you in Leonida.",
+   "say": "Follow noticed dot daily and comment WAIT.",
    "show": [
     [
-     "Follow@0",
-     "for@1",
-     "tomorrow.@2"
+     "Follow@0"
     ],
     [
-     "See@3",
-     "you@4",
-     "in@5"
+     "^@noticed.daily^@1"
     ],
     [
-     "*Leonida.*@6"
+     "comment@5",
+     "*WAIT*@6"
     ]
    ],
    "layout": "words",
@@ -621,36 +680,105 @@
    "bg": "scrim",
    "clips": [
     {
-     "shot": 77,
+     "shot": 43,
      "offset": 0.1
     },
     {
+     "shot": 74,
+     "offset": 15.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "The full thirteen year timeline",
+   "show": [
+    [
+     "The@0",
+     "full@1"
+    ],
+    [
+     "*13*@2",
+     "*year*@3"
+    ],
+    [
+     "timeline@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "icon": "calendar",
+   "centerY": 900,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
+   "pan": [
+    0.05,
+    0.2
+   ]
+  },
+  {
+   "say": "lands straight in your inbox.",
+   "show": [
+    [
+     "lands@0",
+     "straight@1"
+    ],
+    [
+     "in@2",
+     "your@3",
+     "^inbox.^@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 6,
+     "offset": 0.1,
+     "cx": 0.33
+    }
+   ],
+   "centerY": 1280
+  },
+  {
+   "say": "See you in Leonida.",
+   "show": [
+    [
+     "See@0",
+     "you@1",
+     "in@2"
+    ],
+    [
+     "*Leonida.*@3"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
      "shot": 62,
-     "offset": 10.3,
-     "at": 3
+     "offset": 10.3
     }
    ]
   },
   {
    "layout": "endcard",
-   "hold": 2.6,
-   "brand": "GTA 6",
-   "series": "7 days out",
-   "episode": "The Wait",
-   "cta": "Follow for tomorrow",
+   "hold": 2.4,
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6 · The wait is over",
+   "episode": "The full 13 year timeline lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT WAIT",
    "clips": [
     {
-     "shot": 43,
+     "shot": 44,
      "offset": 0.1
     }
    ],
    "bg": "scrim"
   }
- ],
- "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
- "guide_voice_id": "nPczCjzI2devNBz1zQrb",
- "guide_speed": 1.08,
- "guide_stability": 0.3,
- "guide_style": 0.25,
- "voice_preset": 1
+ ]
 }
