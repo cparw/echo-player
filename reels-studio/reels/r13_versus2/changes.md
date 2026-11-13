@@ -34,3 +34,9 @@ Reel: GTA 5 vs GTA 6, part 2: the details side by side. Posts Thu 19 Nov 2026, 0
 
 ## Facts
 * The 48 minute GTA 5 day is labelled player timed. No GTA 6 day length is shown (Rockstar has not given one; the leaked figure is never used).
+
+## Safety fix (13 Nov, after final QA)
+* Phone split (beat 16): the GTA 6 half used shot 74 from 0.3 s (Lucia posing in the elevator, now on the do not use list). It now starts at 5.0 s (Jason walking out of the elevator, then the rooftop).
+* Strangers split (beat 22): GTA V clip 546 (Vespucci boardwalk) is removed (thong bikini from 0.8 s). The GTA 5 half is now the Vinewood Boulevard crowd still (509), then Sandy Shores (548).
+* Only those two beats (435 frames) were rebuilt and spliced into the master; the voice, graphics and everything else are unchanged.
+* Shot 88 is used from 0.2 to 2.85 s only (the list allows up to 3.4 s). Shot 74 is used only between 5.0 and 29.4 s.
