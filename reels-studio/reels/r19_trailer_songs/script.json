@@ -1,0 +1,950 @@
+{
+ "title": "GTA 6's trailer songs, decoded",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "hook_options": [
+  "GTA 6's first two trailer anthems are older than GTA itself. (11 words. PICKED: a checkable contrast nobody expects; 'anthems' means the main trailer song, so the Trailer 2 car radio songs (one from 2004) do not break it. Opens two gaps: which songs, and what the newest one did)",
+  "Rockstar picked a 1989 song to launch a 2026 game. Why? (11 words. Strong why question, but it names only one trailer and pays off slower)",
+  "One GTA 6 trailer pushed a 1986 song up 182,000 percent. (10 words. Big number, but it answers itself and leaves no open loop)"
+ ],
+ "hook_pick": "Option 1 (owner approved): a checkable contrast nobody expects, opens two gaps (which songs, and what the newest one did).",
+ "ending": "closing question over the hook shot, then the follow plus comment line (owner CTA rule, 13 Nov), then the noticed. end card",
+ "time_sensitive": "Posts Tue 17 Nov 2026 19:00 ET. 'Charted before launch' and 'Before launch' stay true after 19 Nov (the chart dates are past).",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six's first two trailer anthems are older than GTA itself.",
+   "instant": true,
+   "bg": "scrim",
+   "push": 0.06,
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "GTA 6's first two / trailer anthems are / older than GTA itself.",
+     "at": 0,
+     "key": [
+      "older",
+      "itself"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: tompetty.com; NME. First GTA: 1997.",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 10.3,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "say": "Petty, eighty nine.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "1989",
+    "small": "TOM PETTY",
+    "cy": 760
+   },
+   "chip": {
+    "text": "FIRST GTA GAME: 1997",
+    "at": 0,
+    "y": 1040,
+    "size": 32
+   },
+   "caps": [],
+   "footnote": "REPORTED: tompetty.com; Loudwire. First GTA: 1997.",
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Pointer Sisters, eighty six.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "1986",
+    "small": "POINTER SISTERS",
+    "cy": 760
+   },
+   "chip": {
+    "text": "FIRST GTA GAME: 1997",
+    "at": 0,
+    "y": 1040,
+    "size": 32
+   },
+   "caps": [],
+   "footnote": "REPORTED: NME; Multiplayer.it. First GTA: 1997.",
+   "clips": [
+    {
+     "shot": 21,
+     "offset": 0.1
+    },
+    {
+     "shot": 6,
+     "offset": 0.1,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "say": "The last trailer's? Charted before launch.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "THE LAST TRAILER'S SONG",
+     "head": "Charted before launch",
+     "mark": "before launch",
+     "mark_at": 4,
+     "source": "Official Charts Company, 29 Oct 2026",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: Official Charts Company. Launch: 19 Nov, per Rockstar.",
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.3
+    },
+    {
+     "shot": 65,
+     "offset": 0.1,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "Save this. The big songs, trailer by trailer.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "Save this.",
+     "at": 0,
+     "key": [
+      "Save"
+     ]
+    },
+    {
+     "text": "The big songs, / trailer by trailer.",
+     "at": 2,
+     "key": [
+      "big songs"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 69,
+     "offset": 0.1
+    },
+    {
+     "shot": 81,
+     "offset": 0.1,
+     "at": 2
+    },
+    {
+     "shot": 89,
+     "offset": 1.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Trailer one. Tom Petty, Love Is a Long Road.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "TRAILER 1",
+    "small": "DEC 2023",
+    "until": 2,
+    "size": 230,
+    "cy": 760
+   },
+   "paper": [
+    {
+     "label": "TOM PETTY, 1989",
+     "head": "Love Is a Long Road",
+     "mark": "Long Road",
+     "mark_at": 7,
+     "source": "From Full Moon Fever. tompetty.com",
+     "at": 2
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: tompetty.com; Loudwire.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/couple_sunset_palms.jpg",
+   "pan": [
+    0.55,
+    0.68
+   ]
+  },
+  {
+   "say": "Spotify told the BBC streams jumped almost thirty seven thousand percent.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "counter": {
+    "to": 36979,
+    "at": 5,
+    "dur": 1.4,
+    "label": "PERCENT MORE STREAMS",
+    "label2": "WEEK ON WEEK, SPOTIFY DATA",
+    "cy": 700
+   },
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "Spotify told the BBC",
+     "at": 0,
+     "key": [
+      "BBC"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Spotify data via the BBC (PC Gamer; GameSpot).",
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 0.2
+    },
+    {
+     "shot": 15,
+     "offset": 1.95,
+     "at": 4
+    },
+    {
+     "shot": 33,
+     "offset": 0.2,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Rockstar's Rob Nelson says the game wasn't fully formed yet.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "chip": {
+    "text": "ROB NELSON, CO STUDIO HEAD, ROCKSTAR NORTH",
+    "at": 0,
+    "y": 850,
+    "size": 29
+   },
+   "caps": [
+    {
+     "text": "Rockstar's Rob Nelson says / the game wasn't / fully formed yet.",
+     "at": 0,
+     "key": [
+      "fully formed"
+     ]
+    }
+   ],
+   "capsY": 1130,
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to Trois Couleurs, via GamesRadar.",
+   "clips": [
+    {
+     "shot": 50,
+     "offset": 0.1
+    },
+    {
+     "shot": 41,
+     "offset": 1.6,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "The song was a real sort of mission statement.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "head": "“A real sort of mission statement”",
+     "mark": "mission statement",
+     "mark_at": 7,
+     "source": "Rob Nelson on the Trailer 1 song",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to Trois Couleurs, via GamesRadar.",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 0.3
+    },
+    {
+     "shot": 1,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Trailer two. The Pointer Sisters, Hot Together.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "TRAILER 2",
+    "small": "MAY 2025",
+    "until": 2,
+    "size": 230,
+    "cy": 760
+   },
+   "paper": [
+    {
+     "label": "THE POINTER SISTERS, 1986",
+     "head": "Hot Together",
+     "mark": "Hot Together",
+     "mark_at": 5,
+     "source": "The main Trailer 2 song, per NME",
+     "at": 2
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: NME; Multiplayer.it.",
+   "clips": [
+    {
+     "shot": 24,
+     "offset": 0.1
+    },
+    {
+     "shot": 74,
+     "offset": 12.6,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Two hours in, streams were up a hundred eighty two thousand percent.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "counter": {
+    "to": 182000,
+    "at": 3,
+    "dur": 1.4,
+    "label": "PERCENT MORE STREAMS",
+    "label2": "FIRST 2 HOURS, VS A WEEK EARLIER",
+    "cy": 700
+   },
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "Two hours in,",
+     "at": 0,
+     "key": [
+      "hours"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Spotify, via TechRadar; The Hollywood Reporter.",
+   "clips": [
+    {
+     "shot": 60,
+     "offset": 0.1
+    },
+    {
+     "shot": 16,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "But the next video hid a song you probably missed.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1000,
+   "caps": [
+    {
+     "text": "But the next video / hid a song you / probably missed.",
+     "at": 0,
+     "key": [
+      "missed"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/desktop.00.5pzu2sm-z4.jpg",
+   "pan": [
+    0.4,
+    0.5
+   ]
+  },
+  {
+   "say": "The Netflix Extended Look. Twenty six minutes. Fourteen songs fans found.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "flash": true,
+   "stamp": {
+    "big": "EXTENDED LOOK",
+    "small": "NETFLIX, 27 AUG 2026",
+    "until": 4,
+    "size": 150,
+    "cy": 760
+   },
+   "tiles": {
+    "items": [
+     {
+      "text": "26 MINUTES",
+      "at": 4
+     },
+     {
+      "text": "14 SONGS FANS FOUND",
+      "at": 7
+     }
+    ],
+    "y": 560,
+    "gap": 170,
+    "size": 84
+   },
+   "caps": [],
+   "footnote": "REPORTED: iGeeksBlog; PowerUp Gaming. No official list.",
+   "clips": [
+    {
+     "shot": 83,
+     "offset": 0.1
+    },
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 88,
+     "offset": 0.3,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Lil Wayne. Def Leppard. Depeche Mode.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "tiles": {
+    "items": [
+     {
+      "text": "LIL WAYNE",
+      "at": 0
+     },
+     {
+      "text": "DEF LEPPARD",
+      "at": 2
+     },
+     {
+      "text": "DEPECHE MODE",
+      "at": 4
+     }
+    ],
+    "y": 480,
+    "gap": 170,
+    "size": 96
+   },
+   "caps": [],
+   "footnote": "REPORTED: iGeeksBlog; PowerUp Gaming. No official list.",
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 1.9
+    },
+    {
+     "shot": 67,
+     "offset": 0.1,
+     "at": 2
+    },
+    {
+     "shot": 77,
+     "offset": 7.0,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Now listen in the elevator.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "Now listen in / the elevator.",
+     "at": 0,
+     "key": [
+      "elevator"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: PowerUp Gaming; iGeeksBlog.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.3,
+    0.42
+   ]
+  },
+  {
+   "say": "That quiet tune is Phil Collins. Against All Odds.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "paper": [
+    {
+     "label": "EXTENDED LOOK, ABOUT 21:34",
+     "head": "Against All Odds",
+     "mark": "Against All Odds",
+     "mark_at": 6,
+     "tag": "PHIL COLLINS",
+     "source": "Plays quietly in the elevator scene",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: PowerUp Gaming; iGeeksBlog (21:33 to 21:56).",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
+   "pan": [
+    0.45,
+    0.58
+   ]
+  },
+  {
+   "say": "Send this to the friend who still hums the Tom Petty one.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Send this to the friend / who still hums / the Tom Petty one.",
+     "at": 0,
+     "key": [
+      "Send this"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 4,
+     "offset": 0.1
+    },
+    {
+     "shot": 68,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 43,
+     "offset": 0.1,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Then the Launch Trailer broke the pattern. A brand new song.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "LAUNCH TRAILER",
+    "small": "15 OCT 2026",
+    "until": 7,
+    "size": 140,
+    "cy": 760
+   },
+   "dim": {
+    "text": "A brand new song.",
+    "at": 7,
+    "cy": 900
+   },
+   "caps": [],
+   "footnote": "ROCKSTAR SAYS: Rockstar Newswire, 15 Oct 2026.",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.9
+    },
+    {
+     "shot": 84,
+     "offset": 0.2,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Flower in a Hurricane, by Justice, with Tame Impala and SZA.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "paper": [
+    {
+     "label": "LAUNCH TRAILER, OCT 2026",
+     "head": "Flower in a Hurricane",
+     "mark": "Hurricane",
+     "mark_at": 3,
+     "tag": "BRAND NEW",
+     "source": "Justice feat. Tame Impala, SZA, King Gizzard and The Lizard Wizard",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "footnote": "ROCKSTAR SAYS: Rockstar Newswire, 15 Oct 2026.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_01.jpg",
+   "pan": [
+    0.18,
+    0.3
+   ]
+  },
+  {
+   "say": "Number thirty one in the UK.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "No. 31",
+    "small": "UK SINGLES CHART",
+    "size": 300,
+    "cy": 760
+   },
+   "chip": {
+    "text": "FIRST CHARTED 29 OCT, 3 WEEKS BEFORE LAUNCH",
+    "at": 1,
+    "y": 1040,
+    "size": 26
+   },
+   "caps": [],
+   "footnote": "REPORTED: Official Charts Company. 3 weeks: OUR MATH.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/stanier_neon.jpg",
+   "pan": [
+    0.42,
+    0.56
+   ]
+  },
+  {
+   "say": "Then the Billboard Hot one hundred. Before launch.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "BILLBOARD HOT 100",
+     "head": "Debut at No. 62",
+     "mark": "No. 62",
+     "mark_at": 3,
+     "source": "Billboard, chart dated 31 Oct 2026",
+     "at": 0
+    }
+   ],
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "Before launch.",
+     "at": 6,
+     "key": [
+      "launch"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Billboard, 26 Oct 2026.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 1.8
+    },
+    {
+     "shot": 104,
+     "offset": 1.0,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "And Justice isn't new to GTA. They were on GTA Four's radio.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "And Justice isn't / new to GTA.",
+     "at": 0,
+     "key": [
+      "new"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "GTA 4, 2008, ELECTRO CHOC RADIO",
+     "head": "Waters of Nazareth",
+     "mark": "Nazareth",
+     "mark_at": 10,
+     "source": "Justice. Songfacts; GTA Wiki",
+     "at": 6
+    }
+   ],
+   "footnote": "REPORTED: Songfacts; GTA Wiki.",
+   "clips": [
+    {
+     "shot": 69,
+     "offset": 0.1
+    },
+    {
+     "shot": 61,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 72,
+     "offset": 0.2,
+     "at": 9
+    },
+    {
+     "shot": 20,
+     "offset": 0.1,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "Now they score GTA Six.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1100,
+   "caps": [
+    {
+     "text": "Now they score GTA 6.",
+     "at": 0,
+     "key": [
+      "score"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Justice compose the GTA 6 original score.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/vice_city_skyline_aerial.jpg",
+   "pan": [
+    0.3,
+    0.42
+   ]
+  },
+  {
+   "say": "Read the three titles in order. A long road. Hot together. A flower in a hurricane. Reads like their story.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "Read the three titles / in order.",
+     "at": 0,
+     "key": [
+      "three titles"
+     ]
+    },
+    {
+     "text": "A long road. / Hot together. / A flower in a hurricane.",
+     "at": 6,
+     "key": [
+      "long road",
+      "Hot together",
+      "hurricane"
+     ]
+    },
+    {
+     "text": "Reads like / their story.",
+     "at": 16,
+     "key": [
+      "story"
+     ]
+    }
+   ],
+   "chip": [
+    {
+     "text": "TRAILER 1",
+     "at": 6,
+     "until": 9,
+     "y": 640
+    },
+    {
+     "text": "TRAILER 2",
+     "at": 9,
+     "until": 11,
+     "y": 640
+    },
+    {
+     "text": "LAUNCH TRAILER",
+     "at": 11,
+     "until": 16,
+     "y": 640
+    }
+   ],
+   "footnote": "OUR READING: not confirmed by Rockstar.",
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 2.4
+    },
+    {
+     "shot": 62,
+     "offset": 9.05,
+     "at": 6
+    },
+    {
+     "shot": 74,
+     "offset": 15.0,
+     "at": 9
+    },
+    {
+     "shot": 82,
+     "offset": 0.5,
+     "at": 11
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 17
+    }
+   ]
+  },
+  {
+   "say": "Which one's been stuck in your head?",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "Which one's been / stuck in your head?",
+     "at": 0,
+     "key": [
+      "stuck in your head"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment SONGS.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "Follow"
+     ]
+    }
+   ],
+   "capsY": 1150,
+   "stamp": {
+    "big": "SONGS",
+    "small": "COMMENT THIS WORD",
+    "at": 5,
+    "size": 300,
+    "cy": 700,
+    "color": "accent"
+   },
+   "clips": [
+    {
+     "shot": 3,
+     "offset": 0.1
+    },
+    {
+     "shot": 27,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "All fourteen songs fans spotted, with timestamps, land straight in your inbox.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "EXTENDED LOOK SONG LIST",
+     "head": "14 songs, with timestamps",
+     "mark": "timestamps",
+     "mark_at": 6,
+     "source": "Spotted by fans and press. No official list",
+     "at": 0
+    }
+   ],
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "land straight / in your inbox.",
+     "at": 7,
+     "key": [
+      "inbox"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 4.3
+    },
+    {
+     "shot": 91,
+     "offset": 5.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6 · Music",
+   "episode": "All fourteen songs land straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT SONGS",
+   "hold": 2.0,
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.1
+    }
+   ]
+  }
+ ]
+}
