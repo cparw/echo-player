@@ -26,6 +26,7 @@ Posts Mon 16 Nov 2026, 19:00 ET. Built in the story style (engine v5) from the o
 * Twist: no Real Dimez imagery; a typeset "Roxy, one half of Real Dimez" card over the sign, then the live sign footage on "Rockstar hasn't said".
 * Closing question back on the opening sign (loop). CTA: STORM stamp, then a redacted "storm clue sheet" card as a teaser.
 * End card: noticed. wordmark, @noticed.daily, episode "Every storm clue lands straight in your inbox", cta "FOLLOW @noticed.daily + COMMENT STORM".
+* Freeze fix (main's freezedetect check): under "GTA 6 launches Nov 19" the skyline clip ran out and held its last frame for 1.2 s. The cut to the toll plaza drive now lands on the word "November" and flows straight into the existing shot, so nothing freezes. Only that group of 51 frames was encoded again; every other frame is bit for bit the same.
 * Safety: the bar shot is used only inside its audited clean window; Lucia's gym shot (PlayStation button prompts) and the rooftop runner were swapped out.
 * Final QA swap: the August chapter first opened on Lucia alone in a mini dress posing in the elevator (shot 74). The source asked for Jason and Lucia together, and the pose is body focused, so those 45 frames now show Jason and Lucia toasting at the sunny Trailer 2 bar (shot 42), patched into the finished master with the same graphics.
 
