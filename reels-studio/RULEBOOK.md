@@ -44,6 +44,16 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 * **End** on an easy question people can answer in one line, then "Follow for tomorrow. See you in Leonida."
 * Length 61 to 90 seconds (TikTok rewards need over a minute). 175 to 190 words a minute. Short sentences, second person, calm and cinematic like Unseen.
 
+### Fast explainer format (from studying @cole.themanyt, 13 Nov; details in `research/reference_reels.md`)
+The owner shared this channel as the type of video to implement. Their police system reel reached 157K likes with this recipe. Our version keeps every non negotiable in section 1.
+* **Promise formats:** "How X works in GTA 6" (one system, rule by rule) and "Everything to know before you play". One clear promise beats a generic list.
+* **Title card hook:** a topic tag and a two line title (key line in orange) on frame one over the best clean shot, held about 3 s. We write "GTA 6" in our own type; never Rockstar's logo.
+* **Rule by rule:** a small numbered header at the top for each item, and one explanatory graphic per beat (star bar, clue icons, map circle, meter). Ours are built only from sourced facts and carry an ILLUSTRATION tag plus the usual source footnote; never dress a guess up as game UI.
+* **Captions:** key phrases that build word by word (up to about 6 words, 2 or 3 lines), bold italic caps with a shadow and no box, key words orange, danger words red.
+* **Loop ending:** the last line runs into the first line, over the opening shot, with a comment question just before it. No end card on these reels.
+* **Dense:** a cut every 1.5 to 2 s and no dead air. Pace target about 210 words a minute (their 250 plus is an AI voice). PROPOSED until the owner approves a sample in his voice.
+* **Never copy:** weapons, robberies, police action, sexualised shots, unknown or AI clips shown as gameplay, unsourced leak claims, their lines or their green italic look.
+
 ### Visual grammar (from studying @unseenbyneuralway)
 * Footage first. Cut every 1.5 to 2.5 seconds, on a spoken word, never one shot behind a long line.
 * Match each shot to the line it sits under.
