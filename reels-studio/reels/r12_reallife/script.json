@@ -1,0 +1,594 @@
+{
+ "title": "Vice City is leaking into real life (story, silent preview)",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "hook_options": [
+  "Rockstar is paying to turn real Miami into Vice City.",
+  "A real Miami Beach hotel is trading its W for a Y.",
+  "Vice City is leaking into real life."
+ ],
+ "hook_pick": "Option 1: one bold, clear claim with money in it that every GTA fan gets instantly (Vice City is Miami), and every beat after it is proof. Option 2 only lands if you know W Hotels; option 3 is vague.",
+ "ending": "one line question, then the loop line 'Because right now,' that runs into the hook on replay, then the noticed. end card",
+ "time_sensitive": "The Heat line is in the present tense for 18 Nov 2026; post before then or switch it to the past tense. Selfridges shop runs to 28 Nov; Y Hotel campaign to 31 Dec.",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "Rockstar is paying to turn real Miami into Vice City.",
+   "instant": true,
+   "bg": "scrim",
+   "push": 0.06,
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "Rockstar is paying / to turn real Miami / into Vice City.",
+     "at": 0,
+     "key": [
+      "paying",
+      "Vice City"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: VGC; Beebom; Insider Gaming.",
+   "clips": [
+    {
+     "shot": 104,
+     "offset": 0.1
+    },
+    {
+     "shot": 91,
+     "offset": 2.5,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "A hotel. A beach. An NBA team. And it didn't stop at Miami.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "tiles": {
+    "items": [
+     {
+      "text": "A HOTEL",
+      "at": 0
+     },
+     {
+      "text": "A BEACH",
+      "at": 2
+     },
+     {
+      "text": "AN NBA TEAM",
+      "at": 4
+     }
+    ],
+    "until": 7,
+    "y": 380,
+    "gap": 165,
+    "size": 92
+   },
+   "caps": [
+    {
+     "text": "And it didn't stop / at Miami.",
+     "at": 7,
+     "key": [
+      "didn't stop"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 14.5
+    },
+    {
+     "shot": 16,
+     "offset": 0.2,
+     "at": 2
+    },
+    {
+     "shot": 83,
+     "offset": 1.6,
+     "at": 4
+    },
+    {
+     "shot": 97,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 77,
+     "offset": 7.0,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "say": "Miami Beach voted four to three to negotiate with Rockstar. One commissioner said it's close to four million dollars for the city.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "4 TO 3",
+    "small": "MIAMI BEACH VOTE",
+    "at": 3,
+    "until": 10,
+    "size": 300,
+    "cy": 700
+   },
+   "paper": [
+    {
+     "label": "MIAMI BEACH COMMISSIONER",
+     "quote": "It's actually close to $4m or so in benefits to the city...",
+     "qsize": 64,
+     "source": "Tanya Katzoff Bhatt, via Insider Gaming",
+     "at": 10
+    }
+   ],
+   "capsY": 1130,
+   "caps": [
+    {
+     "text": "Miami Beach voted",
+     "at": 0,
+     "key": [
+      "voted"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Insider Gaming, 11 Sep 2026.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.5
+    },
+    {
+     "shot": 91,
+     "offset": 7.0,
+     "at": 3
+    },
+    {
+     "shot": 77,
+     "offset": 10.0,
+     "at": 7
+    },
+    {
+     "shot": 26,
+     "offset": 6.4,
+     "at": 10
+    },
+    {
+     "shot": 44,
+     "offset": 0.2,
+     "at": 15
+    },
+    {
+     "shot": 33,
+     "offset": 2.0,
+     "at": 19
+    }
+   ]
+  },
+  {
+   "say": "Then a six hundred fifty thousand dollar deal",
+   "bg": "scrim",
+   "sfx": "hit",
+   "counter": {
+    "to": 650000,
+    "at": 2,
+    "dur": 1.4,
+    "label": "US DOLLARS",
+    "label2": "ONE HOTEL DEAL",
+    "cy": 720
+   },
+   "caps": [],
+   "footnote": "REPORTED: Beebom, citing City of Miami Beach documents.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/desktop.00.5pzu2sm-z4.jpg",
+   "pan": [
+    0.3,
+    0.4
+   ]
+  },
+  {
+   "say": "to turn the W South Beach into Vice City's Y Hotel.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "2201 COLLINS AVENUE",
+     "head": "W South Beach to become Vice City's Y Hotel",
+     "mark": "Y Hotel",
+     "mark_at": 9,
+     "tag": "OCT 15 TO DEC 31",
+     "source": "City of Miami Beach documents, via Beebom",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: Beebom, citing City of Miami Beach documents.",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 15.5
+    },
+    {
+     "shot": 24,
+     "offset": 0.2,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "The plan even paints Muscle Beach's workout gear pink.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "The plan even paints / Muscle Beach's workout gear / pink.",
+     "at": 0,
+     "key": [
+      "pink"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Beebom, citing City of Miami Beach documents.",
+   "clips": [
+    {
+     "shot": 34,
+     "offset": 0.1
+    },
+    {
+     "shot": 16,
+     "offset": 0.9,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Then it crossed the ocean.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "layout": "map",
+   "mapCard": true,
+   "lonMin": -100,
+   "lonMax": 15,
+   "latTop": 62,
+   "latBot": 12,
+   "mapW": 860,
+   "mapTop": 360,
+   "cities": [
+    {
+     "name": "MIAMI",
+     "lon": -80.19,
+     "lat": 25.76,
+     "at": 0
+    },
+    {
+     "name": "LONDON",
+     "lon": -0.13,
+     "lat": 51.51,
+     "at": 2,
+     "side": "l"
+    }
+   ],
+   "capsY": 1180,
+   "caps": [
+    {
+     "text": "Then it crossed / the ocean.",
+     "at": 0,
+     "key": [
+      "ocean"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 4,
+     "offset": 0.1
+    },
+    {
+     "shot": 68,
+     "offset": 0.1,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "say": "Selfridges in London opened a GTA Six shop, and over a hundred thousand people queued online.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "chip": {
+    "text": "SELFRIDGES, LONDON, 9 NOV 2026",
+    "at": 0,
+    "until": 8,
+    "y": 760
+   },
+   "stamp": {
+    "big": "100,000+",
+    "small": "IN THE ONLINE QUEUE",
+    "at": 9,
+    "size": 230,
+    "color": "accent",
+    "cy": 700
+   },
+   "caps": [
+    {
+     "text": "Selfridges in London / opened a GTA 6 shop,",
+     "at": 0,
+     "key": [
+      "London"
+     ]
+    },
+    {
+     "text": "people / queued online.",
+     "at": 13,
+     "key": [
+      "queued online"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: VGC, 9 Nov 2026.",
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 0.3
+    },
+    {
+     "shot": 74,
+     "offset": 5.5,
+     "at": 3
+    },
+    {
+     "shot": 54,
+     "offset": 5.0,
+     "at": 9
+    },
+    {
+     "shot": 94,
+     "offset": 0.3,
+     "at": 13
+    }
+   ]
+  },
+  {
+   "say": "On sale: aprons from Burger Shot, GTA's fake burger chain. And a two thousand five hundred pound jacket for the Goodtime State.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "SELFRIDGES, LONDON",
+     "head": "Burger Shot apron, £250",
+     "mark": "£250",
+     "mark_at": 4,
+     "tag": "FAKE BRAND",
+     "source": "VGC, 9 Nov 2026",
+     "at": 0
+    },
+    {
+     "label": "SELFRIDGES, LONDON",
+     "head": "Goodtime State varsity jacket, £2,500",
+     "mark": "£2,500",
+     "mark_at": 13,
+     "tag": "FAKE STATE",
+     "source": "VGC, 9 Nov 2026",
+     "at": 10
+    }
+   ],
+   "caps": [],
+   "clips": [
+    {
+     "shot": 94,
+     "offset": 0.9
+    },
+    {
+     "shot": 81,
+     "offset": 1.8,
+     "at": 4
+    },
+    {
+     "shot": 74,
+     "offset": 0.6,
+     "at": 10
+    },
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "at": 16
+    }
+   ]
+  },
+  {
+   "say": "A state that doesn't exist.",
+   "bg": "scrim",
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "A state that / doesn't exist.",
+     "at": 0,
+     "key": [
+      "doesn't exist"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: the Goodtime State is Leonida.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GOODTIME_GEAR_01.0t7de8dow381q.jpg",
+   "pan": [
+    0.55,
+    0.62
+   ]
+  },
+  {
+   "say": "And November eighteenth, the night before launch, the Miami Heat play as Vice City. Custom court, new uniforms, live on ESPN.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "NOV 18",
+    "small": "THE NIGHT BEFORE LAUNCH",
+    "at": 1,
+    "until": 7,
+    "size": 280,
+    "cy": 660
+   },
+   "caps": [
+    {
+     "text": "the Miami Heat / play as Vice City.",
+     "at": 7,
+     "key": [
+      "Vice City"
+     ]
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "CUSTOM COURT",
+      "at": 14
+     },
+     {
+      "text": "NEW UNIFORMS",
+      "at": 16
+     },
+     {
+      "text": "LIVE ON ESPN",
+      "at": 18
+     }
+    ],
+    "y": 380,
+    "gap": 160,
+    "size": 80
+   },
+   "footnote": "REPORTED: GTA BOOM; VGC.",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.3
+    },
+    {
+     "shot": 72,
+     "offset": 0.4,
+     "at": 4
+    },
+    {
+     "shot": 65,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 11,
+     "offset": 0.1,
+     "at": 11
+    },
+    {
+     "shot": 83,
+     "offset": 1.0,
+     "at": 14
+    },
+    {
+     "shot": 89,
+     "offset": 2.4,
+     "at": 19
+    }
+   ]
+  },
+  {
+   "say": "Same arena where Burger Shot opened real food stands.",
+   "bg": "scrim",
+   "chip": {
+    "text": "KASEYA CENTER, MIAMI",
+    "at": 0,
+    "until": 8,
+    "y": 760
+   },
+   "caps": [
+    {
+     "text": "Same arena where / Burger Shot opened / real food stands.",
+     "at": 0,
+     "key": [
+      "real food stands"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Beebom; GTA BOOM.",
+   "clips": [
+    {
+     "shot": 47,
+     "offset": 0.9
+    },
+    {
+     "shot": 48,
+     "offset": 0.3,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "So which city should Rockstar take over next?",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "So which city should / Rockstar take over next?",
+     "at": 0,
+     "key": [
+      "next"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 5.6
+    },
+    {
+     "shot": 62,
+     "offset": 10.4,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Because right now,",
+   "bg": "scrim",
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "Because right now,",
+     "at": 0,
+     "key": [
+      "right now"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 104,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "series": "GTA 6",
+   "episode": "@noticed.daily",
+   "cta": "Follow for tomorrow",
+   "hold": 1.8,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/k4ak9okk485712.0cj_8hoskvfgy.jpg",
+   "pan": [
+    0.55,
+    0.62
+   ]
+  }
+ ]
+}

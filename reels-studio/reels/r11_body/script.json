@@ -1,0 +1,540 @@
+{
+ "title": "Skip sleep in GTA 6 and it shows on your face (story, silent preview)",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "hook_options": [
+  "Skip sleep in GTA 6 and it shows on your face.",
+  "Overeat in GTA 6 and your character gains weight.",
+  "GTA 6 writes your worst habits on your face."
+ ],
+ "hook_pick": "Option 1: everyone skips sleep (launch night most of all), the face is instantly visual, it is new (San Andreas never tracked sleep) and it is checkable in Dazed. Option 2 is old news to San Andreas fans; option 3 is vaguer.",
+ "ending": "one line question, then the loop line 'Just remember.' that runs into the hook on replay, then the noticed. end card",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "Skip sleep in GTA Six and it shows on your face.",
+   "instant": true,
+   "bg": "scrim",
+   "push": 0.06,
+   "capsY": 1090,
+   "caps": [
+    {
+     "text": "Skip sleep in GTA 6 / and it shows / on your face.",
+     "at": 0,
+     "key": [
+      "sleep",
+      "face"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 85,
+     "offset": 0.1
+    },
+    {
+     "shot": 101,
+     "offset": 0.3,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "That's from Dazed's deep dive with Rockstar. And your face is just the start.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "That's from Dazed's / deep dive with Rockstar.",
+     "at": 0,
+     "key": [
+      "deep dive"
+     ]
+    },
+    {
+     "text": "And your face / is just the start.",
+     "at": 7,
+     "key": [
+      "just the start"
+     ]
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "FOOD",
+      "at": 10
+     },
+     {
+      "text": "GYM",
+      "at": 11
+     },
+     {
+      "text": "SLEEP",
+      "at": 12
+     }
+    ],
+    "y": 330,
+    "gap": 160,
+    "size": 92
+   },
+   "footnote": "REPORTED: Dazed, autumn 2026 issue.",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 0.8
+    },
+    {
+     "shot": 40,
+     "offset": 0.4,
+     "at": 4
+    },
+    {
+     "shot": 21,
+     "offset": 0.2,
+     "at": 7
+    },
+    {
+     "shot": 82,
+     "offset": 0.3,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "say": "Food changes Jason and Lucia's weight. Rockstar's own demo: an apple, a smoothie, health up for a while. Overeat, and the weight goes on.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "paper": [
+    {
+     "label": "REPORTED",
+     "head": "Food affects Jason and Lucia's weight",
+     "mark": "weight",
+     "mark_at": 5,
+     "source": "Dazed, autumn 2026 issue",
+     "at": 0
+    },
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "Here I am eating an apple, opening the fridge and drinking a smoothie. So this will increase my health temporarily for a while...",
+     "qsize": 52,
+     "source": "Rob Nelson, Rockstar North, to The New York Times",
+     "at": 6
+    }
+   ],
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "Overeat, and / the weight goes on.",
+     "at": 18,
+     "key": [
+      "weight goes on"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Dazed; IGN interview. ROCKSTAR SAYS: NYT.",
+   "clips": [
+    {
+     "shot": 46,
+     "offset": 0.1
+    },
+    {
+     "shot": 74,
+     "offset": 27.5,
+     "at": 6
+    },
+    {
+     "shot": 47,
+     "offset": 1.0,
+     "at": 11
+    },
+    {
+     "shot": 81,
+     "offset": 0.3,
+     "at": 15
+    },
+    {
+     "shot": 42,
+     "offset": 0.2,
+     "at": 18
+    }
+   ]
+  },
+  {
+   "say": "The gym visibly builds muscle. Look at Rockstar's footage: L two, R two. Press in rhythm, or burn stamina.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "The gym visibly / builds muscle.",
+     "at": 0,
+     "key": [
+      "builds muscle"
+     ]
+    },
+    {
+     "text": "Look at Rockstar's footage: / L2, R2.",
+     "at": 5,
+     "key": [
+      "L2",
+      "R2"
+     ]
+    },
+    {
+     "text": "Press in rhythm, / or burn stamina.",
+     "at": 13,
+     "key": [
+      "burn stamina"
+     ]
+    }
+   ],
+   "footnote": "FOOTAGE: ROCKSTAR GAMES. REPORTED: Dazed; NYT.",
+   "clips": [
+    {
+     "shot": 34,
+     "offset": 0.1
+    },
+    {
+     "shot": 85,
+     "offset": 1.8,
+     "at": 5
+    },
+    {
+     "shot": 101,
+     "offset": 0.1,
+     "at": 9
+    },
+    {
+     "shot": 17,
+     "offset": 0.1,
+     "at": 13
+    },
+    {
+     "shot": 102,
+     "offset": 0.1,
+     "at": 16
+    }
+   ],
+   "capsY": 1040,
+   "credit": "",
+   "footTop": 1222
+  },
+  {
+   "say": "Now the twist. Stay away from bed too long, on the run or on a bender for days, and their faces pay for it.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "dim": {
+    "text": "Now the twist.",
+    "until": 3,
+    "cy": 1000
+   },
+   "caps": [
+    {
+     "text": "Stay away from bed / too long,",
+     "at": 3,
+     "key": [
+      "bed"
+     ]
+    },
+    {
+     "text": "on the run, or on / a bender for days,",
+     "at": 9,
+     "key": [
+      "bender"
+     ]
+    },
+    {
+     "text": "and their faces / pay for it.",
+     "at": 18,
+     "key": [
+      "faces"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Dazed, after interviews with Rockstar.",
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.2
+    },
+    {
+     "shot": 58,
+     "offset": 0.1,
+     "at": 3,
+     "cx": 0.75
+    },
+    {
+     "shot": 89,
+     "offset": 0.2,
+     "at": 6
+    },
+    {
+     "shot": 94,
+     "offset": 0.2,
+     "at": 10
+    },
+    {
+     "shot": 51,
+     "offset": 0.1,
+     "at": 14
+    },
+    {
+     "shot": 64,
+     "offset": 1.6,
+     "at": 16
+    },
+    {
+     "shot": 85,
+     "offset": 2.0,
+     "at": 18
+    }
+   ]
+  },
+  {
+   "say": "Dazed compared it to Dorian Gray.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "DAZED SAYS",
+     "head": "A bit like The Picture of Dorian Gray",
+     "mark": "Dorian Gray",
+     "mark_at": 4,
+     "source": "Dazed, autumn 2026 issue",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "clips": [
+    {
+     "shot": 99,
+     "offset": 0.1
+    },
+    {
+     "shot": 40,
+     "offset": 1.6,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "Your habits, written on their faces.",
+   "bg": "scrim",
+   "capsY": 1180,
+   "caps": [
+    {
+     "text": "Your habits, written / on their faces.",
+     "at": 0,
+     "key": [
+      "faces"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_SARAS_SALON_02.170lw.lgxdghm.jpg",
+   "pan": [
+    0.5,
+    0.56
+   ]
+  },
+  {
+   "say": "San Andreas did weight and muscle in two thousand four. GTA Four and Five dropped it. Twenty two years later, it's back.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "2004",
+    "small": "GTA SAN ANDREAS",
+    "until": 10
+   },
+   "timeline": {
+    "from": 2004,
+    "to": 2026,
+    "at": 13,
+    "dur": 1.4,
+    "label": "WEIGHT AND MUSCLE STATS",
+    "big": "22 YEARS",
+    "tag": "OUR MATH",
+    "y": 800
+   },
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "GTA 4 and 5 / dropped it.",
+     "at": 10,
+     "key": [
+      "dropped"
+     ]
+    },
+    {
+     "text": "22 years later, / it's back.",
+     "at": 16,
+     "key": [
+      "back"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Eurogamer. 22 YEARS: OUR MATH, 2004 to 2026.",
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.3
+    },
+    {
+     "shot": 88,
+     "offset": 0.3,
+     "at": 10
+    },
+    {
+     "shot": 83,
+     "offset": 0.4,
+     "at": 16
+    }
+   ]
+  },
+  {
+   "say": "Rob Nelson's hope? You get up, have a coffee, shower, and go out for a little exercise. In the game.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "chip": {
+    "text": "ROB NELSON, CO STUDIO HEAD, ROCKSTAR NORTH",
+    "at": 0,
+    "until": 3,
+    "y": 880
+   },
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "I hope that there will be people that want to get up, have a cup of coffee, shower, get dressed, go out for a little exercise",
+     "qsize": 52,
+     "source": "Rob Nelson to The New York Times",
+     "at": 3
+    }
+   ],
+   "capsY": 1180,
+   "caps": [
+    {
+     "text": "In the game.",
+     "at": 17,
+     "key": [
+      "game"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.4
+    },
+    {
+     "shot": 81,
+     "offset": 2.0,
+     "at": 3
+    },
+    {
+     "shot": 82,
+     "offset": 1.5,
+     "at": 9
+    },
+    {
+     "shot": 104,
+     "offset": 0.2,
+     "at": 12
+    },
+    {
+     "shot": 91,
+     "offset": 2.5,
+     "at": 17
+    }
+   ]
+  },
+  {
+   "say": "So how many hours are you sleeping on launch night?",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "NOV 19",
+    "small": "LAUNCH",
+    "until": 5,
+    "size": 250,
+    "cy": 640
+   },
+   "capsY": 1100,
+   "caps": [
+    {
+     "text": "So how many hours / are you sleeping / on launch night?",
+     "at": 0,
+     "key": [
+      "launch night"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: out 19 Nov 2026.",
+   "clips": [
+    {
+     "shot": 72,
+     "offset": 0.3
+    },
+    {
+     "shot": 20,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 89,
+     "offset": 2.3,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Just remember.",
+   "bg": "scrim",
+   "capsY": 1180,
+   "caps": [
+    {
+     "text": "Just remember.",
+     "at": 0,
+     "key": [
+      "remember"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 85,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "series": "GTA 6",
+   "episode": "@noticed.daily",
+   "cta": "Follow for tomorrow",
+   "hold": 1.8,
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    }
+   ]
+  }
+ ]
+}
