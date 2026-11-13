@@ -127,6 +127,8 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 
 ## 9. Feedback log (newest first)
 
+* 13 Nov (relayed by the owner's Mac session, which now runs Instagram): account is @noticed.daily, name "noticed. | GTA 6", Creator, Gaming video creator. No disclaimers anywhere (no "Not affiliated", no "AI assisted" in captions, cards or end cards); bold copy built to reach millions, never play safe; 9:16 always; Gen Z captions that connect worldwide; hashtags change every reel, at most 5, #GTA6 always one; end cards say noticed. and @noticed.daily; story style is the main format. Goal: 21 reels in total. Source footnotes on facts and the FOOTAGE: ROCKSTAR GAMES credit stay (credits, not disclaimers). Paid voice recording needs the owner's own OK in this chat; the safety system does not accept it relayed from another session.
+
 * 13 Nov: owner, angry: "Don't ask me a single question, just complete it." Never ask him questions; decide and act. When something is truly impossible from a cloud session (clicking in his Chrome, starting a session on his Mac), say it once in one line and give the single action that unblocks it. The local task card and `posting_kit/LOCAL_SESSION_PROMPT.md` hold everything a session on his Mac needs.
 
 * 13 Nov: "The AI label should be turned off ... I will take care of it. You don't do anything about the AI label." Never touch the AI label in any posting step. Also: he wants to SEE changes happen live and fast; a cloud session cannot click in his Chrome, so live changes come from the Claude extension side panel in his Chrome or a local desktop session on his Mac (choose Local, not Cloud).
