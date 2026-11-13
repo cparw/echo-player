@@ -1,0 +1,807 @@
+{
+ "title": "Trailer 2 hid a hurricane in a bar",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "reel": "R16",
+ "post": "Mon 16 Nov 2026, 19:00 ET",
+ "hook_pick": "Owner approved: Sixteen months before GTA Six revealed hurricanes, a bar sign named one.",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "Sixteen months before GTA Six revealed hurricanes, a bar sign named one.",
+   "bg": "scrim",
+   "instant": true,
+   "capsY": 1075,
+   "caps": [
+    {
+     "text": "16 months before GTA 6 / revealed hurricanes, / a bar sign named one.",
+     "at": 0,
+     "key": [
+      "hurricanes",
+      "named one"
+     ]
+    }
+   ],
+   "footnote": "OUR MATH: 6 May 2025 to 29 Sep 2026, 16.8 months.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/punch/r16_hurricane/stills/sign_g1.jpg",
+   "pan": [
+    0.775,
+    0.8
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Trailer Two, one thirty. Hurricane Roxy. And it's not the only clue.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "push": 0.08,
+   "chip": {
+    "text": "TRAILER 2 · 1:30",
+    "at": 0,
+    "until": 6,
+    "y": 330
+   },
+   "caps": [
+    {
+     "text": "Trailer 2, 1:30.",
+     "at": 0,
+     "key": [
+      "1:30"
+     ]
+    },
+    {
+     "text": "Hurricane Roxy.",
+     "at": 4,
+     "key": [
+      "Hurricane",
+      "Roxy"
+     ]
+    },
+    {
+     "text": "And it's not / the only clue.",
+     "at": 6,
+     "key": [
+      "clue"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: GTA Playbook; Destructoid, 6 May 2025.",
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.4
+    },
+    {
+     "shot": 47,
+     "offset": 0.95,
+     "cx": 0.79,
+     "at": 4
+    },
+    {
+     "shot": 40,
+     "offset": 0.4,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Above the bar, a painted plank. Hurricane, then Roxy.",
+   "bg": "scrim",
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "Above the bar, / a painted plank.",
+     "at": 0,
+     "key": [
+      "painted plank"
+     ]
+    },
+    {
+     "text": "Hurricane, / then Roxy.",
+     "at": 6,
+     "key": [
+      "Hurricane",
+      "Roxy"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/punch/r16_hurricane/stills/sign_g2.jpg",
+   "pan": [
+    0.8,
+    0.78
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Rockstar says that trailer drew four hundred seventy five million views in a day.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "counter": {
+    "to": 475000000,
+    "at": 5,
+    "dur": 1.6,
+    "label": "VIEWS IN 24 HOURS",
+    "label2": "ROCKSTAR SAYS, ALL PLATFORMS",
+    "chip": "AND ALMOST NOBODY NOTICED",
+    "cy": 740
+   },
+   "footnote": "ROCKSTAR SAYS: to The Hollywood Reporter.",
+   "clips": [
+    {
+     "shot": 34,
+     "offset": 0.3
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 9
+    },
+    {
+     "shot": 61,
+     "offset": 0.2,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "Since then, that word keeps coming back. Save this. The last clue hides on a calendar.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "chip": {
+    "text": "SAVE THIS",
+    "at": 7,
+    "until": 9,
+    "y": 760
+   },
+   "caps": [
+    {
+     "text": "Since then, that word / keeps coming back.",
+     "at": 0,
+     "key": [
+      "coming back"
+     ]
+    },
+    {
+     "text": "The last clue hides / on a calendar.",
+     "at": 9,
+     "key": [
+      "calendar"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 5.8
+    },
+    {
+     "shot": 97,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 43,
+     "offset": 0.1,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "Twenty oh two.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "2002",
+    "small": "GTA VICE CITY",
+    "at": 0,
+    "size": 300,
+    "cy": 760
+   },
+   "clips": [
+    {
+     "shot": 4,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "In Vice City's first mission, the radio warns of Hurricane Hermine. It says every bridge is closed.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "RADIO, VICE CITY'S FIRST MISSION",
+     "head": "Hurricane Hermine warning. Every bridge closed.",
+     "mark": "Every bridge closed.",
+     "mark_at": 13,
+     "source": "Grand Theft Wiki; GTA Wiki. Paraphrase",
+     "at": 0
+    }
+   ],
+   "footnote": "REPORTED: Grand Theft Wiki; GTA Wiki.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Leonida_Keys_01.jpg",
+   "pan": [
+    0.5,
+    0.88
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "So Rockstar's Florida started with a storm.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "So Rockstar's Florida / started with a storm.",
+     "at": 0,
+     "key": [
+      "storm"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
+   "pan": [
+    0.3,
+    0.42
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "August. Rockstar's Rob Nelson tells The New York Times the story asks whether love can survive through this storm.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "AUG 2026",
+    "small": "THE NEW YORK TIMES",
+    "at": 0,
+    "until": 1,
+    "size": 230,
+    "cy": 760
+   },
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "whether love can survive through this storm",
+     "qsize": 66,
+     "source": "Rob Nelson, Rockstar North, to The New York Times, 27 Aug 2026",
+     "at": 2
+    }
+   ],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 0.5
+    },
+    {
+     "shot": 21,
+     "offset": 0.1,
+     "at": 2
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 9
+    },
+    {
+     "shot": 24,
+     "offset": 0.1,
+     "at": 13
+    }
+   ]
+  },
+  {
+   "say": "Then the storm stops being a metaphor.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "Then the storm stops / being a metaphor.",
+     "at": 0,
+     "key": [
+      "metaphor"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.2,
+     "slow": 1.2
+    }
+   ]
+  },
+  {
+   "say": "Game Informer reports Leonida gets tropical storms and hurricanes.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "GAME INFORMER, 29 SEP 2026",
+     "head": "Leonida gets tropical storms and hurricanes",
+     "mark": "hurricanes",
+     "mark_at": 8,
+     "source": "Cover story, via VGC and Insider Gaming",
+     "at": 0
+    }
+   ],
+   "clips": [
+    {
+     "shot": 88,
+     "offset": 0.3
+    },
+    {
+     "shot": 102,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Rockstar says the weather is now localized.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Rockstar says the weather / is now localized.",
+     "at": 0,
+     "key": [
+      "localized"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Owen Shepherd to Game Informer.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Grassrivers_02.jpg",
+   "pan": [
+    0.2,
+    0.45
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Sun where you stand. Rain down the road.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Sun where you stand.",
+     "at": 0,
+     "key": [
+      "Sun"
+     ]
+    },
+    {
+     "text": "Rain down the road.",
+     "at": 4,
+     "key": [
+      "Rain"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: GTAIntel; GamingBolt.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.3
+    },
+    {
+     "shot": 31,
+     "offset": 1.6,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "GTA Five had rain and thunder. No hurricane on its list.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 960,
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 511,
+     "t": 0
+    },
+    "right": {
+     "shot": 82,
+     "t": 0.4
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   },
+   "caps": [
+    {
+     "text": "GTA 5 had / rain and thunder.",
+     "at": 0,
+     "key": [
+      "rain and thunder"
+     ]
+    },
+    {
+     "text": "No hurricane / on its list.",
+     "at": 6,
+     "key": [
+      "No hurricane"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: GTA Wiki weather list; FiveM."
+  },
+  {
+   "say": "Send this to the friend who'd drive straight into one.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Send this to the friend / who'd drive straight / into one.",
+     "at": 0,
+     "key": [
+      "Send",
+      "into one"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 9.4
+    },
+    {
+     "shot": 77,
+     "offset": 7.0,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "October. The Launch Trailer debuts a new song. Its title? Flower in a Hurricane.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "OCT 2026",
+    "small": "LAUNCH TRAILER",
+    "at": 0,
+    "until": 2,
+    "size": 230,
+    "cy": 760
+   },
+   "caps": [
+    {
+     "text": "The Launch Trailer / debuts a new song.",
+     "at": 1,
+     "key": [
+      "new song"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "THE SONG, 15 OCT 2026",
+     "head": "Flower in a Hurricane",
+     "mark": "Hurricane",
+     "mark_at": 13,
+     "source": "Justice with Tame Impala, SZA and King Gizzard",
+     "at": 8
+    }
+   ],
+   "footnote": "REPORTED: God is a Geek; Prima Games.",
+   "clips": [
+    {
+     "shot": 20,
+     "offset": 0.1
+    },
+    {
+     "shot": 16,
+     "offset": 0.2,
+     "at": 2
+    },
+    {
+     "shot": 1,
+     "offset": 0.4,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Now the calendar. GTA Six launches November nineteenth. Atlantic hurricane season ends November thirtieth.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1140,
+   "timeline": {
+    "from": 19,
+    "to": 30,
+    "at": 4,
+    "dur": 4.08,
+    "label": "NOVEMBER 2026",
+    "pins": [
+     19,
+     30
+    ],
+    "y": 700
+   },
+   "caps": [
+    {
+     "text": "Now the calendar.",
+     "at": 0,
+     "key": [
+      "calendar"
+     ]
+    },
+    {
+     "text": "GTA 6 launches / Nov 19.",
+     "at": 3,
+     "key": [
+      "Nov 19"
+     ]
+    },
+    {
+     "text": "Atlantic hurricane season / ends Nov 30.",
+     "at": 8,
+     "key": [
+      "Nov 30"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: 19 Nov. NOAA: season ends 30 Nov.",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    },
+    {
+     "shot": 77,
+     "offset": 11.0,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "So you land with eleven days of hurricane season left.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "11 DAYS",
+    "small": "OF HURRICANE SEASON LEFT",
+    "at": 0,
+    "size": 260,
+    "color": "accent",
+    "cy": 760
+   },
+   "footnote": "OUR MATH: 30 Nov minus 19 Nov.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_01.jpg",
+   "pan": [
+    0.15,
+    0.4
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "One more thing.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [],
+   "dim": {
+    "text": "One more thing.",
+    "at": 0,
+    "cy": 860
+   },
+   "clips": [
+    {
+     "shot": 99,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Roxy is also a GTA Six name. Half of the rap duo Real Dimez.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "head": "Roxy, one half of Real Dimez",
+     "mark": "Real Dimez",
+     "mark_at": 12,
+     "source": "Official Real Dimez bio, Rockstar Games",
+     "at": 0,
+     "cy": 980
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/punch/r16_hurricane/stills/sign_g1.jpg",
+   "pan": [
+    0.78,
+    0.8
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Rockstar hasn't said if the sign means anything.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Rockstar hasn't said / if the sign means anything.",
+     "at": 0,
+     "key": [
+      "hasn't said"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: GTA Playbook; Heist Atlas.",
+   "clips": [
+    {
+     "shot": 47,
+     "offset": 0.95,
+     "cx": 0.79,
+     "slow": 1.5
+    }
+   ]
+  },
+  {
+   "say": "When the hurricane hits Leonida, do you run, or drive into it?",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1090,
+   "caps": [
+    {
+     "text": "When the hurricane / hits Leonida,",
+     "at": 0,
+     "key": [
+      "hurricane"
+     ]
+    },
+    {
+     "text": "do you run, / or drive into it?",
+     "at": 5,
+     "key": [
+      "run",
+      "drive into it"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/punch/r16_hurricane/stills/sign_g1.jpg",
+   "pan": [
+    0.775,
+    0.8
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Follow noticed dot daily and comment STORM.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1170,
+   "stamp": {
+    "big": "STORM",
+    "small": "COMMENT IT",
+    "at": 5,
+    "size": 280,
+    "color": "accent",
+    "cy": 700
+   },
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    },
+    {
+     "text": "and comment STORM.",
+     "at": 4,
+     "key": [
+      "STORM"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 83,
+     "offset": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Every storm clue, with where to pause, lands straight in your inbox.",
+   "bg": "scrim",
+   "capsY": 1170,
+   "paper": [
+    {
+     "label": "THE STORM CLUE SHEET",
+     "redact": true,
+     "tag": "6 CLUES",
+     "source": "Dated, with where to pause",
+     "at": 0,
+     "cy": 640
+    }
+   ],
+   "caps": [
+    {
+     "text": "Every storm clue, / with where to pause,",
+     "at": 0,
+     "key": [
+      "storm clue"
+     ]
+    },
+    {
+     "text": "lands straight / in your inbox.",
+     "at": 7,
+     "key": [
+      "inbox"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 84,
+     "offset": 0.3
+    },
+    {
+     "shot": 15,
+     "offset": 2.0,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.28,
+    0.4
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "Every storm clue lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT STORM",
+   "hold": 1.8,
+   "clips": [
+    {
+     "shot": 82,
+     "offset": 1.2
+    }
+   ]
+  }
+ ]
+}
