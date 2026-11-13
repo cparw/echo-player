@@ -34,24 +34,23 @@
 **L2** "And sunglasses won't save you." (open loop, paid off in L8)
 * Verdict: SUPPORTED. Label: ROCKSTAR SAYS. See L8.
 
-**L3** "Twenty thirteen. In GTA Five, you watched the cops on your radar." Stamp 2013, GTA 5. Footnote: officers' line of sight shows on the mini map.
-* Verdict: SUPPORTED. Label: GTA 5 fact (REPORTED).
+**L3** "Twenty thirteen. In GTA Five, you watched the cops on your radar." Stamp 2013, GTA 5. Footnote: "REPORTED: GTA 5's mini map showed police line of sight."
+* Verdict: SUPPORTED. Label: REPORTED (Wikipedia, GTA 5 gameplay).
 * [WIKI5] the wanted meter "eventually recedes when players are hidden from the officers' line of sight that displays on the mini-map for a period of time."
 * Year: [STAR] "Since Grand Theft Auto V was released in 2013, it has sold 230 million copies".
-* compare_todo set: GTA V radar beside the GTA VI shot.
+* Compare split, GTA 5 on top: official GTA V freeway and coastal driving (GTA V shots 541, 544, 542) above GTA VI driving (33, 102). The GTA V library has no radar shot (every official one shows police action), so the caption carries the radar point. No police on either side.
 
 **L4** "Rockstar's footage shows GTA Six mostly hides them."
 * Verdict: SUPPORTED, worded as "mostly". Label: ROCKSTAR'S FOOTAGE (owner's verified rule) / REPORTED (GamesRadar's reading of the same footage).
 * [OWNER] OFFICIAL: police usually not on the minimap.
 * [GR2] "At higher star Wanted Levels it looks like your minimap becomes obscured with red and blue flashing lights, so you can't use it to track the movements of any cops around you. Instead, you'll need to use your eyes to spot any police threats and lay low to avoid them."
 * Consistent with [IGN2] on Focus mode: "You can use it to help you locate things that you want to find on the map" ... "and certainly cops."
-* compare_todo set (B side of the radar comparison).
 
 **L5** "It shows six wanted stars, too. GTA Five stopped at five." Counter 5 to 6, WANTED STARS IN GTA 6.
 * Verdict: SUPPORTED. Label: ROCKSTAR'S FOOTAGE (via GamesRadar).
 * [GR1] "Here, we see that the wanted level can go up to six stars" ... "GTA 5 had previously been capped at five stars."
 * [IGNW] "Wanted Levels range from one to five stars."
-* We do not say what six stars does. compare_todo set: GTA V five star meter beside GTA VI.
+* We do not say what six stars does. Compare split, GTA 5 on top: GTA V skyline still (500) then downtown in the haze (531), above GTA VI (91, then 1); the 5 to 6 counter sits in the GTA 6 half. No wanted HUD footage exists without police, so the counter carries the numbers.
 
 **L6** "And small icons under the stars show what the police know." Paper card: IN ROCKSTAR'S FOOTAGE, "Icons under the stars show what the police know." Source line: An Extended Look, Rockstar Games, 27 Aug 2026.
 * Verdict: SUPPORTED. Label: ROCKSTAR'S FOOTAGE.
@@ -107,6 +106,6 @@ noticed. wordmark, @noticed.daily, GTA 6, "Getaway checklist lands straight in y
 * "Victim report" as a trigger and a "hidden" Criminal Profile: not in the IGN text I could open. Left out.
 
 ## Footage and stills
-* Clips only inside audited clean windows (validator OK); frames checked with shot_frames.py. No police, weapons, crashes or suggestive shots; no HUD footage of the wanted meter exists in the clean library, so the meter beats carry compare_todo notes.
+* Clips only inside audited clean windows (validator OK); frames checked with shot_frames.py. No police, weapons, crashes or suggestive shots; no HUD footage of the wanted meter exists in the clean library, so the meter beats use on screen counters and icons text.
 * Official stills from rockstargames.com/VI, checked by eye: Good Time Gear (caps and sunglasses), Stock 305 store sign, Vice City Style (Jason's floral shirt). Rejected: the couple on the green car (revolvers), every image with weapons, masks or logos.
-* compare_todo on L3, L4, L5 (GTA V radar and five star meter beside GTA VI).
+* GTA 5 beats (L3, L5) use the engine compare split with official, audited GTA V visuals (ids 500, 531, 541, 542, 544), GTA 5 on top, both halves labelled. No police on either side.

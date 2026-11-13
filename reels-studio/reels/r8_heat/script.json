@@ -147,45 +147,43 @@
     "until": 2,
     "cy": 760
    },
-   "footnote": "GTA 5: officers' line of sight shows on the mini map.",
+   "footnote": "REPORTED: GTA 5's mini map showed police line of sight.",
    "sfx": "hit",
    "compare": {
     "mode": "split",
-    "left": {
-     "shot": 507,
-     "t": 0
-    },
-    "right": {
-     "shot": 77,
-     "t": 6.8
-    },
+    "left": [
+     {
+      "shot": 541,
+      "t": 0.1
+     },
+     {
+      "shot": 544,
+      "t": 0.1,
+      "at": 3
+     },
+     {
+      "shot": 542,
+      "t": 0.1,
+      "at": 8
+     }
+    ],
+    "right": [
+     {
+      "shot": 33,
+      "t": 0.3
+     },
+     {
+      "shot": 102,
+      "t": 0.1,
+      "at": 8
+     }
+    ],
     "labels": [
      "GTA 5",
      "GTA 6"
     ]
    },
-   "compare_note": "The GTA V library has no radar or wanted HUD (every official shot of it shows police), so GTA 5 is shown with its freeway traffic at night beside a GTA 6 street.",
-   "clips": [
-    {
-     "shot": 33,
-     "offset": 0.3
-    },
-    {
-     "shot": 89,
-     "offset": 1.0,
-     "at": 2
-    },
-    {
-     "shot": 20,
-     "offset": 0.1,
-     "at": 7
-    },
-    {
-     "shot": 77,
-     "offset": 12.0,
-     "at": 9
-    }
-   ]
+   "compare_note": "The GTA V library has no radar, wanted level or police shot (every official one shows police action), so both halves show calm driving and the caption carries the radar point."
   },
   {
    "say": "Rockstar's footage shows GTA Six mostly hides them.",
@@ -236,43 +234,41 @@
     "at": 2,
     "dur": 0.5,
     "label": "WANTED STARS IN GTA 6",
-    "cy": 1150
+    "cy": 1130
    },
    "capsY": 700,
    "footnote": "ROCKSTAR'S FOOTAGE, via GamesRadar, 27 Aug 2026.",
    "sfx": "hit",
    "compare": {
     "mode": "split",
-    "left": {
-     "shot": 500,
-     "t": 0
-    },
-    "right": {
-     "shot": 91,
-     "t": 2.5
-    },
+    "left": [
+     {
+      "shot": 500,
+      "t": 0
+     },
+     {
+      "shot": 531,
+      "t": 0.1,
+      "at": 6
+     }
+    ],
+    "right": [
+     {
+      "shot": 91,
+      "t": 2.5
+     },
+     {
+      "shot": 1,
+      "t": 0.1,
+      "at": 5
+     }
+    ],
     "labels": [
      "GTA 5",
      "GTA 6"
     ]
    },
-   "compare_note": "Split: the GTA 5 caption sits in the GTA 5 half (top), the six star counter in the GTA 6 half (bottom).",
-   "clips": [
-    {
-     "shot": 91,
-     "offset": 2.5
-    },
-    {
-     "shot": 104,
-     "offset": 0.3,
-     "at": 3
-    },
-    {
-     "shot": 91,
-     "offset": 5.6,
-     "at": 6
-    }
-   ]
+   "compare_note": "Split: the GTA 5 caption sits in the GTA 5 half (top), the six star counter in the GTA 6 half (bottom)."
   },
   {
    "say": "And small icons under the stars show what the police know.",
