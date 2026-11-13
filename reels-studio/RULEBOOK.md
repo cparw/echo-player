@@ -16,7 +16,7 @@ Technical details (engine commands, accounts, file paths) live in `STUDIO.md`. T
 8. **No dash characters** (hyphen, en dash, em dash) in anything shown to the owner, in captions or in on screen text.
 9. **Speed.** Use many agents in parallel (the owner asked for 12 to 25). Deliver finished media fast and keep going without waiting when the next step is clear.
 10. **Model mix.** When the session runs on Fable, mix it with Opus: research, vetting, searches, audits, renders and other legwork go to Opus subagents; Fable is kept for creative direction, judgment and final review. Never use Fable where Opus can do the same job to the same quality (owner, 13 Nov). Details in the repo `CLAUDE.md`.
-10. **Six reels at a time**, each one made "like that properly" (owner, 12 Nov 2026).
+11. **Six reels at a time**, each one made "like that properly" (owner, 12 Nov 2026).
 
 ## 2. What works for GTA 6 reels
 
@@ -108,6 +108,8 @@ Our own pillars that fit the same audience: countdown and launch news, places (t
 5. Facts, labels and numbers match between the video and the caption.
 
 ## 9. Feedback log (newest first)
+
+* 13 Nov: owner shared reel DfUuyixBvFp as a new reference: "Check this channel out. All the reels on this channel also, the way they are making things is helpful, which the type of videos we can also implement." Study the whole channel (not just the one reel) and adopt its way of making videos; findings go in `research/reference_reels.md` and section 2.
 
 * 13 Nov: "I don't like it ... What plain sight? No man. Be thoughtful a little bit. Do it in the best way possible. Multiple logos, at least like 12, 13 logos. Let me see how they look, the best possible thing. Do more research." plain sight. (and its backups one frame., look again.) are rejected. From now on show a numbered gallery of 12 to 13 logo options at top quality so the owner can pick by number, each name ONE word with a real idea behind it, backed by research.
 * 13 Nov: "Mix match with Opus and keep this as a universal rule ... remember that permanently ... unnecessarily Fable shouldn't be used where Opus can do the same job to the same extent and quality." Saved as non negotiable 10 and in `CLAUDE.md`.
