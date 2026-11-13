@@ -43,3 +43,7 @@ All 8 official characters, from Rockstar's own bios:
 8. Raul Bautista: confidence, charm and cunning, always hunting for talent.
 The voice: King of the Hill's Stephen Root told the AP in Sept 2026 that he's in GTA 6; outlets identify his role as Brian Heder. Rockstar hasn't published a cast list.
 That's all eight. New GTA 6 breakdown every day on @noticed.daily. See you in Leonida.
+
+## QA (render)
+* R3_characters_v2.mp4: 1080x1920 30/1 fps | 80.50 s | -14.0 LUFS | TP -1.4 dBTP | 65.3 MB | end card from 77.70 s | freezes outside end card: none | PASS
+* Published as reels-studio/media/R3_characters_v2.mp4 with cover reels-studio/media/r3_cover_v2.jpg.
