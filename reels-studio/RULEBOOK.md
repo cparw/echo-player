@@ -85,7 +85,7 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 * Sources that work: Rockstar's official TikTok (all GTA VI posts are downloaded), official 4K screenshots on rockstargames.com/VI. YouTube and Instagram downloads hit login or bot walls; never bypass them with logins, cookies or proxies.
 * **Every shot is audited frame by frame** in the exact 9:16 crop. `official/shots/shots.json` holds `clean` windows; the validator and mixer refuse anything outside them. Descriptions alone are not proof: the first catalog missed a gun, a robbery, nudity and a pole dancer.
 * Rockstar's "RP, Likely Mature 17+" badge is burned into the Extended Look clips. Those shots carry a `crop_box` that zooms past it; never show the badge.
-* Strip all audio from official footage (licensed music). Credit Rockstar on screen and in the caption.
+* Strip all audio from official footage (licensed music). Credit Rockstar on screen (the FOOTAGE: ROCKSTAR GAMES tag), never with a credit line in the caption (owner, 13 Nov).
 * AI visuals only when no official footage can carry the line, never more than one or two beats, labelled AI VISUAL. The owner dislikes AI b roll.
 
 ## 5. Brand (open decision)
@@ -97,11 +97,12 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 * Sixth round sent 13 Nov: a numbered gallery of 15 logos (`brand/round6/logo_gallery.jpg`, close up of the top 3 in `top3_close_up.jpg`). Names shown: **missed.** (recommended: the owner's own words "something that I missed"; logo is a lowercase m whose last leg is a hidden exclamation mark, flat and glass versions; @missed free on YouTube, missed.gg and missed.tv look unregistered), noticed., glimpse., blinked., decoded., overlooked., infrared., blacklight., detected., hush., iceberg. Dropped after vetting because bigger brands own them: cloaked, glyph, subtle, unlocked, closer, reveal, rewind, behold, sonar, beneath. **Not picked yet.**
 * Reference check (research, 13 Nov): Unseen's own avatar is flat and two colours (an off white bracket with a dot on near black), and the newest explainer brands (fern, neo) use one flat letter or symbol too. So lead with flat two colour marks that hide a second meaning, and offer glass or 3D only as an extra version. Never copy the bracket and dot.
 * Logo rule (research, 12 Nov): the mark must work flat at avatar size first (Instagram shows about 110 px); glass or glow is optional styling on top. One bold glyph inside the central 70% of the circle, no words.
-* The handle must not contain GTA, Rockstar, VI or Vice City. Bio and captions say "Not affiliated with Rockstar Games or Take Two".
+* The handle must not contain GTA, Rockstar, VI or Vice City. No disclaimers anywhere (owner, 13 Nov): no "Not affiliated" line in the bio, captions, cards or end cards.
 
 ## 6. Captions and posting
 
-* Caption: one line hook, the facts with labels (ROCKSTAR SAYS, REPORTED, OUR MATH), an easy question, "Follow for tomorrow. See you in Leonida.", disclaimer and credits, max 5 hashtags.
+* Caption rules (owner, 13 Nov): a bold Gen Z voice that connects worldwide, built to reach millions; never play safe. Every number matches the reel's script or fact check. No disclaimers, no footage credit line, never mention AI. No dashes, light emojis. Hashtags change on every reel: at most 5, #GTA6 always one, the other 4 rotating high reach tags. A comment keyword DM offer only when the offer is concrete, never tied to following.
+* Caption format (since 13 Nov): line one is the hook (under 120 characters, matching the reel's opening), then 2 to 5 short punchy fact lines with the source worked in (per Rockstar, reported, our math), one easy question, then the hashtags. Under 900 characters. Example: R7 in `queue/copy.md`.
 * AI label: the owner handles it himself. Never turn it on, off or mention it in posting steps (owner, 13 Nov: "You don't do anything about the AI label").
 * Pin a first comment that invites replies. Reply to every comment in the first hour.
 * Do not auto share to Facebook. Upload the original file to TikTok and YouTube Shorts with AI disclosure on.
@@ -126,6 +127,8 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 5. Facts, labels and numbers match between the video and the caption.
 
 ## 9. Feedback log (newest first)
+
+* 13 Nov (owner's caption rules, relayed by the main session with the posting copy job): no "Footage: Rockstar Games" line in captions (the on screen FOOTAGE: ROCKSTAR GAMES tag stays); never mention AI at all; hashtags change on every reel, at most 5, #GTA6 always one, the other 4 rotating high reach tags; every number in a caption matches the reel's script or fact check; a comment keyword DM offer only when it is concrete, never tied to following. Sections 4, 5 and 6 updated. R7 copy and the posting schedule (R2 to R16): `queue/copy.json` and `queue/copy.md`.
 
 * 13 Nov (relayed by the Mac session, owner's words): "if you want to show GTA 5 comparison with GTA 6, then you should show the GTA 5 pictures also for that properly." Every GTA 5 vs GTA 6 beat shows official, audited GTA V visuals beside the GTA VI shot (split screen or quick A/B cut). Work split: the cloud session builds and voices R2 to R12; the Mac session writes R13 to R21 (private Artifact "noticed scripts R13 to R21") and posts everything from the "noticed reels queue" Artifact. He wants reels started one after the other, fast, with curiosity hooks.
 
