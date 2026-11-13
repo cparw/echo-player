@@ -1,0 +1,917 @@
+{
+ "title": "GTA 6's radio DJs, decoded",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "reel": "R15",
+ "post": "Sun 15 Nov 2026 21:00 ET",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "Lana Del Rey's husband is in GTA Six. As an airboat captain.",
+   "bg": "scrim",
+   "instant": true,
+   "capsY": 860,
+   "caps": [
+    {
+     "text": "Lana Del Rey's husband / is in GTA 6. / As an airboat captain.",
+     "at": 0,
+     "key": [
+      "airboat",
+      "captain."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Stereogum; Holler; Complex.",
+   "clips": [
+    {
+     "shot": 82,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "He's a radio voice with a nickname. So are much bigger stars.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "REAL NAME",
+     "redact": true,
+     "tag": "NICKNAME: MUD DOG MIKE",
+     "source": "ROCKSTAR SAYS: Back Country Radio's roving reporter",
+     "at": 0
+    }
+   ],
+   "caps": [
+    {
+     "text": "So are much / bigger stars.",
+     "at": 7,
+     "key": [
+      "bigger",
+      "stars."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 9.1
+    },
+    {
+     "shot": 91,
+     "offset": 3.5,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Why an airboat captain? Hold that. Save this before you flip stations.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Why an / airboat captain?",
+     "at": 0,
+     "key": [
+      "airboat",
+      "captain?"
+     ]
+    },
+    {
+     "text": "Hold that.",
+     "at": 4,
+     "key": [
+      "Hold"
+     ]
+    },
+    {
+     "text": "Save this / before you flip stations.",
+     "at": 6,
+     "key": [
+      "Save"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    },
+    {
+     "shot": 26,
+     "offset": 6.4,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "On Rockstar's site, most DJs only get nicknames. Here's who's behind them.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/musicDesktop.0zwcbzhynnsc-.jpg",
+   "pan": [
+    0.1,
+    0.4
+   ],
+   "caps": [],
+   "paper": [
+    {
+     "label": "ROCKSTAR'S MUSIC PAGE",
+     "head": "Most hosts get nicknames. No full names.",
+     "mark": "No full names.",
+     "mark_at": 5,
+     "tag": "ROCKSTAR SAYS",
+     "source": "rockstargames.com/VI/music, read 13 Nov 2026",
+     "at": 0
+    }
+   ],
+   "chip": {
+    "text": "REAL NAMES BELOW: REPORTED",
+    "at": 8,
+    "y": 1010
+   }
+  },
+  {
+   "say": "Cocoteo FM, modern Latin.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_09.jpg",
+   "pan": [
+    0.3,
+    0.55
+   ],
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "COCOTEO FM",
+    "small": "MODERN LATIN",
+    "at": 0,
+    "size": 170,
+    "cy": 720
+   }
+  },
+  {
+   "say": "El Martillo? Bad Bunny. La Gata? RaiNao.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "El Martillo? / Bad Bunny.",
+     "at": 0,
+     "key": [
+      "Bad",
+      "Bunny."
+     ]
+    },
+    {
+     "text": "La Gata? / RaiNao.",
+     "at": 4,
+     "key": [
+      "RaiNao."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Complex; Stereogum; GTA Boom.",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.2
+    },
+    {
+     "shot": 54,
+     "offset": 4.95,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "The Chamber, metal.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Ambrosia_02.jpg",
+   "pan": [
+    0.5,
+    0.8
+   ],
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "THE CHAMBER",
+    "small": "106.6, METAL",
+    "at": 0,
+    "size": 160,
+    "cy": 720
+   },
+   "footnote": "REPORTED: 106.6 via Shacknews; The Fader."
+  },
+  {
+   "say": "DJ Kerry and DJ Tom? Kerry King and Tom Araya.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "DJ Kerry and DJ Tom?",
+     "at": 0,
+     "key": []
+    },
+    {
+     "text": "Kerry King / and Tom Araya.",
+     "at": 5,
+     "key": [
+      "Kerry",
+      "King",
+      "Tom",
+      "Araya."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Complex; The Fader; Stereogum.",
+   "clips": [
+    {
+     "shot": 61,
+     "offset": 0.1
+    },
+    {
+     "shot": 17,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Slayer.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "flash": true,
+   "caps": [],
+   "stamp": {
+    "big": "SLAYER",
+    "at": 0,
+    "size": 300,
+    "cy": 800
+   },
+   "clips": [
+    {
+     "shot": 15,
+     "offset": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Afro Bank FM, amapiano.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "AFROBANK FM",
+    "small": "AMAPIANO",
+    "at": 0,
+    "size": 150,
+    "cy": 720
+   },
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 0.2
+    }
+   ]
+  },
+  {
+   "say": "Burna and Palmsy? Burna Boy and Palms Trax.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Burna and Palmsy?",
+     "at": 0,
+     "key": []
+    },
+    {
+     "text": "Burna Boy / and Palms Trax.",
+     "at": 3,
+     "key": [
+      "Burna",
+      "Boy",
+      "Palms",
+      "Trax."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Complex; Stereogum; Geekculture.",
+   "clips": [
+    {
+     "shot": 47,
+     "offset": 0.1
+    },
+    {
+     "shot": 16,
+     "offset": 0.1,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "Dirty South Classics, Miami rap.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.15,
+    0.45
+   ],
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "DIRTY SOUTH",
+    "small": "CLASSICS, MIAMI RAP",
+    "at": 0,
+    "size": 170,
+    "cy": 720
+   },
+   "footnote": "REPORTED: Complex; The Fader."
+  },
+  {
+   "say": "Trick and Trina? Trick Daddy and Trina.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Trick and Trina?",
+     "at": 0,
+     "key": []
+    },
+    {
+     "text": "Trick Daddy / and Trina.",
+     "at": 3,
+     "key": [
+      "Trick",
+      "Daddy",
+      "Trina."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Complex; The Fader; Stereogum.",
+   "clips": [
+    {
+     "shot": 11,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 7.0,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "Flash FM returns from the original Vice City.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_01.jpg",
+   "pan": [
+    0.05,
+    0.7
+   ],
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "Flash FM returns / from the original Vice City.",
+     "at": 0,
+     "key": [
+      "Flash",
+      "Vice",
+      "City."
+     ]
+    }
+   ],
+   "stamp": {
+    "big": "2002",
+    "small": "GTA VICE CITY",
+    "at": 5,
+    "size": 230,
+    "cy": 640
+   },
+   "footnote": "REPORTED: GTA Boom; GTA Intel."
+  },
+  {
+   "say": "Robyn and model Alex Consani.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Robyn and model / Alex Consani.",
+     "at": 0,
+     "key": [
+      "Robyn",
+      "Alex",
+      "Consani."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Stereogum; Complex.",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 14.0
+    }
+   ]
+  },
+  {
+   "say": "Send this to the friend who'll never leave The Chamber.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Send this to the friend / who'll never leave / The Chamber.",
+     "at": 0,
+     "key": [
+      "Send",
+      "Chamber."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 6,
+     "offset": 0.1
+    },
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Now the one this video is about.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [],
+   "dim": {
+    "text": "the one this video is about.",
+    "at": 1
+   },
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 4.5
+    }
+   ]
+  },
+  {
+   "say": "Back Country Radio.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Grassrivers_02.jpg",
+   "pan": [
+    0.18,
+    0.42
+   ],
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "BACK COUNTRY",
+    "small": "RENEGADE COUNTRY",
+    "at": 0,
+    "size": 160,
+    "cy": 720
+   },
+   "footnote": "ROCKSTAR SAYS: airboat ready renegade country."
+  },
+  {
+   "say": "MW is Morgan Wallen. Delta Dawne is Lana Del Rey.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "MW is / Morgan Wallen.",
+     "at": 0,
+     "key": [
+      "Morgan",
+      "Wallen."
+     ]
+    },
+    {
+     "text": "Delta Dawne is / Lana Del Rey.",
+     "at": 4,
+     "key": [
+      "Lana",
+      "Del",
+      "Rey."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Complex; Stereogum; Holler.",
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 0.1
+    },
+    {
+     "shot": 27,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "And Delta's not so secret lover?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "And Delta's / not so secret lover?",
+     "at": 0,
+     "key": [
+      "lover?"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Mud Dog Mike. Swamp weatherman. Airboat captain.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Grassrivers_04.jpg",
+   "pan": [
+    0.84,
+    1.0
+   ],
+   "sfx": "hit",
+   "caps": [],
+   "tiles": {
+    "items": [
+     {
+      "text": "MUD DOG MIKE",
+      "at": 0
+     },
+     {
+      "text": "SWAMP WEATHERMAN",
+      "at": 3
+     },
+     {
+      "text": "AIRBOAT CAPTAIN",
+      "at": 5
+     }
+    ],
+    "y": 470,
+    "gap": 165,
+    "size": 80
+   },
+   "footnote": "REPORTED: Stereogum; GTA Boom; Holler."
+  },
+  {
+   "say": "That's Jeremy Dufrene, Lana's husband.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_06.jpg",
+   "pan": [
+    0.5,
+    0.85
+   ],
+   "caps": [
+    {
+     "text": "That's Jeremy Dufrene, / Lana's husband.",
+     "at": 0,
+     "key": [
+      "Jeremy",
+      "Dufrene,"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Stereogum; Complex; Holler."
+  },
+  {
+   "say": "And the airboat? She met him on his Louisiana swamp tour in 2019.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "And the airboat?",
+     "at": 0,
+     "key": [
+      "airboat?"
+     ]
+    }
+   ],
+   "paper": [
+    {
+     "label": "HOW THEY MET",
+     "head": "On his Louisiana swamp tour, 2019.",
+     "mark": "swamp tour",
+     "mark_at": 9,
+     "tag": "REPORTED",
+     "source": "WAFB 2024; Irish Times 2024; Tribune 2025",
+     "at": 3
+    }
+   ],
+   "clips": [
+    {
+     "shot": 82,
+     "offset": 0.6
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "Bigger change?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Bigger change?",
+     "at": 0,
+     "key": [
+      "change?"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 88,
+     "offset": 0.3
+    }
+   ]
+  },
+  {
+   "say": "In GTA Five, step out of the car and the radio went quiet.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Step out of the car / and the radio went quiet.",
+     "at": 3,
+     "key": [
+      "quiet."
+     ]
+    }
+   ],
+   "capsY": 960,
+   "chip": {
+    "text": "GTA 5: NO RADIO ON FOOT",
+    "at": 10,
+    "y": 700
+   },
+   "footnote": "REPORTED: Dexerto; Gurugamer; GTA Boom.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 528,
+     "t": 0,
+     "push": 0.1
+    },
+    "right": {
+     "shot": 77,
+     "t": 7.0
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "In GTA Six, Jason and Lucia listen on foot, through earbuds on their phones.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Jason and Lucia listen / on foot, through earbuds.",
+     "at": 3,
+     "key": [
+      "foot,",
+      "earbuds."
+     ]
+    }
+   ],
+   "capsY": 960,
+   "chip": {
+    "text": "GTA 6: ON FOOT, IN YOUR EARBUDS",
+    "at": 9,
+    "y": 1230
+   },
+   "footnote": "ROCKSTAR SAYS: via Game Informer; GamesRadar.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 526,
+     "t": 0,
+     "push": 0.1
+    },
+    "right": {
+     "shot": 74,
+     "t": 14.0
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "Plus on demand podcasts, a first for the series.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Plus on demand podcasts, / a first for the series.",
+     "at": 0,
+     "key": [
+      "podcasts,",
+      "first"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Game Informer. REPORTED: TechRadar.",
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.1
+    },
+    {
+     "shot": 21,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "And these six aren't all. Rockstar says the dial runs from classic rock to talk radio.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "And these six / aren't all.",
+     "at": 0,
+     "key": [
+      "aren't",
+      "all."
+     ]
+    },
+    {
+     "text": "From classic rock / to talk radio.",
+     "at": 10,
+     "key": [
+      "classic",
+      "rock",
+      "talk",
+      "radio."
+     ]
+    }
+   ],
+   "capsY": 1100,
+   "footnote": "OUR MATH: none of the six is rock or talk.",
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.4
+    },
+    {
+     "shot": 1,
+     "offset": 2.3,
+     "at": 4
+    },
+    {
+     "shot": 4,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 10
+    },
+    {
+     "shot": 91,
+     "offset": 1.0,
+     "at": 13
+    }
+   ]
+  },
+  {
+   "say": "Which station are you tuning in first?",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "Which station / are you tuning in first?",
+     "at": 0,
+     "key": [
+      "first?"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.2
+    }
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment RADIO.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1000,
+   "caps": [
+    {
+     "text": "Follow / @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    },
+    {
+     "text": "and comment / RADIO.",
+     "at": 4,
+     "key": [
+      "RADIO."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 65,
+     "offset": 0.1
+    },
+    {
+     "shot": 91,
+     "offset": 6.5,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "The cheat sheet of every station and star lands straight in your inbox.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "The cheat sheet / of every station and star",
+     "at": 0,
+     "key": [
+      "cheat",
+      "sheet"
+     ]
+    },
+    {
+     "text": "lands straight / in your inbox.",
+     "at": 8,
+     "key": [
+      "inbox."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 69,
+     "offset": 0.1
+    },
+    {
+     "shot": 3,
+     "offset": 0.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Leonida_Keys_01.jpg",
+   "pan": [
+    0.55,
+    0.92
+   ],
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida."
+     ]
+    }
+   ],
+   "capsY": 1100
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "The radio cheat sheet lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT RADIO",
+   "hold": 2.2,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.25,
+    0.45
+   ]
+  }
+ ]
+}
