@@ -1,0 +1,988 @@
+{
+ "title": "The San Andreas feature GTA 6 brings back (and your first weekend in Leonida)",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "hook_options": [
+  "GTA 6 brings back the San Andreas feature GTA 5 dropped.",
+  "Eat too much in GTA 6 and Lucia gains weight.",
+  "Game Informer spotted 13 side activities in GTA 6's reveal."
+ ],
+ "hook_pick": "Option 1 (the owner's pick): a checkable GTA 5 vs GTA 6 contrast (Kotaku, GamingBolt). Whole line on screen from frame 1 over the beach gym, split screen reveal with GTA V on 'GTA Five dropped'.",
+ "post_time": "Thu 19 Nov 2026, 12:00 ET (launch day lunch break)",
+ "time_sensitive": "Posts on launch day: the 'tonight' lines (save, send, test tonight) assume the game is out on 19 Nov 2026; they stay true for anyone watching on a later evening.",
+ "ending": "one line question, then the follow plus comment CTA (owner rule 13 Nov: the checklist lands straight in your inbox), then the noticed. end card",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six brings back the San Andreas feature",
+   "instant": true,
+   "bg": "scrim",
+   "push": 0.06,
+   "capsY": 1010,
+   "caps": [
+    {
+     "text": "GTA 6 brings back the / San Andreas / feature GTA 5 dropped.",
+     "at": 0,
+     "key": [
+      "San Andreas"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Kotaku; GamingBolt, 26 Aug 2026.",
+   "clips": [
+    {
+     "shot": 34,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "GTA Five dropped.",
+   "instant": true,
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1010,
+   "caps": [
+    {
+     "text": "GTA 6 brings back the / San Andreas / feature GTA 5 dropped.",
+     "at": 0,
+     "key": [
+      "San Andreas",
+      "dropped"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Kotaku; GamingBolt, 26 Aug 2026.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 556,
+     "t": 0.1
+    },
+    "right": {
+     "shot": 85,
+     "t": 0.1,
+     "cy": 0.2
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "Your body. Overeat and they gain weight. That's only half of it.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Your body.",
+     "at": 0,
+     "key": [
+      "body"
+     ]
+    },
+    {
+     "text": "Overeat and they / gain weight.",
+     "at": 2,
+     "key": [
+      "weight"
+     ]
+    },
+    {
+     "text": "That's only half / of it.",
+     "at": 7,
+     "key": [
+      "half"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Rockstar to Dazed, via Kotaku; GamingBolt, 26 Aug 2026.",
+   "clips": [
+    {
+     "shot": 46,
+     "offset": 0.1
+    },
+    {
+     "shot": 41,
+     "offset": 0.1,
+     "at": 2
+    },
+    {
+     "shot": 101,
+     "offset": 0.1,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Save this for tonight.",
+   "bg": "scrim",
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "Save this / for tonight.",
+     "at": 0,
+     "key": [
+      "Save"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.2
+    }
+   ]
+  },
+  {
+   "say": "Twenty seventh of August. Almost half an hour of gameplay, on Netflix first.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "27 AUG",
+    "small": "2026",
+    "at": 0,
+    "until": 4,
+    "size": 300,
+    "cy": 720
+   },
+   "paper": [
+    {
+     "label": "The Extended Look",
+     "head": "Almost half an hour. Netflix first.",
+     "mark": "Netflix",
+     "mark_at": 11,
+     "source": "Engadget; Dexerto; Notebookcheck",
+     "at": 4
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: Shacknews; Engadget; Dexerto; Notebookcheck.",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 0.1
+    },
+    {
+     "shot": 74,
+     "offset": 5.4,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Game Informer spotted thirteen side activities in it.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "counter": {
+    "from": 0,
+    "to": 13,
+    "at": 3,
+    "dur": 0.8,
+    "label": "side activities",
+    "label2": "spotted by Game Informer",
+    "cy": 700
+   },
+   "caps": [],
+   "footnote": "REPORTED: Game Informer, 27 Aug 2026.",
+   "clips": [
+    {
+     "shot": 83,
+     "offset": 0.1
+    },
+    {
+     "shot": 82,
+     "offset": 1.4,
+     "at": 3
+    },
+    {
+     "shot": 84,
+     "offset": 1.0,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "I built your weekend from nine. The best one is last.",
+   "bg": "scrim",
+   "counter": {
+    "from": 13,
+    "to": 9,
+    "at": 0,
+    "dur": 2.2,
+    "label": "for your weekend",
+    "label2": "our pick of the 13",
+    "cy": 700
+   },
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "The best one / is last.",
+     "at": 6,
+     "key": [
+      "last"
+     ]
+    }
+   ],
+   "footnote": "OUR MATH: 9 of Game Informer's 13 headings.",
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 0.2
+    },
+    {
+     "shot": 91,
+     "offset": 0.3,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Saturday morning.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "SATURDAY",
+    "small": "MORNING",
+    "at": 0,
+    "size": 230,
+    "cy": 760
+   },
+   "caps": [],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/safehouse_stilt_house.jpg",
+   "pan": [
+    0.26,
+    0.36
+   ]
+  },
+  {
+   "say": "Jason shoots hoops outside his house.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Jason shoots hoops / outside his house.",
+     "at": 0,
+     "key": [
+      "hoops"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Dexerto; Game Informer.",
+   "clips": [
+    {
+     "shot": 83,
+     "offset": 0.8
+    }
+   ]
+  },
+  {
+   "say": "Then the gym. Lucia bench presses, alternating L two and R two.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Then the gym.",
+     "at": 0,
+     "key": [
+      "gym"
+     ]
+    },
+    {
+     "text": "Lucia bench presses, / alternating",
+     "at": 3,
+     "key": [
+      "bench presses"
+     ]
+    },
+    {
+     "text": "L2 + R2",
+     "at": 7,
+     "key": [
+      "L2",
+      "R2"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Notebookcheck; Game Informer.",
+   "clips": [
+    {
+     "shot": 101,
+     "offset": 0.1
+    },
+    {
+     "shot": 85,
+     "offset": 0.1,
+     "at": 3
+    },
+    {
+     "shot": 85,
+     "offset": 1.85,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Afternoon, the water. An airboat through the swamp. Jet skis toward Vice City.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "AFTERNOON",
+    "small": "SATURDAY",
+    "at": 0,
+    "until": 3,
+    "size": 200,
+    "cy": 760
+   },
+   "tiles": {
+    "items": [
+     {
+      "text": "AIRBOAT",
+      "at": 4
+     },
+     {
+      "text": "JET SKI",
+      "at": 8
+     }
+    ],
+    "y": 400,
+    "gap": 160,
+    "size": 92
+   },
+   "caps": [],
+   "footnote": "REPORTED: Game Informer; Dexerto.",
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.4
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 3
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Or a slow kayak.",
+   "bg": "scrim",
+   "tiles": {
+    "items": [
+     {
+      "text": "KAYAK",
+      "at": 3
+     }
+    ],
+    "y": 400,
+    "size": 92
+   },
+   "caps": [],
+   "footnote": "REPORTED: Game Informer; Dexerto.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/kayak_sunset.jpg",
+   "pan": [
+    0.34,
+    0.42
+   ]
+  },
+  {
+   "say": "Then go under. Scuba into an underwater cave.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Then go under.",
+     "at": 0,
+     "key": [
+      "under"
+     ]
+    },
+    {
+     "text": "Scuba into an / underwater cave.",
+     "at": 3,
+     "key": [
+      "Scuba"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Game Informer; Shacknews.",
+   "clips": [
+    {
+     "shot": 84,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "The New York Times says diving for treasure pays.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "The New York Times says",
+     "head": "Diving for treasure pays",
+     "mark": "pays",
+     "mark_at": 8,
+     "source": "The New York Times, 27 Aug 2026",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "footnote": "REPORTED: The New York Times.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Leonida_Keys_04.jpg",
+   "pan": [
+    0.36,
+    0.46
+   ]
+  },
+  {
+   "say": "Send this to whoever's playing with you tonight.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Send this to whoever's / playing with you tonight.",
+     "at": 0,
+     "key": [
+      "Send"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 50,
+     "offset": 0.1
+    },
+    {
+     "shot": 46,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Now, the half GTA Five dropped.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1080,
+   "caps": [
+    {
+     "text": "Now, the half / GTA 5 dropped.",
+     "at": 0,
+     "key": [
+      "GTA 5"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: GamingBolt.",
+   "compare": {
+    "mode": "ab",
+    "left": {
+     "shot": 527,
+     "t": 0
+    },
+    "right": [
+     {
+      "shot": 101,
+      "t": 0.1
+     },
+     {
+      "shot": 85,
+      "t": 0.2,
+      "at": 5
+     }
+    ],
+    "at": 3,
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "Work out and Jason and Lucia build muscle. Skip sleep, and it shows.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Work out, and Jason / and Lucia build muscle.",
+     "at": 0,
+     "key": [
+      "muscle"
+     ]
+    },
+    {
+     "text": "Skip sleep, / and it shows.",
+     "at": 8,
+     "key": [
+      "shows"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Rockstar to Dazed, via Kotaku; GamingBolt, 26 Aug 2026.",
+   "clips": [
+    {
+     "shot": 34,
+     "offset": 0.4
+    },
+    {
+     "shot": 85,
+     "offset": 1.9,
+     "at": 5
+    },
+    {
+     "shot": 89,
+     "offset": 2.3,
+     "at": 8
+    },
+    {
+     "shot": 40,
+     "offset": 0.9,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "say": "The last GTA with it?",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 960,
+   "tiles": {
+    "items": [
+     {
+      "text": "NO BODY SYSTEM",
+      "at": 1
+     },
+     {
+      "text": "WEIGHT + MUSCLE",
+      "at": 3
+     }
+    ],
+    "y": 600,
+    "gap": 530,
+    "size": 70
+   },
+   "caps": [
+    {
+     "text": "The last GTA / with it?",
+     "at": 0,
+     "key": [
+      "last"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Kotaku; GamingBolt.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 528,
+     "t": 0
+    },
+    "right": {
+     "shot": 85,
+     "t": 1.0,
+     "cy": 0.2
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "San Andreas, two thousand four.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "2004",
+    "small": "GTA SAN ANDREAS",
+    "at": 0,
+    "size": 320,
+    "color": "accent",
+    "cy": 760
+   },
+   "caps": [],
+   "footnote": "REPORTED: Kotaku; GamingBolt.",
+   "clips": [
+    {
+     "shot": 34,
+     "offset": 1.6
+    }
+   ]
+  },
+  {
+   "say": "Sunday is racing. Dirt bikes through the hills,",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "SUNDAY",
+    "small": "RACING",
+    "at": 0,
+    "until": 3,
+    "size": 260,
+    "cy": 760
+   },
+   "tiles": {
+    "items": [
+     {
+      "text": "DIRT BIKES",
+      "at": 3
+     }
+    ],
+    "y": 400,
+    "size": 92
+   },
+   "caps": [],
+   "footnote": "REPORTED: Game Informer; Engadget; Notebookcheck.",
+   "clips": [
+    {
+     "shot": 102,
+     "offset": 0.1
+    },
+    {
+     "shot": 88,
+     "offset": 0.1,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "and a rally car on a race course.",
+   "bg": "scrim",
+   "tiles": {
+    "items": [
+     {
+      "text": "RALLY",
+      "at": 2
+     }
+    ],
+    "y": 400,
+    "size": 92
+   },
+   "caps": [],
+   "footnote": "REPORTED: Game Informer.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_VAPID_BUGGY_01.0jxfiql~371ik.jpg",
+   "pan": [
+    0.18,
+    0.28
+   ]
+  },
+  {
+   "say": "The finale. Sprint off a Vice City rooftop, free fall over the canals, and open your chute over the bay.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "The finale.",
+     "at": 0,
+     "key": [
+      "finale"
+     ]
+    },
+    {
+     "text": "Sprint off a / Vice City rooftop,",
+     "at": 2,
+     "key": [
+      "rooftop"
+     ]
+    },
+    {
+     "text": "free fall over / the canals,",
+     "at": 8,
+     "key": [
+      "free fall"
+     ]
+    },
+    {
+     "text": "and open your chute / over the bay.",
+     "at": 13,
+     "key": [
+      "chute"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Dexerto; Shacknews; Game Informer.",
+   "clips": [
+    {
+     "shot": 104,
+     "offset": 0.1
+    },
+    {
+     "shot": 91,
+     "offset": 3.6,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "One you can test tonight. Pool, mini golf or kayaking together brings Jason and Lucia closer.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "tiles": {
+    "items": [
+     {
+      "text": "POOL",
+      "at": 5
+     },
+     {
+      "text": "MINI GOLF",
+      "at": 6
+     },
+     {
+      "text": "KAYAK",
+      "at": 9
+     }
+    ],
+    "y": 360,
+    "gap": 150,
+    "size": 84
+   },
+   "caps": [
+    {
+     "text": "One you can / test tonight.",
+     "at": 0,
+     "key": [
+      "tonight"
+     ]
+    },
+    {
+     "text": "brings Jason and Lucia / closer.",
+     "at": 11,
+     "key": [
+      "closer"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: IGN interview with Rockstar's Rob Nelson, via Inven Global.",
+   "clips": [
+    {
+     "shot": 6,
+     "offset": 0.1,
+     "cx": 0.3
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 43,
+     "offset": 0.1,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "Game Informer lists more, like zoos and",
+   "bg": "scrim",
+   "tiles": {
+    "items": [
+     {
+      "text": "ZOOS",
+      "at": 5
+     }
+    ],
+    "y": 400,
+    "size": 92
+   },
+   "caps": [
+    {
+     "text": "Game Informer / lists more,",
+     "at": 0,
+     "key": [
+      "more"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Game Informer, via GTABase; MP1st.",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 6.8
+    },
+    {
+     "shot": 5,
+     "offset": 6.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "mud parks.",
+   "bg": "scrim",
+   "tiles": {
+    "items": [
+     {
+      "text": "MUD PARKS",
+      "at": 0
+     }
+    ],
+    "y": 400,
+    "size": 92
+   },
+   "caps": [],
+   "footnote": "REPORTED: Game Informer, via GTABase; MP1st.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_01.jpg",
+   "pan": [
+    0.6,
+    0.68
+   ]
+  },
+  {
+   "say": "So, the gym first, or the rooftop?",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "So, the gym first, / or the rooftop?",
+     "at": 0,
+     "key": [
+      "gym",
+      "rooftop"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 85,
+     "offset": 0.1
+    },
+    {
+     "shot": 91,
+     "offset": 5.3,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment WEEKEND.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "WEEKEND",
+    "small": "COMMENT THIS WORD",
+    "at": 5,
+    "size": 240,
+    "color": "accent",
+    "cy": 700
+   },
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.3
+    },
+    {
+     "shot": 1,
+     "offset": 4.4,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "The full checklist, sorted by day,",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "Your first weekend",
+     "head": "The full checklist, sorted by day",
+     "mark": "sorted by day",
+     "mark_at": 3,
+     "source": "From Game Informer, IGN, Dazed and The New York Times",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/vice_city_skyline_aerial.jpg",
+   "pan": [
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "say": "lands straight in your inbox.",
+   "bg": "scrim",
+   "capsY": 1150,
+   "caps": [
+    {
+     "text": "lands straight / in your inbox.",
+     "at": 0,
+     "key": [
+      "inbox"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 0.2
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "The full weekend checklist lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT WEEKEND",
+   "hold": 2.6,
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ]
+  }
+ ]
+}
