@@ -1,0 +1,107 @@
+HOW TO USE
+1. Download these files to your computer: profile_picture.jpg, R1_gta5_vs_gta6.mp4, R1_cover.jpg, R2_reality_check.mp4, R2_cover.jpg.
+2. In Chrome, open instagram.com (logged in), then click the Claude icon in the toolbar to open the side panel.
+3. Paste PROMPT 1. When it asks for a file, pick it in the file window. Then paste PROMPT 2. Later today, PROMPT 3.
+
+==================== PROMPT 1: PROFILE SETUP ====================
+You are working in my Instagram on instagram.com in this Chrome tab. Do these steps one at a time and tell me after each one what you did.
+Rules: never touch my password, email, phone number or two factor settings; never accept a security or login prompt for me; never delete anything. Whenever a file has to be chosen, stop and ask me; I will pick it in the file window myself.
+
+1. Open Edit profile (instagram.com/accounts/edit/).
+2. Profile photo: click "Change photo", then "Upload photo". Stop and ask me to choose profile_picture.jpg.
+3. Name: missed. | GTA 6
+4. Username: missed.gg. If it is taken, try in this order: missed.tv, missedhq, missed.daily, itsmissed. Tell me which one worked. (On the web the username may live in Accounts Center, Profiles; go there if Edit profile does not show it.)
+5. Bio, exactly these two lines:
+The GTA 6 details you missed. Every big game next.
+Not affiliated with Rockstar Games or Take Two.
+6. Save, then open my profile and confirm the photo, name, username and bio show correctly.
+7. Switch to a professional account if the web allows it: Settings, Account type and tools, Switch to professional account, Creator, category "Gaming video creator" (or "Video creator"). Keep the account public. Skip contact info. If the web does not offer this, tell me and I will do it in the phone app.
+
+==================== PROMPT 2: POST REEL 1 (NOW) ====================
+Post a Reel on my Instagram in this tab. Same rules as before: never touch login or security settings, stop and ask me whenever a file must be chosen.
+
+1. Click Create (the + button), choose Post or Reel. Stop and ask me to choose R1_gta5_vs_gta6.mp4.
+2. If asked about cropping, choose Original or 9:16 so nothing is cut. Click Next.
+3. Cover photo: if there is an option to upload a cover from the computer, use it and stop to ask me to choose R1_cover.jpg. If not, keep the first frame. Click Next.
+4. Caption: paste exactly the text between the two lines of hashes below. Keep every line break and emoji.
+5. Advanced settings: turn ON the AI label ("AI label", "Add AI label" or "Made with AI"; the narration is my own voice made with AI). Turn OFF "Share to Facebook" if it is shown. Keep comments on.
+6. Before clicking Share, show me: the first caption line, AI label on or off, cover set or not. Wait for my "ok", then click Share.
+7. When it is live, open the reel and add this comment, then pin it: Which change are you most excited about? Comment SIX for the one I couldn't fit 👇
+8. Send me the link to the reel.
+
+################################
+GTA 6's Vice City alone is twice the size of Los Santos. And that's not even the biggest change 👇
+
+ROCKSTAR SAYS
+• Map: about twice GTA V's (Aaron Garbut, Rockstar North, to Game Informer). Vice City alone is twice Los Santos (Rockstar to The New York Times)
+• Wildlife: 170+ species, including 60+ bird types, 30+ land mammals, sharks and whales (Game Informer)
+• Weather rebuilt to be local and persistent, with tropical storms and hurricanes
+• NPC animations: GTA V 55,000, GTA VI well over 600,000 (Rockstar via The New York Times)
+• Single player at launch. GTA Online arrived 14 days after GTA V in 2013
+• Preload up to 212 GB depending on device
+
+REPORTED
+• Six star wanted level seen in the Extended Look (Shacknews). GTA V tops out at five
+• GTA V on PS5 was about 87 GB in 2022 (Windows Central)
+
+OUR MATH
+• GTA IV to GTA V: 1,967 days. GTA V to GTA VI: 4,811 days, about 2.4 times longer
+• 600,000 ÷ 55,000 ≈ 10.9
+
+Comment SIX and I'll DM you the one difference I couldn't fit. Not following yet? Check your message requests.
+
+Which change are you most excited about? 👇
+
+Follow for tomorrow. See you in Leonida.
+
+Not affiliated with Rockstar Games or Take Two. Footage: Rockstar Games. Narration is my own voice, AI assisted.
+
+#GTA6 #GTA5 #GTAVI #PS5 #GamingNews
+################################
+
+==================== PROMPT 3: POST REEL 2 (TODAY, 6 PM US EASTERN = 4:30 AM IST) ====================
+Post a Reel on my Instagram in this tab. Same rules as before: never touch login or security settings, stop and ask me whenever a file must be chosen.
+
+1. Click Create (the + button), choose Post or Reel. Stop and ask me to choose R2_reality_check.mp4.
+2. If asked about cropping, choose Original or 9:16 so nothing is cut. Click Next.
+3. Cover photo: if there is an option to upload a cover from the computer, use it and stop to ask me to choose R2_cover.jpg. If not, keep the first frame. Click Next.
+4. Caption: paste exactly the text between the two lines of hashes below. Keep every line break and emoji.
+5. Advanced settings: turn ON the AI label. Turn OFF "Share to Facebook" if it is shown. Keep comments on.
+6. Before clicking Share, show me: the first caption line, AI label on or off, cover set or not. Wait for my "ok", then click Share.
+7. When it is live, open the reel and add this comment, then pin it: Standard or Ultimate? Comment CHECK for my launch checklist 👇
+8. Send me the link to the reel.
+
+################################
+After inflation, GTA 6 costs less than GTA 5 did. Here's the full reality check before you buy 👇
+
+ROCKSTAR SAYS
+• Standard $79.99, Ultimate $99.99 (UK £69.99 and £89.99, India ₹5,999 and ₹7,499)
+• Every purchase before 20 Nov, any edition, gets the Vintage Vice City Pack: a '55 Vapid Stanier, a Shore Court garage and vintage outfits
+• PS5 and Xbox Series X|S. Rockstar targets 30 fps on every console; PS5 Pro adds PSSR and ray traced shadows
+• Up to 212 GB free space. Boxed copies hold a download code, no disc
+• Single player at launch. No online mode announced
+
+REPORTED
+• Xbox One can only stream it through Xbox Cloud Gaming, from 1 a.m. ET on 19 Nov (Xbox Wire)
+• Reviews reported for 18 Nov (Insider Gaming), not confirmed by Rockstar
+• No PC version or date announced
+
+OUR MATH
+• GTA V cost $59.99 in Sept 2013, about $86.47 in Oct 2026 dollars (US CPI). In plain dollars GTA VI is $20 more
+• On Xbox, Standard $79.99 plus the $20 upgrade equals Ultimate's $99.99. PlayStation has no upgrade price yet
+
+Comment CHECK and I'll DM you my full launch checklist. Not following yet? Check your message requests.
+
+Standard or Ultimate? 👇
+
+Follow for tomorrow. See you in Leonida.
+
+Not affiliated with Rockstar Games or Take Two. Footage: Rockstar Games. Narration is my own voice, AI assisted.
+
+#GTA6 #GTAVI #PS5 #Xbox #GamingNews
+################################
+
+DM REPLIES (send by hand to everyone who comments the word; full texts in reels/POSTING_PLAN.md)
+SIX: start with "Auto reply: here's the one difference I couldn't fit, the price 💸"
+CHECK: start with "Auto reply: your GTA 6 launch checklist ✅"
+Never ask anyone to follow before sending the DM.
