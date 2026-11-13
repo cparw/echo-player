@@ -9,10 +9,10 @@ Rules: never touch my password, email, phone number or two factor settings; neve
 
 1. Open Edit profile (instagram.com/accounts/edit/).
 2. Profile photo: click "Change photo", then "Upload photo". Stop and ask me to choose profile_picture.jpg.
-3. Name: missed. | GTA 6
-4. Username: missed.gg. If it is taken, try in this order: missed.tv, missedhq, missed.daily, itsmissed. Tell me which one worked. (On the web the username may live in Accounts Center, Profiles; go there if Edit profile does not show it.)
+3. Name: noticed. | GTA 6
+4. Username: noticed.gg. If it is taken, try in this order: noticed.tv, noticedhq, itsnoticed, noticed.daily. Tell me which one worked. (On the web the username may live in Accounts Center, Profiles; go there if Edit profile does not show it.)
 5. Bio, exactly these two lines:
-The GTA 6 details you missed. Every big game next.
+The GTA 6 details nobody noticed. Every big game next.
 Not affiliated with Rockstar Games or Take Two.
 6. Save, then open my profile and confirm the photo, name, username and bio show correctly.
 7. Switch to a professional account if the web allows it: Settings, Account type and tools, Switch to professional account, Creator, category "Gaming video creator" (or "Video creator"). Keep the account public. Skip contact info. If the web does not offer this, tell me and I will do it in the phone app.

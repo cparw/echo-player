@@ -127,6 +127,8 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 
 ## 9. Feedback log (newest first)
 
+* 13 Nov: "Noticed is a good name. Go ahead with that. Create the logo, add it." BRAND CHOSEN: **noticed.** Logo: gallery 04, an off white app tile with an orange unread dot on near black (`brand/noticed/noticed_logo_flat.png`). Name field "noticed. | GTA 6", username noticed.gg (fallbacks noticed.tv, noticedhq, itsnoticed), bio "The GTA 6 details nobody noticed. Every big game next." plus the not affiliated line. End cards switch from "GTA 6" to noticed.
+
 * 13 Nov: owner asked whether we can post for him and showed the account to use (smangal.mangal, 0 posts), logged in in his Chrome with the Claude extension. Never take his password. A cloud session cannot reach his Chrome, so posting goes through the Claude extension side panel with ready prompts (`posting_kit/CLAUDE_EXTENSION_PROMPTS.txt`); for fully hands off posting later, use an official route (Postiz or a Meta app with Instagram Login). He also switched the session to Opus: "use Opus for this type of work, don't waste my Fable on that" (account setup, posting and other operational work run on Opus). He wants speed: act first, keep messages short.
 
 * 13 Nov: "That channel, that's what I meant. That's why I gave you that latest reel link as reference." The model for HOW we make videos is @dopemotionzone (the Rockstar secrecy reel and the channel's design craft), not @cole.themanyt; the first link was not the one he meant. The story format is now the main style for new reels. The fast explainer notes stay on file but are parked unless the owner asks for them.
