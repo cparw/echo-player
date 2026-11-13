@@ -53,13 +53,15 @@ def clean_window(sh, offset):
         if w[0] - 0.15 <= offset <= w[1]: return w
     return min(wins, key=lambda w: min(abs(offset - w[0]), abs(offset - w[1])))
 
-def blur_graph(b0, b1):
-    """story dim line: blur the footage locally (soft ellipse, edges stay sharp) between b0 and b1 seconds of this clip"""
-    a = (f"255*clip(1.25-hypot((X-W/2)/(W*0.62),(Y-H*0.43)/(H*0.30)),0,1)"
-         f"*clip((T-{b0:.3f})/0.2,0,1)*clip(({b1:.3f}-T)/0.25,0,1)")
+def blur_graph(b0, b1, full=False):
+    """story dim line: blur the footage locally (soft ellipse, edges stay sharp) between b0 and b1 seconds of this clip;
+    full=True (collage) blurs the whole frame"""
+    shape = "255" if full else "255*clip(1.25-hypot((X-W/2)/(W*0.62),(Y-H*0.43)/(H*0.30)),0,1)"
+    a = f"{shape}*clip((T-{b0:.3f})/0.2,0,1)*clip(({b1:.3f}-T)/0.25,0,1)"
+    if full and b0 <= 0: a = f"255*clip(({b1:.3f}-T)/0.25,0,1)"
     return f",split=2[o][b];[b]gblur=sigma=22,format=rgba,geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='{a}'[m];[o][m]overlay=format=auto"
 
-def clip_part(c, dur, outp, treat=None, push=None, blur=None):
+def clip_part(c, dur, outp, treat=None, push=None, blur=None, blur_full=False):
     sh = SHOTS[c["shot"]]
     lo, hi = clean_window(sh, c.get("offset", 0))
     off = min(max(c.get("offset", 0), lo), max(lo, hi - 0.6))
@@ -84,7 +86,7 @@ def clip_part(c, dur, outp, treat=None, push=None, blur=None):
                 "crop=1080:1920:(iw-1080)/2:(ih-1920)/2")
     vf = f"trim=duration={avail:.3f},setpts=PTS-STARTPTS,setpts={slow:.3f}*PTS,{geo},fps=30,tpad=stop_mode=clone:stop_duration=3,{grade({'treat': treat})},setsar=1,format=yuv420p"
     if blur and blur[1] > 0 and blur[0] < dur:
-        vf = vf.rsplit(",format=yuv420p", 1)[0] + blur_graph(*blur) + ",format=yuv420p"
+        vf = vf.rsplit(",format=yuv420p", 1)[0] + blur_graph(blur[0], blur[1], blur_full) + ",format=yuv420p"
     run(["-ss", str(sh["start"] + c.get("offset", 0)), "-i", src, "-vf", vf, "-t", str(dur), "-an",
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", "-r", "30", outp])
 
@@ -105,7 +107,7 @@ for i, s in enumerate(plan["segments"]):
         for j, c in enumerate(s["clips"]):
             pp = os.path.join(od, f"seg_{i:02d}_{j}.mp4")
             c0 = s["start"] + sum(durs[:j]); bl = [s["blur"][0] - c0, s["blur"][1] - c0] if s.get("blur") else None
-            clip_part(c, durs[j], pp, s.get("treat"), s.get("push"), bl); parts.append(pp)
+            clip_part(c, durs[j], pp, s.get("treat"), s.get("push"), bl, s.get("blur_full", False)); parts.append(pp)
         pl = os.path.join(od, f"seg_{i:02d}.txt"); open(pl, "w").write("".join(f"file '{os.path.abspath(x)}'\n" for x in parts))
         run(["-f", "concat", "-safe", "0", "-i", pl, "-c", "copy", p])
     elif s.get("media") and s["media"].lower().endswith((".jpg", ".jpeg", ".png", ".webp")):

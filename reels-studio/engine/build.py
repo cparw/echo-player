@@ -2,7 +2,20 @@
 Usage: python3 build.py script.json words.json outdir
 Show word markup: *word* = highlighter box, ^word^ = accent colour, ~word~ = teal.
 """
-import json, sys, os
+import json, sys, os, subprocess
+
+def card_still(shots_path, shot, offset, outp):
+    """story collage: one clean frame of a shot in the reel's 9:16 framing (same geometry as preview.py), 540x960 jpg"""
+    sh = json.load(open(shots_path))[shot]; src = sh["src"]
+    ROT = ("7696925363795938573", "7502175479718284586"); LB = {"7696925363795938573": (960, 60), "7502175479718284586": (864, 108)}
+    if any(r in src for r in ROT):
+        H, Y = next((v for k, v in LB.items() if k in src), (1080, 0)); W = int(round(H * 9 / 16 / 2) * 2)
+        geo = f"transpose=2,crop=1920:{H}:0:{Y},crop={W}:{H}:(iw-ow)/2:0,scale=540:960"
+    elif sh.get("crop_box"):
+        x, y, w, h = sh["crop_box"]; geo = f"crop={w}:{h}:{x}:{y},scale=540:960"
+    else:
+        geo = "scale=540:960:force_original_aspect_ratio=increase,crop=540:960"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{sh['start'] + offset:.3f}", "-i", src, "-frames:v", "1", "-vf", geo + ",eq=saturation=1.10:contrast=1.05", "-q:v", "2", outp], check=True)
 
 spec = json.load(open(sys.argv[1]))
 words = json.load(open(sys.argv[2]))
@@ -145,6 +158,31 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
             c["t"] = at_t(c.get("at", 0))
             if "mark_at" in c: c["tm"] = wt(c["mark_at"])
         sc["paper"] = cards
+    if b.get("chip"):
+        chips = [dict(c) for c in (b["chip"] if isinstance(b["chip"], list) else [b["chip"]])]
+        for c in chips:
+            c["t"] = at_t(c.get("at", 0))
+            if "until" in c: c["tu"] = wt(c["until"]) - LEAD
+        sc["chip"] = chips
+    for key in ("counter", "timeline"):
+        if b.get(key):
+            o = dict(b[key]); o["t"] = at_t(o.get("at", 0))
+            if "until" in o: o["tu"] = wt(o["until"]) - LEAD
+            sc[key] = o
+    if b.get("tiles"):
+        tl_ = dict(b["tiles"]); tl_["items"] = [dict(x, t=at_t(x.get("at", 0))) for x in tl_["items"]]
+        if "until" in tl_: tl_["tu"] = wt(tl_["until"]) - LEAD
+        sc["tiles"] = tl_
+    if b.get("collage"):
+        cg = dict(b["collage"]); cards = []
+        for q, c in enumerate(cg["cards"]):
+            img = os.path.abspath(os.path.join(out, f"collage_{k}_{q}.jpg"))
+            os.makedirs(out, exist_ok=True); card_still(spec["shots_json"], c["shot"], c.get("offset", 0), img)
+            cards.append(dict(c, img=img))
+        cg["cards"] = cards
+        for key in ("strike", "drop", "fill"):
+            if f"{key}_at" in cg: cg[f"{key}_t"] = wt(cg[f"{key}_at"])
+        sc["collage"] = cg
     if b.get("layout") == "map":
         for k in ("region", "collapse"):
             if sc.get(k): sc[k] = dict(sc[k], t=wt(sc[k].get("at", 0)))
@@ -174,6 +212,8 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
     if push: bg[-1]["push"] = push
     if sc.get("dim"):  # story dim line: compose and preview blur the footage locally while it is up
         bg[-1]["blur"] = [sc["dim"]["t"], sc["dim"].get("tu")]
+    if sc.get("collage"):  # collage floats over fully blurred live footage until the survivor fills the frame
+        bg[-1]["blur"] = [sc["start"], sc["collage"].get("fill_t")]; bg[-1]["blur_full"] = True
 
 for k in range(len(scenes)):
     scenes[k]["end"] = scenes[k + 1]["start"] if k + 1 < len(scenes) else round(voice_end + 0.35, 3)
@@ -200,6 +240,10 @@ for k in range(len(bg)):
     if bg[k].get("blur") and bg[k]["blur"][1] is None: bg[k]["blur"][1] = bg[k]["end"]
 os.makedirs(out, exist_ok=True)
 json.dump(tl, open(os.path.join(out, "timeline.json"), "w"), indent=1)
-json.dump({"duration": tl["duration"], "segments": bg, "shots_json": spec.get("shots_json"), "sfx": [{"t": s["start"], "kind": "hit" if s.get("flash") or s.get("section_new") or s.get("layout") == "number" else "whoosh"} for s in scenes[1:]]},
+if spec.get("sfx_default"):  # story reels: sound effects only where a beat asks ("sfx": "hit" | "whoosh"), default from the script
+    sfx = [{"t": s["start"], "kind": s.get("sfx", spec["sfx_default"])} for s in scenes[1:] if s.get("sfx", spec["sfx_default"]) != "none"]
+else:
+    sfx = [{"t": s["start"], "kind": "hit" if s.get("flash") or s.get("section_new") or s.get("layout") == "number" else "whoosh"} for s in scenes[1:]]
+json.dump({"duration": tl["duration"], "segments": bg, "shots_json": spec.get("shots_json"), "sfx": sfx},
           open(os.path.join(out, "bgplan.json"), "w"), indent=1)
 print(f"scenes={len(scenes)} duration={tl['duration']}s")

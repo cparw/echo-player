@@ -43,9 +43,9 @@ for t in times:
             geo += f",scale={int(1080 * z) // 2 * 2}:{int(1920 * z) // 2 * 2},crop=1080:1920"
         vf = f"{geo},{grade}"
         if seg.get("blur") and seg["blur"][0] <= t <= seg["blur"][1]:  # mirror compose.py's story dim blur (fade ramps included)
-            k = min(1, (t - seg["blur"][0]) / 0.2, (seg["blur"][1] - t) / 0.25)
+            k = min(1, (t - seg["blur"][0]) / 0.2 if not seg.get("blur_full") else 1, (seg["blur"][1] - t) / 0.25)
             vf += (f",split=2[o][b];[b]gblur=sigma=22,format=rgba,geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':"
-                   f"a='255*{k:.3f}*clip(1.25-hypot((X-W/2)/(W*0.62),(Y-H*0.43)/(H*0.30)),0,1)'[m];[o][m]overlay=format=auto")
+                   f"a='255*{k:.3f}*" + ("1" if seg.get("blur_full") else "clip(1.25-hypot((X-W/2)/(W*0.62),(Y-H*0.43)/(H*0.30)),0,1)") + "'[m];[o][m]overlay=format=auto")
         cmd = ["-ss", f"{ss:.3f}", "-i", src, "-frames:v", "1", "-vf", vf]
     elif seg.get("media") and seg["media"].lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
         a = seg.get("pan", [0.4, 0.6])[0]

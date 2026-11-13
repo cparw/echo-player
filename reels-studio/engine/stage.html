@@ -81,12 +81,16 @@ window.init = function (tl) {
   // fast explainer scenes measure their text at render time; make sure the italic caption face is loaded first
   if (TL.scenes.some(isPunch)) return document.fonts.load('italic 800 100px "Inter Tight"').then(() => document.fonts.load('400 100px Anton'))
     .then(() => document.fonts.load('700 100px "Inter Tight Story"')).then(() => document.fonts.load('italic 400 100px "Instrument Serif"'))
-    .then(() => document.fonts.load('800 100px "Inter Tight"')).then(() => document.fonts.load('500 30px "JetBrains Mono"')).then(() => true);
+    .then(() => document.fonts.load('800 100px "Inter Tight"')).then(() => document.fonts.load('500 30px "JetBrains Mono"'))
+    .then(() => Promise.all(TL.scenes.filter(x => x.collage).flatMap(x => x.collage.cards).map(c => new Promise(res => {
+      const im = new Image(); im.onload = () => { IMGS[c.img] = im; res(); }; im.onerror = () => res(); im.src = 'file://' + c.img; }))))
+    .then(() => true);
   return true;
 };
 
 // ===== Fast explainer kit (titlecard, section header, build captions, illustration cards). Only scenes with these keys use it. =====
-const isPunch = sc => !!(sc.caps || sc.section || sc.hud || sc.layout === 'titlecard' || sc.stamp || sc.paper || sc.dim);
+const isPunch = sc => !!(sc.caps || sc.section || sc.hud || sc.layout === 'titlecard' || sc.stamp || sc.paper || sc.dim || sc.chip || sc.counter || sc.timeline || sc.tiles || sc.collage);
+const IMGS = {};
 const PK = { orange: '#FF7A1A', red: '#FF3B30', capCx: 490, capW: 860, capCy: 1180, capMaxH: 240, headTop: 252, cardTop: 416,
              foot: 1310, credit: 1352, shadow: '0 6px 26px rgba(0,0,0,0.85), 0 2px 5px rgba(0,0,0,0.75)' };
 const _mctx = document.createElement('canvas').getContext('2d');
@@ -235,7 +239,7 @@ function stampBlock(st, t) {
   const D = localDark(st.cy || 800, 85, 22, 0.62); D.style.opacity = vis; F.appendChild(D);
   const e = ease.out(pin);
   const Y = document.createElement('div');
-  Y.style.cssText = `position:absolute;left:0;right:0;top:${(st.cy || 800) - 230}px;text-align:center;font-family:Anton;font-size:${st.size || 360}px;line-height:1;color:#FFFFFF;` +
+  Y.style.cssText = `position:absolute;left:0;right:0;top:${(st.cy || 800) - 230}px;text-align:center;font-family:Anton;font-size:${st.size || 360}px;line-height:1;color:${st.color === 'accent' ? '#FF7A1A' : '#FFFFFF'};` +
     `letter-spacing:0.01em;text-shadow:0 10px 40px rgba(0,0,0,0.6);opacity:${vis};filter:blur(${(1 - e) * 16}px);transform:scale(${1.14 - 0.14 * e})`;
   Y.textContent = st.big; F.appendChild(Y);
   if (st.small) {
@@ -263,7 +267,28 @@ function paperBlock(sc, t) {
     L.style.cssText = `position:relative;font-family:'JetBrains Mono';font-weight:500;font-size:26px;letter-spacing:0.22em;color:#6B6A66`;
     L.textContent = String(c.label).toUpperCase(); P.appendChild(L);
   }
-  const head = String(c.head), mk = c.mark && head.indexOf(c.mark) >= 0 ? c.mark : null;
+  if (c.tag) {  // small orange tile on the card corner
+    const tp = ease.outBack(prog(t, c.t + 0.35, 0.25));
+    const Tg = document.createElement('div');
+    Tg.style.cssText = `position:absolute;right:40px;top:34px;padding:8px 16px;background:#FF7A1A;color:#000;font-family:'Inter Tight';font-weight:800;font-size:24px;letter-spacing:0.04em;` +
+      `border-radius:6px;transform:rotate(3deg) scale(${tp});opacity:${clamp(tp * 2, 0, 1)}`;
+    Tg.textContent = String(c.tag).toUpperCase(); P.appendChild(Tg);
+  }
+  if (c.redact) {  // our own device for "not disclosed": solid black bars where the headline would be
+    const rp = ease.out(prog(t, c.t + 0.25, 0.5));
+    [[0.92, 0], [0.58, 0.18]].forEach(([w, d], i) => {
+      const R = document.createElement('div'); const q = ease.out(prog(t, c.t + 0.25 + d, 0.45));
+      R.style.cssText = `position:relative;margin-top:${i ? 18 : 30}px;height:104px;width:${(w * 100 * q).toFixed(1)}%;background:#0B0B0F;border-radius:14px`;
+      P.appendChild(R);
+    });
+  }
+  if (c.quote) {
+    const Q = document.createElement('div');
+    Q.style.cssText = `position:relative;margin-top:14px;font-family:'Instrument Serif';font-style:italic;font-size:${c.qsize || 66}px;line-height:1.08;color:#111111`;
+    Q.innerHTML = `<span style="color:#FF7A1A;font-size:1.5em;line-height:0;vertical-align:-0.32em;margin-right:0.04em">\u201C</span>`;
+    Q.appendChild(document.createTextNode(c.quote)); P.appendChild(Q);
+  }
+  const head = String(c.head || ''), mk = c.mark && head.indexOf(c.mark) >= 0 ? c.mark : null;
   const Hd = document.createElement('div');
   if (!c._z) {
     const m = document.createElement('div'); m.style.cssText = `position:absolute;visibility:hidden;width:${W - 104}px;font-family:'Inter Tight';font-weight:800;line-height:1.04;letter-spacing:-0.01em`;
@@ -282,13 +307,147 @@ function paperBlock(sc, t) {
     M.textContent = mk; Hd.appendChild(M);
     Hd.appendChild(document.createTextNode(head.slice(i + mk.length)));
   } else Hd.textContent = head;
-  P.appendChild(Hd);
+  if (head) P.appendChild(Hd);
   if (c.source) {
     const S = document.createElement('div');
     S.style.cssText = `position:absolute;left:52px;right:52px;bottom:34px;font-family:'JetBrains Mono';font-weight:500;font-size:21px;letter-spacing:0.04em;color:#6B6A66;border-top:2px solid rgba(0,0,0,0.14);padding-top:14px`;
     S.textContent = c.source; P.appendChild(S);
   }
   return P;
+}
+// name / label pill
+function chipBlock(c, t) {
+  const p = prog(t, c.t, 0.28), out = c.tu != null ? prog(t, c.tu, 0.2) : 0, vis = clamp(p * 2, 0, 1) * (1 - out);
+  if (vis <= 0) return null;
+  const e = ease.outBack(p);
+  const C = document.createElement('div');
+  C.style.cssText = `position:absolute;left:0;right:0;top:${c.y || 930}px;display:flex;justify-content:center;opacity:${vis};transform:translateY(${(1 - e) * 18}px)`;
+  C.innerHTML = `<div style="display:flex;align-items:center;gap:14px;padding:12px 24px;border-radius:999px;background:rgba(10,10,14,0.74);border:1.5px solid rgba(255,255,255,0.18);` +
+    `box-shadow:0 8px 26px rgba(0,0,0,0.45);font-family:'JetBrains Mono';font-weight:500;font-size:${c.size || 26}px;letter-spacing:0.12em;color:#FFFFFF;white-space:nowrap">` +
+    `<span style="width:12px;height:12px;border-radius:50%;background:#FF7A1A;flex:none"></span><span></span></div>`;
+  C.firstChild.lastChild.textContent = String(c.text).toUpperCase();
+  return C;
+}
+// big rolling counter with a mono label, an optional second label and a chip
+function counterBlock(o, t) {
+  const F = document.createElement('div'); F.className = 'layer';
+  const pin = prog(t, o.t, 0.25); if (pin <= 0) return null;
+  const cy = o.cy || 760;
+  F.appendChild(Object.assign(localDark(cy, 90, 20, 0.5), {}));
+  const p = ease.outExpo(prog(t, o.t, o.dur || 1.6)), v = (o.from || 0) + (o.to - (o.from || 0)) * p;
+  const txt = fmt(v);
+  if (!o._z) { let z = 220; for (; z > 60; z -= 4) if (textW(fmt(o.to), `400 ${z}px Anton`) <= 900) break; o._z = z; }
+  const N = document.createElement('div');
+  N.style.cssText = `position:absolute;left:0;right:0;top:${cy - o._z * 0.6}px;text-align:center;font-family:Anton;font-size:${o._z}px;line-height:1;color:#FFFFFF;` +
+    `font-variant-numeric:tabular-nums;text-shadow:0 8px 34px rgba(0,0,0,0.6);opacity:${clamp(pin * 2, 0, 1)}`;
+  N.textContent = txt; F.appendChild(N);
+  let y = cy + o._z * 0.48;
+  for (const [lab, sz, col] of [[o.label, 34, '#FFFFFF'], [o.label2, 24, 'rgba(255,255,255,0.75)']]) {
+    if (!lab) continue;
+    const L = document.createElement('div');
+    L.style.cssText = `position:absolute;left:0;right:0;top:${y}px;text-align:center;font-family:'JetBrains Mono';font-weight:500;font-size:${sz}px;letter-spacing:0.22em;color:${col};` +
+      `text-shadow:0 2px 12px rgba(0,0,0,0.9);opacity:${clamp(prog(t, o.t + 0.3, 0.3) * 1.5, 0, 1)}`;
+    L.textContent = String(lab).toUpperCase(); F.appendChild(L); y += sz + 22;
+  }
+  if (o.chip) { const C = chipBlock({ text: o.chip, t: o.t + (o.dur || 1.6) * 0.7, y: y + 14 }, t); if (C) F.appendChild(C); }
+  return F;
+}
+// timeline: a thin line draws left to right; year pins pop as it passes; small ticks between; mono label; optional big word and tag
+function timelineBlock(o, t) {
+  const F = document.createElement('div'); F.className = 'layer';
+  const out = o.tu != null ? prog(t, o.tu, 0.25) : 0; if (out >= 1 || t < o.t) return null;
+  F.style.opacity = 1 - out;
+  const y = o.y || 760, x0 = 110, x1 = 970, lp = ease.inOut(prog(t, o.t, o.dur || 1.4)), xl = x0 + (x1 - x0) * lp;
+  F.appendChild(localDark(y, 95, 14, 0.45));
+  const L = document.createElement('div');
+  L.style.cssText = `position:absolute;left:${x0}px;top:${y - 1.5}px;width:${xl - x0}px;height:3px;background:#FFFFFF;box-shadow:0 0 12px rgba(255,255,255,0.6)`;
+  F.appendChild(L);
+  const a = o.from, b = o.to, xOf = yr => x0 + (x1 - x0) * (yr - a) / (b - a);
+  for (let yr = a + 1; yr < b; yr++) {
+    const x = xOf(yr); if (x > xl) continue;
+    const T = document.createElement('div'); T.style.cssText = `position:absolute;left:${x - 1}px;top:${y - 10}px;width:2px;height:20px;background:rgba(255,255,255,0.7)`;
+    F.appendChild(T);
+  }
+  for (const yr of o.pins || [a, b]) {
+    const x = xOf(yr), tp = (o.t + (o.dur || 1.4) * ((x - x0) / (x1 - x0)) * 0.98);
+    const pp = ease.outBack(prog(t, tp, 0.3)); if (pp <= 0) continue;
+    const D = document.createElement('div');
+    D.style.cssText = `position:absolute;left:${x - 13}px;top:${y - 13}px;width:26px;height:26px;border-radius:50%;background:#FF7A1A;border:3px solid #FFFFFF;box-sizing:border-box;transform:scale(${pp})`;
+    F.appendChild(D);
+    const Y = document.createElement('div');
+    Y.style.cssText = `position:absolute;left:${x - 120}px;width:240px;top:${y + 26}px;text-align:center;font-family:Anton;font-size:64px;line-height:1;color:#FFFFFF;` +
+      `text-shadow:0 4px 18px rgba(0,0,0,0.8);opacity:${clamp(pp, 0, 1)};transform:translateY(${(1 - pp) * 12}px)`;
+    Y.textContent = yr; F.appendChild(Y);
+  }
+  if (o.label) {
+    const Lb = document.createElement('div');
+    Lb.style.cssText = `position:absolute;left:0;right:0;top:${y - 70}px;text-align:center;font-family:'JetBrains Mono';font-weight:500;font-size:28px;letter-spacing:0.24em;color:#FFFFFF;` +
+      `text-shadow:0 2px 12px rgba(0,0,0,0.9);opacity:${prog(t, o.t + 0.1, 0.3)}`;
+    Lb.textContent = String(o.label).toUpperCase(); F.appendChild(Lb);
+  }
+  if (o.big) {
+    const bp = ease.outBack(prog(t, o.t + (o.dur || 1.4) * 0.8, 0.35));
+    const Bg = document.createElement('div');
+    Bg.style.cssText = `position:absolute;left:0;right:0;top:${y - 330}px;text-align:center;font-family:Anton;font-size:200px;line-height:1;color:#FF7A1A;` +
+      `text-shadow:0 8px 34px rgba(0,0,0,0.6);opacity:${clamp(bp * 2, 0, 1)};transform:scale(${0.8 + 0.2 * bp})`;
+    Bg.textContent = o.big; F.appendChild(Bg);
+  }
+  if (o.tag) { const C = chipBlock({ text: o.tag, t: o.t + (o.dur || 1.4), y: y + 120, size: 22 }, t); if (C) F.appendChild(C); }
+  return F;
+}
+// word tiles: black Inter Tight 800 on orange, popping in on their spoken words
+function tilesBlock(o, t) {
+  const F = document.createElement('div'); F.className = 'layer';
+  const out = o.tu != null ? prog(t, o.tu, 0.2) : 0; if (out >= 1) return null;
+  F.style.opacity = 1 - out;
+  const y0 = o.y || 430, gap = o.gap || 150;
+  o.items.forEach((it, i) => {
+    const p = prog(t, it.t, 0.22); if (p <= 0) return;
+    const e = ease.outBack(p), rot = (i % 2 ? 2 : -2.5);
+    const T = document.createElement('div');
+    T.style.cssText = `position:absolute;left:0;right:0;top:${y0 + i * gap}px;display:flex;justify-content:center;opacity:${clamp(p * 2, 0, 1)};transform:rotate(${rot}deg) scale(${0.6 + 0.4 * e})`;
+    T.innerHTML = `<div style="padding:10px 30px 14px;background:#FF7A1A;color:#000;font-family:'Inter Tight';font-weight:800;font-size:${o.size || 96}px;line-height:1;letter-spacing:-0.01em;` +
+      `box-shadow:0 14px 40px rgba(0,0,0,0.45);border-radius:6px;white-space:nowrap"></div>`;
+    T.firstChild.textContent = String(it.text).toUpperCase(); F.appendChild(T);
+  });
+  return F;
+}
+// collage: small footage cards over blurred live footage; strike, drop, survivor fills the frame
+const COLLAGE_POS = [[270, 420, -5], [800, 400, 4], [540, 640, -2], [280, 860, 3], [790, 880, -4]];
+function collageBlock(cg, sc, t) {
+  const F = document.createElement('div'); F.className = 'layer';
+  const fillP = cg.fill_t != null ? ease.inOut(prog(t, cg.fill_t, 0.55)) : 0;
+  if (fillP >= 1) return null;
+  const D = document.createElement('div'); D.className = 'layer'; D.style.background = `rgba(8,8,11,${0.32 * (1 - fillP)})`; F.appendChild(D);
+  const n = cg.cards.length, W = cg.w || 300, H = cg.h || 400, surv = cg.survivor || 0;
+  const order = cg.cards.map((c, i) => i).filter(i => i !== surv).concat([surv]);  // survivor drawn last (on top)
+  for (const i of order) {
+    const c = cg.cards[i], [cx, cy, rot] = COLLAGE_POS[i % COLLAGE_POS.length];
+    const ap = ease.outBack(prog(t, sc.start + 0.08 + i * 0.12, 0.3)); if (ap <= 0) continue;
+    let x = cx - W / 2, y = cy - H / 2, w = W, h = H, r = rot, op = clamp(ap * 2, 0, 1), rad = 18, sk = 0.7 + 0.3 * ap;
+    if (i !== surv && cg.drop_t != null) {
+      const dp = prog(t, cg.drop_t + (i % 3) * 0.06, 0.5), de = dp * dp;
+      y += de * 1300; r += de * (i % 2 ? 24 : -24); op *= 1 - clamp(dp * 1.2 - 0.2, 0, 1);
+    }
+    if (i === surv && fillP > 0) { x *= 1 - fillP; y *= 1 - fillP; w = W + (1080 - W) * fillP; h = H + (1920 - H) * fillP; r = rot * (1 - fillP); rad = 18 * (1 - fillP); sk = 1; }
+    if (op <= 0) continue;
+    const C = document.createElement('div');
+    C.style.cssText = `position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px;border-radius:${rad}px;overflow:hidden;opacity:${op};` +
+      `transform:rotate(${r}deg) scale(${sk});box-shadow:0 18px 50px rgba(0,0,0,0.55);border:${fillP > 0 && i === surv ? 0 : 6}px solid #F5F2EA;box-sizing:border-box;background:#111`;
+    const im = IMGS[c.img];
+    if (im) {
+      const cv = document.createElement('canvas'); cv.width = Math.max(2, Math.round(w)); cv.height = Math.max(2, Math.round(h));
+      const g = cv.getContext('2d'), s2 = Math.max(cv.width / im.width, cv.height / im.height);
+      g.drawImage(im, (cv.width - im.width * s2) / 2, (cv.height - im.height * s2) / 2, im.width * s2, im.height * s2);
+      cv.style.cssText = 'display:block;width:100%;height:100%'; C.appendChild(cv);
+    }
+    if (i !== surv && cg.strike_t != null) {
+      const sp = ease.out(prog(t, cg.strike_t + i * 0.07, 0.25));
+      if (sp > 0) { const S = document.createElement('div'); S.style.cssText = `position:absolute;left:-10%;top:50%;height:12px;width:${120 * sp}%;background:#FF3B30;transform:rotate(-28deg);transform-origin:0 50%;box-shadow:0 2px 10px rgba(0,0,0,0.5)`; C.appendChild(S); }
+    }
+    F.appendChild(C);
+  }
+  return F;
 }
 function dimBlock(dm, t) {
   const F = document.createElement('div'); F.className = 'layer';
@@ -517,6 +676,7 @@ function mapBlock(sc, t, th) {
   const lonL = M.lon0 + c0 * M.step;
   const xOf = lon => left + ((lon - lonL) / M.step) * cell, yOf = lat => top + ((M.lat0 - lat) / M.step - r0) * cell;
   const F = document.createElement('div'); F.className = 'layer';
+  if (sc.mapAlpha != null) F.style.opacity = sc.mapAlpha;
   if (sc.mapCard) {  // story: the map floats on a dark glass card over the live footage
     const K = document.createElement('div');
     K.style.cssText = `position:absolute;left:${left - 40}px;top:${top - 40}px;width:${W + 80}px;height:${H + 80}px;border-radius:28px;background:rgba(10,10,14,0.62);` +
@@ -738,7 +898,12 @@ window.renderAt = function (t) {
     if (sc.section) root.appendChild(sectionHeader(sc.section, t));
     if (sc.stamp) { const X = stampBlock(sc.stamp, t); if (X) root.appendChild(X); }
     if (sc.dim) { const X = dimBlock(sc.dim, t); if (X) root.appendChild(X); }
+    if (sc.collage) { const X = collageBlock(sc.collage, sc, t); if (X) root.appendChild(X); }
     if (sc.paper) { const X = paperBlock(sc, t); if (X) root.appendChild(X); }
+    if (sc.timeline) { const X = timelineBlock(sc.timeline, t); if (X) root.appendChild(X); }
+    if (sc.counter) { const X = counterBlock(sc.counter, t); if (X) root.appendChild(X); }
+    if (sc.tiles) { const X = tilesBlock(sc.tiles, t); if (X) root.appendChild(X); }
+    for (const c of sc.chip || []) { const X = chipBlock(c, t); if (X) root.appendChild(X); }
     if (sc.caps) {
       const C = sc.caps_style === 'story' ? storyCaps(sc, t) : capBlock(sc, t);
       if (C && sc.caps_style === 'story') root.appendChild(localDark(sc.capsY || SK.cy, 78, 9, 0.38));  // soft local shadow, never a box

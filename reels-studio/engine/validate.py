@@ -124,7 +124,8 @@ for i, b in enumerate(beats):
             for k2 in ("at", "until"):
                 if k2 in o and o[k2] >= n: errs.append(f"beat {i}: {key} {k2} out of range ({n} words)")
     for c in b.get("paper") or []:
-        if not c.get("head"): errs.append(f"beat {i}: paper card needs head")
+        if not (c.get("head") or c.get("redact") or c.get("quote")): errs.append(f"beat {i}: paper card needs head, quote or redact")
+        if c.get("quote") and any(d in c["quote"] for d in ALLD): errs.append(f"beat {i}: dash in paper quote")
         if c.get("mark") and c["mark"] not in c.get("head", ""): errs.append(f"beat {i}: paper mark '{c['mark']}' is not in the headline")
         if not c.get("source"): warns.append(f"beat {i}: paper card without a source line")
         for v in (c.get("label"), c.get("head"), c.get("source")):
