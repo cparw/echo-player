@@ -1,0 +1,965 @@
+{
+ "title": "Places 1: Six regions, six real Floridas",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.8
+ },
+ "fps": 30,
+ "tag": "GTA 6",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "voice_preset": 1,
+ "beats": [
+  {
+   "say": "Florida's highest point? Three hundred forty five feet.",
+   "instant": true,
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "FLORIDA'S@0",
+     "HIGHEST@1"
+    ],
+    [
+     "POINT?@2"
+    ],
+    [
+     "*345 FEET.*@3"
+    ]
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_04.jpg",
+   "pan": [
+    0.55,
+    0.72
+   ],
+   "footnote": "USGS: Britton Hill, Florida's highest natural point, 345 ft"
+  },
+  {
+   "say": "Why does GTA Six have a mountain?",
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "WHY@0",
+     "DOES@1",
+     "GTA 6@2"
+    ],
+    [
+     "HAVE@4",
+     "A@5",
+     "^MOUNTAIN?^@6"
+    ]
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_02.jpg",
+   "pan": [
+    0.45,
+    0.62
+   ],
+   "footnote": "Rockstar: Mount Kalaga National Park, one of six Leonida regions"
+  },
+  {
+   "say": "Rockstar described six places in GTA Six. Each one hides real Florida.",
+   "show": [
+    [
+     "Rockstar@0",
+     "described@1"
+    ],
+    [
+     "*six*@2",
+     "places.@3"
+    ],
+    [
+     "Each@7",
+     "one@8",
+     "hides@9"
+    ],
+    [
+     "^real^@10",
+     "^Florida.^@11"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 104,
+     "offset": 0.3
+    },
+    {
+     "shot": 26,
+     "offset": 6.45,
+     "at": 7
+    }
+   ],
+   "footnote": "Six regions on Rockstar's Only in Leonida page. Not the full map."
+  },
+  {
+   "say": "Rockstar's site even calls Leonida the sunshine state.",
+   "show": [
+    [
+     "Rockstar's@0",
+     "site@1"
+    ],
+    [
+     "calls@3",
+     "^Leonida^@4"
+    ],
+    [
+     "“the@5",
+     "*sunshine*@6"
+    ],
+    [
+     "state.”@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1
+    },
+    {
+     "shot": 81,
+     "offset": 1.6,
+     "at": 5
+    }
+   ],
+   "footnote": "Rockstar, Only in Leonida: “destinations across the sunshine state”"
+  },
+  {
+   "say": "Start in Vice City.",
+   "show": [
+    [
+     "*Vice*@2",
+     "*City.*@3"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_01.jpg",
+   "pan": [
+    0.12,
+    0.42
+   ],
+   "centerY": 500
+  },
+  {
+   "say": "Rockstar calls its port",
+   "show": [
+    [
+     "Rockstar@0",
+     "calls@1"
+    ],
+    [
+     "its@2",
+     "^port:^@3"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 60,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "the cruise ship capital of the world.",
+   "show": [
+    [
+     "“The@0",
+     "cruise@1",
+     "ship@2"
+    ],
+    [
+     "^capital^@3",
+     "of@4"
+    ],
+    [
+     "the@5",
+     "world.”@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
+   "pan": [
+    0.0,
+    0.2
+   ],
+   "footnote": "Rockstar, official Vice City text"
+  },
+  {
+   "say": "Real Miami's port has a registered slogan.",
+   "show": [
+    [
+     "Real@0",
+     "Miami's@1",
+     "port:@2"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/vice_city_skyline_aerial.jpg",
+   "pan": [
+    0.42,
+    0.68
+   ]
+  },
+  {
+   "say": "The Cruise Capital of the World.",
+   "show": [
+    [
+     "“The@0",
+     "Cruise@1"
+    ],
+    [
+     "*Capital*@2"
+    ],
+    [
+     "of@3",
+     "the@4",
+     "World.”@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.22,
+    0.46
+   ],
+   "footnote": "PortMiami, Miami Dade County: The Cruise Capital of the World®"
+  },
+  {
+   "say": "Rockstar puts the Leonida Keys by some of America's most beautiful and dangerous waters.",
+   "show": [
+    [
+     "^Leonida^@3",
+     "^Keys:^@4"
+    ],
+    [
+     "“most@9",
+     "*beautiful*@10"
+    ],
+    [
+     "and@11",
+     "^dangerous^@12"
+    ],
+    [
+     "waters.”@13"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 0.45
+    },
+    {
+     "shot": 83,
+     "offset": 0.5,
+     "at": 5
+    },
+    {
+     "shot": 84,
+     "offset": 0.1,
+     "at": 10
+    }
+   ],
+   "footnote": "Rockstar, official Leonida Keys text"
+  },
+  {
+   "say": "The real Keys sit beside what NOAA calls",
+   "show": [
+    [
+     "The@0",
+     "real@1",
+     "Keys:@2"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Leonida_Keys_01.jpg",
+   "pan": [
+    0.5,
+    0.78
+   ]
+  },
+  {
+   "say": "North America's only coral barrier reef.",
+   "show": [
+    [
+     "North@0",
+     "America's@1"
+    ],
+    [
+     "*only*@2"
+    ],
+    [
+     "coral@3",
+     "barrier@4",
+     "reef.@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Leonida_Keys_04.jpg",
+   "pan": [
+    0.32,
+    0.55
+   ],
+   "footnote": "NOAA, Florida Keys National Marine Sanctuary"
+  },
+  {
+   "say": "Then Grassrivers. Flip the name",
+   "show": [
+    [
+     "*Grassrivers.*@1"
+    ],
+    [
+     "Flip@2",
+     "the@3",
+     "name:@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Grassrivers_02.jpg",
+   "pan": [
+    0.12,
+    0.36
+   ],
+   "flash": true
+  },
+  {
+   "say": "and you get River of Grass.",
+   "show": [
+    [
+     "^River^@3",
+     "^of^@4",
+     "^Grass.^@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Grassrivers_04.jpg",
+   "pan": [
+    0.0,
+    0.16
+   ],
+   "footnote": "Our reading of the name. Rockstar hasn't explained it."
+  },
+  {
+   "say": "That's the Everglades' nickname,",
+   "show": [
+    [
+     "The@1",
+     "*Everglades'*@2"
+    ],
+    [
+     "nickname,@3"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Grassrivers_02.jpg",
+   "pan": [
+    0.64,
+    0.9
+   ]
+  },
+  {
+   "say": "from a classic nineteen forty seven book.",
+   "show": [
+    [
+     "from@0",
+     "a@1",
+     "1947@3"
+    ],
+    [
+     "book.@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/safehouse_stilt_house.jpg",
+   "pan": [
+    0.04,
+    0.28
+   ],
+   "footnote": "The Everglades: River of Grass, Marjory Stoneman Douglas, 1947 (National Park Service)"
+  },
+  {
+   "say": "Rockstar says gators are just the famous part.",
+   "show": [
+    [
+     "Gators?@2"
+    ],
+    [
+     "The@5",
+     "*famous*@6",
+     "part.@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 82,
+     "offset": 0.1
+    }
+   ],
+   "footnote": "Rockstar, official Grassrivers text"
+  },
+  {
+   "say": "South Florida is the only place",
+   "show": [
+    [
+     "South@0",
+     "Florida:@1"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 6.1
+    }
+   ]
+  },
+  {
+   "say": "alligators and crocodiles coexist.",
+   "show": [
+    [
+     "^alligators^@0",
+     "and@1"
+    ],
+    [
+     "^crocodiles,^@2",
+     "together.@3"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Grassrivers_04.jpg",
+   "pan": [
+    0.88,
+    1.0
+   ],
+   "footnote": "Coexist fact: National Park Service"
+  },
+  {
+   "say": "Port Gellhorn? Rockstar calls it Leonida's forgotten coast.",
+   "show": [
+    [
+     "Port@0",
+     "Gellhorn:@1"
+    ],
+    [
+     "“Leonida's@5"
+    ],
+    [
+     "*forgotten*@6"
+    ],
+    [
+     "coast.”@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Port_Gellhorn_01.jpg",
+   "pan": [
+    0.0,
+    0.14
+   ],
+   "footnote": "Rockstar, official Port Gellhorn text",
+   "centerY": 935,
+   "footTop": 1262
+  },
+  {
+   "say": "Real Florida has one too.",
+   "show": [
+    [
+     "Real@0",
+     "Florida@1"
+    ],
+    [
+     "has@2",
+     "one@3",
+     "too.@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/ganado_yellow_pickup.jpg",
+   "pan": [
+    0.7,
+    0.9
+   ]
+  },
+  {
+   "say": "A quiet stretch of Gulf shore,",
+   "show": [
+    [
+     "A@0",
+     "quiet@1",
+     "stretch@2"
+    ],
+    [
+     "of@3",
+     "^Gulf^@4",
+     "shore,@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "trademarked as the Forgotten Coast.",
+   "show": [
+    [
+     "Trademarked:@0"
+    ],
+    [
+     "The@2",
+     "^Forgotten^@3"
+    ],
+    [
+     "^Coast.^@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/kayak_sunset.jpg",
+   "pan": [
+    0.45,
+    0.68
+   ],
+   "footnote": "Trademark first used in 1992 by the Apalachicola Bay Chamber. The link is our reading."
+  },
+  {
+   "say": "Ambrosia runs on a sugar refinery.",
+   "show": [
+    [
+     "*Ambrosia*@0",
+     "runs@1"
+    ],
+    [
+     "on@2",
+     "^sugar.^@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 2.1
+    }
+   ],
+   "centerY": 560
+  },
+  {
+   "say": "Rockstar even shows a field burning at sunset.",
+   "show": [
+    [
+     "A@3",
+     "field,@4",
+     "*burning*@5"
+    ],
+    [
+     "at@6",
+     "sunset.@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Ambrosia_04.jpg",
+   "pan": [
+    0.12,
+    0.38
+   ],
+   "footnote": "Rockstar: Allied Crystal sugar refinery, plus its own burning field screenshot"
+  },
+  {
+   "say": "Growers burn fields before harvest.",
+   "show": [
+    [
+     "Growers@0",
+     "*burn*@1",
+     "fields@2"
+    ],
+    [
+     "before@3",
+     "harvest.@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Ambrosia_04.jpg",
+   "pan": [
+    0.6,
+    0.84
+   ]
+  },
+  {
+   "say": "Locals call the ash black snow.",
+   "show": [
+    [
+     "Locals@0",
+     "call@1",
+     "it@2"
+    ],
+    [
+     "*black*@4",
+     "*snow.*@5"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Ambrosia_02.jpg",
+   "pan": [
+    0.55,
+    0.85
+   ],
+   "footnote": "Black snow: AP, 2019"
+  },
+  {
+   "say": "And Mount Kalaga sits up",
+   "show": [
+    [
+     "*Mount*@1",
+     "*Kalaga*@2"
+    ],
+    [
+     "sits@3",
+     "up@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_04.jpg",
+   "pan": [
+    0.36,
+    0.58
+   ]
+  },
+  {
+   "say": "against the state's northern border.",
+   "show": [
+    [
+     "against@0",
+     "the@1",
+     "state's@2"
+    ],
+    [
+     "^northern^@3",
+     "border.@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_06.jpg",
+   "pan": [
+    0.42,
+    0.68
+   ],
+   "footnote": "Rockstar, official Mount Kalaga text"
+  },
+  {
+   "say": "So does real Florida's highest point. Britton Hill.",
+   "show": [
+    [
+     "Real@2",
+     "Florida's@3"
+    ],
+    [
+     "*highest*@4",
+     "point:@5"
+    ],
+    [
+     "^Britton^@6",
+     "^Hill.^@7"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 88,
+     "offset": 0.2
+    }
+   ],
+   "footnote": "Walton County, about 2 miles from the Alabama line"
+  },
+  {
+   "say": "Three hundred forty five feet.",
+   "show": [],
+   "layout": "number",
+   "from": 0,
+   "to": 345,
+   "count_at": 0,
+   "count_dur": 1.1,
+   "label": "feet. Britton Hill, real Florida's highest point",
+   "numSize": 420,
+   "footnote": "USGS elevation data",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_02.jpg",
+   "pan": [
+    0.62,
+    0.95
+   ]
+  },
+  {
+   "say": "The lowest state high point in America.",
+   "show": [
+    [
+     "The@0",
+     "*lowest*@1"
+    ],
+    [
+     "state@2",
+     "high@3",
+     "point@4"
+    ],
+    [
+     "in@5",
+     "America.@6"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_05.jpg",
+   "pan": [
+    0.6,
+    0.84
+   ],
+   "footnote": "Lowest high point of any US state"
+  },
+  {
+   "say": "Rockstar built Florida a mountain.",
+   "show": [
+    [
+     "Rockstar@0",
+     "built@1"
+    ],
+    [
+     "a@3",
+     "^mountain.^@4"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Mount_Kalaga_National_Park_04.jpg",
+   "pan": [
+    0.8,
+    1.0
+   ]
+  },
+  {
+   "say": "Rockstar never says these are on purpose. You decide.",
+   "show": [
+    [
+     "Rockstar@0",
+     "*never*@1",
+     "says@2"
+    ],
+    [
+     "these@3",
+     "are@4"
+    ],
+    [
+     "on@5",
+     "purpose.@6"
+    ],
+    [
+     "^You^@7",
+     "^decide.^@8"
+    ]
+   ],
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 6.7
+    },
+    {
+     "shot": 15,
+     "offset": 1.95,
+     "at": 7
+    }
+   ],
+   "footnote": "Rockstar's words are quoted. Real world links are our reading."
+  },
+  {
+   "say": "Which region are you?",
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "Which@0",
+     "*region*@1"
+    ],
+    [
+     "are@2",
+     "you?@3"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "say": "Follow noticed dot daily and comment TRIP.",
+   "show": [
+    [
+     "Follow@0",
+     "^@noticed.daily^@1"
+    ],
+    [
+     "comment@4",
+     "*TRIP*@6"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 65,
+     "offset": 0.1
+    },
+    {
+     "shot": 16,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "say": "The six stop road trip lands straight in your inbox.",
+   "show": [
+    [
+     "six@1",
+     "stop@2"
+    ],
+    [
+     "road@3",
+     "*trip*@4"
+    ],
+    [
+     "in@7",
+     "your@8",
+     "^inbox.^@9"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 0.6
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "say": "See you in Leonida.",
+   "show": [
+    [
+     "See@0",
+     "you@1",
+     "in@2"
+    ],
+    [
+     "*Leonida.*@3"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 6.0
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "hold": 2.0,
+   "brand": "noticed.",
+   "series": "Places",
+   "episode": "The six stop road trip lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT TRIP",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    }
+   ],
+   "handle": "@noticed.daily",
+   "wordmark": true
+  }
+ ]
+}

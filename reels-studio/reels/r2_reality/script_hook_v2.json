@@ -1,0 +1,638 @@
+{
+ "title": "GTA 6 Reality Check: before you buy",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "fps": 30,
+ "tag": "GTA 6 · REALITY CHECK",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six is eighty dollars. GTA Five cost eighty six in today's money.",
+   "instant": true,
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "GTA 6@0",
+     "IS@2",
+     "*$80.*@3"
+    ],
+    [
+     "GTA 5@5",
+     "COST@7",
+     "^$86^@8"
+    ],
+    [
+     "IN@10",
+     "TODAY'S@11",
+     "MONEY.@12"
+    ]
+   ],
+   "footnote": "Our math: $59.99 in Sept 2013 is $86.47 in Oct 2026 (BLS CPI). In plain dollars GTA VI costs $20 more.",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 2.5
+    },
+    {
+     "shot": 89,
+     "offset": 0.1,
+     "at": 5
+    }
+   ],
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 500,
+     "t": 0
+    },
+    "right": {
+     "shot": 91,
+     "t": 2.5
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "Save this before you buy.",
+   "show": [
+    [
+     "*Save*@0",
+     "this@1"
+    ],
+    [
+     "before@2",
+     "you@3",
+     "buy.@4"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 88,
+     "offset": 0.1
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "GTA Five cost sixty dollars in twenty thirteen. In today's money, that's about eighty six. So GTA Six is actually cheaper.",
+   "layout": "versus",
+   "topic": "LAUNCH PRICE IN TODAY'S DOLLARS",
+   "show": [
+    [
+     "Price@0",
+     "*check.*@2"
+    ]
+   ],
+   "left": {
+    "label": "GTA V, 2013",
+    "value": "$86",
+    "sub": "$59.99 back then",
+    "at": 12
+   },
+   "right": {
+    "label": "GTA VI, 2026",
+    "value": "$80",
+    "sub": "$79.99 Standard",
+    "at": 16
+   },
+   "footnote": "Our math: US CPI, Sept 2013 to Oct 2026. In plain dollars GTA VI costs $20 more.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 9.0,
+     "at": 8
+    },
+    {
+     "shot": 77,
+     "offset": 6.5,
+     "at": 15
+    }
+   ],
+   "bg": "scrim",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 505,
+     "t": 0
+    },
+    "right": {
+     "shot": 77,
+     "t": 6.6
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "Ultimate is a hundred. On Xbox, buy Standard now and upgrade later for the same total.",
+   "layout": "versus",
+   "topic": "XBOX: SAME TOTAL EITHER WAY",
+   "show": [],
+   "left": {
+    "label": "ULTIMATE TODAY",
+    "value": "$99.99",
+    "sub": "everything up front",
+    "at": 0
+   },
+   "right": {
+    "label": "STANDARD NOW",
+    "value": "$79.99",
+    "sub": "+ $20 upgrade later",
+    "at": 6
+   },
+   "footnote": "Microsoft Store list prices, 12 Nov 2026. PlayStation has no upgrade price yet.",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 0.5
+    },
+    {
+     "shot": 74,
+     "offset": 13.0,
+     "at": 9
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "On PlayStation, that upgrade has no price yet.",
+   "show": [
+    [
+     "On@0",
+     "PlayStation,@1"
+    ],
+    [
+     "no@5",
+     "*price*@6",
+     "yet.@7"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 58,
+     "offset": 0.1
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Buy before November twentieth and you get the Vintage Vice City Pack.",
+   "show": [
+    [
+     "Buy@0",
+     "before@1",
+     "*Nov 20*@2"
+    ],
+    [
+     "Vintage@8",
+     "Vice@9",
+     "City@10",
+     "^Pack^@11"
+    ]
+   ],
+   "footnote": "Rockstar: digital buys before 20 Nov. Boxed preorders while supplies last.",
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.2
+    },
+    {
+     "shot": 77,
+     "offset": 10.0,
+     "at": 7
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "A classic car, a garage, vintage outfits.",
+   "layout": "list",
+   "show": [],
+   "items": [
+    {
+     "text": "'55 VAPID STANIER",
+     "at": 1,
+     "size": 96
+    },
+    {
+     "text": "SHORE COURT GARAGE",
+     "at": 4,
+     "size": 96
+    },
+    {
+     "text": "VINTAGE OUTFITS",
+     "at": 5,
+     "size": 96,
+     "final": true
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/stanier_neon.jpg",
+   "pan": [
+    0.35,
+    0.6
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Send this to the friend who's buying it this week.",
+   "show": [
+    [
+     "*Send*@0",
+     "this@1",
+     "to@2"
+    ],
+    [
+     "the@3",
+     "friend@4",
+     "who's@5"
+    ],
+    [
+     "buying@6",
+     "it.@7"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 42,
+     "offset": 1.0
+    },
+    {
+     "shot": 48,
+     "offset": 0.1,
+     "at": 3
+    },
+    {
+     "shot": 47,
+     "offset": 0.8,
+     "at": 6
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "It's PS Five and Xbox Series X and S only. No PS Four, no PC announced.",
+   "layout": "list",
+   "show": [],
+   "items": [
+    {
+     "text": "PS5",
+     "at": 1,
+     "size": 104
+    },
+    {
+     "text": "XBOX SERIES X AND S",
+     "at": 4,
+     "size": 88
+    },
+    {
+     "text": "PS4",
+     "at": 10,
+     "strike_at": 11,
+     "size": 104
+    },
+    {
+     "text": "PC",
+     "at": 13,
+     "strike_at": 14,
+     "size": 104
+    }
+   ],
+   "footnote": "Sony: not on PS4. No PC version or date announced as of 12 Nov 2026.",
+   "clips": [
+    {
+     "shot": 102,
+     "offset": 0.1
+    },
+    {
+     "shot": 65,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 101,
+     "offset": 0.1,
+     "at": 10
+    },
+    {
+     "shot": 85,
+     "offset": 0.1,
+     "at": 13
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "On Xbox One, you can only stream it, through Xbox Cloud Gaming.",
+   "show": [
+    [
+     "Xbox@1",
+     "One?@2"
+    ],
+    [
+     "*Stream*@6",
+     "only.@7"
+    ]
+   ],
+   "footnote": "Xbox Wire: Xbox Cloud Gaming from 1 a.m. ET, 19 Nov. Game sold separately.",
+   "clips": [
+    {
+     "shot": 84,
+     "offset": 0.1
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 6
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 9
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Every console targets thirty frames per second. Even the PS Five Pro.",
+   "layout": "number",
+   "from": 0,
+   "to": 30,
+   "suffix": " FPS",
+   "label": "Rockstar's target on every console",
+   "count_at": 3,
+   "count_dur": 0.8,
+   "show": [
+    [
+     "Every@0",
+     "console@1"
+    ]
+   ],
+   "footnote": "Rockstar, 10 Nov 2026. PS5 Pro adds PSSR and ray traced shadows.",
+   "clips": [
+    {
+     "shot": 15,
+     "offset": 1.9
+    },
+    {
+     "shot": 61,
+     "offset": 0.1,
+     "at": 7
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "You'll need up to two hundred twelve gigabytes. The box has no disc, just a code.",
+   "layout": "number",
+   "from": 0,
+   "to": 212,
+   "suffix": " GB",
+   "label": "free space, depending on your console",
+   "count_at": 4,
+   "count_dur": 1.0,
+   "show": [
+    [
+     "Up@2",
+     "to@3"
+    ]
+   ],
+   "footnote": "Rockstar: up to 212 GB. Boxed copies hold a download code, no disc.",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 5.3
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 8
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "And at launch, it's single player only.",
+   "show": [
+    [
+     "At@1",
+     "launch:@2"
+    ],
+    [
+     "*single*@4",
+     "player@5"
+    ],
+    [
+     "only.@6"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 40,
+     "offset": 0.1
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Is it worth it? What nobody knows yet is how it runs. Reviews are reported for November eighteenth.",
+   "show": [
+    [
+     "Worth@2",
+     "it?@3"
+    ],
+    [
+     "How@9",
+     "it@10",
+     "*runs.*@11"
+    ],
+    [
+     "Reviews:@12",
+     "^Nov 18^@16"
+    ]
+   ],
+   "footnote": "Review embargo reported for 18 Nov (Insider Gaming), not confirmed by Rockstar.",
+   "clips": [
+    {
+     "shot": 21,
+     "offset": 0.1
+    },
+    {
+     "shot": 43,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 12
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "If thirty frames is fine for you, buy Standard and decide on Ultimate after the reviews.",
+   "show": [
+    [
+     "30 fps@1",
+     "fine?@4"
+    ],
+    [
+     "Buy@7",
+     "*Standard.*@8"
+    ],
+    [
+     "Ultimate@12",
+     "after@13",
+     "reviews.@15"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 15.0
+    },
+    {
+     "shot": 74,
+     "offset": 21.0,
+     "at": 9
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Standard or Ultimate? Tell me which one.",
+   "show": [
+    [
+     "Standard@0"
+    ],
+    [
+     "or@1",
+     "*Ultimate?*@2"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 46,
+     "offset": 0.1
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 3
+    }
+   ],
+   "bg": "scrim"
+  },
+  {
+   "say": "Follow noticed dot daily and comment CHECK.",
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "Follow@0",
+     "^@noticed.daily^@1"
+    ],
+    [
+     "comment@4",
+     "*CHECK*@6"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 1.8
+    },
+    {
+     "shot": 83,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "My full launch checklist lands straight in your inbox.",
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "Full@1",
+     "launch@2"
+    ],
+    [
+     "*checklist*@3"
+    ],
+    [
+     "in@6",
+     "your@7",
+     "^inbox.^@8"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 2.2
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "font": "anton",
+   "bg": "scrim",
+   "show": [
+    [
+     "See@0",
+     "you@1",
+     "in@2"
+    ],
+    [
+     "*Leonida.*@3"
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "hold": 2.6,
+   "brand": "noticed.",
+   "series": "Reality check",
+   "episode": "The launch checklist lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT CHECK",
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ],
+   "handle": "@noticed.daily",
+   "wordmark": true
+  }
+ ]
+}

@@ -1,0 +1,796 @@
+{
+ "title": "GTA 6 was planned across parts of two continents (v2, CTA rule)",
+ "format": "story",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six was planned across parts of two continents. Then it shrank.",
+   "instant": true,
+   "bg": "scrim",
+   "push": 0.06,
+   "caps": [
+    {
+     "text": "GTA 6 was planned across / parts of two continents. / Then it shrank.",
+     "at": 0,
+     "key": [
+      "parts of two continents"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek, 14 Oct 2026.",
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 9
+    }
+   ]
+  },
+  {
+   "say": "But Vice City alone is still twice the size of Los Santos.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "2x",
+    "small": "VICE CITY VS LOS SANTOS",
+    "at": 6,
+    "color": "accent",
+    "cy": 700
+   },
+   "caps": [
+    {
+     "text": "But Vice City alone is still / twice the size of Los Santos.",
+     "at": 0,
+     "key": [
+      "twice the size"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: via The New York Times.",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 5.4
+    },
+    {
+     "shot": 77,
+     "offset": 9.6,
+     "at": 6
+    }
+   ],
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 500,
+     "t": 0
+    },
+    "right": {
+     "shot": 91,
+     "t": 5.4
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "And how they built what was left is why this game looks so real.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "collage": {
+    "cards": [
+     {
+      "shot": 82,
+      "offset": 0.6
+     },
+     {
+      "shot": 16,
+      "offset": 0.3
+     },
+     {
+      "shot": 77,
+      "offset": 6.8
+     },
+     {
+      "shot": 88,
+      "offset": 1.0
+     },
+     {
+      "shot": 5,
+      "offset": 6.2
+     }
+    ],
+    "survivor": 2,
+    "strike_at": 0,
+    "drop_at": 2,
+    "fill_at": 4
+   },
+   "capsY": 1190,
+   "caps": [
+    {
+     "text": "And how they built / what was left",
+     "at": 0
+    },
+    {
+     "text": "is why this game / looks so real.",
+     "at": 7,
+     "key": [
+      "looks so real"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek, 14 Oct 2026.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.1
+    },
+    {
+     "shot": 77,
+     "offset": 6.8,
+     "at": 4
+    },
+    {
+     "shot": 30,
+     "offset": 0.5,
+     "at": 7
+    },
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "at": 11
+    }
+   ]
+  },
+  {
+   "say": "Twenty fifteen. Miami. Rockstar's Rob Nelson lands with senior staff, on the game's very first research trip.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "2015",
+    "small": "FIRST RESEARCH TRIP MIAMI, FLORIDA",
+    "until": 3
+   },
+   "chip": {
+    "text": "ROB NELSON, CO STUDIO HEAD, ROCKSTAR NORTH",
+    "at": 3,
+    "until": 10,
+    "y": 880
+   },
+   "caps": [
+    {
+     "text": "Rockstar's Rob Nelson lands / with senior staff,",
+     "at": 3
+    },
+    {
+     "text": "on the game's very / first research trip.",
+     "at": 10,
+     "key": [
+      "first research trip"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek, 14 Oct 2026.",
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.4
+    },
+    {
+     "shot": 33,
+     "offset": 0.3,
+     "at": 3
+    },
+    {
+     "shot": 74,
+     "offset": 5.4,
+     "at": 7
+    },
+    {
+     "shot": 77,
+     "offset": 0.2,
+     "at": 12
+    },
+    {
+     "shot": 43,
+     "offset": 0.1,
+     "at": 15
+    }
+   ]
+  },
+  {
+   "say": "The code name: Project Americas.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "CODE NAME",
+     "head": "Project Americas",
+     "mark": "Americas",
+     "mark_at": 4,
+     "source": "Bloomberg reports, Businessweek, 14 Oct 2026",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek, 14 Oct 2026."
+  },
+  {
+   "say": "Because the plan covered large stretches of North and South America.",
+   "bg": "scrim",
+   "mapCard": true,
+   "layout": "map",
+   "lonMin": -130,
+   "lonMax": -30,
+   "latTop": 62,
+   "latBot": -56,
+   "mapW": 560,
+   "mapTop": 300,
+   "region": {
+    "lonMax": -30,
+    "at": 4
+   },
+   "capsY": 1130,
+   "caps": [
+    {
+     "text": "Because the plan covered / large stretches of",
+     "at": 0
+    },
+    {
+     "text": "North and South America.",
+     "at": 7,
+     "key": [
+      "North and South America"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Bloomberg Businessweek, 14 Oct 2026.",
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 6.1
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 62,
+     "offset": 9.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Then it shrank. To one city, and the land around it.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "mapCard": true,
+   "layout": "map",
+   "lonMin": -130,
+   "lonMax": -30,
+   "latTop": 62,
+   "latBot": -56,
+   "mapW": 560,
+   "mapTop": 300,
+   "region": {
+    "lonMax": -30,
+    "at": 0
+   },
+   "collapse": {
+    "lon": -81.4,
+    "lat": 27.6,
+    "at": 2,
+    "dur": 0.5,
+    "label": "LEONIDA"
+   },
+   "dim": {
+    "text": "Then it shrank.",
+    "until": 3,
+    "cy": 1080
+   },
+   "capsY": 1240,
+   "caps": [
+    {
+     "text": "To one city, / and the land around it.",
+     "at": 3,
+     "key": [
+      "one city"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.1
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Bloomberg, which reported it, doesn't say exactly why.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "THE REASON",
+     "redact": true,
+     "source": "Bloomberg does not say exactly why",
+     "at": 0
+    }
+   ],
+   "caps": [
+    {
+     "text": "Bloomberg, which reported it, / doesn't say exactly why.",
+     "at": 0,
+     "key": [
+      "exactly why"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 31,
+     "offset": 2.0
+    },
+    {
+     "shot": 27,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "But the research never stopped. For a decade, Rockstar staff kept coming back to Miami.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "timeline": {
+    "from": 2015,
+    "to": 2026,
+    "at": 5,
+    "dur": 1.6,
+    "label": "RESEARCH TRIPS, MIAMI",
+    "y": 720
+   },
+   "caps": [
+    {
+     "text": "But the research / never stopped.",
+     "at": 0
+    },
+    {
+     "text": "For a decade, Rockstar staff / kept coming back to Miami.",
+     "at": 5
+    }
+   ],
+   "footnote": "REPORTED: Dazed.",
+   "clips": [
+    {
+     "shot": 3,
+     "offset": 0.1
+    },
+    {
+     "shot": 41,
+     "offset": 0.1,
+     "at": 5
+    },
+    {
+     "shot": 28,
+     "offset": 0.1,
+     "at": 10
+    }
+   ]
+  },
+  {
+   "say": "Hanging out. Listening to stories.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "quote": "We hang out, get a feeling for the place, listen to the stories...",
+     "source": "Rupert Humphries, Rockstar, to Dazed",
+     "at": 0
+    }
+   ],
+   "caps": [],
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 1.5
+    },
+    {
+     "shot": 47,
+     "offset": 1.0,
+     "at": 2
+    }
+   ]
+  },
+  {
+   "say": "They rode along with police. Visited racetracks and nightclubs. Interviewed respected people from every kind of neighbourhood, and hired some.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "tiles": {
+    "items": [
+     {
+      "text": "RIDE ALONGS",
+      "at": 1
+     },
+     {
+      "text": "RACETRACKS",
+      "at": 6
+     },
+     {
+      "text": "NIGHTCLUBS",
+      "at": 8
+     }
+    ],
+    "until": 9,
+    "y": 420,
+    "gap": 165
+   },
+   "caps": [
+    {
+     "text": "Interviewed respected people / from every kind of neighbourhood,",
+     "at": 9
+    },
+    {
+     "text": "and hired some.",
+     "at": 17,
+     "key": [
+      "hired some"
+     ]
+    }
+   ],
+   "footnote": "REPORTED / ROCKSTAR SAYS: The New York Times.",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.3
+    },
+    {
+     "shot": 32,
+     "offset": 4.8,
+     "at": 3
+    },
+    {
+     "shot": 88,
+     "offset": 1.0,
+     "at": 6
+    },
+    {
+     "shot": 65,
+     "offset": 0.1,
+     "at": 7
+    },
+    {
+     "shot": 72,
+     "offset": 0.2,
+     "at": 8
+    },
+    {
+     "shot": 27,
+     "offset": 0.1,
+     "at": 9
+    },
+    {
+     "shot": 28,
+     "offset": 0.1,
+     "at": 12
+    },
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "at": 15
+    },
+    {
+     "shot": 69,
+     "offset": 0.1,
+     "at": 17
+    }
+   ]
+  },
+  {
+   "say": "So when the first trailer dropped, Florida recognised itself.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "So when the first / trailer dropped,",
+     "at": 0
+    },
+    {
+     "text": "Florida / recognised itself.",
+     "at": 6,
+     "key": [
+      "recognised itself"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 58,
+     "offset": 0.3
+    },
+    {
+     "shot": 6,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 43,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "A woman dancing on a moving car. An alligator pulled from a pool. Both were real clips first.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "REAL CLIP, MIAMI, 2017",
+     "head": "A woman dances on a moving car",
+     "tag": "IN TRAILER 1",
+     "source": "Know Your Meme",
+     "at": 0
+    },
+    {
+     "label": "REAL CLIP, FLORIDA, 2019",
+     "head": "An alligator pulled from a pool",
+     "tag": "IN TRAILER 1",
+     "source": "Know Your Meme",
+     "at": 7
+    }
+   ],
+   "caps": [
+    {
+     "text": "Both were / real clips first.",
+     "at": 13,
+     "key": [
+      "real clips first"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Know Your Meme.",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 11.0
+    },
+    {
+     "shot": 82,
+     "offset": 0.8,
+     "at": 7
+    },
+    {
+     "shot": 47,
+     "offset": 1.2,
+     "at": 13
+    }
+   ]
+  },
+  {
+   "say": "Ninety million YouTube views in a day. A game reveal record.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "counter": {
+    "to": 90421491,
+    "at": 0,
+    "dur": 1.8,
+    "label": "VIEWS IN 24 HOURS",
+    "label2": "MOST VIEWED GAME REVEAL, YOUTUBE",
+    "chip": "GUINNESS WORLD RECORDS",
+    "cy": 680
+   },
+   "caps": [
+    {
+     "text": "A game reveal record.",
+     "at": 7,
+     "key": [
+      "game reveal record"
+     ]
+    }
+   ],
+   "capsY": 1180,
+   "footnote": "REPORTED: Guinness World Records.",
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 13.0
+    },
+    {
+     "shot": 91,
+     "offset": 6.0,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "One state. Eleven years from first trip to launch.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "timeline": {
+    "from": 2015,
+    "to": 2026,
+    "at": 2,
+    "dur": 1.4,
+    "label": "FIRST TRIP TO LAUNCH",
+    "big": "11 YEARS",
+    "tag": "OUR MATH",
+    "y": 800
+   },
+   "caps": [
+    {
+     "text": "One state.",
+     "at": 0
+    },
+    {
+     "text": "Eleven years from / first trip to launch.",
+     "at": 2
+    }
+   ],
+   "capsY": 1160,
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.3
+    },
+    {
+     "shot": 43,
+     "offset": 0.3,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "Would you have wanted the bigger plan?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Would you have wanted / the bigger plan?",
+     "at": 0,
+     "key": [
+      "bigger plan"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment AMERICAS.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    },
+    {
+     "text": "and comment AMERICAS.",
+     "at": 4,
+     "key": [
+      "AMERICAS"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.3
+    },
+    {
+     "shot": 82,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "The full Project Americas timeline lands straight in your inbox.",
+   "bg": "scrim",
+   "paper": [
+    {
+     "label": "IN YOUR INBOX",
+     "head": "Project Americas, the full timeline",
+     "mark": "full timeline",
+     "mark_at": 3,
+     "source": "Every source: Bloomberg, NYT, Dazed, Guinness",
+     "at": 0
+    }
+   ],
+   "caps": [
+    {
+     "text": "lands straight / in your inbox.",
+     "at": 5,
+     "key": [
+      "in your inbox"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 0.6
+    },
+    {
+     "shot": 44,
+     "offset": 0.3,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "hold": 2.0,
+   "brand": "noticed.",
+   "series": "Story",
+   "episode": "The full Project Americas timeline lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT AMERICAS",
+   "handle": "@noticed.daily",
+   "wordmark": true,
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.6
+    }
+   ]
+  }
+ ]
+}
