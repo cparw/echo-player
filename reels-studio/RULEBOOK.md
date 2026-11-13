@@ -88,6 +88,8 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 * Rockstar's "RP, Likely Mature 17+" badge is burned into the Extended Look clips. Those shots carry a `crop_box` that zooms past it; never show the badge.
 * Strip all audio from official footage (licensed music). Credit Rockstar on screen (the FOOTAGE: ROCKSTAR GAMES tag), never with a credit line in the caption (owner, 13 Nov).
 * AI visuals only when no official footage can carry the line, never more than one or two beats, labelled AI VISUAL. The owner dislikes AI b roll.
+* **Do not use (caught in final QA, 13 Nov, even where shots.json says clean):** GTA VI shot 94 (Lucia filmed from behind at hip height), shot 74 (Lucia posing in the elevator, mini dress), shot 88 after 3.1 s (debris near a rider, possible crash); GTA V clip 546 (thong bikini from 0.8 s). Stills with guns or police: couple_greencar_skyline.jpg (revolver), ocean_view_hotel_neon.jpg (pistols; only its right edge is safe), boats_aerial.jpg (police boat and helicopter), the Stanier sunset still, the Ocean View Hotel pack image, Trailer 1 key art, keyart_nov19, launch_trailer_keyframe, extended_look_art and two Ultimate Edition stills. No official GTA V wanted level or police shot is clean. Body focused framing (from behind, bare midriff as the subject) is out even in clean windows.
+* GTA V visuals: 68 audited official images and clips, ids 500 to 568, used through the `compare` key (split or A/B, GTA 5 first, labelled). Schema: `engine/COMPARE.md`.
 
 ## 5. Brand (open decision)
 
