@@ -1,0 +1,950 @@
+{
+ "title": "GTA 5 vs GTA 6, part 2: the details side by side",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "reel": "R13",
+ "post": "Thu 19 Nov 2026, 00:15 ET (launch night)",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "Rockstar ran GTA Six at",
+   "instant": true,
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 600,
+   "scrimY": 600,
+   "show": [
+    [
+     "ROCKSTAR@0",
+     "RAN@1",
+     "GTA 6@2"
+    ],
+    [
+     "AT@4",
+     "GTA 5'S"
+    ],
+    [
+     "DAY",
+     "SPEED."
+    ],
+    [
+     "TOO",
+     "FAST."
+    ]
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    }
+   ]
+  },
+  {
+   "say": "GTA Five's day speed. Too fast.",
+   "instant": true,
+   "layout": "words",
+   "font": "anton",
+   "bg": "scrim",
+   "centerY": 600,
+   "scrimY": 600,
+   "show": [
+    [
+     "ROCKSTAR",
+     "RAN",
+     "GTA 6"
+    ],
+    [
+     "AT",
+     "GTA 5'S@0"
+    ],
+    [
+     "*DAY*@2",
+     "*SPEED.*@3"
+    ],
+    [
+     "*TOO*@4",
+     "*FAST.*@5"
+    ]
+   ],
+   "compare": {
+    "mode": "ab",
+    "left": {
+     "shot": 500,
+     "t": 0
+    },
+    "right": {
+     "shot": 104,
+     "offset": 0.6
+    },
+    "at": 3,
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "So they slowed time.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "So they / slowed time.",
+     "at": 0,
+     "key": [
+      "slowed time"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to Edge, via Kotaku.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_01.16qc1xq5nigg1.jpg",
+   "pan": [
+    0.8,
+    0.62
+   ]
+  },
+  {
+   "say": "And the last change rewrites how strangers treat you.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "And the last change / rewrites how",
+     "at": 0,
+     "key": [
+      "last change"
+     ]
+    },
+    {
+     "text": "strangers / treat you.",
+     "at": 6,
+     "key": [
+      "strangers"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 61,
+     "offset": 0.1
+    },
+    {
+     "shot": 48,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "GTA Five's roughly forty eight minute day rushed through a world this detailed.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "layout": "versus",
+   "topic": "ONE IN GAME DAY",
+   "caps": [],
+   "left": {
+    "label": "GTA 5",
+    "value": "48 MIN",
+    "sub": "player timed",
+    "at": 3
+   },
+   "right": {
+    "label": "GTA 6",
+    "value": "SLOWER",
+    "sub": "longer sunsets",
+    "at": 7
+   },
+   "footnote": "REPORTED: GTA 5 day about 48 min, player timed.",
+   "compare": {
+    "mode": "split",
+    "left": [
+     {
+      "shot": 531,
+      "t": 0.1
+     },
+     {
+      "shot": 503,
+      "t": 0,
+      "at": 7
+     }
+    ],
+    "right": {
+     "shot": 62,
+     "offset": 9.1
+    }
+   }
+  },
+  {
+   "say": "So sunsets and nights now last longer.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "So sunsets and nights / now last longer.",
+     "at": 0,
+     "key": [
+      "last longer"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: via Kotaku, 29 Oct 2026.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_SQUALO_01.0cim7hj58ypb1.jpg",
+   "pan": [
+    0.3,
+    0.48
+   ]
+  },
+  {
+   "say": "Save this for launch week.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Save this / for launch week.",
+     "at": 0,
+     "key": [
+      "Save"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 6.0
+    }
+   ]
+  },
+  {
+   "say": "GTA Five dropped San Andreas's weight system. Six brings it back.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "layout": "versus",
+   "topic": "WEIGHT AND MUSCLE",
+   "caps": [],
+   "left": {
+    "label": "GTA 5",
+    "value": "NO WEIGHT",
+    "sub": "dropped after San Andreas",
+    "at": 2
+   },
+   "right": {
+    "label": "GTA 6",
+    "value": "IT'S BACK",
+    "sub": "food, gym and sleep",
+    "at": 7
+   },
+   "footnote": "REPORTED: Eurogamer; GamingBolt; Dazed.",
+   "compare": {
+    "mode": "split",
+    "left": [
+     {
+      "shot": 567,
+      "t": 0.1
+     },
+     {
+      "shot": 566,
+      "t": 0.1,
+      "at": 5
+     },
+     {
+      "shot": 556,
+      "t": 0.1,
+      "at": 8
+     }
+    ],
+    "right": [
+     {
+      "shot": 85,
+      "offset": 0.1
+     },
+     {
+      "shot": 17,
+      "offset": 0.1,
+      "at": 8
+     }
+    ]
+   }
+  },
+  {
+   "say": "Food changes your weight, the gym builds visible muscle,",
+   "bg": "scrim",
+   "tiles": {
+    "items": [
+     {
+      "text": "FOOD",
+      "at": 0
+     },
+     {
+      "text": "GYM",
+      "at": 5
+     }
+    ],
+    "y": 420,
+    "gap": 170,
+    "size": 120
+   },
+   "caps": [
+    {
+     "text": "Food changes your weight,",
+     "at": 0,
+     "key": [
+      "weight"
+     ]
+    },
+    {
+     "text": "the gym builds / visible muscle,",
+     "at": 4,
+     "key": [
+      "visible muscle"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Dazed via Eurogamer; IGN.",
+   "clips": [
+    {
+     "shot": 34,
+     "offset": 0.3
+    },
+    {
+     "shot": 101,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "and skipping sleep shows on your face.",
+   "bg": "scrim",
+   "tiles": {
+    "items": [
+     {
+      "text": "SLEEP",
+      "at": 2
+     }
+    ],
+    "y": 420,
+    "size": 120
+   },
+   "caps": [
+    {
+     "text": "and skipping sleep / shows on your face.",
+     "at": 0,
+     "key": [
+      "your face"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_05.01rxi8y_wrmf1.jpg",
+   "pan": [
+    0.5,
+    0.57
+   ]
+  },
+  {
+   "say": "GTA Five built wide roads for easy turning. Six narrows them to a more believable size.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "layout": "versus",
+   "topic": "ROADS",
+   "caps": [],
+   "left": {
+    "label": "GTA 5",
+    "value": "WIDE",
+    "sub": "easy turning",
+    "at": 3
+   },
+   "right": {
+    "label": "GTA 6",
+    "value": "NARROWER",
+    "sub": "a more believable size",
+    "at": 9
+   },
+   "footnote": "ROCKSTAR SAYS: Rob Nelson, via GamesRadar.",
+   "compare": {
+    "mode": "split",
+    "left": [
+     {
+      "shot": 541,
+      "t": 0.1
+     },
+     {
+      "shot": 542,
+      "t": 0.1,
+      "at": 5
+     },
+     {
+      "shot": 507,
+      "t": 0,
+      "at": 8
+     }
+    ],
+    "right": {
+     "shot": 77,
+     "offset": 6.7
+    }
+   }
+  },
+  {
+   "say": "Driving takes a bit more skill.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Driving takes / a bit more skill.",
+     "at": 0,
+     "key": [
+      "more skill"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Nelson, via Insider Gaming.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Then the water. Wind ripples it.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Then the water.",
+     "at": 0,
+     "key": [
+      "water"
+     ]
+    },
+    {
+     "text": "Wind ripples it.",
+     "at": 3,
+     "key": [
+      "ripples"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Aaron Garbut to Edge.",
+   "compare": {
+    "mode": "ab",
+    "left": {
+     "shot": 522,
+     "t": 0
+    },
+    "right": {
+     "shot": 60,
+     "offset": 0.1
+    },
+    "at": 3
+   }
+  },
+  {
+   "say": "Buildings block the wind.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Buildings / block the wind.",
+     "at": 0,
+     "key": [
+      "block the wind"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.2,
+    0.42
+   ]
+  },
+  {
+   "say": "Where you sit in a boat decides if you skip the waves or get rocked.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Where you sit / in a boat decides",
+     "at": 0,
+     "key": [
+      "decides"
+     ]
+    },
+    {
+     "text": "if you skip the waves / or get rocked.",
+     "at": 7,
+     "key": [
+      "get rocked"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Garbut to Edge, via GamesRadar.",
+   "clips": [
+    {
+     "shot": 82,
+     "offset": 0.2
+    },
+    {
+     "shot": 68,
+     "offset": 0.1,
+     "at": 13
+    }
+   ]
+  },
+  {
+   "say": "Halfway. The best one is still coming.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "dim": {
+    "text": "Halfway.",
+    "at": 0,
+    "until": 1,
+    "cy": 820
+   },
+   "caps": [
+    {
+     "text": "The best one / is still coming.",
+     "at": 1,
+     "key": [
+      "still coming"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 15,
+     "offset": 2.0
+    }
+   ]
+  },
+  {
+   "say": "In GTA Five, your phone pics went up on Snapmatic. In Six, it's an in game feed Jason and Lucia can only scroll.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "layout": "versus",
+   "topic": "PHONE PICS",
+   "caps": [],
+   "left": {
+    "label": "GTA 5",
+    "value": "YOU POSTED",
+    "sub": "to Snapmatic",
+    "at": 4
+   },
+   "right": {
+    "label": "GTA 6",
+    "value": "CAN'T POST",
+    "sub": "scroll only",
+    "at": 12
+   },
+   "footnote": "REPORTED: IGN; Game Informer.",
+   "compare": {
+    "mode": "split",
+    "left": [
+     {
+      "shot": 523,
+      "t": 0
+     },
+     {
+      "shot": 527,
+      "t": 0,
+      "at": 10
+     }
+    ],
+    "right": [
+     {
+      "shot": 74,
+      "offset": 0.3
+     },
+     {
+      "shot": 74,
+      "offset": 14.0,
+      "at": 17
+     }
+    ]
+   }
+  },
+  {
+   "say": "They're on the run.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "They're on the run.",
+     "at": 0,
+     "key": [
+      "on the run"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Hold the phone over a parked car",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Hold the phone / over a parked car",
+     "at": 0,
+     "key": [
+      "parked car"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg",
+   "pan": [
+    0.3,
+    0.45
+   ]
+  },
+  {
+   "say": "and it shows the alarm, the tracker, and what it's worth.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "tiles": {
+    "items": [
+     {
+      "text": "ALARM",
+      "at": 4
+     },
+     {
+      "text": "TRACKER",
+      "at": 6
+     },
+     {
+      "text": "WORTH",
+      "at": 10
+     }
+    ],
+    "y": 420,
+    "gap": 170,
+    "size": 120
+   },
+   "caps": [],
+   "footnote": "REPORTED: IGN; Game Informer.",
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 9.2,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "Send this to the friend who says it's just GTA Five with palm trees.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Send this to the friend / who says it's just",
+     "at": 0,
+     "key": [
+      "Send this"
+     ]
+    },
+    {
+     "text": "GTA 5 / with palm trees.",
+     "at": 9,
+     "key": [
+      "palm trees"
+     ]
+    }
+   ],
+   "compare": {
+    "mode": "ab",
+    "left": {
+     "shot": 501,
+     "t": 0
+    },
+    "right": {
+     "shot": 16,
+     "offset": 0.1
+    },
+    "at": 7
+   }
+  },
+  {
+   "say": "Now the one I promised.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "dim": {
+    "text": "Now the one I promised.",
+    "at": 0,
+    "cy": 820
+   },
+   "caps": [],
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "In older GTAs, almost everyone just ran from you. In Six, strangers have tempers, and they react to how you treated them.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "layout": "versus",
+   "topic": "STRANGERS",
+   "caps": [],
+   "left": {
+    "label": "OLD GTAs",
+    "value": "RUN",
+    "sub": "almost everyone fled",
+    "at": 4
+   },
+   "right": {
+    "label": "GTA 6",
+    "value": "REACT",
+    "sub": "to how you treated them",
+    "at": 13
+   },
+   "footnote": "ROCKSTAR SAYS: Rob Nelson, via Insider Gaming.",
+   "compare": {
+    "mode": "split",
+    "left": [
+     {
+      "shot": 546,
+      "t": 0.1
+     },
+     {
+      "shot": 509,
+      "t": 0,
+      "at": 5
+     },
+     {
+      "shot": 548,
+      "t": 0.1,
+      "at": 16
+     }
+    ],
+    "right": [
+     {
+      "shot": 30,
+      "offset": 0.1
+     },
+     {
+      "shot": 74,
+      "offset": 27.0,
+      "at": 9
+     },
+     {
+      "shot": 47,
+      "offset": 0.8,
+      "at": 16
+     }
+    ]
+   }
+  },
+  {
+   "say": "In one preview, Jason stared at a man with a dog.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "In one preview, Jason / stared at a man with a dog.",
+     "at": 0,
+     "key": [
+      "a dog"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Edge via PC Gamer, 29 Oct 2026.",
+   "clips": [
+    {
+     "shot": 31,
+     "offset": 1.7
+    },
+    {
+     "shot": 28,
+     "offset": 0.1,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "The man unclipped the leash. Jason ran.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "paper": [
+    {
+     "label": "REPORTED · EDGE DEMO",
+     "head": "The man unclipped the leash",
+     "mark": "the leash",
+     "mark_at": 3,
+     "source": "Edge via PC Gamer, 29 Oct 2026",
+     "at": 0,
+     "cy": 640
+    }
+   ],
+   "capsY": 1160,
+   "caps": [
+    {
+     "text": "Jason ran.",
+     "at": 5,
+     "key": [
+      "ran"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 88,
+     "offset": 0.2
+    }
+   ]
+  },
+  {
+   "say": "Which change will you notice first?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Which change will / you notice first?",
+     "at": 0,
+     "key": [
+      "notice"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.4
+    }
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment COMPARE.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 990,
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    }
+   ],
+   "tiles": {
+    "items": [
+     {
+      "text": "COMMENT COMPARE",
+      "at": 5
+     }
+    ],
+    "y": 1110,
+    "size": 100
+   },
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.1
+    },
+    {
+     "shot": 44,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "The full side by side sheet, with sources, lands straight in your inbox.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "paper": [
+    {
+     "label": "COMMENT COMPARE",
+     "head": "The full side by side sheet, with sources",
+     "mark": "side by side",
+     "mark_at": 2,
+     "source": "Every difference, sources included",
+     "at": 0,
+     "cy": 960
+    },
+    {
+     "label": "COMMENT COMPARE",
+     "head": "Lands straight in your inbox",
+     "mark": "your inbox",
+     "mark_at": 11,
+     "source": "Not following yet? Check your message requests.",
+     "at": 8,
+     "cy": 960
+    }
+   ],
+   "caps": [],
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 504,
+     "t": 0
+    },
+    "right": [
+     {
+      "shot": 1,
+      "offset": 0.1
+     },
+     {
+      "shot": 1,
+      "offset": 2.3,
+      "at": 8
+     }
+    ]
+   }
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "See you in / Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.3
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 5 VS GTA 6",
+   "episode": "The full side by side sheet lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT COMPARE",
+   "hold": 2.0,
+   "sfx": "whoosh",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 2.6
+    }
+   ]
+  }
+ ]
+}
