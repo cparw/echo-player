@@ -1,0 +1,962 @@
+{
+ "title": "Six checks before GTA 6 unlocks",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "reel": "R14",
+ "post": "Mon 16 Nov 2026, 12:00 ET",
+ "hook_pick": "Owner approved: GTA Six preload is live. Is your PS Five actually downloading it?",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six preload is live. Is your PS Five actually downloading it?",
+   "bg": "scrim",
+   "instant": true,
+   "push": 0.06,
+   "capsY": 1060,
+   "caps": [
+    {
+     "text": "GTA 6 preload is live. / Is your PS5 actually / downloading it?",
+     "at": 0,
+     "key": [
+      "live",
+      "downloading"
+     ]
+    }
+   ],
+   "chip": {
+    "text": "PRELOAD OPEN SINCE 10 NOV",
+    "at": 5,
+    "y": 700
+   },
+   "footnote": "ROCKSTAR SAYS: preload opened 10 Nov (Newswire).",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 1.0,
+     "slow": 1.4
+    },
+    {
+     "shot": 89,
+     "offset": 0.2,
+     "at": 5,
+     "slow": 1.3
+    }
+   ]
+  },
+  {
+   "say": "Asleep? Only with two settings on. Check six saves launch night.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Asleep?",
+     "at": 0,
+     "key": [
+      "Asleep"
+     ]
+    },
+    {
+     "text": "Only with / 2 settings on.",
+     "at": 1,
+     "key": [
+      "2 settings"
+     ]
+    },
+    {
+     "text": "Check 6 saves / launch night.",
+     "at": 6,
+     "key": [
+      "launch night"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: PlayStation Support, read 13 Nov 2026.",
+   "clips": [
+    {
+     "shot": 58,
+     "offset": 0.1
+    },
+    {
+     "shot": 62,
+     "offset": 9.4,
+     "at": 1
+    },
+    {
+     "shot": 94,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Save this. You'll want it on the eighteenth.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1170,
+   "stamp": {
+    "big": "18 NOV",
+    "small": "SAVE THIS",
+    "at": 0,
+    "size": 300,
+    "cy": 720
+   },
+   "caps": [
+    {
+     "text": "You'll want it / on the 18th.",
+     "at": 2,
+     "key": [
+      "18th"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/vice_city_skyline_aerial.jpg",
+   "pan": [
+    0.45,
+    0.55
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Check one.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "CHECK 1",
+    "small": "PS5 REST MODE",
+    "at": 0,
+    "size": 250,
+    "cy": 760
+   },
+   "caps": [],
+   "clips": [
+    {
+     "shot": 72,
+     "offset": 0.2,
+     "slow": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Settings, System, Power Saving, Features Available in Rest Mode.",
+   "bg": "scrim",
+   "caps": [],
+   "tiles": {
+    "items": [
+     {
+      "text": "SETTINGS",
+      "at": 0
+     },
+     {
+      "text": "SYSTEM",
+      "at": 1
+     },
+     {
+      "text": "POWER SAVING",
+      "at": 2
+     },
+     {
+      "text": "FEATURES AVAILABLE",
+      "at": 4
+     },
+     {
+      "text": "IN REST MODE",
+      "at": 6
+     }
+    ],
+    "y": 400,
+    "gap": 128,
+    "size": 72
+   },
+   "footnote": "REPORTED: PlayStation Support, read 13 Nov 2026.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/cheetah_headlights_night.jpg",
+   "pan": [
+    0.35,
+    0.5
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Turn on Stay Connected to the Internet.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "THEN TURN ON",
+     "head": "Stay Connected to the Internet",
+     "mark": "Stay Connected",
+     "mark_at": 2,
+     "source": "PlayStation Support, Power Saving page",
+     "at": 0
+    }
+   ],
+   "clips": [
+    {
+     "shot": 24,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Then Automatic Updates, Auto Download on.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "SAVED DATA AND GAME/APP SETTINGS",
+     "head": "Automatic Updates: Auto Download on",
+     "mark": "Auto Download on",
+     "mark_at": 3,
+     "source": "PlayStation Support, Automatic Updates page",
+     "at": 0
+    }
+   ],
+   "clips": [
+    {
+     "shot": 31,
+     "offset": 1.6
+    },
+    {
+     "shot": 32,
+     "offset": 6.9,
+     "at": 3
+    }
+   ]
+  },
+  {
+   "say": "Pre orders download in Rest Mode.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Pre orders download / in Rest Mode.",
+     "at": 0,
+     "key": [
+      "Rest Mode"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: PlayStation Support, read 13 Nov 2026.",
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "So rest it. Don't turn it off.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "capsY": 1150,
+   "dim": {
+    "text": "So rest it.",
+    "at": 0,
+    "until": 3,
+    "cy": 860
+   },
+   "caps": [
+    {
+     "text": "Don't turn it off.",
+     "at": 3,
+     "key": [
+      "off"
+     ]
+    }
+   ],
+   "footnote": "OUR TIP, from PlayStation Support's rest mode rule.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Port_Gellhorn_01.jpg",
+   "pan": [
+    0.04,
+    0.16
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Check two, Xbox.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "CHECK 2",
+    "small": "XBOX",
+    "at": 0,
+    "size": 250,
+    "cy": 760
+   },
+   "caps": [],
+   "clips": [
+    {
+     "shot": 1,
+     "offset": 2.3
+    }
+   ]
+  },
+  {
+   "say": "Energy saving still gets overnight updates.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Energy saving still gets / overnight updates.",
+     "at": 0,
+     "key": [
+      "overnight updates"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Xbox Wire, 11 Jan 2023.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/boats_aerial.jpg",
+   "pan": [
+    0.3,
+    0.45
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Keep it plugged in and online, and start the preload yourself.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Keep it plugged in / and online,",
+     "at": 0,
+     "key": [
+      "plugged in"
+     ]
+    },
+    {
+     "text": "and start the preload / yourself.",
+     "at": 6,
+     "key": [
+      "yourself"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Xbox preload opened 10 Nov.",
+   "clips": [
+    {
+     "shot": 43,
+     "offset": 0.1
+    },
+    {
+     "shot": 83,
+     "offset": 0.3,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Check three. Space. Rockstar says up to two hundred twelve gigs.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "CHECK 3",
+    "small": "SPACE",
+    "at": 0,
+    "until": 3,
+    "size": 250,
+    "cy": 760
+   },
+   "counter": {
+    "to": 212,
+    "at": 5,
+    "dur": 1.4,
+    "label": "GIGABYTES",
+    "label2": "UP TO, DEPENDING ON PLATFORM",
+    "cy": 760
+   },
+   "footnote": "ROCKSTAR SAYS: up to 212 GB (Newswire, 3 Nov).",
+   "clips": [
+    {
+     "shot": 82,
+     "offset": 0.2
+    },
+    {
+     "shot": 88,
+     "offset": 0.3,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "On a five hundred twelve gig Series S, that's over half your space.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "XBOX SERIES S, 512 GB",
+     "head": "Up to 212 of about 364 GB usable: over half",
+     "mark": "over half",
+     "mark_at": 9,
+     "source": "Usable space: GTABase. OUR MATH",
+     "at": 0
+    }
+   ],
+   "footnote": "REPORTED: GTABase; PC Gamer measured 362 GB.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Leonida_Keys_01.jpg",
+   "pan": [
+    0.45,
+    0.85
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Send this to the friend who turns their console off.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Send this to the friend / who turns their / console off.",
+     "at": 0,
+     "key": [
+      "Send",
+      "off"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 12.6
+    },
+    {
+     "shot": 21,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Now the three most people miss.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "Now the 3 / most people miss.",
+     "at": 0,
+     "key": [
+      "miss"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 5,
+     "offset": 3.2
+    },
+    {
+     "shot": 20,
+     "offset": 0.1,
+     "at": 3
+    },
+    {
+     "shot": 69,
+     "offset": 0.6,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Midnight isn't midnight everywhere.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "Midnight isn't / midnight everywhere.",
+     "at": 0,
+     "key": [
+      "Midnight"
+     ]
+    }
+   ],
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
+   "pan": [
+    0.25,
+    0.4
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Check four. Bought the box? There's no disc, just a code.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "CHECK 4",
+    "small": "BOXED COPY",
+    "at": 0,
+    "until": 2,
+    "size": 250,
+    "cy": 760
+   },
+   "paper": [
+    {
+     "label": "ROCKSTAR SAYS",
+     "head": "No disc in the box. Just a download code.",
+     "mark": "download code",
+     "mark_at": 8,
+     "source": "Rockstar Support; GTABase; GTABoom",
+     "at": 2
+    }
+   ],
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.2
+    },
+    {
+     "shot": 81,
+     "offset": 0.2,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "It works the day you get it, so redeem it tonight.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "It works the day / you get it,",
+     "at": 0,
+     "key": [
+      "day"
+     ]
+    },
+    {
+     "text": "so redeem it / tonight.",
+     "at": 7,
+     "key": [
+      "tonight"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: codes work as soon as you get them.",
+   "clips": [
+    {
+     "shot": 65,
+     "offset": 0.1
+    },
+    {
+     "shot": 60,
+     "offset": 0.1,
+     "at": 7
+    }
+   ]
+  },
+  {
+   "say": "On PlayStation, it must match your account's region.",
+   "bg": "scrim",
+   "chip": {
+    "text": "YOUR ACCOUNT REGION",
+    "at": 4,
+    "y": 760
+   },
+   "caps": [
+    {
+     "text": "On PlayStation, it must / match your account's region.",
+     "at": 0,
+     "key": [
+      "region"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: PS5 codes must match the region.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_01.jpg",
+   "pan": [
+    0.12,
+    0.42
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Xbox codes aren't region locked.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Xbox codes aren't / region locked.",
+     "at": 0,
+     "key": [
+      "aren't"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Xbox codes are not region locked.",
+   "clips": [
+    {
+     "shot": 61,
+     "offset": 0.2
+    }
+   ]
+  },
+  {
+   "say": "Check five. Your unlock time. PlayStation lists midnight local.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "CHECK 5",
+    "small": "YOUR UNLOCK TIME",
+    "at": 0,
+    "until": 5,
+    "size": 250,
+    "cy": 760
+   },
+   "caps": [
+    {
+     "text": "PlayStation lists / midnight local.",
+     "at": 5,
+     "key": [
+      "midnight local"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: PlayStation Store, via GTABoom.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/stanier_neon.jpg",
+   "pan": [
+    0.3,
+    0.5
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "But the US gets one window, midnight Eastern. So Los Angeles plays at nine PM on the eighteenth.",
+   "bg": "scrim",
+   "layout": "map",
+   "mapCard": true,
+   "lonMin": -126,
+   "lonMax": -66,
+   "latTop": 50,
+   "latBot": 24,
+   "mapW": 860,
+   "mapTop": 400,
+   "region": {
+    "lonMax": -60,
+    "at": 4
+   },
+   "cities": [
+    {
+     "name": "NEW YORK",
+     "lon": -74.0,
+     "lat": 40.7,
+     "time": "12 AM",
+     "at": 6,
+     "accent": false
+    },
+    {
+     "name": "CHICAGO",
+     "lon": -87.6,
+     "lat": 41.9,
+     "time": "11 PM",
+     "at": 6,
+     "side": "l",
+     "accent": false,
+     "dy": -70
+    },
+    {
+     "name": "DENVER",
+     "lon": -105.0,
+     "lat": 39.7,
+     "time": "10 PM",
+     "at": 6,
+     "accent": false,
+     "dy": 18
+    },
+    {
+     "name": "LOS ANGELES",
+     "lon": -118.2,
+     "lat": 34.05,
+     "time": "9 PM",
+     "at": 13,
+     "accent": false,
+     "dy": 30
+    }
+   ],
+   "capsY": 1110,
+   "caps": [
+    {
+     "text": "But the US gets one window, / midnight Eastern.",
+     "at": 0,
+     "key": [
+      "one window"
+     ]
+    },
+    {
+     "text": "So Los Angeles plays / at 9 PM on the 18th.",
+     "at": 8,
+     "key": [
+      "9 PM"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: PlayStation Store via GTABoom. May change.",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official_places/Vice_City_08.jpg",
+   "pan": [
+    0.3,
+    0.45
+   ],
+   "credit": "FOOTAGE: ROCKSTAR GAMES"
+  },
+  {
+   "say": "Check six. Spoilers.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "CHECK 6",
+    "small": "SPOILERS",
+    "at": 0,
+    "size": 250,
+    "cy": 760
+   },
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 0.3
+    }
+   ]
+  },
+  {
+   "say": "New Zealand unlocks first, eighteen hours before New York.",
+   "bg": "scrim",
+   "layout": "map",
+   "mapCard": true,
+   "lonMin": -130,
+   "lonMax": 180,
+   "latTop": 72,
+   "latBot": -48,
+   "mapW": 900,
+   "mapTop": 430,
+   "sweep": {
+    "from": 178,
+    "to": -74,
+    "at": 0,
+    "dur": 2.6,
+    "label": "MIDNIGHT"
+   },
+   "cities": [
+    {
+     "name": "NEW ZEALAND",
+     "lon": 174.8,
+     "lat": -36.8,
+     "time": "FIRST",
+     "at": 0,
+     "side": "l"
+    },
+    {
+     "name": "NEW YORK",
+     "lon": -74.0,
+     "lat": 40.7,
+     "time": "18 HRS LATER",
+     "at": 6,
+     "accent": false
+    }
+   ],
+   "capsY": 1170,
+   "caps": [
+    {
+     "text": "New Zealand unlocks first,",
+     "at": 0,
+     "key": [
+      "first"
+     ]
+    },
+    {
+     "text": "18 hours / before New York.",
+     "at": 4,
+     "key": [
+      "18 hours"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: GTABoom. 18 HOURS: OUR MATH.",
+   "clips": [
+    {
+     "shot": 84,
+     "offset": 0.3
+    },
+    {
+     "shot": 4,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Mute GTA Six from the eighteenth.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Mute GTA 6 / from the 18th.",
+     "at": 0,
+     "key": [
+      "Mute"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 54,
+     "offset": 5.0
+    },
+    {
+     "shot": 99,
+     "offset": 0.1,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "So what time does it unlock where you are?",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [
+    {
+     "text": "So what time does it / unlock where you are?",
+     "at": 0,
+     "key": [
+      "where you are"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    }
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment UNLOCK.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1170,
+   "stamp": {
+    "big": "UNLOCK",
+    "small": "COMMENT IT",
+    "at": 5,
+    "size": 260,
+    "color": "accent",
+    "cy": 700
+   },
+   "caps": [
+    {
+     "text": "Follow @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    },
+    {
+     "text": "and comment UNLOCK.",
+     "at": 4,
+     "key": [
+      "UNLOCK"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Every region's unlock time, plus the exact PS Five and Xbox taps, lands straight in your inbox.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Every region's / unlock time,",
+     "at": 0,
+     "key": [
+      "unlock time"
+     ]
+    },
+    {
+     "text": "plus the exact / PS5 and Xbox taps,",
+     "at": 4,
+     "key": [
+      "exact"
+     ]
+    },
+    {
+     "text": "lands straight / in your inbox.",
+     "at": 12,
+     "key": [
+      "inbox"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 40,
+     "offset": 0.4
+    },
+    {
+     "shot": 97,
+     "offset": 0.1,
+     "at": 4
+    },
+    {
+     "shot": 1,
+     "offset": 0.3,
+     "at": 7,
+     "slow": 1.1
+    },
+    {
+     "shot": 15,
+     "offset": 2.0,
+     "at": 12
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 6.6
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "Every unlock time lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT UNLOCK",
+   "hold": 2.0,
+   "clips": [
+    {
+     "shot": 26,
+     "offset": 6.4
+    }
+   ]
+  }
+ ]
+}
