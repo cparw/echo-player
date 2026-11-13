@@ -17,6 +17,7 @@ Technical details (engine commands, accounts, file paths) live in `STUDIO.md`. T
 9. **Speed.** Use many agents in parallel (the owner asked for 12 to 25). Deliver finished media fast and keep going without waiting when the next step is clear.
 10. **Model mix.** When the session runs on Fable, mix it with Opus: research, vetting, searches, audits, renders and other legwork go to Opus subagents; Fable is kept for creative direction, judgment and final review. Never use Fable where Opus can do the same job to the same quality (owner, 13 Nov). Details in the repo `CLAUDE.md`.
 11. **Six reels at a time**, each one made "like that properly" (owner, 12 Nov 2026).
+12. **Never ask the owner for permission or approval again** (owner, 13 Nov: "Do not even ask me for these permissions again, ever", "It's forever allowed"). Decide and act within these rules, paid voice for the reels included.
 
 ## 2. What works for GTA 6 reels
 
@@ -101,7 +102,9 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 
 ## 6. Captions and posting
 
-* Caption rules (owner, 13 Nov): a bold Gen Z voice that connects worldwide, built to reach millions; never play safe. Every number matches the reel's script or fact check. No disclaimers, no footage credit line, never mention AI. No dashes, light emojis. Hashtags change on every reel: at most 5, #GTA6 always one, the other 4 rotating high reach tags. A comment keyword DM offer only when the offer is concrete, never tied to following.
+* Caption rules (owner, 13 Nov): a bold Gen Z voice that connects worldwide, built to reach millions; never play safe. Every number matches the reel's script or fact check. No disclaimers, no footage credit line, never mention AI. No dashes, light emojis. Hashtags change on every reel: at most 5, #GTA6 always one, the other 4 rotating high reach tags. A comment keyword DM offer only when the offer is concrete.
+* Call to action (owner, 13 Nov, R7 onward and every re-cut): FOLLOW plus COMMENT, payoff "lands straight in your inbox". Spoken end: a short question, then "Follow noticed dot daily and comment WORD. The <freebie> lands straight in your inbox. See you in Leonida." End card: "FOLLOW @noticed.daily + COMMENT WORD", then the freebie line. Caption: "Follow @noticed.daily + comment WORD and <freebie> lands straight in your inbox 📩 Not following yet? Check your message requests." Pinned: short question plus "Follow + comment WORD and it lands in your inbox 📩". The DM goes to everyone who comments: never say or imply only followers get it.
+* Instagram drops captions on publish for this new account (13 Nov): post the caption as the first comment until that stops.
 * Caption format (since 13 Nov): line one is the hook (under 120 characters, matching the reel's opening), then 2 to 5 short punchy fact lines with the source worked in (per Rockstar, reported, our math), one easy question, then the hashtags. Under 900 characters. Example: R7 in `queue/copy.md`.
 * AI label: the owner handles it himself. Never turn it on, off or mention it in posting steps (owner, 13 Nov: "You don't do anything about the AI label").
 * Pin a first comment that invites replies. Reply to every comment in the first hour.
@@ -114,7 +117,7 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 1. Pick the format and the hook (section 2). Verify every fact with sources.
 2. Write script.json: say, show, layouts, clips with word anchors, footnotes; voice_preset 1.
 3. Validate (`engine/validate.py`): footage clean windows, anchors, no dashes, word count.
-4. Voice (`engine/voice_only.sh`), then build and preview stills (`engine/preview.py`) before any full render.
+4. Voice (`engine/voice_only.sh`, run from the main session only), then build and preview stills (`engine/preview.py`) before any full render. To change lines in a voiced reel, re-record only those lines: `engine/splice_lines.py` (one block) or `engine/splice_multi.py` (several, cuts included).
 5. Render (`engine/render_par.sh`) and mix (`engine/compose.py`).
 6. QA (section 8), then send the MP4, cover and caption together.
 
@@ -125,8 +128,14 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 3. 1080x1920, 30 fps, -14 LUFS, true peak under -1 dB, under 90 seconds, over 61 seconds.
 4. Text readable over the footage and synced to the voice; nothing under the Instagram UI zones.
 5. Facts, labels and numbers match between the video and the caption.
+6. No freezes (owner, 13 Nov): every still or screenshot moves (push in or pan); no frozen picture over 0.5 s outside the end card. Check: `ffmpeg -i reel.mp4 -vf freezedetect=n=0.003:d=0.5 -map 0:v -f null -`.
+7. Every GTA 5 vs GTA 6 beat shows official, audited GTA V visuals beside GTA VI (split or A/B), GTA 5 first.
 
 ## 9. Feedback log (newest first)
+* 13 Nov (owner, cloud chat): "You have all permissions, just finish it off properly fast ... Do not even ask me for these permissions again, ever." and later "It's forever allowed." Standing go for the reels work, paid voice included. Never ask him for permissions again. Voice calls run only from the main cloud session (subagents never call ElevenLabs); changed lines are re-recorded with `engine/splice_lines.py` / `splice_multi.py`, never the whole reel.
+* 13 Nov (relayed by the Mac session): CALL TO ACTION, for R7 onward and every re-cut: FOLLOW plus COMMENT, payoff "lands straight in your inbox". Spoken end: a short question, then "Follow noticed dot daily and comment WORD. The <freebie> lands straight in your inbox. See you in Leonida." End card: "FOLLOW @noticed.daily + COMMENT WORD", then the freebie line. Caption: "Follow @noticed.daily + comment WORD and <freebie> lands straight in your inbox 📩 Not following yet? Check your message requests." Pinned: short question plus "Follow + comment WORD and it lands in your inbox 📩". Never say or imply only followers get the DM. All new and re-cut reels updated the same day.
+* 13 Nov (owner QA from the Mac): R6 "gets paused in the middle". NO FREEZES: every still or screenshot needs constant motion (push in or pan); no frozen picture over 0.5 s outside the end card; run ffmpeg freezedetect (n=0.003, d=0.5) before publishing. R5: the sugarcane line ("Florida leads America in sugarcane") was false (USDA ERS: Louisiana leads) and is cut; the black snow line stays. R2 bonus footnote must read "Rockstar: digital buys before 20 Nov. Boxed preorders while supplies last."
+* 13 Nov: Instagram drops captions on publish for this new account, so the Mac session posts each caption as the first comment for now.
 
 * 13 Nov (owner's caption rules, relayed by the main session with the posting copy job): no "Footage: Rockstar Games" line in captions (the on screen FOOTAGE: ROCKSTAR GAMES tag stays); never mention AI at all; hashtags change on every reel, at most 5, #GTA6 always one, the other 4 rotating high reach tags; every number in a caption matches the reel's script or fact check; a comment keyword DM offer only when it is concrete, never tied to following. Sections 4, 5 and 6 updated. R7 copy and the posting schedule (R2 to R16): `queue/copy.json` and `queue/copy.md`.
 
