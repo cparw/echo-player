@@ -16,4 +16,5 @@ done
 for p in "${pids[@]}"; do wait "$p"; done
 : > "$TMP/list.txt"; for ((i=0;i<N;i++)); do echo "file '$TMP/part_$i.mov'" >> "$TMP/list.txt"; done
 ffmpeg -y -v error -f concat -safe 0 -i "$TMP/list.txt" -c copy "$OUT"
+rm -rf "$TMP"  # free the chunk copies right away (disk is shared by many renders)
 echo "done $FRAMES frames in $N chunks -> $OUT"
