@@ -18,7 +18,6 @@ Opening only, with the older tool: `splice_hook.py <dir with the spec as script.
 Result: 213 words, speech 73.38 s. Recorded text matches script_hook_v2.json word for word.
 
 ## What changed vs script.json
-* Do not use list (rulebook, 13 Nov): shot 74 replaced on the closing question with shot 3; the dolphins still (not one of the banned revolver stills) pans 0.95 to 1.0 so the sunbather at its left edge never shows. The first v2 render (commit 6bd88c7) is superseded.
 * Beats 0 and 1: new hook and bridge. The old iguana hook is gone; the falling iguana payoff at the end still works as the last real Florida detail.
 * Hook `compare` (GTA 5 vs GTA 6 beat): split, top GTA V still 519 (river and waterfall with rabbits, a deer and a mountain lion), bottom GTA VI shot 82 (airboat on a swamp river, birds overhead; 2.8 s clean, so no freeze). Clips kept only as the fallback.
 * Freeze fixes (no freeze rule; the live R6 froze 8.4 to 11.1 s): the iguana line now cuts shot 5 (slow 2.0), shot 27 at word 8, shot 1 at word 12; the closing "See you in Leonida." uses shot 91 instead of a 0.3 s window of shot 5.

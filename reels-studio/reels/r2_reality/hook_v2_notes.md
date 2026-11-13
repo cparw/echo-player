@@ -20,7 +20,7 @@ Both ends, as run: `python3 $S/engine/splice_multi.py $R/voice_spec_v2.json $R/v
 Result: hook 13 words (gain +0.4 dB), ending 27 words (gain minus 1.3 dB); 216 words, speech 69.79 s. The build lifts the hook a further 1.5 dB to match the next line (minus 16.8 against minus 16.6 LUFS).
 
 ## What changed vs script.json
-* Do not use list (rulebook, 13 Nov): shot 74 replaced everywhere. The Ultimate and Xbox line now cuts shots 15, 65 and 1; the 30 fps line cuts shots 41 and 24. stanier_neon.jpg stays (no weapon; the banned one is a different Stanier sunset still).
+* Do not use list (rulebook, 13 Nov, narrowed): the one elevator use of shot 74 (offset 0.5 s, Lucia posing) on the Ultimate and Xbox line is replaced by shots 15 and 65; shot 74 at 13, 15 and 21 s stays (inside its clean 4.6 to 39.8 s part). stanier_neon.jpg stays (hands on the wheel, no weapon).
 * Beat 0: new hook (say, show, footnote), `compare` split.
 * Beat 2 (price card): `compare` split.
 * "Buy before November twentieth..." footnote now reads exactly "Rockstar: digital buys before 20 Nov. Boxed preorders while supplies last." (coordinator, 13 Nov).

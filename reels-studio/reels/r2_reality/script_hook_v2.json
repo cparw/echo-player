@@ -170,8 +170,8 @@
      "at": 4
     },
     {
-     "shot": 1,
-     "offset": 0.6,
+     "shot": 74,
+     "offset": 13.0,
      "at": 9
     }
    ],
@@ -511,12 +511,12 @@
    ],
    "clips": [
     {
-     "shot": 41,
-     "offset": 0.1
+     "shot": 74,
+     "offset": 15.0
     },
     {
-     "shot": 24,
-     "offset": 0.1,
+     "shot": 74,
+     "offset": 21.0,
      "at": 9
     }
    ],
