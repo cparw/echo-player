@@ -40,5 +40,5 @@ One real place for each GTA 6 region (the links are our reading; Rockstar never 
 3. Grassrivers: Everglades National Park. "River of Grass" comes from Marjory Stoneman Douglas's 1947 book, and it's the only place where alligators and crocodiles live side by side (NPS).
 4. Port Gellhorn: the Gulf coast trademarked as the Forgotten Coast (first used in 1992 by the Apalachicola Bay Chamber).
 5. Ambrosia: the sugar towns on Lake Okeechobee's south shore. Growers burn cane before harvest and locals call the ash black snow (AP, 2019).
-6. Mount Kalaga: Britton Hill in Walton County, Florida's highest natural point at 345 feet, about 2 miles from the Alabama line (USGS).
+6. Mount Kalaga: Britton Hill in Walton County, near the Alabama line: Florida's highest natural point, 345 feet (USGS).
 That's the full route. New GTA 6 breakdown every day on @noticed.daily. See you in Leonida.
