@@ -45,7 +45,7 @@
 **L5** "Rob Nelson: in old GTAs, act out and everyone would run in terror. This world is not like that." Paper quote card (verbatim): "Apart from the police, everyone would run in terror from you if you started acting out. This world in GTA 6 is not like that." Rob Nelson, Rockstar North, to IGN.
 * Verdict: SUPPORTED. Label: ROCKSTAR SAYS.
 * [IGN2] "I think in previous GTA games you were a bit all powerful" (hyphen dropped) ... "Apart from the police, everyone would run in terror from you if you started acting out. This world in GTA 6 is not like that." Also quoted by [IG].
-* Compare A/B, GTA 5 first: GTA V Vinewood walk of fame crowd (509), cut to GTA VI on "act" (74, then 2), under the quote card.
+* Compare A/B, GTA 5 first: GTA V Vinewood walk of fame crowd (509), cut to GTA VI on "act" (82, then 2), under the quote card.
 
 **L6** "So Rockstar built a whole team in Los Angeles, just for people on the street." Map: LOS ANGELES, NPC TEAM.
 * Verdict: SUPPORTED. Label: REPORTED (NYT, from Rockstar).
@@ -86,3 +86,4 @@ noticed. wordmark, @noticed.daily, GTA 6, "NPC cheat sheet lands straight in you
 * One official still: the Vice City skyline from rockstargames.com/VI.
 * GTA 5 beats (L2, L5, L8) use the engine compare mode with official, audited GTA V visuals (ids 501, 503, 509, 530, 548, 556, 565), GTA 5 first, both labelled. GTA V shot 546 (Vespucci boardwalk) was rejected: a woman in a thong bikini walks in the background.
 * Shot 74's hug moment (32 to 34 s, a tight dress seen from behind) is not used.
+* Final frame check: shots that could read wrong with their line were replaced. The hook's rooftop runner seen from behind (104) became the Welcome to The Keys billboard (1); Lucia walking alone at night (94) under "Follow too closely" became a driving POV behind a pickup (33); rooftop bar frames where a card or counter hid the faces became an airboat (82), the racer's backflip (65) and a diver (84).

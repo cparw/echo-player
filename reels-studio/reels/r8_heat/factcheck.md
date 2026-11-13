@@ -109,3 +109,4 @@ noticed. wordmark, @noticed.daily, GTA 6, "Getaway checklist lands straight in y
 * Clips only inside audited clean windows (validator OK); frames checked with shot_frames.py. No police, weapons, crashes or suggestive shots; no HUD footage of the wanted meter exists in the clean library, so the meter beats use on screen counters and icons text.
 * Official stills from rockstargames.com/VI, checked by eye: Good Time Gear (caps and sunglasses), Stock 305 store sign, Vice City Style (Jason's floral shirt). Rejected: the couple on the green car (revolvers), every image with weapons, masks or logos.
 * GTA 5 beats (L3, L5) use the engine compare split with official, audited GTA V visuals (ids 500, 531, 541, 542, 544), GTA 5 on top, both halves labelled. No police on either side.
+* Final frame check: shot 94 (filmed from behind at hip height) is not used.

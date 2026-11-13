@@ -7,4 +7,5 @@ There was no owner source.json for this reel: the script was written in this ses
 * "Four main characters" became "Four playable characters" to match the source word for word.
 * Call to action rule (13 Nov): ends on "Friends or lovers?" then "Follow noticed dot daily and comment COUPLE. The relationship guide lands straight in your inbox. See you in Leonida." The loop line "Either way, they're stuck together" and "How are you playing them?" left to stay at 164 words.
 * No GTA 5 comparison in this reel ("one more than GTA 5" was left out on purpose).
+* Final frame check: shot 94 (Lucia walking at night, filmed from behind at hip height) was replaced by a man in a cap (99) and the processing desk (38), to keep every frame clear of body focused framing. Spoken words, captions and facts unchanged.
 * End card: noticed. wordmark, @noticed.daily, "Relationship guide lands straight in your inbox", FOLLOW @noticed.daily + COMMENT COUPLE.

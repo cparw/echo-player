@@ -89,3 +89,4 @@ noticed. wordmark, @noticed.daily, GTA 6, "Relationship guide lands straight in 
 * Clips only inside audited clean windows (validator OK); frames checked with shot_frames.py; no clip holds or slows. No weapons, police, crashes or suggestive shots.
 * One official still from rockstargames.com/VI: Vice City Style (Jason and Lucia lounging, fully clothed). Rejected: the couple on the green car (revolvers), the club embrace (too sensual), all key art with weapons or logos.
 * No GTA 5 comparison in this reel.
+* Final frame check: shot 94 (filmed from behind at hip height) is not used.

@@ -524,8 +524,8 @@
    "sfx": "hit",
    "clips": [
     {
-     "shot": 94,
-     "offset": 0.25
+     "shot": 38,
+     "offset": 0.3
     },
     {
      "shot": 40,
@@ -567,8 +567,8 @@
      "at": 3
     },
     {
-     "shot": 94,
-     "offset": 0.1,
+     "shot": 2,
+     "offset": 0.8,
      "at": 7
     },
     {
