@@ -1,0 +1,880 @@
+{
+ "title": "GTA 6 costs £70. The real car costs £1,000,000.",
+ "format": "story",
+ "account": "@noticed.daily",
+ "brand_name": "noticed.",
+ "reel": "R20",
+ "post": "Sun 15 Nov 2026 12:00 ET",
+ "time_sensitive": "Selfridges pop up runs 9 to 28 Nov 2026; 'parked in Selfridges' and 'before the twenty eighth' are true for a 15 Nov post. Recheck the listing on the morning of 15 Nov.",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "pace_wpm": 180,
+ "fps": 30,
+ "tag": null,
+ "grain": 0.06,
+ "caps_style": "story",
+ "sfx_default": "none",
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "GTA Six costs seventy pounds. The real car costs",
+   "bg": "scrim",
+   "instant": true,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg",
+   "pan": [
+    0.0,
+    0.12
+   ],
+   "capsY": 1090,
+   "caps": [
+    {
+     "text": "GTA 6: £69.99 / The real car: / £1,000,000",
+     "at": 0,
+     "key": [
+      "£1,000,000"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Push Square; Insider Gaming."
+  },
+  {
+   "say": "a million.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "stamp": {
+    "big": "£1,000,000",
+    "small": "THE REAL CAR",
+    "color": "accent",
+    "size": 190,
+    "cy": 760
+   },
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 0.4
+    }
+   ]
+  },
+  {
+   "say": "It's a Grotti Cheetah, parked in Selfridges, London.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_02.0rkrlsu_dg~ww.jpg",
+   "pan": [
+    0.3,
+    0.48
+   ],
+   "caps": [
+    {
+     "text": "A real / Grotti Cheetah,",
+     "at": 0,
+     "key": [
+      "Grotti",
+      "Cheetah,"
+     ]
+    }
+   ],
+   "chip": {
+    "text": "SELFRIDGES, LONDON",
+    "at": 4,
+    "y": 760
+   },
+   "footnote": "REPORTED: Dexerto; Man of Many; Time Out London."
+  },
+  {
+   "say": "And in twenty thirteen,",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [],
+   "stamp": {
+    "big": "2013",
+    "at": 2,
+    "size": 300,
+    "cy": 780
+   },
+   "clips": [
+    {
+     "shot": 44,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "GTA Five's real car was given away.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "GTA 5's real car / was given away.",
+     "at": 0,
+     "key": [
+      "away."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: NBC News, 4 Sep 2013.",
+   "compare": {
+    "mode": "ab",
+    "left": {
+     "shot": 507,
+     "t": 1.0,
+     "push": 0.12
+    },
+    "right": {
+     "shot": 89,
+     "t": 0.1
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ],
+    "at": 5
+   }
+  },
+  {
+   "say": "Save this if you're near London before the twenty eighth.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Save this if you're / near London",
+     "at": 0,
+     "key": [
+      "Save"
+     ]
+    }
+   ],
+   "stamp": {
+    "big": "28 NOV",
+    "small": "LAST DAY",
+    "at": 6,
+    "size": 250,
+    "cy": 700
+   },
+   "footnote": "REPORTED: Time Out London; IBTimes UK.",
+   "clips": [
+    {
+     "shot": 33,
+     "offset": 0.2
+    },
+    {
+     "shot": 2,
+     "offset": 0.1,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "The Cheetah's been in almost every GTA since Three.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_03.0v3_dryhtjarc.jpg",
+   "pan": [
+    0.0,
+    0.18
+   ],
+   "timeline": {
+    "from": 2001,
+    "to": 2026,
+    "pins": [
+     2001,
+     2026
+    ],
+    "label": "THE CHEETAH, SINCE GTA III",
+    "at": 1,
+    "dur": 1.4,
+    "y": 640
+   },
+   "caps": [
+    {
+     "text": "In almost every GTA / since GTA III.",
+     "at": 3,
+     "key": [
+      "III."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Insider Gaming; GGRecon."
+  },
+  {
+   "say": "Now Rockstar and West Coast Customs,",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_RIDEOUT_CUSTOMS_03.0_n4oqh5f_ar4.jpg",
+   "pan": [
+    0.2,
+    0.42
+   ],
+   "caps": [
+    {
+     "text": "Rockstar and / West Coast Customs,",
+     "at": 1,
+     "key": [
+      "West",
+      "Coast",
+      "Customs,"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Dexerto; Man of Many; Insider Gaming."
+  },
+  {
+   "say": "the Pimp My Ride shop, built one for real.",
+   "bg": "scrim",
+   "chip": {
+    "text": "THE PIMP MY RIDE SHOP",
+    "at": 1,
+    "until": 5,
+    "y": 760
+   },
+   "caps": [
+    {
+     "text": "built one / for real.",
+     "at": 5,
+     "key": [
+      "real."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: NBC News; Man of Many.",
+   "clips": [
+    {
+     "shot": 41,
+     "offset": 0.3
+    },
+    {
+     "shot": 6,
+     "offset": 0.1,
+     "at": 5
+    }
+   ]
+  },
+  {
+   "say": "Blue to pink Vice City fade.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/squalo_boat_skyline_dusk.jpg",
+   "pan": [
+    0.08,
+    0.24
+   ],
+   "caps": [
+    {
+     "text": "Blue to pink / Vice City fade.",
+     "at": 0,
+     "key": [
+      "Vice",
+      "City",
+      "fade."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Selfridges listing, via Man of Many."
+  },
+  {
+   "say": "Reports say there's a Ferrari Testarossa underneath.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_02.0rkrlsu_dg~ww.jpg",
+   "pan": [
+    0.62,
+    0.78
+   ],
+   "caps": [],
+   "paper": [
+    {
+     "label": "UNDER THE PAINT",
+     "head": "A Ferrari Testarossa",
+     "mark": "Testarossa",
+     "mark_at": 5,
+     "tag": "REPORTED",
+     "source": "Insider Gaming; Rockstar Intel; Notebookcheck",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "say": "So the prancing horse? Gone. Grotti badges instead.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_04.0caq_y0_f1rvt.jpg",
+   "pan": [
+    0.28,
+    0.4
+   ],
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "The prancing horse? / Gone.",
+     "at": 1,
+     "key": [
+      "Gone."
+     ]
+    },
+    {
+     "text": "Grotti badges / instead.",
+     "at": 5,
+     "key": [
+      "Grotti"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: Man of Many; Notebookcheck."
+  },
+  {
+   "say": "Price: one million pounds.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "caps": [],
+   "counter": {
+    "to": 1000000,
+    "at": 1,
+    "dur": 1.2,
+    "label": "BRITISH POUNDS",
+    "label2": "ABOUT $1.3M",
+    "cy": 720
+   },
+   "footnote": "REPORTED: Insider Gaming; IBTimes UK.",
+   "clips": [
+    {
+     "shot": 89,
+     "offset": 1.3
+    }
+   ]
+  },
+  {
+   "say": "No checkout button. You go through Selfridges Personal Shopping.",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "HOW TO BUY IT",
+     "head": "No checkout. Selfridges Personal Shopping only.",
+     "mark": "Personal Shopping",
+     "mark_at": 7,
+     "source": "Selfridges listing, via Insider Gaming",
+     "at": 0
+    }
+   ],
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 13.0
+    },
+    {
+     "shot": 74,
+     "offset": 26.5,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "Send this to the friend who'd want to split it.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/couple_sunset_palms.jpg",
+   "pan": [
+    0.02,
+    0.2
+   ],
+   "caps": [
+    {
+     "text": "Send this to the friend / who'd want to split it.",
+     "at": 0,
+     "key": [
+      "Send",
+      "split"
+     ]
+    }
+   ]
+  },
+  {
+   "say": "But this isn't Rockstar's first real car.",
+   "bg": "scrim",
+   "sfx": "whoosh",
+   "caps": [],
+   "dim": {
+    "text": "Not their first real car.",
+    "at": 0
+   },
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 4.5
+    }
+   ]
+  },
+  {
+   "say": "Twenty thirteen. For GTA Five, the same shop built a real Bravado Banshee.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "stamp": {
+    "big": "2013",
+    "at": 0,
+    "until": 2,
+    "size": 300,
+    "cy": 880
+   },
+   "caps": [
+    {
+     "text": "For GTA 5, the same shop / built a real / Bravado Banshee.",
+     "at": 2,
+     "key": [
+      "Bravado",
+      "Banshee."
+     ]
+    }
+   ],
+   "capsY": 1150,
+   "chip": {
+    "text": "IN GAME: GTA 5'S BRAVADO BANSHEE",
+    "at": 11,
+    "y": 800,
+    "size": 22
+   },
+   "footnote": "REPORTED: NBC News; iGrandTheftAuto, 2013.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 510,
+     "t": 0,
+     "push": 0.1
+    },
+    "right": [
+     {
+      "shot": 62,
+      "t": 9.1
+     },
+     {
+      "shot": 26,
+      "t": 6.4,
+      "at": 8
+     }
+    ],
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "It wasn't for sale. GameStop gave it away.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "It wasn't for sale.",
+     "at": 0,
+     "key": []
+    },
+    {
+     "text": "GameStop / gave it away.",
+     "at": 4,
+     "key": [
+      "away."
+     ]
+    }
+   ],
+   "footnote": "REPORTED: NBC News; iGrandTheftAuto.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 509,
+     "t": 0,
+     "push": 0.1
+    },
+    "right": {
+     "shot": 62,
+     "t": 7.0
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "The prize, car plus a cheque, was worth a quarter million dollars.",
+   "bg": "scrim",
+   "caps": [],
+   "counter": {
+    "to": 250000,
+    "at": 9,
+    "dur": 1.1,
+    "label": "US DOLLARS",
+    "label2": "CAR PLUS A CHEQUE, 2013",
+    "cy": 900
+   },
+   "footnote": "REPORTED: iGrandTheftAuto; NBC News.",
+   "compare": {
+    "mode": "split",
+    "left": {
+     "shot": 505,
+     "t": 0,
+     "push": 0.1
+    },
+    "right": [
+     {
+      "shot": 33,
+      "t": 2.2
+     },
+     {
+      "shot": 1,
+      "t": 2.3,
+      "at": 6
+     }
+    ],
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ]
+   }
+  },
+  {
+   "say": "Thirteen years later, the number's about five times bigger. And this time, you pay.",
+   "bg": "scrim",
+   "layout": "versus",
+   "vsTop": 600,
+   "topic": "THE REAL CARS",
+   "left": {
+    "label": "GTA 5, 2013",
+    "value": "$250K",
+    "sub": "given away",
+    "at": 0
+   },
+   "right": {
+    "label": "GTA 6, 2026",
+    "value": "$1.3M",
+    "sub": "about 5x",
+    "at": 6
+   },
+   "caps": [
+    {
+     "text": "And this time, / you pay.",
+     "at": 9,
+     "key": [
+      "pay."
+     ]
+    }
+   ],
+   "capsY": 1150,
+   "footnote": "OUR MATH: $1.3M / $250K = 5.2",
+   "compare": {
+    "mode": "ab",
+    "left": {
+     "shot": 500,
+     "t": 0,
+     "push": 0.12
+    },
+    "right": {
+     "shot": 77,
+     "t": 11.5
+    },
+    "labels": [
+     "GTA 5",
+     "GTA 6"
+    ],
+    "at": 6
+   }
+  },
+  {
+   "say": "A million pounds buys fourteen thousand two hundred eighty seven copies of the game.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "A million pounds buys",
+     "at": 0,
+     "key": [
+      "million"
+     ]
+    }
+   ],
+   "capsY": 1180,
+   "counter": {
+    "to": 14287,
+    "at": 4,
+    "dur": 1.6,
+    "label": "COPIES OF GTA 6",
+    "label2": "AT £69.99 EACH",
+    "cy": 680
+   },
+   "footnote": "OUR MATH: £1,000,000 / £69.99 = 14,287.",
+   "clips": [
+    {
+     "shot": 81,
+     "offset": 0.2
+    },
+    {
+     "shot": 47,
+     "offset": 0.1,
+     "at": 8
+    }
+   ]
+  },
+  {
+   "say": "Or get the one in the game.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_04.0caq_y0_f1rvt.jpg",
+   "pan": [
+    0.0,
+    0.14
+   ],
+   "caps": [
+    {
+     "text": "Or get the one / in the game.",
+     "at": 0,
+     "key": [
+      "game."
+     ]
+    }
+   ]
+  },
+  {
+   "say": "The ninety five Cheetah comes with the Ultimate Edition, eighty nine ninety nine.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_03.0v3_dryhtjarc.jpg",
+   "pan": [
+    0.55,
+    0.75
+   ],
+   "caps": [],
+   "paper": [
+    {
+     "label": "ULTIMATE EDITION: £89.99, $99.99",
+     "head": "The '95 Grotti Cheetah",
+     "mark": "Grotti Cheetah",
+     "mark_at": 3,
+     "source": "ROCKSTAR SAYS: for later stage action",
+     "at": 0
+    }
+   ],
+   "footnote": "REPORTED prices: Push Square; TheSixthAxis."
+  },
+  {
+   "say": "And fans already spotted a Cheetah Classic in the first trailer,",
+   "bg": "scrim",
+   "caps": [],
+   "paper": [
+    {
+     "label": "FANS SPOTTED, TRAILER 1",
+     "head": "A Cheetah Classic",
+     "mark": "Cheetah Classic",
+     "mark_at": 5,
+     "tag": "REPORTED",
+     "source": "GTABoom trailer breakdown; GTA wiki",
+     "at": 0
+    }
+   ],
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 4.6
+    },
+    {
+     "shot": 24,
+     "offset": 0.2,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "near the Ocean View Hotel. Go check.",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/assets/official/ocean_view_hotel_neon.jpg",
+   "pan": [
+    0.86,
+    0.95
+   ],
+   "sfx": "hit",
+   "caps": [
+    {
+     "text": "near the / Ocean View Hotel.",
+     "at": 0,
+     "key": [
+      "Ocean",
+      "View",
+      "Hotel."
+     ]
+    },
+    {
+     "text": "Go check.",
+     "at": 5,
+     "key": [
+      "check."
+     ]
+    }
+   ],
+   "footnote": "REPORTED by fans. Rockstar has not confirmed it."
+  },
+  {
+   "say": "So be honest. The car,",
+   "bg": "scrim",
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg",
+   "pan": [
+    0.02,
+    0.12
+   ],
+   "caps": [
+    {
+     "text": "So be honest. / The car,",
+     "at": 0,
+     "key": [
+      "car,"
+     ]
+    }
+   ]
+  },
+  {
+   "say": "or fourteen thousand copies?",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "or 14,000 / copies?",
+     "at": 0,
+     "key": [
+      "copies?"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 16,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "Follow noticed dot daily and comment CHEETAH.",
+   "bg": "scrim",
+   "sfx": "hit",
+   "capsY": 1000,
+   "caps": [
+    {
+     "text": "Follow / @noticed.daily",
+     "at": 0,
+     "key": [
+      "@noticed.daily"
+     ]
+    },
+    {
+     "text": "and comment / CHEETAH.",
+     "at": 4,
+     "key": [
+      "CHEETAH."
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 60,
+     "offset": 0.1
+    },
+    {
+     "shot": 91,
+     "offset": 6.5,
+     "at": 4
+    }
+   ]
+  },
+  {
+   "say": "The pop up guide lands straight in your inbox:",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "The pop up guide / lands straight in your inbox",
+     "at": 0,
+     "key": [
+      "inbox"
+     ]
+    }
+   ],
+   "capsY": 1100,
+   "clips": [
+    {
+     "shot": 3,
+     "offset": 0.1
+    }
+   ]
+  },
+  {
+   "say": "address, dates, and the twelve pound Grotti keychain you can actually afford.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "Grotti keychain / you can actually afford.",
+     "at": 6,
+     "key": [
+      "afford."
+     ]
+    }
+   ],
+   "capsY": 1150,
+   "tiles": {
+    "items": [
+     {
+      "text": "ADDRESS",
+      "at": 0
+     },
+     {
+      "text": "DATES",
+      "at": 1
+     },
+     {
+      "text": "£12 KEYCHAIN",
+      "at": 4
+     }
+    ],
+    "y": 430,
+    "gap": 150,
+    "size": 84
+   },
+   "footnote": "REPORTED: Time Out London; VGC; Push Square.",
+   "clips": [
+    {
+     "shot": 83,
+     "offset": 0.1
+    },
+    {
+     "shot": 88,
+     "offset": 0.3,
+     "at": 6
+    }
+   ]
+  },
+  {
+   "say": "See you in Leonida.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "See you in Leonida.",
+     "at": 0,
+     "key": [
+      "Leonida."
+     ]
+    }
+   ],
+   "capsY": 1100,
+   "clips": [
+    {
+     "shot": 62,
+     "offset": 10.4
+    }
+   ]
+  },
+  {
+   "layout": "endcard",
+   "brand": "noticed.",
+   "wordmark": true,
+   "handle": "@noticed.daily",
+   "series": "GTA 6",
+   "episode": "The pop up guide lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT CHEETAH",
+   "hold": 2.2,
+   "media": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/imgs/desktop.00.5pzu2sm-z4.jpg",
+   "pan": [
+    0.3,
+    0.42
+   ]
+  }
+ ]
+}
