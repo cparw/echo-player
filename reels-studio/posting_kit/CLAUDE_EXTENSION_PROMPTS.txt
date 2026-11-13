@@ -24,8 +24,8 @@ Post a Reel on my Instagram in this tab. Same rules as before: never touch login
 2. If asked about cropping, choose Original or 9:16 so nothing is cut. Click Next.
 3. Cover photo: if there is an option to upload a cover from the computer, use it and stop to ask me to choose R1_cover.jpg. If not, keep the first frame. Click Next.
 4. Caption: paste exactly the text between the two lines of hashes below. Keep every line break and emoji.
-5. Advanced settings: turn ON the AI label ("AI label", "Add AI label" or "Made with AI"; the narration is my own voice made with AI). Turn OFF "Share to Facebook" if it is shown. Keep comments on.
-6. Before clicking Share, show me: the first caption line, AI label on or off, cover set or not. Wait for my "ok", then click Share.
+5. Advanced settings: do NOT touch the AI label. Turn OFF "Share to Facebook" if it is shown. Keep comments on.
+6. Before clicking Share, show me: the first caption line and whether the cover is set. Wait for my "ok", then click Share.
 7. When it is live, open the reel and add this comment, then pin it: Which change are you most excited about? Comment SIX for the one I couldn't fit 👇
 8. Send me the link to the reel.
 
@@ -66,8 +66,8 @@ Post a Reel on my Instagram in this tab. Same rules as before: never touch login
 2. If asked about cropping, choose Original or 9:16 so nothing is cut. Click Next.
 3. Cover photo: if there is an option to upload a cover from the computer, use it and stop to ask me to choose R2_cover.jpg. If not, keep the first frame. Click Next.
 4. Caption: paste exactly the text between the two lines of hashes below. Keep every line break and emoji.
-5. Advanced settings: turn ON the AI label. Turn OFF "Share to Facebook" if it is shown. Keep comments on.
-6. Before clicking Share, show me: the first caption line, AI label on or off, cover set or not. Wait for my "ok", then click Share.
+5. Advanced settings: do NOT touch the AI label. Turn OFF "Share to Facebook" if it is shown. Keep comments on.
+6. Before clicking Share, show me: the first caption line and whether the cover is set. Wait for my "ok", then click Share.
 7. When it is live, open the reel and add this comment, then pin it: Standard or Ultimate? Comment CHECK for my launch checklist 👇
 8. Send me the link to the reel.
 

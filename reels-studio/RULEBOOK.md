@@ -102,7 +102,7 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 ## 6. Captions and posting
 
 * Caption: one line hook, the facts with labels (ROCKSTAR SAYS, REPORTED, OUR MATH), an easy question, "Follow for tomorrow. See you in Leonida.", disclaimer and credits, max 5 hashtags.
-* Turn ON the AI label (the narration is an AI clone of the owner's voice).
+* AI label: the owner handles it himself. Never turn it on, off or mention it in posting steps (owner, 13 Nov: "You don't do anything about the AI label").
 * Pin a first comment that invites replies. Reply to every comment in the first hour.
 * Do not auto share to Facebook. Upload the original file to TikTok and YouTube Shorts with AI disclosure on.
 * The owner's mother runs Instagram and YouTube from India (payouts to her). TikTok is the owner's in the US for reach. Never suggest a VPN for TikTok in India.
@@ -126,6 +126,8 @@ The owner confirmed on 13 Nov that this channel is the model for how we make vid
 5. Facts, labels and numbers match between the video and the caption.
 
 ## 9. Feedback log (newest first)
+
+* 13 Nov: "The AI label should be turned off ... I will take care of it. You don't do anything about the AI label." Never touch the AI label in any posting step. Also: he wants to SEE changes happen live and fast; a cloud session cannot click in his Chrome, so live changes come from the Claude extension side panel in his Chrome or a local desktop session on his Mac (choose Local, not Cloud).
 
 * 13 Nov: owner rejected the flat badge logo ("I don't like this logo ... futuristic nice logo") and wants zero manual work: "I want you to do everything ... you take control". New logo: a chrome glass letter n with an orange notification dot (`brand/noticed/noticed_logo_chrome_n.png`, also `posting_kit/profile_picture.jpg`). Execution on his Mac goes through a one click desktop task (Claude session on his machine with Chrome and his G-DRIVE SSD; folder `noticed_studio` on the drive). Category for the Creator account: Gaming Video Creator. Reel 4 (The Wait) stays unposted: it says seven days away.
 
