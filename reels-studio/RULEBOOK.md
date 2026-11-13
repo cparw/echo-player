@@ -119,6 +119,8 @@ The owner shared this channel as the type of video to implement. Their police sy
 
 ## 9. Feedback log (newest first)
 
+* 13 Nov: owner sent a second reel, DfG0di2REJO, with no comment, right after the @cole.themanyt reference. Treat it as another model to study (reel plus its channel) and fold what is new into the fast explainer format.
+
 * 13 Nov: owner shared reel DfUuyixBvFp as a new reference: "Check this channel out. All the reels on this channel also, the way they are making things is helpful, which the type of videos we can also implement." Study the whole channel (not just the one reel) and adopt its way of making videos; findings go in `research/reference_reels.md` and section 2.
 
 * 13 Nov: "I don't like it ... What plain sight? No man. Be thoughtful a little bit. Do it in the best way possible. Multiple logos, at least like 12, 13 logos. Let me see how they look, the best possible thing. Do more research." plain sight. (and its backups one frame., look again.) are rejected. From now on show a numbered gallery of 12 to 13 logo options at top quality so the owner can pick by number, each name ONE word with a real idea behind it, backed by research.
