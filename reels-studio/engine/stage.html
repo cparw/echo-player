@@ -5,6 +5,7 @@
 <style>
 @font-face { font-family: 'Anton'; src: url('node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Inter Tight'; font-weight: 800; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 800; font-style: italic; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-800-italic.woff2') format('woff2'); }
 @font-face { font-family: 'Inter Tight'; font-weight: 600; src: url('node_modules/@fontsource/inter-tight/files/inter-tight-latin-600-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Instrument Serif'; font-style: italic; src: url('node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2') format('woff2'); }
 @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url('node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-500-normal.woff2') format('woff2'); }
@@ -76,8 +77,171 @@ window.init = function (tl) {
     if (sc.layout === 'quote' && !sc.font) { sc.font = 'serif'; sc.size = sc.size || 120; sc.maxH = sc.maxH || 560; }
     if (sc.lines && sc.lines.length) fitScene(sc);
   }
+  // fast explainer scenes measure their text at render time; make sure the italic caption face is loaded first
+  if (TL.scenes.some(isPunch)) return document.fonts.load('italic 800 100px "Inter Tight"').then(() => document.fonts.load('400 100px Anton')).then(() => true);
   return true;
 };
+
+// ===== Fast explainer kit (titlecard, section header, build captions, illustration cards). Only scenes with these keys use it. =====
+const isPunch = sc => !!(sc.caps || sc.section || sc.hud || sc.layout === 'titlecard');
+const PK = { orange: '#FF7A1A', red: '#FF3B30', capCx: 490, capW: 860, capCy: 1180, capMaxH: 240, headTop: 252, cardTop: 416,
+             foot: 1310, credit: 1352, shadow: '0 6px 26px rgba(0,0,0,0.85), 0 2px 5px rgba(0,0,0,0.75)' };
+const _mctx = document.createElement('canvas').getContext('2d');
+function textW(txt, font) { _mctx.font = font; return _mctx.measureText(txt).width; }
+function svgIcon(name, size, stroke, fill, sw) {
+  const inner = (window.ICONS || {})[name] || '';
+  return `<svg viewBox="0 0 24 24" width="${size}" height="${size}" fill="${fill || 'none'}" stroke="${stroke}" stroke-width="${sw || 2}" stroke-linecap="round" stroke-linejoin="round" style="overflow:visible;display:block">${inner}</svg>`;
+}
+
+// Title card: orange topic pill (pops in with one ring) over a two line Anton title; EACH line is fitted to the width on its own,
+// line 1 white, line 2 orange. Upper zone (default): the block ends at titleBottom (955, above mid height) and may use 86% width.
+// Lower zone (titleBottom > 960): width drops to the caption box so nothing enters the right 14% Instagram zone.
+function titleCard(sc, t, th) {
+  const F = document.createElement('div'); F.className = 'layer';
+  const lines = (sc.title || []).map(x => String(x).toUpperCase());
+  const bottom = sc.titleBottom || 955, lower = bottom > 960;
+  const maxW = lower ? PK.capW : 1080 * 0.86, cx = lower ? PK.capCx : 540, LH = 0.96;
+  if (!sc._tsizes) sc._tsizes = lines.map(l => { let z = 300; for (; z > 40; z -= 2) if (textW(l, `400 ${z}px Anton`) <= maxW) break; return z; });
+  const zs = sc._tsizes, H = zs.reduce((a, b) => a + b * LH, 0), top = Math.round(bottom - H);
+  sc._ttop = top;
+  const tagH = 74, tagTop = top - tagH - 22;
+  const pp = prog(t, sc.start, 0.32), e = ease.outBack(pp);
+  const topic = String(sc.topic || '').toUpperCase();
+  if (topic) {
+    const W = textW(topic, '400 46px Anton') + 64;
+    const P = document.createElement('div');
+    P.style.cssText = `position:absolute;left:${cx - W / 2}px;top:${tagTop}px;width:${W}px;height:${tagH}px;border-radius:${tagH / 2}px;background:${PK.orange};` +
+      `display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:46px;color:#000;letter-spacing:0.04em;box-shadow:0 6px 24px rgba(0,0,0,0.55);transform:scale(${0.78 + 0.22 * e})`;
+    P.textContent = topic; F.appendChild(P);
+    const rp = prog(t, sc.start, 0.5);
+    if (rp < 1) {
+      const R = document.createElement('div'), k = 1 + 0.55 * ease.out(rp);
+      R.style.cssText = `position:absolute;left:${cx - W / 2}px;top:${tagTop}px;width:${W}px;height:${tagH}px;border-radius:${tagH / 2}px;border:3px solid ${PK.orange};box-sizing:border-box;` +
+        `opacity:${0.95 * (1 - rp)};transform:scale(${k}, ${1 + (k - 1) * 1.6})`;
+      F.appendChild(R);
+    }
+  }
+  const T = document.createElement('div');
+  T.style.cssText = `position:absolute;left:${cx - 540}px;width:1080px;top:${top}px;text-align:center;font-family:Anton;line-height:${LH};letter-spacing:0.005em;` +
+    `text-shadow:0 8px 34px rgba(0,0,0,0.8), 0 2px 6px rgba(0,0,0,0.6);transform:scale(${1.04 - 0.04 * ease.out(prog(t, sc.start, 0.4))});transform-origin:50% 100%`;
+  lines.forEach((l, i) => { const d = document.createElement('div'); d.style.cssText = `color:${i === 1 ? PK.orange : '#FFFFFF'};white-space:nowrap;font-size:${zs[i]}px`; d.textContent = l; T.appendChild(d); });
+  F.appendChild(T);
+  return F;
+}
+
+// Section header: number in an orange circle, Anton title, optional Lucide icon; pops in when the section starts and stays
+function sectionHeader(sec, t) {
+  const p = prog(t, sec.t, 0.3), e = ease.outBack(p);
+  const H = document.createElement('div');
+  H.style.cssText = `position:absolute;left:0;right:0;top:${PK.headTop}px;display:flex;justify-content:center;align-items:center;gap:23px;` +
+    `opacity:${clamp(p * 2, 0, 1)};transform:scale(${0.7 + 0.3 * e});transform-origin:50% 50%`;
+  const C = document.createElement('div');
+  C.style.cssText = `width:97px;height:97px;border-radius:50%;background:${PK.orange};display:flex;align-items:center;justify-content:center;` +
+    `font-family:Anton;font-size:60px;color:#000;box-shadow:0 4px 20px rgba(0,0,0,0.55);flex:none;padding-top:2px;box-sizing:border-box`;
+  C.textContent = sec.n;
+  const T = document.createElement('div');
+  T.style.cssText = `font-family:Anton;font-size:74px;line-height:1;color:#FFFFFF;text-shadow:${PK.shadow};white-space:nowrap;letter-spacing:0.01em`;
+  T.textContent = String(sec.title).toUpperCase();
+  H.appendChild(C); H.appendChild(T);
+  if (sec.icon && (window.ICONS || {})[sec.icon]) {
+    const I = document.createElement('div'); I.style.cssText = 'filter:drop-shadow(0 3px 10px rgba(0,0,0,0.8));flex:none';
+    I.innerHTML = svgIcon(sec.icon, 67, '#FFFFFF', 'none', 2.2); H.appendChild(I);
+  }
+  return H;
+}
+
+// Build caption: key phrase words land one by one (bold italic caps, no box), key words orange, danger words red
+function capBlock(sc, t) {
+  let cap = null;
+  for (const c of sc.caps) if (t >= c.t0) cap = c;
+  if (!cap) return null;
+  if (!cap._size) {
+    const strs = cap.lines.map(r => r.map(x => x.w).join(' '));
+    let z = sc.capSize || 132;
+    for (; z > 40; z -= 2) {
+      const w = Math.max(...strs.map(l => textW(l, `italic 800 ${z}px "Inter Tight"`))) + z * 0.12;  // italic overhang
+      if (w <= PK.capW && cap.lines.length * z * 1.02 <= PK.capMaxH) break;
+    }
+    cap._size = z;
+  }
+  const z = cap._size, h = cap.lines.length * z * 1.02;
+  const B = document.createElement('div');
+  B.style.cssText = `position:absolute;left:${PK.capCx - PK.capW / 2}px;width:${PK.capW}px;top:${Math.round(PK.capCy - h / 2)}px;text-align:center;` +
+    `font-family:'Inter Tight';font-weight:800;font-style:italic;font-size:${z}px;line-height:1.02;color:#FFFFFF;text-shadow:${PK.shadow}`;
+  for (const row of cap.lines) {
+    const L = document.createElement('div'); L.style.whiteSpace = 'nowrap'; L.style.wordSpacing = '0.1em';
+    row.forEach((x, i) => {
+      const s = document.createElement('span'); s.style.display = 'inline-block';
+      const p = prog(t, x.t, 0.13);
+      if (p <= 0) s.style.opacity = 0;
+      else { const e = ease.outBack(p); s.style.opacity = clamp(p * 2, 0, 1); s.style.transform = `scale(${1.28 - 0.28 * e})`; }
+      if (x.kind === 'key') s.style.color = PK.orange;
+      if (x.kind === 'danger') s.style.color = PK.red;
+      s.textContent = x.w; L.appendChild(s);
+      if (i < row.length - 1) L.appendChild(document.createTextNode(' '));
+    });
+    B.appendChild(L);
+  }
+  return B;
+}
+
+// Illustration card (stars bar or clue chips): dark translucent box, thin orange outline, soft glow, ILLUSTRATION tag
+function hudCard(sc, t) {
+  const hud = sc.hud, F = document.createElement('div'); F.className = 'layer';
+  const p = prog(t, sc.start + 0.04, 0.28), e = ease.outBack(p);
+  const box = document.createElement('div');
+  let W, Hh;
+  if (hud.type === 'stars') { W = 744; Hh = 176; } else { W = 820; Hh = 268; }
+  box.style.cssText = `position:absolute;left:${540 - W / 2}px;top:${hud.top || PK.cardTop}px;width:${W}px;height:${Hh}px;box-sizing:border-box;border-radius:28px;` +
+    `background:rgba(10,10,14,0.78);border:2px solid rgba(255,122,26,0.9);box-shadow:0 0 34px rgba(255,122,26,0.28), 0 10px 40px rgba(0,0,0,0.5);` +
+    `opacity:${clamp(p * 2, 0, 1)};transform:scale(${0.86 + 0.14 * e})`;
+  const tag = document.createElement('div');
+  tag.style.cssText = `position:absolute;left:26px;top:-15px;padding:3px 12px;background:#0A0A0E;border:1.5px solid rgba(255,122,26,0.9);border-radius:8px;` +
+    `font-family:'JetBrains Mono';font-weight:500;font-size:17px;letter-spacing:0.18em;color:${PK.orange}`;
+  tag.textContent = 'ILLUSTRATION'; box.appendChild(tag);
+  if (hud.type === 'stars') {
+    const n = hud.total || 6, hot = hud.hot || [], R = document.createElement('div');
+    R.style.cssText = 'position:absolute;left:0;right:0;top:0;bottom:0;display:flex;justify-content:center;align-items:center;gap:20px';
+    for (let i = 0; i < n; i++) {
+      const ft = (hud.fill_t || [])[i], isHot = hot.includes(i + 1);
+      const fp = ft != null ? prog(t, ft, 0.18) : 0;
+      const S = document.createElement('div'); S.style.cssText = 'width:96px;height:96px;flex:none;position:relative';
+      const fillCol = isHot ? PK.orange : '#FFFFFF';
+      const k = fp > 0 ? (isHot ? 1.5 - 0.5 * ease.outBack(fp) : 1.18 - 0.18 * ease.outBack(fp)) : 1;
+      S.innerHTML = `<div style="position:absolute;inset:0">${svgIcon('star', 96, 'rgba(255,255,255,0.55)', 'rgba(255,255,255,0.06)', 1.6)}</div>` +
+        (fp > 0 ? `<div style="position:absolute;inset:0;opacity:${clamp(fp * 2, 0, 1)};transform:scale(${k});filter:drop-shadow(0 0 ${isHot ? 22 : 8}px ${isHot ? 'rgba(255,122,26,0.9)' : 'rgba(255,255,255,0.35)'})">${svgIcon('star', 96, fillCol, fillCol, 1.6)}</div>` : '');
+      R.appendChild(S);
+    }
+    box.appendChild(R);
+  } else {
+    const G = document.createElement('div');
+    G.style.cssText = 'position:absolute;left:30px;right:30px;top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px';
+    (hud.items || []).forEach((it, i) => {
+      const ap = prog(t, sc.start + 0.12 + i * 0.06, 0.2);
+      const red = it.tr != null && t >= it.tr, clr = it.tc != null && t >= it.tc;
+      const C = document.createElement('div');
+      const bg = clr ? 'rgba(255,255,255,0.06)' : red ? 'rgba(255,59,48,0.88)' : 'rgba(255,255,255,0.10)';
+      const bd = clr ? 'rgba(255,255,255,0.25)' : red ? PK.red : 'rgba(255,255,255,0.30)';
+      const rk = red && !clr ? 1.12 - 0.12 * ease.outBack(prog(t, it.tr, 0.2)) : 1;
+      C.style.cssText = `position:relative;height:86px;border-radius:16px;background:${bg};border:2px solid ${bd};display:flex;align-items:center;gap:12px;padding:0 16px;` +
+        `box-sizing:border-box;opacity:${ap * (clr ? 0.75 : 1)};transform:scale(${rk})`;
+      const I = document.createElement('div'); I.style.flex = 'none'; I.innerHTML = svgIcon(it.icon || 'eye', 40, '#FFFFFF', 'none', 2);
+      const L = document.createElement('div');
+      L.style.cssText = `font-family:'Inter Tight';font-weight:800;font-size:25px;letter-spacing:0.03em;color:#FFFFFF;white-space:nowrap${clr ? ';text-decoration:line-through;opacity:0.7' : ''}`;
+      L.textContent = String(it.label).toUpperCase();
+      C.appendChild(I); C.appendChild(L);
+      if (clr) {
+        const K = document.createElement('div'); const cp = ease.outBack(prog(t, it.tc, 0.2));
+        K.style.cssText = `position:absolute;right:-12px;top:-14px;width:40px;height:40px;border-radius:50%;background:#22C55E;display:flex;align-items:center;justify-content:center;transform:scale(${cp})`;
+        K.innerHTML = svgIcon('check', 26, '#FFFFFF', 'none', 3.2); C.appendChild(K);
+      }
+      G.appendChild(C);
+    });
+    box.appendChild(G);
+  }
+  F.appendChild(box);
+  return F;
+}
 
 function bgLayer(sc, t, th) {
   const L = document.createElement('div'); L.className = 'layer';
@@ -412,7 +576,15 @@ window.renderAt = function (t) {
   root.innerHTML = '';
   const sc = TL.scenes.find(s => t >= s.start && t < s.end) || TL.scenes[TL.scenes.length - 1];
   if (sc.layout === 'endcard') { root.appendChild(endCard(sc, t, th)); return; }
+  const punch = isPunch(sc);
+  if (punch && !sc.scrimY) sc.scrimY = sc.layout === 'titlecard' ? (sc.titleBottom || 955) - 150 : PK.capCy;
   root.appendChild(bgLayer(sc, t, th));
+  if (punch) {
+    if (sc.layout === 'titlecard') root.appendChild(titleCard(sc, t, th));
+    if (sc.hud) root.appendChild(hudCard(sc, t));
+    if (sc.section) root.appendChild(sectionHeader(sc.section, t));
+    if (sc.caps) { const C = capBlock(sc, t); if (C) root.appendChild(C); }
+  }
   if (sc.layout === 'number') {
     root.appendChild(numberBlock(sc, t, th));
     if (sc.lines && sc.lines.length) root.appendChild(wordsBlock(sc, t, th, sc.wordsTop || 520));
@@ -470,8 +642,10 @@ window.renderAt = function (t) {
   }
   if (sc.footnote) {
     const F = document.createElement('div'); F.className = 'foot';
-    F.style.top = (sc.footTop || 1236) + 'px'; F.style.color = th.fg; F.style.opacity = 0.62 * prog(t, sc.start + 0.25, 0.3);
-    F.textContent = sc.footnote;
+    F.style.top = (sc.footTop || (punch ? PK.foot : 1236)) + 'px';
+    if (punch) F.style.textShadow = '0 2px 10px rgba(0,0,0,0.9)'; F.style.color = th.fg; F.style.opacity = 0.62 * prog(t, sc.start + 0.25, 0.3);
+    if (punch) { F.style.opacity = 0.95 * prog(t, sc.start + 0.25, 0.3); F.style.right = 'auto'; F.innerHTML = '<span style="display:inline-block;background:rgba(0,0,0,0.45);border-radius:12px;padding:3px 12px;margin-left:-12px"></span>'; F.firstChild.textContent = sc.footnote; }
+    else F.textContent = sc.footnote;
     root.appendChild(F);
   }
   if (TL.tag && !sc.noTag) {
@@ -483,6 +657,8 @@ window.renderAt = function (t) {
   if (sc.credit) {
     const C = document.createElement('div'); C.className = 'aitag'; C.style.color = th.fg; C.style.opacity = 0.6;
     C.textContent = sc.credit;
+    if (punch) { C.style.top = (PK.credit + 4) + 'px'; C.style.left = '80px'; C.style.right = 'auto'; C.style.textAlign = 'left'; C.style.textShadow = '0 2px 10px rgba(0,0,0,0.9)';
+      C.style.opacity = 0.85; C.innerHTML = '<span style="display:inline-block;background:rgba(0,0,0,0.45);border-radius:10px;padding:3px 12px;margin-left:-12px"></span>'; C.firstChild.textContent = sc.credit; }
     root.appendChild(C);
   }
   if (sc.ai) {
@@ -491,6 +667,11 @@ window.renderAt = function (t) {
     root.appendChild(A);
   }
   // quick flash on cuts marked 'flash'
+  // fast explainer: a 2 frame white flash when a new section starts
+  if (sc.section_new) {
+    const f = Math.floor((t - sc.start) * (TL.fps || 30) + 1e-6);
+    if (f >= 0 && f < 2) { const W = document.createElement('div'); W.className = 'layer'; W.style.background = '#fff'; W.style.opacity = f === 0 ? 0.9 : 0.45; root.appendChild(W); }
+  }
   if (sc.flash) {
     const fp = prog(t, sc.start, 0.12);
     if (fp < 1) { const W = document.createElement('div'); W.className = 'layer'; W.style.background = '#fff'; W.style.opacity = 0.35 * (1 - fp); root.appendChild(W); }

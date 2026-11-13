@@ -29,6 +29,8 @@ if spec.get("voice_preset"):
     cfg.update(PRESETS[str(spec["voice_preset"])])
 cfg.update({k: spec[k] for k in ("guide_voice_id", "guide_model", "guide_speed", "guide_stability", "guide_style",
                                  "guide_similarity", "sts_stability", "sts_similarity", "pitch_semitones") if k in spec and not spec.get("voice_preset")})
+if spec.get("pace_wpm") and "guide_speed" in spec:
+    cfg["guide_speed"] = min(1.2, float(spec["guide_speed"]))  # faster formats (pace_wpm set) may lift the guide speed on top of a preset
 text = " ".join(b["say"].strip() for b in spec["beats"] if b.get("say"))
 self_read = cfg["guide_voice_id"] == "self"
 gvoice = spec["voice_id"] if self_read else cfg["guide_voice_id"]

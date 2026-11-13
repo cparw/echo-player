@@ -87,3 +87,10 @@ Setup once per session: `cd reels-studio/engine && npm install` (fonts) and `pip
 
 ## Research
 `research/all_streams.json` and the launch plan in `PLAYBOOK.md`: 12 research streams from 12 Nov 2026 (facts with sources and confidence, algorithm, monetization, legal, production, hooks, creators). Recheck time sensitive facts before each post.
+
+## Fast explainer style (engine v5, 13 Nov 2026, from the @cole.themanyt study)
+* New script keys, all optional (reels without them build exactly as before; checked byte for byte on the six reels): `"layout": "titlecard"` with `topic` and a two line `title` (each line fitted to the width on its own, line 2 orange), `section` (`n`, `title`, `icon`: numbered header that stays up), `caps` (key phrase captions that build word by word; `key` words orange, `danger` words red; Inter Tight 800 italic caps, no box), `hud` (`stars` or `clues` illustration card with an ILLUSTRATION tag), `push` (slow push in), top level `loop` (no end card), and for the voice `pace_wpm`, `max_pause`, `guide_speed` (`engine/tighten_pauses.py` trims long gaps). `engine/synth_words.py` makes fake word timings for silent previews.
+* First reel in this style: "How the police work in GTA 6". Sample script (first 15 s): `reels/police_explainer/sample_script.json`; stills in `reels/police_explainer/preview/` (title options A, B, C; A = shot 30 was picked).
+* Not built yet: the loop back into the opening shot (only the end card is removed), and the `clues` card has not been rendered in a real reel.
+* Voice for the sample is NOT recorded: the paid ElevenLabs call was blocked by the permission system when a subagent tried it. Do not route around that; record only after the owner says go in the chat (`bash engine/voice_only.sh <reel dir>`).
+* ElevenLabs on 13 Nov: 36,677 of 40,000 credits used, so 3,323 left until the reset. A 15 s sample is about 300 credits; a full 62 s reel at 210 words a minute is about 1,200.

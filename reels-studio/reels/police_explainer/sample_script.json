@@ -1,0 +1,163 @@
+{
+ "title": "How the GTA 6 wanted system works (fast explainer sample, silent)",
+ "format": "fast_explainer",
+ "voice_id": "bqoGL6z7prHxVFnnNfsb",
+ "model_id": "eleven_v4",
+ "voice_preset": 1,
+ "fps": 30,
+ "tag": null,
+ "loop": true,
+ "theme": {
+  "bg": "#08080B",
+  "fg": "#F5F2EA",
+  "accent": "#FF7A1A",
+  "accent2": "#2EE6D0",
+  "ink": "#0B0B0F"
+ },
+ "shots_json": "/tmp/claude-0/-home-user-echo-player/53197e09-39b2-53e1-ace7-1aefc4b23039/scratchpad/official/shots/shots.json",
+ "beats": [
+  {
+   "say": "In GTA Six, the police remember your outfit.",
+   "layout": "titlecard",
+   "instant": true,
+   "bg": "scrim",
+   "topic": "GTA 6",
+   "title": [
+    "THE POLICE REMEMBER",
+    "YOUR OUTFIT"
+   ],
+   "clips": [
+    {
+     "shot": 30,
+     "offset": 0.1
+    }
+   ],
+   "titleBottom": 1300
+  },
+  {
+   "say": "Here's how the new wanted system works.",
+   "bg": "scrim",
+   "caps": [
+    {
+     "text": "HERE'S HOW / THE NEW / WANTED SYSTEM",
+     "at": 0,
+     "key": [
+      "WANTED SYSTEM"
+     ]
+    }
+   ],
+   "clips": [
+    {
+     "shot": 77,
+     "offset": 6.8
+    }
+   ]
+  },
+  {
+   "say": "Rule one. No witness, no cops. Rockstar says someone has to see the crime, or an alarm has to go off, before it is even reported.",
+   "bg": "scrim",
+   "section": {
+    "n": 1,
+    "title": "NO WITNESS, NO COPS",
+    "icon": "eye-off"
+   },
+   "caps": [
+    {
+     "text": "RULE ONE",
+     "at": 0
+    },
+    {
+     "text": "NO WITNESS / NO COPS",
+     "at": 2,
+     "key": [
+      "COPS"
+     ]
+    },
+    {
+     "text": "SOMEONE HAS TO / SEE IT",
+     "at": 8,
+     "key": [
+      "SEE IT"
+     ]
+    },
+    {
+     "text": "OR AN ALARM / HAS TO GO OFF",
+     "at": 14,
+     "danger": [
+      "ALARM"
+     ]
+    }
+   ],
+   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
+   "clips": [
+    {
+     "shot": 74,
+     "offset": 13.0
+    },
+    {
+     "shot": 31,
+     "offset": 2.0,
+     "at": 6
+    },
+    {
+     "shot": 47,
+     "offset": 1.0,
+     "at": 11
+    },
+    {
+     "shot": 77,
+     "offset": 9.8,
+     "at": 19
+    }
+   ]
+  },
+  {
+   "say": "Rule two. The stars now go up to six. GTA Five stopped at five.",
+   "bg": "scrim",
+   "section": {
+    "n": 2,
+    "title": "SIX STARS",
+    "icon": "star"
+   },
+   "hud": {
+    "type": "stars",
+    "total": 6,
+    "fill_at": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "hot": [
+     6
+    ]
+   },
+   "caps": [
+    {
+     "text": "GTA 5 STOPPED / AT FIVE",
+     "at": 9,
+     "danger": [
+      "FIVE"
+     ]
+    }
+   ],
+   "footnote": "REPORTED: GamesRadar on the Extended Look.",
+   "clips": [
+    {
+     "shot": 91,
+     "offset": 5.6
+    },
+    {
+     "shot": 33,
+     "offset": 0.1,
+     "at": 9
+    }
+   ]
+  }
+ ],
+ "pace_wpm": 210,
+ "max_pause": 0.35,
+ "guide_speed": 1.15
+}

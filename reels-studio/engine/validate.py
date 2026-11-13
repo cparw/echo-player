@@ -8,10 +8,12 @@ errs, warns = [], []
 p = sys.argv[1]
 s = json.load(open(p))
 cap = open(sys.argv[2]).read() if len(sys.argv) > 2 and os.path.exists(sys.argv[2]) else ""
-LAYOUTS = {"words", "number", "bars", "list", "endcard", "countdown", "waffle", "map", "quote", "versus"}
+LAYOUTS = {"words", "number", "bars", "list", "endcard", "countdown", "waffle", "map", "quote", "versus", "titlecard"}
 BANNED = ["part you never see", "part of gta 6 you never see", "thank you for guarding", "this is unseen", "unseen",
           "countdown to vice city", "guard it", "our arithmetic", "on the record", "denmark"]
 DASHES = ["—", "–", "‒", "−"]
+ALLD = DASHES + ["-"]
+GUNLIKE = ("crosshair", "sword", "swords", "bomb", "target", "skull", "knife")
 _ij = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons.js")
 ICONS = set(re.findall(r'"([a-z0-9-]+)": "', open(_ij).read())) if os.path.exists(_ij) else set()
 
@@ -19,7 +21,10 @@ for k in ["voice_id", "model_id", "tag", "theme", "beats"]:
     if k not in s: errs.append(f"missing top level key: {k}")
 beats = s.get("beats", [])
 SHOTS = json.load(open(s["shots_json"])) if s.get("shots_json") and os.path.exists(s["shots_json"]) else []
-if not beats or beats[-1].get("layout") != "endcard":
+if s.get("loop"):
+    # fast explainer loop: no end card; the last line runs back into the first
+    if any(b.get("layout") == "endcard" for b in beats): warns.append("loop is set but the script has an endcard (loop reels end without one)")
+elif not beats or beats[-1].get("layout") != "endcard":
     errs.append("last beat must be the endcard")
 total = 0
 for i, b in enumerate(beats):
@@ -80,6 +85,53 @@ for i, b in enumerate(beats):
                 if k not in cy: errs.append(f"beat {i}: map city missing {k}")
             if cy.get("at", 0) >= n: errs.append(f"beat {i}: city anchor out of range")
         if b.get("sweep", {}).get("at", 0) >= n: errs.append(f"beat {i}: sweep anchor out of range")
+    # ---- fast explainer keys ----
+    if lay == "titlecard":
+        if not isinstance(b.get("title"), list) or not 1 <= len(b["title"]) <= 2: errs.append(f"beat {i}: titlecard needs 'title' as a list of 1 or 2 lines")
+        if not b.get("topic"): warns.append(f"beat {i}: titlecard has no 'topic' tag")
+        for txt in list(b.get("title") or []) + [b.get("topic") or ""]:
+            if any(d in txt for d in ALLD): errs.append(f"beat {i}: dash in titlecard text '{txt}'")
+    if b.get("caps") is not None:
+        if not isinstance(b["caps"], list): errs.append(f"beat {i}: caps must be a list")
+        for cp in b["caps"] if isinstance(b["caps"], list) else []:
+            txt = cp.get("text", "")
+            if not txt.strip(): errs.append(f"beat {i}: caption with empty text"); continue
+            if len(txt.split(" / ")) > 3: errs.append(f"beat {i}: caption '{txt}' has more than 3 lines")
+            if len(txt.replace(" / ", " ").split()) > 8: warns.append(f"beat {i}: caption '{txt}' is long (key phrases, about 6 words)")
+            if any(d in txt.replace(" / ", " ") for d in ALLD): errs.append(f"beat {i}: dash in caption '{txt}'")
+            if not isinstance(cp.get("at", 0), int) or cp.get("at", 0) >= n: errs.append(f"beat {i}: caption '{txt}' anchor at={cp.get('at')} out of range ({n} words)")
+            words_up = {w.strip(".,!?").upper() for w in txt.replace(" / ", " ").split()}
+            for kk in ("key", "danger"):
+                for ph in cp.get(kk, []):
+                    for w in ph.split():
+                        if w.strip(".,!?").upper() not in words_up: errs.append(f"beat {i}: {kk} word '{w}' is not in caption '{txt}'")
+        ats = [cp.get("at", 0) for cp in b["caps"] if isinstance(cp, dict)]
+        if ats != sorted(ats): errs.append(f"beat {i}: captions must be in spoken order")
+    if b.get("section"):
+        sec = b["section"]
+        if not isinstance(sec.get("n"), int) or not sec.get("title"): errs.append(f"beat {i}: section needs n (int) and title")
+        if any(d in str(sec.get("title", "")) for d in ALLD): errs.append(f"beat {i}: dash in section title")
+        if sec.get("icon") and sec["icon"] not in ICONS: warns.append(f"beat {i}: unknown section icon {sec['icon']}")
+        if sec.get("icon") and any(g in sec["icon"] for g in GUNLIKE): errs.append(f"beat {i}: section icon {sec['icon']} reads as a weapon")
+    if b.get("hud"):
+        hud = b["hud"]; ht = hud.get("type")
+        if ht not in ("stars", "clues"): errs.append(f"beat {i}: hud type must be stars or clues")
+        if ht == "stars":
+            tot = hud.get("total", 6)
+            if not isinstance(tot, int) or not 1 <= tot <= 8: errs.append(f"beat {i}: stars total must be 1 to 8")
+            for a in hud.get("fill_at", []):
+                if a >= n: errs.append(f"beat {i}: stars fill_at {a} out of range ({n} words)")
+            if len(hud.get("fill_at", [])) > tot: errs.append(f"beat {i}: more fill_at entries than stars")
+            for h in hud.get("hot", []):
+                if not 1 <= h <= tot: errs.append(f"beat {i}: hot star {h} outside 1..{tot}")
+        if ht == "clues":
+            for it in hud.get("items") or []:
+                if any(d in it.get("label", "") for d in ALLD): errs.append(f"beat {i}: dash in clue label")
+                ic = it.get("icon", "")
+                if ic and ic not in ICONS: warns.append(f"beat {i}: unknown clue icon {ic}")
+                if any(g in ic for g in GUNLIKE): errs.append(f"beat {i}: clue icon {ic} reads as a weapon (use alert-triangle)")
+                for kk in ("red_at", "clear_at"):
+                    if kk in it and it[kk] >= n: errs.append(f"beat {i}: clue {kk} out of range")
     if b.get("icon") and b["icon"] not in ICONS: warns.append(f"beat {i}: unknown icon {b['icon']} (have: {', '.join(sorted(ICONS))})")
     for c in b.get("clips", []) or []:
         if isinstance(c, dict) and c.get("at", 0) >= n: errs.append(f"beat {i}: clip anchor at={c['at']} out of range")

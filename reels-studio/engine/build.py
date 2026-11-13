@@ -28,6 +28,8 @@ for b in spec["beats"]:
 assert i == len(words), f"word mismatch: used {i} of {len(words)}"
 
 scenes, bg = [], []
+section_cur = None  # fast explainer: the current section header stays up until the next one
+CAP_GAP = 0.11      # build captions: seconds between words
 voice_end = words[-1]["end"]
 for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
     if b.get("layout") == "endcard":
@@ -58,6 +60,8 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
             row.append(item); j += 1
         lines.append(row)
     sc["lines"] = lines
+    if (b.get("caps") is not None or b.get("layout") == "titlecard") and "show" not in b:
+        sc["lines"] = []  # these beats carry their own text (caption builds, title card), not the full spoken line
     if b.get("layout") == "number":
         ci = b.get("count_at", 0)
         sc["t0"] = round(sw[min(ci, M - 1)]["start"], 3)
@@ -83,6 +87,41 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
             cy["t"] = wt(cy.get("at", 0))
         if sc.get("sweep"):
             sc["sweep"]["t"] = wt(sc["sweep"].get("at", 0))
+    # ---- fast explainer keys (new; absent in older scripts, so they render exactly as before) ----
+    if b.get("caps") is not None:
+        caps = []
+        for cp in b["caps"]:
+            keyw = {x.strip(".,!?").upper() for ph in cp.get("key", []) for x in ph.split()}
+            dang = {x.strip(".,!?").upper() for ph in cp.get("danger", []) for x in ph.split()}
+            t0 = sc["start"] if cp.get("at", 0) == 0 else wt(cp["at"]); q = 0; rows = []  # word 0 captions land with the cut
+            for ln in cp["text"].split(" / "):
+                row = []
+                for w in ln.split():
+                    u = w.strip(".,!?").upper()
+                    item = {"w": w.upper(), "t": round(t0 + q * cp.get("gap", CAP_GAP), 3)}
+                    if u in dang: item["kind"] = "danger"
+                    elif u in keyw: item["kind"] = "key"
+                    row.append(item); q += 1
+                rows.append(row)
+            caps.append({"t0": t0, "lines": rows})
+        sc["caps"] = caps
+    if b.get("section"):
+        section_cur = dict(b["section"], t=sc["start"])
+        sc["section"] = section_cur; sc["section_new"] = True
+    elif section_cur is not None and b.get("layout") != "titlecard":
+        sc["section"] = section_cur
+    if b.get("hud"):
+        hud = dict(b["hud"])
+        if hud.get("type") == "stars":
+            hud["fill_t"] = [wt(a) for a in hud.get("fill_at", [])]
+        elif hud.get("type") == "clues":
+            items = [dict(x) for x in hud.get("items") or [{"label": l, "icon": i} for l, i in
+                     (("CAMERA", "cctv"), ("PARTNER", "users"), ("CLOTHES", "shirt"), ("FACE", "scan-face"), ("WEAPON", "alert-triangle"), ("CAR", "car"))]]
+            for x in items:
+                if "red_at" in x: x["tr"] = wt(x["red_at"])
+                if "clear_at" in x: x["tc"] = wt(x["clear_at"])
+            hud["items"] = items
+        sc["hud"] = hud
     clips = None
     if b.get("clips"):
         # cut on the spoken word: a clip with "at" starts LEAD before that word; the first clip starts with the scene
@@ -93,6 +132,8 @@ for k, (b, sw) in enumerate(zip(spec["beats"], spoken)):
     scenes.append(sc)
     bg.append({"start": sc["start"], "media": b.get("media"), "media_offset": b.get("media_offset", 0), "pan": b.get("pan", [0.40, 0.60]),
                "clips": clips, "treat": "duo" if b.get("bg") == "duo" else b.get("treat")})
+    push = b.get("push", 0.07 if b.get("layout") == "titlecard" else None)  # slow push in (zoom gained over the beat)
+    if push: bg[-1]["push"] = push
 
 for k in range(len(scenes)):
     scenes[k]["end"] = scenes[k + 1]["start"] if k + 1 < len(scenes) else round(voice_end + 0.35, 3)
@@ -113,8 +154,9 @@ for k in range(len(bg)):
 
 tl = {"fps": fps, "duration": round(duration, 3), "tag": spec.get("tag"), "theme": spec["theme"], "scenes": scenes,
       "stills": [round((s["start"] + s["end"]) / 2 + 0.3, 2) for s in scenes]}
+if spec.get("loop"): tl["loop"] = True
 os.makedirs(out, exist_ok=True)
 json.dump(tl, open(os.path.join(out, "timeline.json"), "w"), indent=1)
-json.dump({"duration": tl["duration"], "segments": bg, "shots_json": spec.get("shots_json"), "sfx": [{"t": s["start"], "kind": "hit" if s.get("flash") or s.get("layout") == "number" else "whoosh"} for s in scenes[1:]]},
+json.dump({"duration": tl["duration"], "segments": bg, "shots_json": spec.get("shots_json"), "sfx": [{"t": s["start"], "kind": "hit" if s.get("flash") or s.get("section_new") or s.get("layout") == "number" else "whoosh"} for s in scenes[1:]]},
           open(os.path.join(out, "bgplan.json"), "w"), indent=1)
 print(f"scenes={len(scenes)} duration={tl['duration']}s")

@@ -53,7 +53,7 @@ def clean_window(sh, offset):
         if w[0] - 0.15 <= offset <= w[1]: return w
     return min(wins, key=lambda w: min(abs(offset - w[0]), abs(offset - w[1])))
 
-def clip_part(c, dur, outp, treat=None):
+def clip_part(c, dur, outp, treat=None, push=None):
     sh = SHOTS[c["shot"]]
     lo, hi = clean_window(sh, c.get("offset", 0))
     off = min(max(c.get("offset", 0), lo), max(lo, hi - 0.6))
@@ -73,6 +73,9 @@ def clip_part(c, dur, outp, treat=None):
         geo = f"crop={w}:{h}:{x}:{y},scale=1080:1920:flags=lanczos,unsharp=5:5:0.5:5:5:0.0"
     else:
         geo = "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920"
+    if push:  # fast explainer title card: slow push in, zoom grows by `push` over the clip
+        geo += (f",scale=w='trunc(1080*(1+{push}*t/{max(dur, 0.1):.3f})/2)*2':h='trunc(1920*(1+{push}*t/{max(dur, 0.1):.3f})/2)*2':eval=frame:flags=bicubic,"
+                "crop=1080:1920:(iw-1080)/2:(ih-1920)/2")
     vf = f"trim=duration={avail:.3f},setpts=PTS-STARTPTS,setpts={slow:.3f}*PTS,{geo},fps=30,tpad=stop_mode=clone:stop_duration=3,{grade({'treat': treat})},setsar=1,format=yuv420p"
     run(["-ss", str(sh["start"] + c.get("offset", 0)), "-i", src, "-vf", vf, "-t", str(dur), "-an",
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", "-r", "30", outp])
@@ -92,7 +95,7 @@ for i, s in enumerate(plan["segments"]):
         else:
             durs = [round(dur / n, 3) if j < n - 1 else round(dur - round(dur / n, 3) * (n - 1), 3) for j in range(n)]
         for j, c in enumerate(s["clips"]):
-            pp = os.path.join(od, f"seg_{i:02d}_{j}.mp4"); clip_part(c, durs[j], pp, s.get("treat")); parts.append(pp)
+            pp = os.path.join(od, f"seg_{i:02d}_{j}.mp4"); clip_part(c, durs[j], pp, s.get("treat"), s.get("push")); parts.append(pp)
         pl = os.path.join(od, f"seg_{i:02d}.txt"); open(pl, "w").write("".join(f"file '{os.path.abspath(x)}'\n" for x in parts))
         run(["-f", "concat", "-safe", "0", "-i", pl, "-c", "copy", p])
     elif s.get("media") and s["media"].lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
