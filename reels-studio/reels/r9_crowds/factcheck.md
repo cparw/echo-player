@@ -1,6 +1,6 @@
 # Fact check: R9 "Stare at a stranger in GTA 6. His dog might chase you." (story style), 13 Nov 2026
 
-165 spoken words, about 55 s at 180 words a minute, plus a 2 s end card. Every page below was opened with curl on 13 Nov 2026 (raw copies in the session scratchpad, `punch/_pages/`). Source sentences are copied verbatim; "..." marks a cut. The New York Times original is paywalled, so it is checked through The Star's full reprint (and The Nightly's shorter one).
+162 spoken words, about 54 s at 180 words a minute, plus a 2 s end card. Every page below was opened with curl on 13 Nov 2026 (raw copies in the session scratchpad, `punch/_pages/`). Source sentences are copied verbatim; "..." marks a cut. The New York Times original is paywalled, so it is checked through The Star's full reprint (and The Nightly's shorter one).
 
 ## Hook options (picked the first)
 1. **Stare at a stranger in GTA 6. His dog might chase you.** Picked: a vivid scene anyone can picture, it really happened in Edge's demo, and it opens the door to the 600,000 animations payoff.
@@ -24,7 +24,7 @@
 * [EDGE] "Nelson angles the camera towards the man and lets Jason stare a little too long."
 * [EDGE] "The man with the dog has decided that Jason's stare constitutes a test. He squares up, then unclips the leash from the animal's collar. Nelson turns and runs. The dog gives chase."
 
-**L1** "Edge magazine watched it happen. A man took Jason's stare as a test, squared up, unclipped the leash." Paper quote card (verbatim): "The man with the dog has decided that Jason's stare constitutes a test." Source line: Edge GTA 6 cover story, 29 Oct 2026.
+**L1** "In Edge's demo, a man took Jason's stare as a test, squared up, unclipped the leash." Paper quote card (verbatim): "The man with the dog has decided that Jason's stare constitutes a test." Source line: Edge GTA 6 cover story, 29 Oct 2026.
 * Verdict: SUPPORTED. Label: REPORTED (Edge).
 * Same sentences as L0. [PCG] confirms the passage comes from "Edge's GTA 6 cover story".
 
@@ -38,7 +38,7 @@
 * Verdict: SUPPORTED ("temper" for "temperament"). Label: REPORTED (Edge).
 * [EDGE] "These pedestrians are assigned personality traits that help determine how they respond: temperament, aggression, where they are, what they have seen, and how the player has behaved towards them."
 
-**L4** "Stand too close and listen in? They notice. Follow too closely, and they may get aggressive, or bolt."
+**L4** "Listen in too close? They notice. Follow too closely, and they may get aggressive, or bolt."
 * Verdict: SUPPORTED ("bolt" for "get away"). Label: ROCKSTAR SAYS (Nelson to IGN).
 * [IGN2] "if you stand too close to a group, they should notice you and notice that you're eavesdropping. So, if you stand there and try to listen to the whole thing, they'll often turn around, notice you and go, 'Oh hey, can I help you?' Or if you follow people for too long and too close so that they can hear you, they'll go, 'Oh, hey.' Then they may be aggressive, or they may just want to get away from you."
 
@@ -51,7 +51,7 @@
 * Verdict: SUPPORTED. Label: REPORTED (NYT, from Rockstar).
 * [STAR] "To make this world feel more believable, Rockstar built a new team of writers, directors and producers in Los Angeles that focused solely on creating more realised NPCs."
 
-**L7** "And art directed every single one of them by hand." Collage of five strangers from the footage.
+**L7** "And art directed every one by hand." Collage of five strangers from the footage.
 * Verdict: SUPPORTED ("by hand" for the bespoke, not procedural, approach). Label: ROCKSTAR SAYS (Aaron Garbut to the NYT).
 * [STAR] "Rather than use procedural generation to algorithmically mix and match body parts and clothes, the developers went for a bespoke approach." and "“We art-directed each individual one of them,” said Garbut".
 
@@ -61,18 +61,18 @@
 * OUR MATH: 600,000 / 55,000 = 10.9, so about 11 times (more, since it is "well over"). [EDGE] says "around 600,000", so the counter stops at 600,000 and the label says WELL OVER.
 * compare_todo set: GTA V crowd labelled 55,000 beside GTA VI labelled 600,000 plus.
 
-**L9, L10** "Watch one per second, nonstop, and you'd need almost a week." Stamp 6.9 DAYS, ONE ANIMATION PER SECOND.
+**L9, L10** "Watch one per second, nonstop? Almost a week." Stamp 6.9 DAYS, ONE ANIMATION PER SECOND.
 * Verdict: OUR MATH. 600,000 seconds / 86,400 seconds a day = 6.94 days. Footnote on screen: "OUR MATH: 600,000 seconds is about 6.9 days."
 
-**L11** "So in GTA Six, do you stare, or pet the dog?" (closing question)
+**L11** "Stare, or pet the dog?" (closing question)
 * Verdict: SUPPORTED (petting a dog is in the game). Label: REPORTED (NYT).
 * [STAR] "Exiting the apartment, Jason stooped down to pet a pedestrian's dog."
 
-**L12** "Just remember what happens when you stare." (loop line, runs back into the hook)
-* No new claim.
+**L12** "Follow noticed dot daily and comment STARE. The NPC cheat sheet lands straight in your inbox. See you in Leonida." Tiles FOLLOW @NOTICED.DAILY, COMMENT STARE.
+* Owner rule (13 Nov): every reel ends on a short question, then this exact call to action. The DM goes to everyone who comments, following or not; the caption says so ("Not following yet? Check your message requests."). The NPC cheat sheet is the DM TEXT in `caption.txt`; every item in it comes from the sources above.
 
 ## End card
-"noticed." / THE GTA 6 DETAILS NOBODY NOTICED / @noticed.daily / FOLLOW FOR TOMORROW, over blurred footage. The engine's end card has no handle key, so the handle sits in the `episode` slot.
+noticed. wordmark, @noticed.daily, GTA 6, "NPC cheat sheet lands straight in your inbox", FOLLOW @NOTICED.DAILY + COMMENT STARE, over blurred footage (engine `wordmark` and `handle` keys).
 
 ## Dropped or kept off screen
 * Nelson's "How many people are going to go for a weapon?" (weapon talk), Edge's swear line, the pet snacks detail, and "different districts have their own demographic and professional textures" (no room).

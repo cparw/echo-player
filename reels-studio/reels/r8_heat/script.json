@@ -426,31 +426,6 @@
    "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN."
   },
   {
-   "say": "Spare outfits even ride in your trunk.",
-   "bg": "scrim",
-   "caps": [
-    {
-     "text": "Spare outfits even / ride in your trunk.",
-     "at": 0,
-     "key": [
-      "trunk."
-     ]
-    }
-   ],
-   "footnote": "ROCKSTAR SAYS: Rob Nelson to IGN.",
-   "clips": [
-    {
-     "shot": 89,
-     "offset": 0.3
-    },
-    {
-     "shot": 62,
-     "offset": 9.2,
-     "at": 3
-    }
-   ]
-  },
-  {
    "say": "They know your car? Jump out. They know you're a couple? Split up.",
    "bg": "scrim",
    "caps": [
@@ -579,17 +554,9 @@
    ]
   },
   {
-   "say": "New shirt, new car, or split up. What's your getaway?",
+   "say": "New shirt, new car, or split up?",
    "bg": "scrim",
-   "caps": [
-    {
-     "text": "What's your getaway?",
-     "at": 7,
-     "key": [
-      "getaway?"
-     ]
-    }
-   ],
+   "caps": [],
    "tiles": {
     "items": [
      {
@@ -624,35 +591,67 @@
      "shot": 60,
      "offset": 0.1,
      "at": 5
-    },
-    {
-     "shot": 91,
-     "offset": 5.6,
-     "at": 7
     }
    ]
   },
   {
-   "say": "Whatever you pick, change your shirt first.",
+   "say": "Follow noticed dot daily and comment HEAT. The getaway checklist lands straight in your inbox. See you in Leonida.",
    "bg": "scrim",
    "caps": [
     {
-     "text": "Whatever you pick, / change your shirt first.",
-     "at": 0,
+     "text": "The getaway checklist / lands straight in your inbox.",
+     "at": 7,
      "key": [
-      "shirt first."
+      "inbox."
+     ]
+    },
+    {
+     "text": "See you in Leonida.",
+     "at": 15,
+     "key": [
+      "Leonida."
      ]
     }
    ],
+   "tiles": {
+    "items": [
+     {
+      "text": "FOLLOW @NOTICED.DAILY",
+      "at": 0
+     },
+     {
+      "text": "COMMENT HEAT",
+      "at": 5
+     }
+    ],
+    "y": 430,
+    "gap": 160,
+    "size": 64
+   },
    "clips": [
     {
-     "shot": 41,
-     "offset": 0.5
+     "shot": 91,
+     "offset": 5.6
+    },
+    {
+     "shot": 62,
+     "offset": 10.3,
+     "at": 5
+    },
+    {
+     "shot": 44,
+     "offset": 0.2,
+     "at": 7
+    },
+    {
+     "shot": 91,
+     "offset": 7.0,
+     "at": 10
     },
     {
      "shot": 74,
      "offset": 0.3,
-     "at": 3
+     "at": 15
     }
    ]
   },
@@ -662,9 +661,9 @@
    "wordmark": true,
    "handle": "@noticed.daily",
    "series": "GTA 6",
-   "episode": "Your outfit is evidence",
-   "cta": "Follow for tomorrow",
-   "hold": 2.0,
+   "episode": "Getaway checklist lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT HEAT",
+   "hold": 2.2,
    "clips": [
     {
      "shot": 74,
@@ -678,5 +677,5 @@
   "No witness, no alarm, no cops. GTA 6 changed the rules.",
   "GTA 6's best getaway might be a new shirt."
  ],
- "loop_note": "The last spoken line runs back into the hook; the noticed. end card (wordmark and @noticed.daily handle) plays over the opening footage. The engine loop flag stays off because it drops the end card."
+ "ending": "Owner CTA rule (13 Nov): a short question, then: Follow noticed dot daily and comment HEAT. The getaway checklist lands straight in your inbox. See you in Leonida. The DM goes to everyone who comments."
 }

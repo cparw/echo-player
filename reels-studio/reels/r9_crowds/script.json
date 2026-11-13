@@ -58,16 +58,16 @@
    ]
   },
   {
-   "say": "Edge magazine watched it happen. A man took Jason's stare as a test, squared up, unclipped the leash.",
+   "say": "In Edge's demo, a man took Jason's stare as a test, squared up, unclipped the leash.",
    "bg": "scrim",
    "caps": [
     {
-     "text": "Edge magazine / watched it happen.",
+     "text": "In Edge's demo, a man took / Jason's stare as a test,",
      "at": 0
     },
     {
      "text": "Squared up, / unclipped the leash.",
-     "at": 13,
+     "at": 11,
      "key": [
       "unclipped"
      ]
@@ -79,7 +79,7 @@
      "quote": "The man with the dog has decided that Jason's stare constitutes a test.",
      "qsize": 60,
      "source": "Edge GTA 6 cover story, 29 Oct 2026",
-     "at": 5,
+     "at": 3,
      "cy": 620
     }
    ],
@@ -93,27 +93,27 @@
     {
      "shot": 99,
      "offset": 0.1,
-     "at": 4
+     "at": 2
     },
     {
      "shot": 30,
      "offset": 0.6,
-     "at": 5
+     "at": 3
     },
     {
      "shot": 31,
      "offset": 0.15,
-     "at": 9
+     "at": 7
     },
     {
      "shot": 30,
      "offset": 2.5,
-     "at": 13
+     "at": 11
     },
     {
      "shot": 88,
      "offset": 0.4,
-     "at": 15
+     "at": 13
     }
    ]
   },
@@ -249,23 +249,23 @@
    ]
   },
   {
-   "say": "Stand too close and listen in? They notice. Follow too closely, and they may get aggressive, or bolt.",
+   "say": "Listen in too close? They notice. Follow too closely, and they may get aggressive, or bolt.",
    "bg": "scrim",
    "caps": [
     {
-     "text": "Stand too close / and listen in?",
+     "text": "Listen in / too close?",
      "at": 0
     },
     {
      "text": "They notice.",
-     "at": 6,
+     "at": 4,
      "key": [
       "notice."
      ]
     },
     {
      "text": "Follow too closely, / and they may get aggressive, / or bolt.",
-     "at": 8,
+     "at": 6,
      "key": [
       "bolt."
      ]
@@ -280,32 +280,32 @@
     {
      "shot": 74,
      "offset": 28.0,
-     "at": 3
+     "at": 2
     },
     {
      "shot": 3,
      "offset": 0.7,
-     "at": 6
+     "at": 4
     },
     {
      "shot": 94,
      "offset": 0.1,
-     "at": 8
+     "at": 6
     },
     {
      "shot": 61,
      "offset": 0.15,
-     "at": 11
+     "at": 9
     },
     {
      "shot": 30,
      "offset": 3.0,
-     "at": 14
+     "at": 12
     },
     {
      "shot": 91,
      "offset": 0.3,
-     "at": 16
+     "at": 14
     }
    ]
   },
@@ -434,16 +434,16 @@
    ]
   },
   {
-   "say": "And art directed every single one of them by hand.",
+   "say": "And art directed every one by hand.",
    "bg": "scrim",
    "caps": [
     {
-     "text": "And art directed / every single one of them",
+     "text": "And art directed / every one",
      "at": 0
     },
     {
      "text": "by hand.",
-     "at": 8,
+     "at": 5,
      "key": [
       "hand."
      ]
@@ -473,7 +473,7 @@
      }
     ],
     "survivor": 2,
-    "fill_at": 8
+    "fill_at": 5
    },
    "capsY": 1190,
    "footnote": "ROCKSTAR SAYS: Aaron Garbut to The New York Times.",
@@ -486,7 +486,7 @@
     {
      "shot": 61,
      "offset": 0.5,
-     "at": 8
+     "at": 5
     }
    ]
   },
@@ -553,11 +553,11 @@
    ]
   },
   {
-   "say": "Watch one per second, nonstop,",
+   "say": "Watch one per second, nonstop?",
    "bg": "scrim",
    "caps": [
     {
-     "text": "Watch one per second, / nonstop,",
+     "text": "Watch one per second, / nonstop?",
      "at": 0
     }
    ],
@@ -569,14 +569,14 @@
    "footnote": "OUR MATH: 600,000 seconds is about 6.9 days."
   },
   {
-   "say": "and you'd need almost a week.",
+   "say": "Almost a week.",
    "bg": "scrim",
    "caps": [
     {
-     "text": "you'd need / almost a week.",
-     "at": 1,
+     "text": "Almost a week.",
+     "at": 0,
      "key": [
-      "almost a week."
+      "week."
      ]
     }
    ],
@@ -593,74 +593,97 @@
     {
      "shot": 62,
      "offset": 10.3
-    },
-    {
-     "shot": 44,
-     "offset": 0.2,
-     "at": 3
     }
    ]
   },
   {
-   "say": "So in GTA Six, do you stare, or pet the dog?",
+   "say": "Stare, or pet the dog?",
    "bg": "scrim",
    "caps": [
     {
-     "text": "So in GTA 6,",
-     "at": 0
-    },
-    {
-     "text": "do you stare, / or pet the dog?",
-     "at": 4,
+     "text": "Stare, / or pet the dog?",
+     "at": 0,
      "key": [
-      "pet the dog?"
+      "dog?"
      ]
     }
    ],
    "footnote": "REPORTED: The New York Times saw Jason pet a dog.",
    "clips": [
     {
-     "shot": 60,
-     "offset": 0.15
-    },
-    {
      "shot": 71,
-     "offset": 0.1,
-     "at": 4
+     "offset": 0.1
     },
     {
      "shot": 74,
      "offset": 33.0,
-     "at": 7
+     "at": 2
     }
    ]
   },
   {
-   "say": "Just remember what happens when you stare.",
+   "say": "Follow noticed dot daily and comment STARE. The NPC cheat sheet lands straight in your inbox. See you in Leonida.",
    "bg": "scrim",
    "caps": [
     {
-     "text": "Just remember / what happens when you stare.",
-     "at": 0,
+     "text": "The NPC cheat sheet / lands straight in your inbox.",
+     "at": 7,
      "key": [
-      "stare."
+      "inbox."
+     ]
+    },
+    {
+     "text": "See you in Leonida.",
+     "at": 16,
+     "key": [
+      "Leonida."
      ]
     }
    ],
+   "tiles": {
+    "items": [
+     {
+      "text": "FOLLOW @NOTICED.DAILY",
+      "at": 0
+     },
+     {
+      "text": "COMMENT STARE",
+      "at": 5
+     }
+    ],
+    "y": 430,
+    "gap": 160,
+    "size": 64
+   },
    "clips": [
     {
-     "shot": 30,
-     "offset": 0.4
+     "shot": 16,
+     "offset": 0.1
     },
     {
-     "shot": 67,
-     "offset": 0.1,
-     "at": 3
+     "shot": 81,
+     "offset": 0.15,
+     "at": 4
+    },
+    {
+     "shot": 74,
+     "offset": 10.0,
+     "at": 7
+    },
+    {
+     "shot": 62,
+     "offset": 10.3,
+     "at": 11
+    },
+    {
+     "shot": 89,
+     "offset": 0.4,
+     "at": 14
     },
     {
      "shot": 61,
      "offset": 0.15,
-     "at": 5
+     "at": 16
     }
    ]
   },
@@ -670,9 +693,9 @@
    "wordmark": true,
    "handle": "@noticed.daily",
    "series": "GTA 6",
-   "episode": "Strangers remember",
-   "cta": "Follow for tomorrow",
-   "hold": 2.0,
+   "episode": "NPC cheat sheet lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT STARE",
+   "hold": 2.2,
    "clips": [
     {
      "shot": 30,
@@ -686,5 +709,5 @@
   "GTA 5 had 55,000 animations. GTA 6 has over 600,000.",
   "In GTA 6, strangers remember how you treated them."
  ],
- "loop_note": "The last spoken line runs back into the hook; the noticed. end card (wordmark and @noticed.daily handle) plays over the opening footage. The engine loop flag stays off because it drops the end card."
+ "ending": "Owner CTA rule (13 Nov): a short question, then: Follow noticed dot daily and comment STARE. The NPC cheat sheet lands straight in your inbox. See you in Leonida. The DM goes to everyone who comments."
 }

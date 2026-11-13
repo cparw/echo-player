@@ -1,6 +1,6 @@
 # Fact check: R10 "You can't break up Jason and Lucia" (story style), 13 Nov 2026
 
-155 spoken words, about 52 s at 180 words a minute, plus a 2 s end card. Every page below was opened with curl on 13 Nov 2026 (raw copies in the session scratchpad, `punch/_pages/`). Source sentences are copied verbatim; "..." marks a cut. The New York Times and Bloomberg Businessweek originals are paywalled, so they are checked through full reprints and detailed write ups (The Star, The Nightly, GTA Intel).
+164 spoken words, about 55 s at 180 words a minute, plus a 2 s end card. Every page below was opened with curl on 13 Nov 2026 (raw copies in the session scratchpad, `punch/_pages/`). Source sentences are copied verbatim; "..." marks a cut. The New York Times and Bloomberg Businessweek originals are paywalled, so they are checked through full reprints and detailed write ups (The Star, The Nightly, GTA Intel).
 
 ## Hook options (picked the first)
 1. **You can't break up Jason and Lucia. Rockstar won't let you.** Picked: bold, one line, starts arguments in the comments, and it is exactly what Game Informer reported. The four character origin answers it inside 8 seconds.
@@ -67,12 +67,13 @@
 * Verdict: SUPPORTED (spoken line drops "through"). Label: ROCKSTAR SAYS (Nelson to the NYT).
 * [STAR] "it plays out asking questions about whether love can survive through this storm."
 
-**L13** "Friends or lovers? How are you playing them?" Tiles FRIENDS, LOVERS. (closing question; both paths are real, see L9)
+**L13** "Friends or lovers?" Tiles FRIENDS, LOVERS. (closing question; both paths are real, see L9)
 
-**L14** "Either way, they're stuck together." (loop line, runs back into the hook; true per L0)
+**L14** "Follow noticed dot daily and comment COUPLE. The relationship guide lands straight in your inbox. See you in Leonida." Tiles FOLLOW @NOTICED.DAILY, COMMENT COUPLE.
+* Owner rule (13 Nov): every reel ends on a short question, then this exact call to action. The DM goes to everyone who comments, following or not; the caption says so ("Not following yet? Check your message requests."). The relationship guide is the DM TEXT in `caption.txt`; every item in it comes from the sources above.
 
 ## End card
-noticed. wordmark, @noticed.daily, GTA 6, "Bonnie and Clyde, by design", FOLLOW FOR TOMORROW, over blurred footage (engine `wordmark` and `handle` keys).
+noticed. wordmark, @noticed.daily, GTA 6, "Relationship guide lands straight in your inbox", FOLLOW @NOTICED.DAILY + COMMENT COUPLE, over blurred footage (engine `wordmark` and `handle` keys).
 
 ## Dropped or kept off screen
 * "Lucia is the first fully fleshed out female lead in a mainline GTA" and "the first playable couple" (both Dazed): cut for length.

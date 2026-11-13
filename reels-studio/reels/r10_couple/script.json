@@ -543,17 +543,9 @@
    ]
   },
   {
-   "say": "Friends or lovers? How are you playing them?",
+   "say": "Friends or lovers?",
    "bg": "scrim",
-   "caps": [
-    {
-     "text": "How are you / playing them?",
-     "at": 3,
-     "key": [
-      "playing them?"
-     ]
-    }
-   ],
+   "caps": [],
    "tiles": {
     "items": [
      {
@@ -578,40 +570,77 @@
      "shot": 24,
      "offset": 1.2,
      "at": 2
-    },
-    {
-     "shot": 44,
-     "offset": 0.15,
-     "at": 3
     }
    ]
   },
   {
-   "say": "Either way, they're stuck together.",
+   "say": "Follow noticed dot daily and comment COUPLE. The relationship guide lands straight in your inbox. See you in Leonida.",
    "bg": "scrim",
    "caps": [
     {
-     "text": "Either way, / they're stuck together.",
-     "at": 0,
+     "text": "The relationship guide / lands straight in your inbox.",
+     "at": 7,
      "key": [
-      "stuck together."
+      "inbox."
+     ]
+    },
+    {
+     "text": "See you in Leonida.",
+     "at": 15,
+     "key": [
+      "Leonida."
      ]
     }
    ],
+   "tiles": {
+    "items": [
+     {
+      "text": "FOLLOW @NOTICED.DAILY",
+      "at": 0
+     },
+     {
+      "text": "COMMENT COUPLE",
+      "at": 5
+     }
+    ],
+    "y": 430,
+    "gap": 160,
+    "size": 64
+   },
    "clips": [
     {
-     "shot": 50,
-     "offset": 0.1
+     "shot": 44,
+     "offset": 0.15
     },
     {
      "shot": 74,
      "offset": 14.6,
-     "at": 2
+     "at": 4
+    },
+    {
+     "shot": 43,
+     "offset": 0.2,
+     "at": 7
+    },
+    {
+     "shot": 50,
+     "offset": 0.1,
+     "at": 9
+    },
+    {
+     "shot": 42,
+     "offset": 0.2,
+     "at": 11
     },
     {
      "shot": 21,
      "offset": 0.1,
-     "at": 4
+     "at": 15
+    },
+    {
+     "shot": 74,
+     "offset": 15.5,
+     "at": 18
     }
    ]
   },
@@ -621,9 +650,9 @@
    "wordmark": true,
    "handle": "@noticed.daily",
    "series": "GTA 6",
-   "episode": "Bonnie and Clyde, by design",
-   "cta": "Follow for tomorrow",
-   "hold": 2.0,
+   "episode": "Relationship guide lands straight in your inbox",
+   "cta": "FOLLOW @noticed.daily + COMMENT COUPLE",
+   "hold": 2.2,
    "clips": [
     {
      "shot": 74,
@@ -637,5 +666,5 @@
   "Rockstar first planned GTA 6 with four playable characters.",
   "In GTA 6, ignoring a goodnight text can cost you."
  ],
- "loop_note": "The last spoken line runs back into the hook; the noticed. end card (wordmark and @noticed.daily handle) plays over the opening footage. The engine loop flag stays off because it drops the end card."
+ "ending": "Owner CTA rule (13 Nov): a short question, then: Follow noticed dot daily and comment COUPLE. The relationship guide lands straight in your inbox. See you in Leonida. The DM goes to everyone who comments."
 }

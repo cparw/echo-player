@@ -1,6 +1,6 @@
 # Fact check: R8 "In GTA 6, the police remember your outfit" (story style), 13 Nov 2026
 
-160 spoken words, about 53 s at 180 words a minute, plus a 2 s end card. Every page below was opened with curl on 13 Nov 2026 (raw copies in the session scratchpad, `punch/_pages/`). Source sentences are copied verbatim. Lines follow the owner's verified rules for R8 (13 Nov): mechanics are said as "Rockstar's footage shows" or "Rockstar's Rob Nelson told IGN"; nothing about what six stars does, hollow or solid stars, K9 units, spike strips, separate wanted levels, shot out tyres or any leak.
+162 spoken words, about 54 s at 180 words a minute, plus a 2 s end card. Every page below was opened with curl on 13 Nov 2026 (raw copies in the session scratchpad, `punch/_pages/`). Source sentences are copied verbatim. Lines follow the owner's verified rules for R8 (13 Nov): mechanics are said as "Rockstar's footage shows" or "Rockstar's Rob Nelson told IGN"; nothing about what six stars does, hollow or solid stars, K9 units, spike strips, separate wanted levels, shot out tyres or any leak.
 
 ## Hook options (picked the first)
 1. **In GTA 6, the police remember your outfit.** Picked: concrete, odd, visual, and Rob Nelson's own words back it. The same topic drew 157K likes on a reference channel.
@@ -72,30 +72,27 @@
 * [IGN2] "I can come in here and if I have heat, purchasing and wearing a new outfit will remove any heat that I have."
 * [INV] "Buying a new outfit removes heat".
 
-**L11** "Spare outfits even ride in your trunk."
-* Verdict: SUPPORTED. Label: ROCKSTAR SAYS.
-* [IGN2] "call my personal vehicle, which has changes of outfits in the trunk."
-
-**L12** "They know your car? Jump out. They know you're a couple? Split up." Tiles JUMP OUT, SPLIT UP.
+**L11** "They know your car? Jump out. They know you're a couple? Split up." Tiles JUMP OUT, SPLIT UP.
 * Verdict: SUPPORTED. Label: ROCKSTAR SAYS.
 * [IGN1] "the police know what we're driving, so we should just jump out of the vehicle. They also know we're a couple. You could split up, and that will also help lower the police's perception of you."
 
-**L13** "But if either of you gets arrested, it's Busted." Paper quote card (verbatim): "If either of you gets arrested, it's just 'Busted,' then it's a restart, a respawn." Rob Nelson, Rockstar North, to IGN.
+**L12** "But if either of you gets arrested, it's Busted." Paper quote card (verbatim): "If either of you gets arrested, it's just 'Busted,' then it's a restart, a respawn." Rob Nelson, Rockstar North, to IGN.
 * Verdict: SUPPORTED. Label: ROCKSTAR SAYS.
 * [IGN2] "Rob Nelson: If either of you gets arrested, it's just 'Busted,' then it's a restart, a respawn. As with previous games."
 
-**L14** "Nelson's best tip: get off the streets, on foot, into the alleys."
+**L13** "Nelson's best tip: get off the streets, on foot, into the alleys."
 * Verdict: SUPPORTED. Label: ROCKSTAR SAYS.
 * [IGN1] "Your best option is usually to do this" ... "get off the streets and get on foot into the alleys."
 
-**L15** "New shirt, new car, or split up. What's your getaway?" Tiles NEW SHIRT, NEW CAR, SPLIT UP.
-* Closing question. The three options are the sourced fixes in L9 to L12; [IGN2] also: "We could wait for it to die down, change our outfits, or split Jason and Lucia up."
+**L14** "New shirt, new car, or split up?" Tiles NEW SHIRT, NEW CAR, SPLIT UP.
+* Closing question. The three options are the sourced fixes in L9 to L11; [IGN2] also: "We could wait for it to die down, change our outfits, or split Jason and Lucia up."
 
-**L16** "Whatever you pick, change your shirt first." (loop line, runs back into the hook)
-* Advice that follows from L0 and L8. No new claim.
+**L15** "Follow noticed dot daily and comment HEAT. The getaway checklist lands straight in your inbox. See you in Leonida." Tiles FOLLOW @NOTICED.DAILY, COMMENT HEAT.
+* Owner rule (13 Nov): every reel ends on a short question, then this exact call to action. The DM goes to everyone who comments, following or not; the caption says so ("Not following yet? Check your message requests."). The getaway checklist is the DM TEXT in `caption.txt`; every item in it comes from the sources above.
+* The trunk line ([IGN2] "call my personal vehicle, which has changes of outfits in the trunk.") left the voice to make room and lives in the checklist.
 
 ## End card
-"noticed." / THE GTA 6 DETAILS NOBODY NOTICED / @noticed.daily / FOLLOW FOR TOMORROW, over the blurred opening shot. The engine's end card has no handle key, so the handle sits in the `episode` slot.
+noticed. wordmark, @noticed.daily, GTA 6, "Getaway checklist lands straight in your inbox", FOLLOW @NOTICED.DAILY + COMMENT HEAT, over the blurred opening shot (engine `wordmark` and `handle` keys).
 
 ## Dropped or kept off screen
 * The six clue icon names (camera footage, accomplice, clothing, face, weapon, vehicle): GamesRadar's reading [GR2], not in the owner's verified list; Rockstar's footage shows four [GR1]. The reel says face, clothes, car and couple, which Nelson says himself.
