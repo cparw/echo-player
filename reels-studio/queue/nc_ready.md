@@ -7,3 +7,4 @@ Each line: reel, commit pinned link, length, size, loudness / true peak, freezes
 * R8 READY https://raw.githubusercontent.com/cparw/echo-player/2edce2b6b1eea6effa60483380ce989b99818dbd/reels-studio/media/R8_heat_nc.mp4 | 56.536000s | 56 MB | -14.0 -1.5 | freezes: none
 * R7 READY https://raw.githubusercontent.com/cparw/echo-player/015d3df7ef32ddd5a25dc16bc48611fbd390b965/reels-studio/media/R7_project_americas_nc.mp4 | 70.674000s | 71 MB | -14.0 -1.3 | freezes: none
 * R9 READY https://raw.githubusercontent.com/cparw/echo-player/598b08e5ddb86c3cb144dcd44bb8777cc4ffd705/reels-studio/media/R9_crowds_nc.mp4 | 56.566667s | 57 MB | -14.0 -1.5 | freezes: none
+* R10 READY https://raw.githubusercontent.com/cparw/echo-player/f9ade3a07b2d3490aad5d42c603789fb606954c2/reels-studio/media/R10_jason_and_lucia_nc.mp4 | 57.233333s | 57 MB | -14.0 -1.4 | freezes: none
